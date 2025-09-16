@@ -1,0 +1,50 @@
+<!--<canvas #myCanvas width="4997" height="4615"></canvas>-->
+<!--<img #mapImage  src="assets/nagyterkep_jo2_kisebb.svg" style="display:none;" />-->
+<p class="pb-4"> </p>
+<div class="container-fluid " style="border: 1px solid gray; border-top: 1px solid gray;">
+
+  <div class="row justify-content-center ">
+    <div class="col">
+      <div #scene class="scene position-relative">
+
+        <app-svg-element class="img-fluid mx-auto d-block"
+                    style="max-height: 90vh; object-fit: contain;">
+        </app-svg-element>
+        <div class="p-lg-3 zoom-buttons button-group position-absolute top-0 start-0">
+          <div class="button-wrapper">
+            <button class="btn btn-secondary" (click)="zoomIn()">+</button>
+            <button class="btn btn-secondary" (click)="zoomOut()">-</button>
+          </div>
+          <img class="custom-img" src="assets/kutatok_ejszakaja_logo.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid">
+<!--  <svg #svgElement [attr.width]="svgWidth" [attr.height]="svgHeight" xmlns="http://www.w3.org/2000/svg">-->
+<!--    <image [attr.href]="imageSrc" [attr.width]="svgWidth" [attr.height]="svgHeight"></image>-->
+
+<!--    &lt;!&ndash; Group polygons and rectangles together &ndash;&gt;-->
+<!--    <g *ngFor="let group of elements" [attr.class]="'group'" (click)="handleGroupClick(group)">-->
+<!--      <path-->
+<!--        [attr.d]="group.polygon.d"-->
+<!--        [attr.class]="group.polygon.cssClass"-->
+<!--      ></path>-->
+<!--      <rect-->
+<!--        [attr.x]="group.rectangle.x"-->
+<!--        [attr.y]="group.rectangle.y"-->
+<!--        [attr.width]="group.rectangle.width"-->
+<!--        [attr.height]="group.rectangle.height"-->
+<!--        [attr.fill]="group.rectangle.fillStyle"-->
+<!--        [attr.stroke]="group.rectangle.strokeStyle"-->
+<!--        [attr.stroke-width]="group.rectangle.strokeWidth"-->
+<!--        [attr.transform]="group.rectangle.transform"-->
+<!--      ></rect>-->
+<!--    </g>-->
+<!--  </svg>-->
+</div>

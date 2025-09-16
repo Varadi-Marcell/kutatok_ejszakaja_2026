@@ -1,0 +1,14 @@
+<div class="info-container" (click)="showInfo()">
+  <img src="assets/info-spot2.png" alt="info icon" class="info-icon" />
+  <div class="info-label"
+       [ngClass]="{'visible': isInfoVisible, 'closing': isClosing}"
+  >
+    <div class="info-header">
+      <span class="header-text">{{ header }}</span>
+      <span *ngIf="isInfoVisible" class="close-icon" (click)="closeInfo($event)">×</span>
+    </div>
+    <div *ngIf="isInfoVisible" class="info-content">
+      {{ content }}
+    </div>
+  </div>
+</div>

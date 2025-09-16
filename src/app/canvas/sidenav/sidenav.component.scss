@@ -1,0 +1,28 @@
+.sidenav {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 200px;
+  height: calc(100% - 56px - 60px);
+  background-color: transparent;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.sidenav.collapsed {
+  transform: translateX(-100%);
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 66px;
+  left: 210px;
+  z-index: 2;
+}
+
+.custom-group-item {
+  color: white;
+  background-color: rgb(79 74 74 / 50%);
+
+}

@@ -1,0 +1,161 @@
+//.info-container {
+//  position: relative;
+//  display: inline-flex;
+//  align-items: center;
+//  cursor: pointer;
+//  padding: 5px 10px;
+//  border-radius: 5px;
+//  transition: background-color 0.9s ease;
+//  height: 40px;
+//
+//  .info-icon {
+//    width: 40px; // adjust size as needed
+//    height: auto;
+//  }
+//
+//  .info-label {
+//    background-color: #333334;
+//    color: #fff;
+//    padding: 5px 10px;
+//    border-radius: 5px;
+//    font-size: 14px;
+//    margin-left: 10px;
+//    white-space: nowrap;
+//    opacity: 0;
+//    visibility: hidden;
+//    transform: translateX(-1px);
+//    transition: opacity 0.9s ease, visibility 1s ease, transform 0.8s ease;
+//    position: absolute;
+//    //top: 50%; // Ensures the label is displayed below the icon
+//    left: 76%;
+//    z-index: 10;
+//    min-width: 150px;
+//
+//    .info-header {
+//      display: flex;
+//      justify-content: space-between;
+//      align-items: center;
+//      font-weight: bold;
+//      //margin-bottom: 5px;
+//
+//      .close-icon {
+//        cursor: pointer;
+//        margin-left: 10px;
+//        font-size: 14px;
+//        color: #fff;
+//
+//        &:hover {
+//          color: #ccc; // Change color on hover if needed
+//        }
+//      }
+//    }
+//
+//    .info-content {
+//      font-size: 12px;
+//      max-width: 30%;
+//      //margin-top: 5px;
+//    }
+//  }
+//
+//  &:hover .info-label {
+//    opacity: 1;
+//    visibility: visible;
+//    transform: translateX(0);
+//  }
+//}
+//
+//.info-label.visible {
+//  opacity: 1;
+//  visibility: visible;
+//  transform: translateX(0);
+//}
+.info-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.9s ease;
+  height: 40px;
+
+  .info-icon {
+    width: 40px;
+    height: auto;
+  }
+
+  .info-label {
+    background-color: #333334;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%) translateX(0);
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+    z-index: 10;
+    min-width: 150px;
+
+    &.closing {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      animation-play-state: running;
+      animation-direction: reverse;
+    }
+
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+      min-width: 210px;
+      animation: growAnimation 0.5s forwards;
+
+    }
+
+    .info-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+
+      .close-icon {
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 14px;
+        color: #fff;
+
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+
+    .info-content {
+      font-size: 12px;
+      max-height: 100px; // Set max height for scrolling
+      overflow-y: auto;  // Enable vertical scroll
+      width: 100%;       // Ensure it occupies full width within the label
+
+    }
+  }
+
+  &:hover .info-label {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes growAnimation {
+  0% {
+    transform: translateY(-50%) scale(0.5) translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50%) scale(1) translateX(0);
+    opacity: 1;
+  }
+}

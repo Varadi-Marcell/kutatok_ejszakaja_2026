@@ -1,0 +1,33 @@
+/*!* canvas.component.css *!*/
+/*.polygon {*/
+/*  fill: transparent;*/
+/*  stroke: transparent;*/
+/*  transition: fill 0.5s, stroke 0.5s, stroke-width 0.5s;*/
+/*}*/
+
+/*.polygon:hover {*/
+/*  fill: #9898ef;*/
+/*  stroke: black;*/
+/*  stroke-width: 5;*/
+/*  opacity: 0.8;*/
+/*}*/
+/* canvas.component.css */
+.polygon {
+  fill: transparent;
+  stroke: transparent;
+  transition: fill 0.5s, stroke 0.5s, stroke-width 0.5s, opacity 0.5s;
+  cursor: pointer;
+}
+
+.polygon:hover {
+  fill: #6198ce;
+  stroke: black;
+  stroke-width: 8;
+  opacity: 0.8;
+}
+
+rect {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  z-index: 10;
+}
