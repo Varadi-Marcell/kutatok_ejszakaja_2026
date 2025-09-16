@@ -1,0 +1,98 @@
+[
+  {
+    "No.": "1",
+    " name": "Érdekes kémiai kísérletek bemutatása",
+    "english_name": "Interesting chemical demonstrations",
+    "description": "Kémiai bemutatók: Játék a színekkel, Whoosh palack, Thor kalapácsa, Mini tüzijáték, Termit reakció stb.",
+    "english_description": "Chemical demonstrations: playing with colours, Whoosh bottle, Thor's hammer, Mini fireworks, Termite reaction etc.",
+    "place": "A/2 épület, II. előadó / A/2 building, Lecturer room II.",
+    "time": "19:00-20:30",
+    "max_person": "300 fő",
+    "registration": "Regisztráció nélküli",
+    "Infrastruktúra igénye": "mikrofon, hangosítás, kamera  a kivetítéshez, laptop"
+  },
+  {
+    "No.": "2",
+    " name": "Tüzes-jeges AnyagBAZÁR",
+    "english_name": "Materials with fire and ice",
+    "description": "Kísérletek anyagokkal alacsony és nagy hőmérsékleten.",
+    "english_description": "Experiments with materials at low and high temperatures.",
+    "place": "C1 épület 1. emelet folyosó vége (AVK kari könyvtár) / Building C1, 1st floor, end of corridor (AVK Faculty Library)",
+    "time": "17:00, 18:00, 21:00",
+    "max_person": "30 fő/alkalom",
+    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "3",
+    " name": "Larina? Tesla? Tik-Tok? Tudomány!” ",
+    "english_name": "Larina? Tesla? Tik-Tok? Science!” ",
+    "description": "Zenélő hárfa húrok nélkül, villámot szóró „hangszóró”  - és még sok érdekesség, bemutató a tudomány világából. ",
+    "english_description": "\"A musical harp without strings, a ‘speaker’ that shoots lightning - and many more curiosities and demonstrations from the world of science.",
+    "place": null,
+    "time": null,
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "8"",
+    " name": "Üvegaula főbejárat földszint / Glass hall main entrance ground floor",
+    "english_name": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "description": "-",
+    "english_description": "-",
+    "place": "áram, asztal, székek",
+    "time": "Dr. Szabó Gábor",
+    "max_person": "gabor.szabo@uni-miskolc.hu",
+    "registration": "30704329944",
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "4",
+    " name": "Érmenyomás",
+    "english_name": "Coin forming",
+    "description": "Válassz egy mintát és készíts saját érmét pillanatok alatt! ",
+    "english_description": "Choose a design and create your own coin in seconds!",
+    "place": "Üveg előcsarnok galériájának a Fornetti felé eső része / The part of the glass lobby gallery facing Fornetti",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "5",
+    " name": "Régészeti leletek és saját ékszerek összetételvizsgálata",
+    "english_name": "Composition analysis of archaeological finds and personal jewellery",
+    "description": "Az érdeklődők közérthetően megismerhetik a hordozható röntgenfluoreszcens elemző (ED-XRF) működési elvét és használatát, amellyel középkori régészeti fémleletek, illetve kívánságra saját fémtárgyak, ékszerek kémiai összetételét is meghatározhatjuk pár perc alatt.",
+    "english_description": "Visitors can learn the principle of operation and use of the portable X-ray fluorescence analyser (ED-XRF), which can be used to determine the chemical composition of medieval archaeological metal objects and, if desired, of their own metal objects and jewellery in a few minutes.",
+    "place": "B/1 épület, III. emelet, 312. terem / B/1 building, 3rd floor, room 312",
+    "time": "17:00 - 18:00",
+    "max_person": "10 fő / alkalom",
+    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "6",
+    " name": "Mini téglagyártás",
+    "english_name": "Mini brick production",
+    "description": "Interaktív bemutatása a téglagyártásnak - hogyan lesz az agyagból égetett kerámia falazóelem?",
+    "english_description": "\"Interactive demonstration of brick-making — how does clay become a fired ceramic building block?",
+    "place": null,
+    "time": null,
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "7"",
+    " name": "C/2. épület, V hajó - Energia-, Kerámia- és Polimetechnológiai Intézet, Portechnológiai laboratórium / C/2 épület, Ship V - Institute of Energy, Ceramics and Polymer Technology, Port Technology Laboratory /",
+    "english_name": "17:30, 18:30, 19:30",
+    "description": "10 fő/alkalom",
+    "english_description": "Regisztrálás az AVK kari standnál. (Üvegaula)",
+    "place": "nincs",
+    "time": "Hamza Alexandra, Dr. Kocserha István",
+    "max_person": "alexandra.hamza@uni-miskolc.hu",
+    "registration": " ",
+    "Infrastruktúra igénye": " "
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "No.": "1",
+    "name": "Bemutató óra - a Konfuciusz Intézet kínálata",
+    "english_name": "Presentation – what the Confucius Institute has to offer",
+    "description": "Mindenkinek ajánljuk a bemutató megtekintését, aki érdeklődik a Konfuciusz Intézet által kínált nyelvi és kulturális képzések iránt.",
+    "english_description": "We recommend anyone interested in the language and cultural training courses offered by the Confucius Institute to attend our presentation.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "18:00",
+    "max_person": "15 fő",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "2",
+    "name": "Kínai kultúra óra",
+    "english_name": "Chinese Culture class",
+    "description": "Bemutató óra a kínai kultúráról mindazoknak, akiket vonz a Kelet gazdag kultúrája.",
+    "english_description": "A lesson on Chinese culture for all those attracted by the rich culture of the East.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "18:30",
+    "max_person": "15 fő",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "3",
+    "name": "Tai-chi bemutató",
+    "english_name": "Tai-chi performance",
+    "description": "Tai-chi bemutató.",
+    "english_description": "Tai-ji performance.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "19:00",
+    "max_person": "-",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "4",
+    "name": "Kínai nyelvi óra",
+    "english_name": "Chinese Language class",
+    "description": "Bemutató kínai nyelvi óra, azaz nyerj betekintést a kínai nyelv szépségeibe.",
+    "english_description": "Demo Chinese language class - get an insight into the beauty of the Chinese language.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "19:30",
+    "max_person": "15 fő",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "5",
+    "name": "Kínai kalligráfia foglalkozás",
+    "english_name": "Chinese Calligraphy workshop",
+    "description": "Ismerkedj meg a kínai kalligráfia művészetével.",
+    "english_description": "Get to know the art of Chinese calligraphy.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "20:00",
+    "max_person": "15 fő",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "6",
+    "name": "Kínai zene bemutató",
+    "english_name": "Chinese music performance",
+    "description": "Klasszikus kínai zene bemutató.",
+    "english_description": "Classical Chinese music performance.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "20:30",
+    "max_person": "15 fő",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "7",
+    "name": "Kínai zene és szülinapi köszöntő",
+    "english_name": "Chinese music and Confucius birthday",
+    "description": "A Konfuciusz Intézet 12. születésnapjának ünneplése.",
+    "english_description": "Celebrating the12th birthday of Confucius Institute.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "21:00",
+    "max_person": "15 fő",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "8",
+    "name": "Kínai tea ceremónia és kvíz",
+    "english_name": "Chinese tea ceremony and quizes",
+    "description": "Kínai tea kóstolás és Kínával kapcsolatos játékos kvízek, feladványok.",
+    "english_description": "Chinese tea tasting and China related quizzes and games.",
+    "place": "Főépület / Glass Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "Infrastruktúra igénye": "Áramvételi lehetőség"
+  },
+  {
+    "No.": null,
+    "name": null,
+    "english_name": null,
+    "description": null,
+    "english_description": null,
+    "place": null,
+    "time": null,
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": null
+  }
+]

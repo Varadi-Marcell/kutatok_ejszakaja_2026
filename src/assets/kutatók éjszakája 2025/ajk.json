@@ -1,0 +1,110 @@
+[
+  {
+    "No.": "",
+    "name": null,
+    "english_name": null,
+    "description": null,
+    "english_description": null,
+    "place": null,
+    "time": null,
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "1",
+    "name": "Bűnös vagy ártatlan? - Mintatárgyalás",
+    "english_name": "Guilty or innocent? - Mock trial",
+    "description": "Interaktív büntetőeljárás, próbáld ki magad ügyvédként, ügyészként, bíróként, de akár a vádlottak padján is bizonyíthatod ártatlanságodat!",
+    "english_description": "Interactive criminal proceedings: try yourself out as a lawyer, prosecutor, judge, or even prove your innocence in the dock!",
+    "place": "C/2 épület, Mintatárgyaló / Building C/2, Mock trial room",
+    "time": "18:00 ; 19:00",
+    "max_person": "30",
+    "registration": "ÁJK Kari stand",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "2",
+    "name": "Teszteld a jogi tudásod! - Jogi kvíz",
+    "english_name": "Legal quiz - Test your legal knowledge!",
+    "description": "Mennyire vagy tájékozott a jog világában? Keresd az ÁJK standját és teszteld tudásodat!",
+    "english_description": "How well-informed are you about the law? Find the ÁJK desk and test your knowledge!",
+    "place": "ÁJK Kari stand / ÁJK stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limit",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "asztal"
+  },
+  {
+    "No.": "4",
+    "name": "Detektíviskola",
+    "english_name": "School of Detectives",
+    "description": "A legkisebbekre is gondolunk. Legyél nyomozó, gyere játssz velünk! (4-10 éves korosztálynak)",
+    "english_description": "We think about the small ones too! Be a detective, come and play with us (ages 4-10)",
+    "place": "ÁJK Kari stand / ÁJK stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limit",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "5",
+    "name": "Gyere és nyomozz velünk!  Borsod-Abaúj-Zemplén Megyei Rendőr-Főkapitányság - Balesetmegelőzési Bizottság ",
+    "english_name": "Come and investigate with us!",
+    "description": "A program a Borsod-Abaúj-Zemplén Vármegyei Rendőrfőkapitányság közreműködésével valósul meg.",
+    "english_description": "The programme is implemented in cooperation with the Police Headquarters of Borsod-Abaúj-Zemplén County.",
+    "place": "Főépület előtt műveleti kocsinál / In front of the main building, by the operational vehicle",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "20",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "áramforrás + parkolóhely biztosítása"
+  },
+  {
+    "No.": "6",
+    "name": "Bűnmegelőzés - Balesetmegelőzés                                                                                                                      Borsod-Abaúj-Zemplén Megyei Rendőr-Főkapitányság - Balesetmegelőzési Bizottság ",
+    "english_name": "Crime prevention - Accident prevention",
+    "description": "A program a Borsod-Abaúj-Zemplén Vármegyei Rendőrfőkapitányság közreműködésével valósul meg.",
+    "english_description": "The programme is implemented in cooperation with the Police Headquarters of Borsod-Abaúj-Zemplén County.",
+    "place": "Rendőrség stand / Police stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "10",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "asztal + áramforrás"
+  },
+  {
+    "No.": "7",
+    "name": "Vércseppek nyomában…                                                                                                                                        Borsod-Abaúj-Zemplén Megyei Rendőr-Főkapitányság - Balesetmegelőzési Bizottság ",
+    "english_name": "Looking for bloodstains...",
+    "description": "A program a Borsod-Abaúj-Zemplén Vármegyei Rendőrfőkapitányság közreműködésével valósul meg.",
+    "english_description": "The programme is implemented in cooperation with the Police Headquarters of Borsod-Abaúj-Zemplén County.",
+    "place": "Rendőrség stand / Police stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "10",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "áramforrás + asztal"
+  },
+  {
+    "No.": "8",
+    "name": "Pörgess és nyerj!",
+    "english_name": "Spin and win!",
+    "description": "A program a Miskolci Törvényszék közreműködésével valósul meg.",
+    "english_description": "The program is being implemented in cooperation with the Miskolc Court of Justice.",
+    "place": "Miskolci Törvényszék stand / Miskolc Courthouse stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limit",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "asztal"
+  },
+  {
+    "No.": "9",
+    "name": "Ne válj áldozattá!",
+    "english_name": "Don't become a victim!",
+    "description": "Interaktív program a Miskolci Áldozatsegítő Központ közreműködésével „T.J. sértett elmondta, éppen hazaindult a késői órán a szórakozóhelyről, amikor megtámadták és értékeit erőszakkal elvették tőle.” Interaktív program: Veled is megtörténhet! Tudod mit kell tenned? Tudod kitől kaphatsz segítséget? Keresd a Miskolci Áldozatsegítő Központ standját!",
+    "english_description": "Interactive program in cooperation with the Miskolc Victim Support Center \"T.J. said he was on his way home late at night from a nightclub when he was attacked and robbed.\" Interactive program: It could happen to you too! Do you know what to do? Do you know who can help you? Look for the Miskolc Victim Support Center stand!",
+    "place": "Miskolci Áldozatsegítő Központ stand / Miskolc Victim Support Center stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limit",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "külön standot hoznak, csupán helyszín biztosítását kérik"
+  }
+]

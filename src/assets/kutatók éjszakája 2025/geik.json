@@ -1,0 +1,110 @@
+[
+  {
+    "No.": "1",
+    "name": "A blokklánc. Barát vagy ellenség?",
+    "english_name": "Blockchain. Friend or enemy?",
+    "description": "Egyre többet hallani a blokkláncról, de mi is az és mire használható? Hol jelent már meg és hol használják a közeljövőben?",
+    "english_description": "We hear more and more about blockchain, but what is it and what can it be used for? Where has it appeared and where will it be used in the near future?",
+    "place": "Informatikai Épület 2. emelet 200. labor / Informatics Building 2nd floor, lab 200",
+    "time": "18:00",
+    "max_person": "30",
+    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "2",
+    "name": "A mobilos fényképezés titkai",
+    "english_name": "Secrets of mobile phone photography",
+    "description": "Mi történik a kijelző mögötti boszorkány konyhában?",
+    "english_description": "What's going on in the witch's kitchen behind the display?",
+    "place": "Informatikai Épület 2. emelet 200. labor / Informatics Building, 2nd floor, lab 200.",
+    "time": "19:30",
+    "max_person": "30",
+    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "3",
+    "name": "Retro számítógép kiállítás és játszószoba",
+    "english_name": "Retro computer exhibition and playroom",
+    "description": "Az X generáció számítógépeinek és videójátékainak interaktív bemutatása nem csak boomereknek.",
+    "english_description": "The interactive exhibition of Gen X's computers and video games, not just for Boomers.",
+    "place": "Informatikai épület, I. és II. emelet / Informatics Building, 1st and 2nd floor",
+    "time": "17.00 - 21.00-ig folyamatos / Continuously between 5pm-9pm.",
+    "max_person": "(15)",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "4",
+    "name": "Mesterséges Intelligencia és Róvásírás",
+    "english_name": "Artificial Inteligence and Sekler Rovas writing",
+    "description": "Interaktív előadás és párbaj a mesterséges inteligencia és a róvásírást gyakorló kutatók között.",
+    "english_description": "Interactive presentation and duel between artificial intelligence and researchers practicing Sekler Rovas writing.",
+    "place": "Informatikai Épület, 2. emelet 214. előadó / Informatics Building, 2nd floor, room 214",
+    "time": "17:30; 19:00; 20:30;",
+    "max_person": "35",
+    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "5",
+    "name": "Látványos fizikai kísérletek",
+    "english_name": "Spectacular Physics Experiments",
+    "description": "Kísérletek vákuumban, elektrosztatikai eszközökkel és lézerekkel.",
+    "english_description": "Experiments in vaccum, with electrostatic devices, and lasers.",
+    "place": "A/2 épület, III. (legfelső) emelet 11. (üvegajtón be) - Fizikai és Elektrotechnikai Intézet / A/2 building, 3rd (top) floor 11. (through glass door)",
+    "time": "17:30, 18:00, 18:30, 19:00, 19:30",
+    "max_person": "20",
+    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "6",
+    "name": "Világító napelemek",
+    "english_name": "Illuminated solar panels",
+    "description": "A napelem panelek nem csak elnyelni képesek a fényt. Adott körülmények között világítani is tudnak.",
+    "english_description": "Solar panels can not only absorb light, but also emit it under certain conditions.",
+    "place": "A/3 épület, 2. emelet - Elektrotechnikai és Elektronikai Intézeti Tanszék / A/3 building, 2nd floor - Department of Electrical Engineering and Electronics",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "(12)",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "7",
+    "name": "Formát adunk az energetikának",
+    "english_name": "Giving form to Energetics",
+    "description": "Fedezd fel, hogyan forradalmasítja a 3D nyomtatás a villamosenergetikát! A bemutatón kézbe vehető, működő modelleken keresztül láthatod, hogyan készülhetnek szigetelők, transzformátorházak vagy akár mini szélturbinák nyomtatott formában.",
+    "english_description": "Discover how 3D printing is revolutionizing electrical power engineering! Through interactive, working models, you'll see how insulators, transformer housings, and even miniature wind turbines can be created using additive manufacturing.",
+    "place": "A/3 épület, 2. emelet - Elektrotechnikai és Elektronikai Intézeti Tanszék / A/3 building, 2nd floor - Department of Electrical Engineering and Electronics",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "(12)",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "8",
+    "name": "Napszimulátor",
+    "english_name": "Sunsimulator",
+    "description": "A napelemeket nem csak a külvilágban kell vizsgálni, hanem laboratóriumi körülmények között is.",
+    "english_description": "Solar panels not only have to be researched in the outside world, but in laboratories as well.",
+    "place": "A/3 épület, 2. emelet - Elektrotechnikai és Elektronikai Intézeti Tanszék / A/3 building, 2nd floor - Department of Electrical Engineering and Electronics",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  },
+  {
+    "No.": "9",
+    "name": "Napelemek Testközelből",
+    "english_name": "PV Panels up close ",
+    "description": "Ha még nem láttál sérült napelemet, nézd meg testközelből!",
+    "english_description": "If you haven't seen a damaged solar panel yet, come and take a closer look!",
+    "place": "A/3 épület, 2. emelet - Elektrotechnikai és Elektronikai Intézeti Tanszék / A/3 building, 2nd floor - Department of Electrical Engineering and Electronics",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "Infrastruktúra igénye": "-"
+  }
+]

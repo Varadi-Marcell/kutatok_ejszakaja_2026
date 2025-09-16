@@ -1,0 +1,110 @@
+[
+  {
+    "No.": "1",
+    "name": "Selmeci Műemlékkönyvtár és a '200 éves a Magyar Tudományos Akadémia és könyvtára' rollup kiállítás ünnepélyes megnyitója",
+    "english_name": "Opening of the Selmec Museum Library and the exhibition of the '200 years of the Hungarian Academy of Sciences and its library'",
+    "description": "Selmeci Műemlékkönyvtár és a '200 éves a Magyar Tudományos Akadémia és könyvtára' rollup kiállítás ünnepélyes megnyitójára invitálunk mindenkit.",
+    "english_description": "Opening of the Selmec Museum Library and the exhibition of the '200 years of the Hungarian Academy of Sciences and its library'.",
+    "place": "KLM épület földszint / KLM building ground floor",
+    "time": "Ünnepélyesmegnyitó: 15:00,  17:00 órától óránként tárlatvezetés / Opening ceremony: 3pm,  Guided tours every hour from 5pm",
+    "max_person": "100",
+    "registration": "nem",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "2",
+    "name": "Könyvtári túra",
+    "english_name": "Library tour",
+    "description": "Felújított könyvtár és raktárainak megtekintése.",
+    "english_description": "Viewing the renovated library and its storage facilities.",
+    "place": "KLM épület / 1. emelet, olvasóterem",
+    "time": "óránként (17:00 órától, utolsó időpont: 20:00) / every hour (from 5pm, last time: 8pm)",
+    "max_person": "20-25",
+    "registration": "nem",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "3",
+    "name": "Könyvszobrászat",
+    "english_name": "Creating book sculptures",
+    "description": "Kézműves alkotások készítése könyvekből.",
+    "english_description": "Crafting handmade items from books.",
+    "place": "KLM épület / KLM épület",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "8-10 / alkalom",
+    "registration": "nem",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "4",
+    "name": "Mesemondás - A kőleves",
+    "english_name": "Storytelling - The \"stone soup\"",
+    "description": "Mesemondás gyerekeknek - A kőleves c. magyar népmese.",
+    "english_description": "Storytelling for children - The \"Stone soup\" (only in Hungarian).",
+    "place": "KLM emelet / KLM floor",
+    "time": "minden egész órában (17:00 órától, utolsó időpont: 20:00) / every hour (from 5pm, last time: 8pm)",
+    "max_person": "30 fő / alkalom",
+    "registration": "nem",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "5",
+    "name": "Kaspó - ahol a tudomány játékra kel' társasjáték",
+    "english_name": "\"Kaspó - where science becomes a game\" board game",
+    "description": "Növényismereti társasjáték.",
+    "english_description": "Plant knowledge board game (only in Hungarian).",
+    "place": "KLM épület - 1. emelet, olvasóterem / KLM building - 1st floor, reading room",
+    "time": "minden óra 30-tól (17:30 órától, utolsó időpont: 19:30) / every hour from 30 (from 5:30pm, last time: 7:30pm)",
+    "max_person": "4-5 fő / játék",
+    "registration": "nem",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "6",
+    "name": "Silent book kiállítás",
+    "english_name": "Silent book exhibition",
+    "description": "Hogyan készül a silent book? — a #fairytailproject művészeti csoport művészeinek kiállítása.",
+    "english_description": "How is a silent book made? — Exhibition by artists from the #fairytailproject art group.",
+    "place": "KLM emelet / KLM floor",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs korlát",
+    "registration": "nem",
+    "Infrastruktúra igénye": "nem"
+  },
+  {
+    "No.": null,
+    "name": null,
+    "english_name": null,
+    "description": null,
+    "english_description": null,
+    "place": null,
+    "time": null,
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "",
+    "name": "",
+    "english_name": "",
+    "description": "",
+    "english_description": "",
+    "place": "",
+    "time": "",
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": ""
+  },
+  {
+    "No.": "",
+    "name": "",
+    "english_name": "",
+    "description": "",
+    "english_description": "",
+    "place": "",
+    "time": "",
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": ""
+  }
+]

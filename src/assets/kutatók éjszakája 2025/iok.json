@@ -1,0 +1,110 @@
+[
+  {
+    "No.": "1",
+    "name": "Szóbeli Origó és Zöld Út próbanyelvvizsga - ANGOL",
+    "english_name": "Mock exam in English: Zöld Út and Origó oral exam",
+    "description": "Szóbeli Origó és Zöld Út (általános, gazdasági vagy műszaki) próbanyelvvizsga angol nyelvből, előzetes regisztráció alapján. A vizsga értékelése után tanácsadás a további felkészüléshez. Regisztráció az üveg előcsarnokban található IOK Információs pultnál szükséges! ",
+    "english_description": "Mock exam in English: Zöld Út (general, economic or technical) and Origó (general) bilingual (English-Hungarian) language exams. Personal assessment and recommendations after the exam considering further preparation. Registration is required at the IOK Information Desk located in the glass lobby! ",
+    "place": "A/1 épület, 318. terem / Building A/1, Room 318",
+    "time": "17:00-18:00",
+    "max_person": "max. 10 fő",
+    "registration": "nincs",
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "2",
+    "name": "Tudod-e? - Érdekességek a spanyol és olasz nyelv és kultúra kapcsán",
+    "english_name": "Did you know? - Fun facts about the Spanish and Italian language and culture",
+    "description": "Spanyol és olasz nyelvi és országismereti játékos feladatok. ",
+    "english_description": "Quizzes and games related to the Spanish and Italian language and culture.",
+    "place": "A/1 épület, 317. terem / Building A/1, Room 317",
+    "time": "17:00-19:00",
+    "max_person": null,
+    "registration": "nincs",
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "3",
+    "name": "Szóbeli Origó és Zöld Út próbanyelvvizsga-NÉMET",
+    "english_name": "Mock exam in German: Zöld Út and Origó oral exam",
+    "description": "Szóbeli Origó és Zöld Út (gazdasági) próbanyelvvizsga német nyelvből, előzetes regisztráció alapján. A vizsga értékelése után tanácsadás a további felkészüléshez. Regisztráció az üveg előcsarnokban található IOK Információs pultnál szükséges! ",
+    "english_description": "Mock exam in German: Zöld Út (economic) and Origó (general) bilingual (German-Hungarian) language exams. Personal assessment and recommendations after the exam. Registration is required at the IOK Information Desk located in the glass lobby! ",
+    "place": "A/1 épület, 318. terem / Building A/1, Room 318",
+    "time": "17:00-18:00",
+    "max_person": "max. 10 fő",
+    "registration": "nincs",
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "4",
+    "name": "Ünnepeljük együtt a Nyelvek Európai Napját! ",
+    "english_name": "Let's celebrate the European Day of Languages!",
+    "description": "Szavak mögött a világ - Nyelvi Tényvadászat: érdekességek, amik garantáltan meglepnek! ",
+    "english_description": "The world behind the words- Linguistic Fact Hunt: curiosities that are guaranteed to surprise you!",
+    "place": "A/1 épület, magasföldszint folyosó / Building A/1, high ground corridor",
+    "time": "17:00-19:00",
+    "max_person": null,
+    "registration": "nincs",
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "5",
+    "name": "Információ, próbanyelvvizsga regisztráció",
+    "english_name": "Information; registration for mock exams",
+    "description": "Az IOK által kínált szóbeli próbanyelvvizsgára itt lehet regisztrálni",
+    "english_description": "Registration for oral mock exams  ",
+    "place": "Üveg aula stand / Main Hall IOK Stand",
+    "time": "16:30-20:00",
+    "max_person": null,
+    "registration": "nincs",
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "6",
+    "name": "Földrajzi kvíz a németnyelvű országokról",
+    "english_name": "Geographical quiz on German-speaking countries",
+    "description": "A németnyelvű országok tartományait, ezek fővárosait keressük és találjuk meg vaktérképen",
+    "english_description": "Find the provinces and their capital cities of German-speaking countries on the blind map",
+    "place": "A/1 épület, 317. terem / Building A/1, Room 317",
+    "time": "17:00-20:00",
+    "max_person": "bármennyi, folyamatosan",
+    "registration": "nincs",
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": null,
+    "name": null,
+    "english_name": null,
+    "description": null,
+    "english_description": null,
+    "place": null,
+    "time": null,
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "",
+    "name": "",
+    "english_name": "",
+    "description": "",
+    "english_description": "",
+    "place": "",
+    "time": "",
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": ""
+  },
+  {
+    "No.": "",
+    "name": "",
+    "english_name": "",
+    "description": "",
+    "english_description": "",
+    "place": "",
+    "time": "",
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": ""
+  }
+]

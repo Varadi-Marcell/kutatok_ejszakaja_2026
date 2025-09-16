@@ -1,0 +1,110 @@
+[
+  {
+    "No.": "1",
+    "name": "Testünk titkai; Függőségeink",
+    "english_name": "The secrets of our bodies; Addictions",
+    "description": "Az emberi test felépítésének tanulmányozása különböző mulázsok segítségével; Dohányzás, alkohol, drog - hogyan hat a szervezetünkre? ",
+    "english_description": "Studying the structure of the human body using different types of moulds; Smoking, alcohol, drugs - how do they affect our body? ",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "3 db asztal, 6 db szék"
+  },
+  {
+    "No.": "2",
+    "name": "Légúti idegentest. Újraélesztés AED készülékkel",
+    "english_name": "Foreign body in the airway. Resuscitation with AED",
+    "description": "Újraélesztés! Légúti idegen test eltávolítása.",
+    "english_description": "Resuscitation with AED. Foreign body in the airway.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "3",
+    "name": "Babaszoba",
+    "english_name": "Nursery",
+    "description": "A 9. hónap \"súlyának\" megélése várandós mellénnyel; a pelenkázás, öltöztetés fortélyai",
+    "english_description": "Experience the \"weight\" of the 9th month with a pregnancy simulator; baby changing and dressing tricks.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "2 db asztal, 4 db szék"
+  },
+  {
+    "No.": "4",
+    "name": "Mire képes a testünk?",
+    "english_name": "What is our body capable of?",
+    "description": "Testünk számos képességgel kell rendelkezzen mindennapi feladataink ellátáshoz. A program lehetőséget biztosít a saját képességek (erő, stabilitás, koordináció és egyensúly mérésével) megismerésére, vagy a mozgásszervrendszerrel kapcsolatos ismeretek tesztelésére.",
+    "english_description": "Our bodies need to have many abilities to perform our daily tasks. The program provides an opportunity to assess your own abilities (by measuring strength, stability, coordination and balance) or to test your knowledge of the musculoskeletal system.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "2 db asztal, 4 db szék"
+  },
+  {
+    "No.": "5",
+    "name": "Gyógynövények az egészségturizmusban",
+    "english_name": "Herbs in health tourism",
+    "description": "Magyarország bővelkedik gyógynövényekben, melyek minden területen megjelennek és felhasználásra kerülnek - így van ez az egészségturizmusban is. A program iránt érdeklődők megismerkedhetnek hazánk ismertebb gyógynövényeivel és azok felhasználási lehetőségeivel.",
+    "english_description": "Hungary is rich in medicinal plants, which are used in all fields - including health tourism. Those interested can learn about the most famous medicinal plants of our country and their uses.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "2 db asztal, 4 db szék"
+  },
+  {
+    "No.": "6",
+    "name": "Együk magunkat egészségesre!",
+    "english_name": "Bite into a healthier you!",
+    "description": "Az egészséges táplálkozásnak minden életkorban alapvető jelentősége van. Szerepe elvitathatatlan a testi-lelki egészségben, jó szellemi és fizikai teljesítőképesség megőrzésében, az optimális növekedés, továbbá az egészséges öregedés szempontjából is. Az OKOSTÁNYÉR végigvezet bennünket az alapvető élelmiszercsoportokhoz (zöldségfélék, gyümölcsök, gabonafélék, tej és tejtermékek, hús és húskészítmények, halak és tojás) kapcsolható táplálkozási tanácsokon.",
+    "english_description": "A healthy diet is essential at any age. Its role in maintaining physical and mental health, good mental and physical performance, optimal growth and healthy ageing is undisputed. The \"Smart Plate\" (\"OKOSTÁNYÉR\") guides us through the nutritional advice associated with the basic food groups (vegetables, fruit, cereals, milk and dairy products, meat and meat products, fish and eggs).",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "1 db asztal, 2 db szék"
+  },
+  {
+    "No.": "7",
+    "name": "Mit látsz a képen?",
+    "english_name": "What can you see in the picture?",
+    "description": "Különböző képalkotó eljárásokkal készített, nem mindennapi felvételek",
+    "english_description": "Unusual images from different medical imaging techniques.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "2 db asztal, 4 db szék, 1 db vetítővászon, 2db elektromos csatlakozó aljzat"
+  },
+  {
+    "No.": "8",
+    "name": "Biológiai játszóház",
+    "english_name": "Biological Playground",
+    "description": "Érdekelnek a testedet felépítő szövetek? Gyere és ismerd meg azokat, valamint kóros elváltozásaikat közelebbről, valódi kutatómikroszkópok segítségével. Hasznos információkat tudhatsz meg a HPV szűrés regionális lehetőségeiről. Tanuld meg a testanalizáló és a pulzoximéter helyes használatát és ehhez kapcsolódóan vegyél részt egy érdekes játékban a szívhangok világában. Mérd fel a biológiai ismereteidet egy izgalmas tudáspróbában. A kisebbeknek különleges metszetekkel készülünk. ",
+    "english_description": "Are you interested in the tissues that build up your body? Come and learn more about them and their pathological changes with the help of real research microscopes. You can learn useful information about regional HPV screening options. Learn how to use a body analyzer and pulse oximeter correctly and take part in an interesting game about heart sounds. Test your biological knowledge in an exciting quiz. We will have special sections for younger visitors. ",
+    "place": "Stefánia épület, labor / Stefania building, laboratory",
+    "time": "17:30, 18:30, 19:30",
+    "max_person": "max. 15 fő egyszerre; regisztrációhoz kötött, regisztráció és csoportindítás az Egészségtudományi Kar információs pultjától",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "9",
+    "name": "Vakvezető kutyás bemutató",
+    "english_name": "Walking with a Guide dog",
+    "description": "Megtapasztalható látássérültként vakvezető kutyával közlekedni.",
+    "english_description": "You can try walking around with a guide dog as a visually impaired person.",
+    "place": "Stefánia épület, aula, vagy emeleti folyosó / Stefania building, auditorium, or upper floor corridor",
+    "time": "17-19",
+    "max_person": "60 fő",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "2 asztal 2 szék"
+  }
+]

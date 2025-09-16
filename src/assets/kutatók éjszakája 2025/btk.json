@@ -1,0 +1,110 @@
+[
+  {
+    "No.": "1",
+    "name": "„SZELLEMVASÚT” – játékos vetélkedő egyének, családok, párok, csoportok számára! ",
+    "english_name": "\"GHOST RAILWAY\" - a playful competition for individuals, families, couples, groups!",
+    "description": "A tavalyi és tavaly előtti nagysikerű programunk újból - izgalmas, új feladványokkal!                    A Szellemvasút 5+1 állomásból áll (0. állomás a standon, a többi 5 az A/5, II. emeleti folyosóján), valójában egy vetélkedő. Egyének, párok, családok, 5-6 fős csoportok is nevezhetnek központi standunknál! A vetélkedő egyes állomásai az ATTI termeiben és folyosóján lesznek, ahol a vállalkozó szellemű játékosoknak egy-egy kreatív feladványt kell megoldaniuk a vetélkedő központi témája mentén. Központi témánk: Helyünk a világban.  Aki a legügyesebben és leggyorsabban célba ér, nyereményeket kap!  A programra várunk gyerekeket, fiatalokat, családokat is, tekintettel arra, hogy az egyes állomásokon olyan feladványok lesznek, amelyek megfejtésében bármely korosztályhoz tartozó ügyes, kreatív megoldásokat adhat! Kalandra fel! És hogy miért is SZELLEMVASÚT? Kiderül majd a helyszínen!",
+    "english_description": "The Ghost Railway consists of 5+1 stations (station 0 at the stand, the other 5 in the corridor of A/5, II. floor), it is actually a competition. Individuals, couples, families, groups of 5-6 people can also register at our central stand! The various stations of the contest will be in the halls and corridors of ATTI, where enterprising players must solve a creative puzzle based on the central theme of the contest. Our central theme: Our place in the world.  Whoever gets to the finish line the most skillfully and the fastest gets prizes!  We welcome children, young people, and families to the program, given that there will be puzzles at each station, which can be solved by any age group with clever, creative solutions! Go on an adventure! And why GHOST RAILWAY? Will be revealed on the spot!",
+    "place": "A/5 épület, II. emelet, az ATTI folyosója és termei / Building A/5, 2nd floor, ATTI corridor and rooms",
+    "time": "18:00-20:30 között folyamatosan / Continuously between 18:00-20:30",
+    "max_person": "Mindegy!",
+    "registration": "Igen, a BTK standjánál lesz egy emberünk!",
+    "Infrastruktúra igénye": "Nincsen, de valamilyen nyeremény jó lenne. Pld. egyetemi logós valamik. Tavaly rengetegen voltak nálunk, így legalább 100 valami kellene. Ez lehet kis csoki, vagy toll, teljesen mindegy, csak valami legyen!"
+  },
+  {
+    "No.": "2",
+    "name": "Mozi a moziban",
+    "english_name": "Cinema at the cinema",
+    "description": "Ki ismeri jól, jobban a filmeket a felvillanó jelenetek alapján? Pálfi György Final Cut című mozijából mutatunk meg egy 10-15 perces montázst, a résztvevőknek ki kell találniuk, melyek azok a filmek, amelyekből a pillanatok láthatók. A programon médiaszakos hallgatók is ott lesznek, akik a filmekkel kapcsolatban érdekességekkel készülnek. Félóránként tervezzük a programot, nyolc órától, fél tízig, három alkalommal.",
+    "english_description": "Who knows movies better based on flash scenes? We will show a 10-15 minute montage from György Pálfi's movie Final Cut, and participants will have to guess which movies the scenes are from. Media students will also be present at the program, sharing interesting facts about the films. The program is scheduled to run every half hour, three times between 8:00 p.m. and 9:30 p.m.",
+    "place": "C/1 épület, 310. terem / Building C/1, Room 310",
+    "time": "20",
+    "max_person": "10 fő",
+    "registration": "Nem szükséges.",
+    "Infrastruktúra igénye": "nincs "
+  },
+  {
+    "No.": "3",
+    "name": "Embernek mása",
+    "english_name": "A copy of a human",
+    "description": "Antropomorf figurák készítése kőből, fából, papírból. ",
+    "english_description": "Making anthropomorphic figures from stone, wood, paper.",
+    "place": "C1 épület, III. emeleti folyosó (308-as terem előtt) / Building C1, 3rd floor corridor (in front of room 308)",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "5 (egyszerre)",
+    "registration": "Nem szükséges.",
+    "Infrastruktúra igénye": "saját erőből megoldjuk"
+  },
+  {
+    "No.": "4",
+    "name": "Legyél te a következő Sherlock Holmes!",
+    "english_name": "Be the Next Sherlock Holmes!",
+    "description": "Szabadulószoba helyett magánnyomozó iroda! Lehetnél te a következő Sherlock Holmes? A résztvevők rövid, izgalmas, angol nyelvű feladatok segítségével próbálhatják ki magukat detektívként. Kövesd a nyomokat, figyelj a részletekre és fejtsd meg a rejtélyt! Minimum alapfokú szintű angol nyelvtudás szükséges a programon való részvételhez. Egyedül vagy 2-5 fős csapatokban is dolgozhatnak a résztvevők.",
+    "english_description": "Detective agency instead of an escape room! Could you be the next Sherlock Holmes? Participants can try themselves as detectives by solving short and intriguing tasks in English. Follow the clues, pay attention to the details and solve the case! Participants need to speak English at least at a pre-intermediate level. You can work alone or in a group of 2-5.",
+    "place": "C/1 éület, 3. emelet, 301. terem / Building C/1, 3rd floor, room 301",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "Egyszerre kb. 30 fő, a program kb. 30-35 percet vesz igénybe, így a csoportok folyamatosan válthatják egymást",
+    "registration": "Nem szükséges.",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "5",
+    "name": "Mesterséges intelligencia és más digitális eszközök az irodalomtudományban",
+    "english_name": "AI and other digital tools in literature studies",
+    "description": "Arany János, Kosztolányi Dezső, Hajnóczy Péter és még sokan mások a digitális térben: kézírás-felismerés és szemantikus tudásgráf (A Digitális Örökség Nemzeti Laboratórium programja).",
+    "english_description": "János Arany, Dezső Kosztolányi, Péter Hajnóczy and many more in the digital space: optical character recognition for manuscripts and semantic knowledge graph (Program of the National Laboratory of Digital Heritage).",
+    "place": "A/1 épület, 109. terem / Building A/1, room 109",
+    "time": "19:00–21:00 között folyamatosan / continuously between 7pm-9pm",
+    "max_person": "15–20 fő",
+    "registration": "Nem szükséges.",
+    "Infrastruktúra igénye": "saját eszközöket hozunk"
+  },
+  {
+    "No.": "6",
+    "name": "Hogyan NE nyelvvizsgázz?",
+    "english_name": "How NOT to take a language exam?",
+    "description": "Interaktív előadás a sikeres nyelvvizsgához.",
+    "english_description": "Interactive presentation for a successful language exam.",
+    "place": "C/1 épület, 3. emelet, 307A terem / Building C/1, 3rd floor, room 307A",
+    "time": "18:00-18:30; 19:00-19:30",
+    "max_person": "15 fő",
+    "registration": "Nem szükséges.",
+    "Infrastruktúra igénye": "Az intézet megoldja."
+  },
+  {
+    "No.": "7",
+    "name": "\"... és az én őseim vajon kik voltak?\"",
+    "english_name": "\"... and who were my own ancestors?\"",
+    "description": "Anyakönyvek, sajtóhírek, gyászjelentések... A családnév és az anyai rokonok, a szűkebb és a tágabb rokonság. A keresztnevek érdekességei és a keresztszülők, hosszan érvényes hagyományok és a nemzedéki törések. A modern ember számára meghökkentő életutak, házasodások, gyermekszámok és gyermekhalálozás. Mozaikcsaládok és hadifoglyok.",
+    "english_description": "Church registers, press releases, funeral announcement cards... Family names and maternal relatives, kinship in a narrow and a broader sense. Cultural traditions of first names and godparents, long-term traditions and generation gaps. Surprising life spells, marriages, numbers of birth and infant mortality. Blended families and lists of war prisoners.",
+    "place": "C1. épület, II. emelet, 202/b. terem / Building C1, 2nd floor, room 202/b",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "Nem szükséges maximálni",
+    "registration": "Nem szükséges.",
+    "Infrastruktúra igénye": "saját erőből megoldjuk"
+  },
+  {
+    "No.": "8",
+    "name": "Mini-ÖSD próbanyelvvizsga",
+    "english_name": "Mini ÖSD language test",
+    "description": "A résztvevők kipróbálhatják a német nyelvtudásukat az ÖSD mini próba nyelvvizsgával. A feladattípusok közül választhatnak, amelyeket vizsgáztató okatatók fognak kijavítani.",
+    "english_description": "Participants can test their German language skills with the ÖSD mini test. They can choose from a variety of tasks, which will be corrected by examining teachers.",
+    "place": "C/1. épület, II. emelet, 203/A. terem / Building C/1, 2nd floor, room 203/A",
+    "time": "17.30-19.30 között folyamatosan / continuously between 5:30pm-7:30pm",
+    "max_person": "15",
+    "registration": "Nem szükséges.",
+    "Infrastruktúra igénye": "Az intézet megoldja."
+  },
+  {
+    "No.": "9",
+    "name": "Kahoot! kvíz: Angol nyelvű országok kultúrája",
+    "english_name": "Kahoot! Quiz: Culture of English Speaking Countries",
+    "description": "Teszteld tudásod az angol nyelvű országok kultúráját és történelmét illetően. Ne felejtsd el magaddal hozni okostelefonodat! :)",
+    "english_description": "Test your knowledge of the culture and history of English speaking countries. Don't forget to bring your smartphone with you! :)",
+    "place": "C/1 épület, III. emelet, 306. terem / Building C/1, 3rd floor, room 306",
+    "time": "19:00-20:30 között folyamatosan / continuously between 7pm-8:30pm",
+    "max_person": "20",
+    "registration": "Nem szükséges.",
+    "Infrastruktúra igénye": "Vetítő"
+  }
+]

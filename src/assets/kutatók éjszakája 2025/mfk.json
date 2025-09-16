@@ -1,0 +1,110 @@
+[
+  {
+    "No.": "1",
+    "name": "Amiről az ősmaradványok mesélnek",
+    "english_name": "The story of fossils",
+    "description": "Több száz különleges ős­maradványt bemutató kiállítás, melyből a földi élet fejlődését ismerhetjük meg.",
+    "english_description": "An exhibition featuring hundreds of unique fossils, providing insight into the evolution of life on Earth.",
+    "place": "A/3. épület, III. emelet lépcsőforduló; Őslénytár / A/3 building, 3rd floor landing; Fossil Museum",
+    "time": "folyamatos; de óránként (17:00, 18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (5:00 PM, 6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
+    "max_person": "nincs korlát",
+    "registration": "kari pultnál",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "2",
+    "name": "Ásványok a világ minden tájáról - Ásványkiállítás",
+    "english_name": "Minerals from around the world - Mineral exhibition",
+    "description": "Gyönyörködjön a Nyersanyagkutató Földtudományi Intézet több ezer darabos lélegzetelállító ásványkiállításában.",
+    "english_description": "Admire the breathtaking mineral exhibition of the Raw Materials Research Institute of Earth Sciences, featuring thousands of specimens.",
+    "place": "A/3 épület, III. emelet, Ásványtár / A/3 building, 3rd floor, Mineral storage",
+    "time": "folyamatos; de óránként (17:00, 18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (5:00 PM, 6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
+    "max_person": "nincs korlát",
+    "registration": "kari pultnál",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "3",
+    "name": "Tanbánya látogatás",
+    "english_name": "Underground mine visit inside the building of the University of Miskolc",
+    "description": "Gyere velünk a bánya mélyére! A tanbányában egykori bányákból származó  eszközök segítségével mutatjuk be a bányászathoz kötődő kitermelési technológiákat valósághű környezetben.",
+    "english_description": "Come with us deep into the mine! In our underground mine, tools from former mines and mining-related extraction technologies can be seen in a realistic environment.",
+    "place": "Tanbánya (A/3 épület, 1. emelet) Élményközponton belül / Tanbánya (Building A/3, 1st floor) Inside the Experience Center",
+    "time": "17 órától 30 precenként indulnak csoportok a kari standtól / From 5:00 p.m., groups will depart from the faculty stand every 30 minutes.",
+    "max_person": "20 fő csoportonként",
+    "registration": "kari pultnál",
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "4",
+    "name": "Szeparációs kihívás - válogass gyorsabban, mint Hamupipőke!",
+    "english_name": "Separation challenge - be faster than Cinderella!",
+    "description": "Különböző, a hulladékkezelésben is használatos szeparációs módszereket mutatunk be. Dobszita, légáramkészülék, de még varázskukorica is előkerül.",
+    "english_description": "We present various separation methods also used in waste management. A drum sieve, an air-flow device, and even magic corn will make an appearance.",
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs",
+    "registration": "nincs",
+    "Infrastruktúra igénye": "áram+2 asztal,2szék"
+  },
+  {
+    "No.": "5",
+    "name": "Aranyláz Miskolcon!",
+    "english_name": "Gold rush in Miskolc!",
+    "description": "Miért található arany a folyók hordalékaiban? Hogyan választották el a régiek a nehéz fémszemcséket a homoktól és kavicstól? A program során bemutatjuk az aranymosás hagyományos technikáját, amelyet a látogatók saját kezűleg is kipróbálhatnak.",
+    "english_description": "Why can gold be found in river sediments? How did people in the past separate the heavy metal particles from sand and gravel? During the program, we will demonstrate the traditional technique of gold panning, which visitors can also try out for themselves.",
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs ",
+    "registration": "nincs",
+    "Infrastruktúra igénye": null
+  },
+  {
+    "No.": "6",
+    "name": "Értékek az elektronikai hulladékokban",
+    "english_name": "Values in electronic wastes",
+    "description": "Egyre több, akkumulátorral felszerelt elektronikus eszközt használunk. Élettartamuk végén feldolgozásuk szükséges a környezet védelme, valamint az értékes elemek visszanyerése és újrahasznosítása érdekében, ez a körforgásos gazdaság. Gyere el és kapj választ arra, milyen értékes anyagokat tartalmaznak ezek az eszközök, miért vannak bennük, és hogyan hasznosíthatók újra!",
+    "english_description": "We are using more and more electronic devices equipped with batteries. At the end of their lifetime, processing is necessary both to protect the environment and to recover and recycle the valuable elements they contain, this is called circular economy. Come and find out what valuable materials these devices contain, why they are there, and how they can be recycled!",
+    "place": "MÁV terem, A4 épület / MÁV room, building A4",
+    "time": "18:00, 18:40, 19:20",
+    "max_person": "20",
+    "registration": null,
+    "Infrastruktúra igénye": "nincs"
+  },
+  {
+    "No.": "7",
+    "name": "Digitális Terepasztal",
+    "english_name": "Digital Sandbox",
+    "description": "Távérzékelési eszközök segítségével létrehozott kiterjesztett valóság alapú terepasztal kicsiknek és nagyoknak egyaránt.",
+    "english_description": "An augmented reality-based sandbox created with remote sensing tools for both kids and adults.",
+    "place": "MFK Stand üveg előcsarnok / MFK stand glass lobby",
+    "time": "17:00-től / from 5pm",
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": "1 asztal 2 szék, elektromos áram"
+  },
+  {
+    "No.": "8",
+    "name": "Szenzorok a klímaváltozás \"árnyékában\"",
+    "english_name": "Soil and Air quality sensors in the \"shadow\" of climate change",
+    "description": "Különböző környezeti (levegő) és talaj paramétereket rögzítő szenzorok bemutatása, melyek adatai segítenek a föld- és környezettudományi szakemberek részére megfelelő alkalmazkodási, gazdasági és beavatkozási akciók kijelölésében.  ",
+    "english_description": "Introduction of various sensors that record environmental (air) and soil parameters, whose data assist earth and environmental science professionals in determining appropriate adaptation, economic, and intervention actions.",
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
+    "time": "17:00-től / from 5pm",
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": "1 asztal 1 szék, elektromos áram"
+  },
+  {
+    "No.": "9",
+    "name": "MFK stand- kari regisztrációs pult",
+    "english_name": null,
+    "description": null,
+    "english_description": null,
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
+    "time": null,
+    "max_person": null,
+    "registration": null,
+    "Infrastruktúra igénye": "1 asztal, 2 szék"
+  }
+]
