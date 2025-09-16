@@ -1,56 +1,57 @@
-import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import {Directive, ElementRef, Renderer2, OnInit, OnDestroy, HostListener} from '@angular/core';
+import { fromEvent, Subscription } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 
 @Directive({
   selector: '[rwdimgmap]'
 })
-export class RwdImageMaps {
-  private w: number;
-  private h: number;
 
-  constructor(public el: ElementRef, private renderer: Renderer2) {}
+export class RwdImageMaps  {
+  private originalWidth: number;
+  private originalHeight: number;
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
+  constructor(private el: ElementRef, private renderer: Renderer2) { }
+
+  // @HostListener('load', ['$event.target'])
+  // onLoad(img: HTMLImageElement) {
+  //   this.originalWidth = img.naturalWidth;
+  //   this.originalHeight = img.naturalHeight;
+  //   this.resize();
+  // }
+
+  @HostListener('window:resize')
+  onResize() {
     this.resize();
   }
 
   @HostListener('load', ['$event.target'])
-  onLoad(img) {
-    this.w = img.width;
-    this.h = img.height;
+  onLoad(img: HTMLImageElement) {
+    this.originalWidth = img.naturalWidth;
+    this.originalHeight = img.naturalHeight;
     this.resize();
   }
 
-  resize() {
-    if (!this.w || !this.h) {
-      const temp = new Image();
-      temp.src = this.el.nativeElement.src;
-      if (!this.w) this.w = temp.width;
-      if (!this.h) this.h = temp.height;
-    }
+  private resize() {
+    const imgWidth = this.el.nativeElement.width;
+    const imgHeight = this.el.nativeElement.height;
 
-    const wPercent = this.el.nativeElement.width / 100;
-    const hPercent = this.el.nativeElement.height / 100;
-    console.log(wPercent,hPercent);
-    const map = this.el.nativeElement.useMap.replace('#', '');
-    const areas = document.querySelectorAll(`map[name="${map}"] area`);
+    const wPercent = imgWidth / 100;
+    const hPercent = imgHeight / 100;
+    const mapName = this.el.nativeElement.useMap.replace('#', '');
+    const areas = document.querySelectorAll(`map[name="${mapName}"] area`);
 
-    areas.forEach((area: HTMLAreaElement) => {
-      if (!area.dataset['coords']) {
-        area.dataset['coords'] = area.coords;
-      }
-
-      const coords = area.dataset['coords'].split(',');
-      const coordsPercent = new Array(coords.length);
+    areas.forEach(area => {
+      const coords = area.getAttribute('coords').split(',');
+      let coordsPercent = new Array(coords.length);
 
       for (let i = 0; i < coordsPercent.length; ++i) {
         if (i % 2 === 0) {
-          coordsPercent[i] = parseInt(((Number(coords[i]) / this.w) * 100 * wPercent).toString(), 10);
+          coordsPercent[i] = parseInt(String((Number(coords[i]) / this.originalWidth) * 100 * wPercent));
         } else {
-          coordsPercent[i] = parseInt(((Number(coords[i]) / this.h) * 100 * hPercent).toString(), 10);
+          coordsPercent[i] = parseInt(String((Number(coords[i]) / this.originalHeight) * 100 * hPercent));
         }
       }
-      area.coords = coordsPercent.toString();
+      this.renderer.setAttribute(area, 'coords', coordsPercent.toString());
     });
   }
 }

@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+::-webkit-scrollbar {
+  /*background-color: blue;*/
+  --scrollbar-width: thin;
+}
+/* Alapértelmezett scrollbar */
+::-webkit-scrollbar {
+  width: 7px; /* Scrollbar szélessége */
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Háttérszín */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a; /* Scrollbar színe */
+  border-radius: 5px; /* Lekerekített sarkok */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6a6a; /* Hover állapot színe */
+}
+
+/* Scrollbar végeken található gombok kisebbítése */
+::-webkit-scrollbar-button:single-button {
+  height: 1px; /* Gombok magassága */
+  background: #3b3b3b; /* Gombok színe */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:single-button:hover {
+  background: #5b5b5b; /* Gombok hover állapot színe */
+}
+

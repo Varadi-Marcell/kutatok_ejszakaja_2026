@@ -1,11 +1,28 @@
-.image-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+
+.map-container img {
+  display: block;
+}
+
+.map-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicking through this layer */
+}
+.custom-svg {
+  top: 0;
+  left: 0;
+}
+
+svg {
+  pointer-events: fill;
 }
 
 
-area{
-  cursor: pointer;
-}
+

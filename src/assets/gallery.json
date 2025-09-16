@@ -1,0 +1,26 @@
+[
+  {
+    "itemImageSrc": "assets/panorama2.jpg",
+    "thumbnailImageSrc": "assets/panorama2.jpg",
+    "alt": "Panoráma 2",
+    "title": "Panoráma 2"
+  },
+  {
+    "itemImageSrc": "assets/panorama3.jpg",
+    "thumbnailImageSrc": "assets/panorama3.jpg",
+    "alt": "Panoráma 3",
+    "title": "Panoráma 3"
+  },
+  {
+    "itemImageSrc": "assets/panorama4.jpg",
+    "thumbnailImageSrc": "assets/panorama4.jpg",
+    "alt": "Panoráma 4",
+    "title": "Panoráma 4"
+  },
+  {
+    "itemImageSrc": "assets/jpeg5.jpg",
+    "thumbnailImageSrc": "assets/jpeg5.jpg",
+    "alt": "Panoráma 5",
+    "title": "Panoráma 5"
+  }
+]
