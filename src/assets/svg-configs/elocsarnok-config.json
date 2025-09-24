@@ -27,6 +27,24 @@
         "capacity": 1500
       }
     },
+    {
+      "id": "btk",
+      "name": "btk",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 392.1,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "BTK terület",
+        "capacity": 1500
+      }
+    },
 
     {
       "id": "audience",

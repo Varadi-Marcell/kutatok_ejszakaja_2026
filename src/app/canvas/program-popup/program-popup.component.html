@@ -1,5 +1,6 @@
 <div class="popup-overlay" 
-     [class.visible]="isVisible" 
+     [class.visible]="isVisible && !isClosing" 
+     [class.closing]="isClosing"
      (click)="onBackdropClick($event)"
      *ngIf="isVisible">
   

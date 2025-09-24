@@ -16,6 +16,7 @@ export class ProgramPopupComponent implements OnInit {
 
   isLoading: boolean = false;
   isEnglish: boolean = false;
+  isClosing: boolean = false;
 
   // Touch/swipe handling
   private startY: number = 0;
@@ -31,7 +32,15 @@ export class ProgramPopupComponent implements OnInit {
   }
 
   onClose() {
-    this.close.emit();
+    if (this.isClosing) return; // Prevent multiple close calls
+    
+    this.isClosing = true;
+    
+    // Wait for closing animation to complete before emitting close
+    setTimeout(() => {
+      this.isClosing = false;
+      this.close.emit();
+    }, 600); // Match the animation duration
   }
 
   onBackdropClick(event: Event) {
