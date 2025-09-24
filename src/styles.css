@@ -1,35 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
-::-webkit-scrollbar {
-  /*background-color: blue;*/
-  --scrollbar-width: thin;
-}
-/* Alapértelmezett scrollbar */
-::-webkit-scrollbar {
-  width: 7px; /* Scrollbar szélessége */
-}
-
-::-webkit-scrollbar-track {
-  background: #2c2c2c; /* Háttérszín */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #4a4a4a; /* Scrollbar színe */
-  border-radius: 5px; /* Lekerekített sarkok */
+.scene {
+  overflow: hidden;
+  position: relative;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #6a6a6a; /* Hover állapot színe */
+.zoom-buttons {
+  z-index: 1000;
 }
 
-/* Scrollbar végeken található gombok kisebbítése */
-::-webkit-scrollbar-button:single-button {
-  height: 1px; /* Gombok magassága */
-  background: #3b3b3b; /* Gombok színe */
-  border-radius: 5px;
+.zoom-buttons .btn {
+  margin: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-::-webkit-scrollbar-button:single-button:hover {
-  background: #5b5b5b; /* Gombok hover állapot színe */
+.svg-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
+.polygon {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.polygon:hover {
+  fill: rgba(0, 123, 255, 0.3);
+  stroke: #007bff;
+  stroke-width: 3;
+}
+
+.group {
+  cursor: pointer;
+}
+
+.group:hover .polygon {
+  fill: rgba(0, 123, 255, 0.3);
+  stroke: #007bff;
+  stroke-width: 3;
+}

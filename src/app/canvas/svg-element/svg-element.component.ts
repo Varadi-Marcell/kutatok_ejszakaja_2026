@@ -70,7 +70,7 @@ export class SvgElementComponent implements AfterViewInit{
     {
       id: 'a5',
       polygon: {
-        d:'m 1622.1758,1197.7109 54.0273,-77.3906 315.3125,220.0938 -54.0234,77.3906 z m 0,0',
+        d:'M1703.25,1186.61h135.88v88.5h-135.88v-88.5Z',
         cssClass: 'polygon'
       },
       rectangle: {

@@ -1,28 +1,15 @@
-.map-container {
-  position: relative;
-  display: inline-block;
+/* App component styles */
+.container-fluid {
+  padding: 0;
 }
 
-.map-container img {
-  display: block;
+main {
+  padding: 20px;
+  min-height: calc(100vh - 120px);
 }
 
-.map-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Allow clicking through this layer */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
 }
-.custom-svg {
-  top: 0;
-  left: 0;
-}
-
-svg {
-  pointer-events: fill;
-}
-
-
-

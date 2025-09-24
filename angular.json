@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "resizeAngular": {
+    "kutatok-ejszaka-2025": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "css"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/resize-angular",
+            "outputPath": "dist/kutatok-ejszaka-2025",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,7 +29,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/ngx-spinner/animations/ball-scale-multiple.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -61,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "resizeAngular:build:production"
+              "buildTarget": "kutatok-ejszaka-2025:build:production"
             },
             "development": {
-              "browserTarget": "resizeAngular:build:development"
+              "buildTarget": "kutatok-ejszaka-2025:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "resizeAngular:build"
+            "buildTarget": "kutatok-ejszaka-2025:build"
           }
         },
         "test": {
@@ -88,9 +92,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/ngx-spinner/animations/ball-scale-multiple.css",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "src/styles.css"
             ],
             "scripts": []
