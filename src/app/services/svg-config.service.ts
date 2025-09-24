@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { SvgMapConfig } from '../model/svg-map-config';
+import { ProgramEvent } from '../model/program-event';
 
 @Injectable({
   providedIn: 'root'
@@ -32,5 +33,15 @@ export class SvgConfigService {
 
   loadRegiAulaConfig(): Observable<SvgMapConfig> {
     return this.loadConfig('assets/svg-configs/regi_aula-config.json');
+  }
+
+  // GEIK programok betöltése (backward compatibility)
+  loadGeikData(): Observable<ProgramEvent[]> {
+    return this.http.get<ProgramEvent[]>('assets/kutatók éjszakája 2025/geik.json');
+  }
+
+  // Dinamikus area adatok betöltése
+  loadAreaData(areaId: string): Observable<ProgramEvent[]> {
+    return this.http.get<ProgramEvent[]>(`assets/kutatók éjszakája 2025/${areaId}.json`);
   }
 }

@@ -1,0 +1,68 @@
+<div class="popup-overlay" 
+     [class.visible]="isVisible" 
+     (click)="onBackdropClick($event)"
+     *ngIf="isVisible">
+  
+  <div class="popup-content" (click)="onContentClick($event)">
+    <!-- Header -->
+    <div class="popup-header">
+      <h2 class="popup-title">{{ areaName.toUpperCase() }} Programok</h2>
+      <button class="close-btn" (click)="onClose()" aria-label="Bezárás">
+        <span>&times;</span>
+      </button>
+    </div>
+
+    <!-- Loading State -->
+    <div class="loading-container" *ngIf="isLoading">
+      <div class="spinner"></div>
+      <p>Programok betöltése...</p>
+    </div>
+
+    <!-- Programs List -->
+    <div class="popup-body" *ngIf="!isLoading">
+      <div class="programs-container" *ngIf="programs.length > 0; else noPrograms">
+        <div class="program-card" *ngFor="let program of programs; let i = index">
+          <div class="program-number" *ngIf="program['No.']">{{ program['No.'] }}</div>
+          
+          <h3 class="program-name">{{ program.name }}</h3>
+          
+          <div class="program-details">
+            <div class="detail-item" *ngIf="program.time">
+              <i class="icon-time">🕒</i>
+              <span class="detail-text">{{ program.time }}</span>
+            </div>
+            
+            <div class="detail-item" *ngIf="program.place">
+              <i class="icon-location">📍</i>
+              <span class="detail-text">{{ program.place }}</span>
+            </div>
+          </div>
+          
+          <div class="program-description" *ngIf="program.description">
+            <p>{{ program.description }}</p>
+          </div>
+
+          <div class="program-meta" *ngIf="program.max_person || program.registration">
+            <div class="meta-item" *ngIf="program.max_person">
+              <strong>Max. létszám:</strong> {{ program.max_person }}
+            </div>
+            <div class="meta-item" *ngIf="program.registration">
+              <strong>Regisztráció:</strong> {{ program.registration }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #noPrograms>
+        <div class="no-programs">
+          <p>Jelenleg nincsenek elérhető programok ehhez a területhez.</p>
+        </div>
+      </ng-template>
+    </div>
+
+    <!-- Footer -->
+    <div class="popup-footer">
+      <button class="btn-close-mobile" (click)="onClose()">Bezárás</button>
+    </div>
+  </div>
+</div>

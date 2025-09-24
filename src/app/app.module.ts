@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {CanvasComponent} from "./canvas/canvas/canvas.component";
 import {SvgElementComponent} from "./canvas/svg-element/svg-element.component";
+import {ProgramPopupComponent} from "./canvas/program-popup/program-popup.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     CanvasComponent,
     SvgElementComponent,
+    ProgramPopupComponent,
   ],
   imports: [
     BrowserModule,

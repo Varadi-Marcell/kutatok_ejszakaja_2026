@@ -30,3 +30,11 @@
     </div>
   </div>
 </div>
+
+<!-- Program Popup -->
+<app-program-popup
+  [programs]="popupPrograms"
+  [areaName]="popupAreaName"
+  [isVisible]="showPopup"
+  (close)="onClosePopup()">
+</app-program-popup>

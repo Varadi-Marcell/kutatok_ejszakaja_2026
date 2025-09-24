@@ -3,6 +3,7 @@ import panzoom from "@panzoom/panzoom";
 import { SvgElementComponent } from "../svg-element/svg-element.component";
 import { SvgConfigService } from "../../services/svg-config.service";
 import { SvgMapConfig, AreaClickEvent } from "../../model/svg-map-config";
+import { ProgramEvent } from "../../model/program-event";
 
 interface Polygon {
   path: Path2D;
@@ -26,6 +27,12 @@ export class CanvasComponent implements AfterViewInit, OnInit {
   private instance: any;
   currentSvgConfig: SvgMapConfig | null = null;
   private isInitialized = false;
+
+  // Popup properties
+  showPopup: boolean = false;
+  popupPrograms: ProgramEvent[] = [];
+  popupAreaName: string = '';
+  isLoadingPrograms: boolean = false;
 
   constructor(private svgConfigService: SvgConfigService) {
   }
@@ -172,8 +179,37 @@ export class CanvasComponent implements AfterViewInit, OnInit {
 
   onAreaClick(event: AreaClickEvent) {
     console.log('Terület kattintva:', event.area.name, event.area);
-    // Itt lehet kezelni a területre való kattintást
-    alert(`${event.area.name} (${event.area.id}) területre kattintottál!`);
+    
+    // Set popup data and show loading
+    this.popupAreaName = event.area.name || event.area.id;
+    this.isLoadingPrograms = true;
+    this.showPopup = true;
+    this.popupPrograms = [];
+    
+    // Dinamikus JSON betöltés az area id alapján
+    this.svgConfigService.loadAreaData(event.area.id).subscribe({
+      next: (data) => {
+        console.log(`${event.area.id.toUpperCase()} programok:`, data);
+        console.log(`Összesen ${data.length} program található a ${event.area.id.toUpperCase()}-nél`);
+        
+        this.popupPrograms = data;
+        this.isLoadingPrograms = false;
+      },
+      error: (error) => {
+        console.error(`Hiba a ${event.area.id} adatok betöltésekor:`, error);
+        this.isLoadingPrograms = false;
+        this.showPopup = false;
+        // Fallback: eredeti alert ha nincs JSON fájl
+        alert(`${event.area.name} (${event.area.id}) területre kattintottál!`);
+      }
+    });
+  }
+
+  onClosePopup() {
+    this.showPopup = false;
+    this.popupPrograms = [];
+    this.popupAreaName = '';
+    this.isLoadingPrograms = false;
   }
 
   // Különböző SVG konfigurációk betöltése
