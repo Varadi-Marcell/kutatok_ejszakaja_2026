@@ -6,7 +6,10 @@
   <div class="popup-content" (click)="onContentClick($event)">
     <!-- Header -->
     <div class="popup-header">
-      <h2 class="popup-title">{{ areaName.toUpperCase() }} Programok</h2>
+      <h2 class="popup-title">
+        <span class="header-icon">🎓</span>
+        {{ areaName.toUpperCase() }} Programok
+      </h2>
       <button class="close-btn" (click)="onClose()" aria-label="Bezárás">
         <span>&times;</span>
       </button>
@@ -39,14 +42,20 @@
           </div>
           
           <div class="program-description" *ngIf="program.description">
+            <div class="description-header">
+              <i class="icon-description">📝</i>
+              <span class="description-label">Leírás</span>
+            </div>
             <p>{{ program.description }}</p>
           </div>
 
           <div class="program-meta" *ngIf="program.max_person || program.registration">
             <div class="meta-item" *ngIf="program.max_person">
+              <i class="icon-people">👥</i>
               <strong>Max. létszám:</strong> {{ program.max_person }}
             </div>
             <div class="meta-item" *ngIf="program.registration">
+              <i class="icon-registration">✅</i>
               <strong>Regisztráció:</strong> {{ program.registration }}
             </div>
           </div>

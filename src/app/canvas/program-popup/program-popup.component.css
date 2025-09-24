@@ -58,6 +58,13 @@
   font-weight: 600;
   color: white;
   flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 .close-btn {
@@ -191,6 +198,23 @@
   margin-bottom: 15px;
 }
 
+.description-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon-description {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.description-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
 .program-description p {
   margin: 0;
   color: #666;
@@ -209,14 +233,23 @@
   margin-bottom: 5px;
   font-size: 0.9rem;
   color: #666;
+  display: flex;
+  align-items: center;
 }
 
 .meta-item:last-child {
   margin-bottom: 0;
 }
 
+.meta-item i {
+  margin-right: 8px;
+  font-size: 1rem;
+  min-width: 18px;
+}
+
 .meta-item strong {
   color: #333;
+  margin-right: 5px;
 }
 
 /* No Programs */
