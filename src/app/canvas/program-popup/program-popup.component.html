@@ -3,7 +3,12 @@
      (click)="onBackdropClick($event)"
      *ngIf="isVisible">
   
-  <div class="popup-content" (click)="onContentClick($event)">
+  <div class="popup-content" 
+       #popupContent
+       (click)="onContentClick($event)"
+       (touchstart)="onTouchStart($event)"
+       (touchmove)="onTouchMove($event)"
+       (touchend)="onTouchEnd($event)">
     <!-- Header -->
     <div class="popup-header">
       <h2 class="popup-title">
