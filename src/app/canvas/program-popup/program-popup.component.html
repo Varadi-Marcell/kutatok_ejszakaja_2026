@@ -8,17 +8,23 @@
     <div class="popup-header">
       <h2 class="popup-title">
         <span class="header-icon">🎓</span>
-        {{ areaName.toUpperCase() }} Programok
+        {{ areaName.toUpperCase() }} {{ isEnglish ? 'Programs' : 'Programok' }}
       </h2>
-      <button class="close-btn" (click)="onClose()" aria-label="Bezárás">
-        <span>&times;</span>
-      </button>
+      <div class="header-controls">
+        <button class="lang-toggle-btn" (click)="toggleLanguage()" [attr.aria-label]="isEnglish ? 'Switch to Hungarian' : 'Switch to English'">
+          <span class="lang-flag">{{ isEnglish ? '🇭🇺' : '🇬🇧' }}</span>
+          <span class="lang-text">{{ isEnglish ? 'HU' : 'EN' }}</span>
+        </button>
+        <button class="close-btn" (click)="onClose()" aria-label="Bezárás">
+          <span>&times;</span>
+        </button>
+      </div>
     </div>
 
     <!-- Loading State -->
     <div class="loading-container" *ngIf="isLoading">
       <div class="spinner"></div>
-      <p>Programok betöltése...</p>
+      <p>{{ isEnglish ? 'Loading programs...' : 'Programok betöltése...' }}</p>
     </div>
 
     <!-- Programs List -->
@@ -27,7 +33,7 @@
         <div class="program-card" *ngFor="let program of programs; let i = index">
           <div class="program-number" *ngIf="program['No.']">{{ program['No.'] }}</div>
           
-          <h3 class="program-name">{{ program.name }}</h3>
+          <h3 class="program-name">{{ isEnglish && program.english_name ? program.english_name : program.name }}</h3>
           
           <div class="program-details">
             <div class="detail-item" *ngIf="program.time">
@@ -41,22 +47,22 @@
             </div>
           </div>
           
-          <div class="program-description" *ngIf="program.description">
+          <div class="program-description" *ngIf="program.description || program.english_description">
             <div class="description-header">
               <i class="icon-description">📝</i>
-              <span class="description-label">Leírás</span>
+              <span class="description-label">{{ isEnglish ? 'Description' : 'Leírás' }}</span>
             </div>
-            <p>{{ program.description }}</p>
+            <p>{{ isEnglish && program.english_description ? program.english_description : program.description }}</p>
           </div>
 
           <div class="program-meta" *ngIf="program.max_person || program.registration">
             <div class="meta-item" *ngIf="program.max_person">
               <i class="icon-people">👥</i>
-              <strong>Max. létszám:</strong> {{ program.max_person }}
+              <strong>{{ isEnglish ? 'Max. capacity:' : 'Max. létszám:' }}</strong> {{ program.max_person }}
             </div>
             <div class="meta-item" *ngIf="program.registration">
               <i class="icon-registration">✅</i>
-              <strong>Regisztráció:</strong> {{ program.registration }}
+              <strong>{{ isEnglish ? 'Registration:' : 'Regisztráció:' }}</strong> {{ program.registration }}
             </div>
           </div>
         </div>

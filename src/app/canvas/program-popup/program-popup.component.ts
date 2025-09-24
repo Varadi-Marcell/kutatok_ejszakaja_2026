@@ -13,8 +13,13 @@ export class ProgramPopupComponent implements OnInit {
   @Output() close = new EventEmitter<void>();
 
   isLoading: boolean = false;
+  isEnglish: boolean = false;
 
   ngOnInit() {
+  }
+
+  toggleLanguage() {
+    this.isEnglish = !this.isEnglish;
   }
 
   onClose() {
