@@ -1,0 +1,50 @@
+{
+  "id": "diszaula",
+  "name": "Díszaula",
+  "svgPath": "assets/KutatokEjszakaja-Standalaprajz-Elocsarnok-01-1.svg",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 1148.7,
+    "height": 1056.7
+  },
+  "interactiveAreas": [
+    {
+      "id": "geik",
+      "name": "GEIK",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 465.6,
+        "y": 113.6,
+        "width": 203.5,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "GEIK terület",
+        "capacity": 1500
+      }
+    },
+
+    {
+      "id": "audience",
+      "name": "Nézőtér",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 347.3,
+        "y": 598.6,
+        "width": 351.1,
+        "height": 429.5
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Nézőtér",
+        "capacity": 300
+      }
+    }
+  ]
+}

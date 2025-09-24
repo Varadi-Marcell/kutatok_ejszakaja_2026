@@ -9,7 +9,12 @@
     "time": "Ünnepélyesmegnyitó: 15:00,  17:00 órától óránként tárlatvezetés / Opening ceremony: 3pm,  Guided tours every hour from 5pm",
     "max_person": "100",
     "registration": "nem",
-    "Infrastruktúra igénye": "nincs"
+    "Infrastruktúra igénye": "nincs",
+    "Neve": "Szabóné Kovács Beáta",
+    "e-mail címe": "beata.kovacs@uni-miskolc.hu",
+    "tel. száma": "2948",
+    "Segítők": "Petrasovszkiné Munkácsi Szilvia",
+    "Korosztály": "bárki"
   },
   {
     "No.": "2",
@@ -21,7 +26,12 @@
     "time": "óránként (17:00 órától, utolsó időpont: 20:00) / every hour (from 5pm, last time: 8pm)",
     "max_person": "20-25",
     "registration": "nem",
-    "Infrastruktúra igénye": "nincs"
+    "Infrastruktúra igénye": "nincs",
+    "Neve": "Budai Anna",
+    "e-mail címe": "anna.budai1@uni-miskolc.hu",
+    "tel. száma": "1674",
+    "Segítők": "Pauer Erika",
+    "Korosztály": "bárki"
   },
   {
     "No.": "3",
@@ -33,7 +43,12 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "8-10 / alkalom",
     "registration": "nem",
-    "Infrastruktúra igénye": "nincs"
+    "Infrastruktúra igénye": "nincs",
+    "Neve": "Csorba Csilla",
+    "e-mail címe": "csilla.csorba@uni-miskolc.hu",
+    "tel. száma": "1676",
+    "Segítők": "Bana Szilvia",
+    "Korosztály": "bárki"
   },
   {
     "No.": "4",
@@ -45,66 +60,11 @@
     "time": "minden egész órában (17:00 órától, utolsó időpont: 20:00) / every hour (from 5pm, last time: 8pm)",
     "max_person": "30 fő / alkalom",
     "registration": "nem",
-    "Infrastruktúra igénye": "nincs"
-  },
-  {
-    "No.": "5",
-    "name": "Kaspó - ahol a tudomány játékra kel' társasjáték",
-    "english_name": "\"Kaspó - where science becomes a game\" board game",
-    "description": "Növényismereti társasjáték.",
-    "english_description": "Plant knowledge board game (only in Hungarian).",
-    "place": "KLM épület - 1. emelet, olvasóterem / KLM building - 1st floor, reading room",
-    "time": "minden óra 30-tól (17:30 órától, utolsó időpont: 19:30) / every hour from 30 (from 5:30pm, last time: 7:30pm)",
-    "max_person": "4-5 fő / játék",
-    "registration": "nem",
-    "Infrastruktúra igénye": "nincs"
-  },
-  {
-    "No.": "6",
-    "name": "Silent book kiállítás",
-    "english_name": "Silent book exhibition",
-    "description": "Hogyan készül a silent book? — a #fairytailproject művészeti csoport művészeinek kiállítása.",
-    "english_description": "How is a silent book made? — Exhibition by artists from the #fairytailproject art group.",
-    "place": "KLM emelet / KLM floor",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "nincs korlát",
-    "registration": "nem",
-    "Infrastruktúra igénye": "nem"
-  },
-  {
-    "No.": null,
-    "name": null,
-    "english_name": null,
-    "description": null,
-    "english_description": null,
-    "place": null,
-    "time": null,
-    "max_person": null,
-    "registration": null,
-    "Infrastruktúra igénye": null
-  },
-  {
-    "No.": "",
-    "name": "",
-    "english_name": "",
-    "description": "",
-    "english_description": "",
-    "place": "",
-    "time": "",
-    "max_person": "",
-    "registration": "",
-    "Infrastruktúra igénye": ""
-  },
-  {
-    "No.": "",
-    "name": "",
-    "english_name": "",
-    "description": "",
-    "english_description": "",
-    "place": "",
-    "time": "",
-    "max_person": "",
-    "registration": "",
-    "Infrastruktúra igénye": ""
+    "Infrastruktúra igénye": "nincs",
+    "Neve": "Pauer Erika",
+    "e-mail címe": "erika.pauer@uni-miskolc.hu",
+    "tel. száma": "1675",
+    "Segítők": "Tóth Henrietta",
+    "Korosztály": "10 éven aluliak"
   }
 ]

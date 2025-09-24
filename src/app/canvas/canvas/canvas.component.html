@@ -7,15 +7,24 @@
     <div class="col">
       <div #scene class="scene position-relative">
 
-        <app-svg-element class="img-fluid mx-auto d-block"
-                    style="max-height: 90vh; object-fit: contain;">
+        <app-svg-element 
+          #svgComponent
+          class="img-fluid mx-auto d-block"
+          style="max-height: 90vh; object-fit: contain;"
+          [config]="currentSvgConfig"
+          (areaClick)="onAreaClick($event)">
         </app-svg-element>
         <div class="p-lg-3 zoom-buttons button-group position-absolute top-0 start-0">
           <div class="button-wrapper">
             <button class="btn btn-secondary" (click)="zoomIn()">+</button>
             <button class="btn btn-secondary" (click)="zoomOut()">-</button>
           </div>
-          <img class="custom-img" src="assets/kutatok_ejszakaja_logo.png">
+          <div class="svg-selector mt-2">
+            <button class="btn btn-primary btn-sm me-1" (click)="loadNagyterkep()">Nagy Térkép</button>
+            <button class="btn btn-primary btn-sm me-1" (click)="loadDiszaula()">Díszaula</button>
+            <button class="btn btn-primary btn-sm me-1" (click)="loadElocsarnok()">Előcsarnok</button>
+            <button class="btn btn-primary btn-sm" (click)="loadRegiAula()">Régi Aula</button>
+          </div>
         </div>
       </div>
     </div>

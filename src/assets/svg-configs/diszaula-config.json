@@ -1,0 +1,52 @@
+{
+  "id": "diszaula",
+  "name": "Díszaula",
+  "svgPath": "assets/KutatokEjszakaja-Standalaprajz-Diszaula-01-1.svg",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 1413.1,
+    "height": 1389.2
+  },
+  "interactiveAreas": [
+    {
+      "id": "stage",
+      "name": "Színpad",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 494.5,
+        "y": 232.3,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Főszínpad terület",
+        "capacity": 500
+      }
+    },
+    {
+      "id": "audience",
+      "name": "Nézőtér",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 347.3,
+        "y": 598.6,
+        "width": 351.1,
+        "height": 429.5
+      },
+      "style": {
+        "fillStyle": "rgba(0, 0, 255, 0.2)",
+        "strokeStyle": "#0000ff",
+        "strokeWidth": 2,
+        "cssClass": "audience-area"
+      },
+      "metadata": {
+        "description": "Nézőtér",
+        "capacity": 300
+      }
+    }
+  ]
+}

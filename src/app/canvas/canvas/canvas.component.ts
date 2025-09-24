@@ -1,6 +1,8 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import panzoom from "@panzoom/panzoom";
 import { SvgElementComponent } from "../svg-element/svg-element.component";
+import { SvgConfigService } from "../../services/svg-config.service";
+import { SvgMapConfig, AreaClickEvent } from "../../model/svg-map-config";
 
 interface Polygon {
   path: Path2D;
@@ -16,62 +18,229 @@ interface Polygon {
   templateUrl: './canvas.component.html',
   styleUrls: ['./canvas.component.css']
 })
-export class CanvasComponent implements AfterViewInit {
-
+export class CanvasComponent implements AfterViewInit, OnInit {
 
   @ViewChild('scene') scene: ElementRef;
-  @ViewChild(SvgElementComponent) svgElementComponent: SvgElementComponent;
+  @ViewChild('svgComponent') svgComponent: SvgElementComponent;
+  
   private instance: any;
-  constructor() {
-  }
-  ngOnInit() {
+  currentSvgConfig: SvgMapConfig | null = null;
+  private isInitialized = false;
 
+  constructor(private svgConfigService: SvgConfigService) {
+  }
+
+  ngOnInit() {
+    // Betöltjük az alapértelmezett konfigurációt
+    this.loadDefaultConfig();
+  }
+
+  loadDefaultConfig() {
+    this.svgConfigService.loadNagyterkepConfig().subscribe({
+      next: (config) => {
+        this.currentSvgConfig = config;
+      },
+      error: (error) => {
+        console.error('Hiba a konfiguráció betöltésekor:', error);
+      }
+    });
   }
 
   ngAfterViewInit() {
+    // Késleltetett inicializálás, hogy biztosan betöltődjenek a komponensek
+    setTimeout(() => {
+      this.initializePanzoom();
+    }, 100);
+  }
 
-    this.instance = panzoom(this.svgElementComponent.svgElement.nativeElement, {
-      bounds: true,
-      maxZoom: 1,
-      minZoom: 0.1
-    });
+  private initializePanzoom() {
+    // Próbálkozások különböző elemekkel
+    const svgElement = document.querySelector('app-svg-element svg');
+    const svgContainer = document.querySelector('app-svg-element .svg-container');
+    const svgComponent = document.querySelector('app-svg-element');
+    
+    console.log('Panzoom inicializálás próbálkozás...');
+    console.log('SVG Component:', this.svgComponent);
+    console.log('Scene:', this.scene);
+    console.log('SVG Element (DOM):', svgElement);
+    console.log('SVG Container:', svgContainer);
+    console.log('SVG Component Element:', svgComponent);
+    
+    let targetElement = null;
+    let method = '';
 
-    this.scene.nativeElement.addEventListener('wheel', (e: WheelEvent) => {
-      e.preventDefault(); // do not scroll
+    // 1. Próbálkozás: SVG container
+    if (svgContainer && this.scene && !this.isInitialized) {
+      targetElement = svgContainer;
+      method = 'SVG Container';
+    }
+    // 2. Próbálkozás: SVG elem
+    else if (svgElement && this.scene && !this.isInitialized) {
+      targetElement = svgElement;
+      method = 'SVG Element';
+    }
+    // 3. Próbálkozás: Teljes komponens
+    else if (svgComponent && this.scene && !this.isInitialized) {
+      targetElement = svgComponent;
+      method = 'SVG Component';
+    }
+    // 4. Fallback: ViewChild
+    else if (this.svgComponent && this.svgComponent.svgElement && this.scene && !this.isInitialized) {
+      targetElement = this.svgComponent.svgElement.nativeElement;
+      method = 'ViewChild';
+    }
 
-      const zoomSpeed = 0.2;
-      const currentZoomFactor = this.instance.getScale();
-      let zoomFactor;
+    if (targetElement) {
+      try {
+        console.log(`Panzoom inicializálása ${method} módszerrel...`);
+        this.instance = panzoom(targetElement as HTMLElement, {
+          bounds: true,
+          maxZoom: 3,
+          minZoom: 0.5,
+          boundsPadding: 0.1
+        });
 
-      if (e.deltaY < 0) { // zoom in
-        zoomFactor = currentZoomFactor + zoomSpeed;
-      } else { // zoom out
-        zoomFactor = currentZoomFactor - zoomSpeed;
-        if (zoomFactor < 1) { // minZoom
-          zoomFactor = 1;
-        }
+        this.scene.nativeElement.addEventListener('wheel', (e: WheelEvent) => {
+          e.preventDefault(); // do not scroll
+
+          if (!this.instance) return;
+
+          const zoomSpeed = 0.2;
+          const currentZoomFactor = this.instance.getScale();
+          let zoomFactor;
+
+          if (e.deltaY < 0) { // zoom in
+            zoomFactor = currentZoomFactor + zoomSpeed;
+          } else { // zoom out
+            zoomFactor = currentZoomFactor - zoomSpeed;
+            if (zoomFactor < 0.5) { // minZoom
+              zoomFactor = 0.5;
+            }
+          }
+
+          const point = {clientX: e.clientX, clientY: e.clientY};
+          this.instance.zoomToPoint(zoomFactor, point);
+        });
+
+        this.isInitialized = true;
+        console.log(`Panzoom sikeresen inicializálva ${method} módszerrel`);
+      } catch (error) {
+        console.error(`Hiba a panzoom inicializálásakor (${method}):`, error);
+        // Újrapróbálkozás 500ms múlva
+        setTimeout(() => {
+          this.initializePanzoom();
+        }, 500);
       }
-
-      const point = {clientX: e.clientX, clientY: e.clientY};
-
-      this.instance.zoomToPoint(zoomFactor, point);
-
-    });
+    } else {
+      console.log('Elemek még nem érhetők el, újrapróbálkozás 500ms múlva...');
+      setTimeout(() => {
+        this.initializePanzoom();
+      }, 500);
+    }
   }
   zoomIn() {
-    const currentZoomFactor = this.instance.getScale();
-    const zoomFactor = currentZoomFactor + 0.1;
-    console.log(zoomFactor)
-
-    this.instance.zoomIn(zoomFactor);
+    if (!this.instance) {
+      console.warn('Panzoom még nem inicializálódott');
+      return;
+    }
+    
+    try {
+      const currentZoomFactor = this.instance.getScale();
+      const zoomFactor = currentZoomFactor + 0.1;
+      console.log('Zoom in:', zoomFactor);
+      this.instance.zoom(zoomFactor);
+    } catch (error) {
+      console.error('Hiba a zoom in során:', error);
+    }
   }
 
   zoomOut() {
-    const currentZoomFactor = this.instance.getScale();
-    const zoomFactor = currentZoomFactor - 0.1;
-    console.log(zoomFactor)
-    if (zoomFactor >= 1) {
+    if (!this.instance) {
+      console.warn('Panzoom még nem inicializálódott');
+      return;
     }
-      this.instance.zoomOut(zoomFactor);
+    
+    try {
+      const currentZoomFactor = this.instance.getScale();
+      const zoomFactor = Math.max(currentZoomFactor - 0.1, 0.1); // minimum zoom 0.1
+      console.log('Zoom out:', zoomFactor);
+      this.instance.zoom(zoomFactor);
+    } catch (error) {
+      console.error('Hiba a zoom out során:', error);
+    }
+  }
+
+  onAreaClick(event: AreaClickEvent) {
+    console.log('Terület kattintva:', event.area.name, event.area);
+    // Itt lehet kezelni a területre való kattintást
+    alert(`${event.area.name} (${event.area.id}) területre kattintottál!`);
+  }
+
+  // Különböző SVG konfigurációk betöltése
+  loadNagyterkep() {
+    this.resetPanzoom();
+    this.svgConfigService.loadNagyterkepConfig().subscribe({
+      next: (config) => {
+        this.currentSvgConfig = config;
+        this.reinitializePanzoom();
+      },
+      error: (error) => {
+        console.error('Hiba a konfiguráció betöltésekor:', error);
+      }
+    });
+  }
+
+  // További SVG-k betöltésére szolgáló metódusok később implementálhatók
+  loadDiszaula() {
+    this.resetPanzoom();
+    this.svgConfigService.loadDiszaulaConfig().subscribe({
+      next: (config) => {
+        this.currentSvgConfig = config;
+        this.reinitializePanzoom();
+      },
+      error: (error) => {
+        console.error('Hiba a konfiguráció betöltésekor:', error);
+      }
+    });
+  }
+
+  loadElocsarnok() {
+    this.resetPanzoom();
+    this.svgConfigService.loadElocsarnokConfig().subscribe({
+      next: (config) => {
+        this.currentSvgConfig = config;
+        this.reinitializePanzoom();
+      },
+      error: (error) => {
+        console.error('Hiba a konfiguráció betöltésekor:', error);
+      }
+    });
+  }
+
+  loadRegiAula() {
+    this.resetPanzoom();
+    this.svgConfigService.loadRegiAulaConfig().subscribe({
+      next: (config) => {
+        this.currentSvgConfig = config;
+        this.reinitializePanzoom();
+      },
+      error: (error) => {
+        console.error('Hiba a konfiguráció betöltésekor:', error);
+      }
+    });
+  }
+
+  private resetPanzoom() {
+    if (this.instance) {
+      this.instance.destroy();
+      this.instance = null;
+    }
+    this.isInitialized = false;
+  }
+
+  private reinitializePanzoom() {
+    setTimeout(() => {
+      this.initializePanzoom();
+    }, 300);
   }
 }
