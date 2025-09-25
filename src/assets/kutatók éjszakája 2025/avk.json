@@ -14,7 +14,8 @@
     "e-mail címe": "maria.agnes.ilosvai@uni-miskolc.hu",
     "tel. száma": "13-48",
     "Segítők": "Veréb Zsolt, Dr. Mentes Dóra, Salamon Dávid",
-    "Korosztály": "vegyes"
+    "Korosztály": "vegyes",
+    "building": "a2"
   },
   {
     "No.": "2",
@@ -31,7 +32,44 @@
     "e-mail címe": "csaba.poliska@uni-miskolc.hu",
     "tel. száma": "15-24",
     "Segítők": "-",
-    "Korosztály": "vegyes"
+    "Korosztály": "vegyes",
+    "building": "c1"
+  },
+  {
+    "No.": "3",
+    "name": "Larina? Tesla? Tik-Tok? Tudomány!”",
+    "english_name": "Larina? Tesla? Tik-Tok? Science!”",
+    "description": "Zenélő hárfa húrok nélkül, villámot szóró „hangszóró” - és még sok érdekesség, bemutató a tudomány világából.",
+    "english_description": "A musical harp without strings, a ‘speaker’ that shoots lightning - and many more curiosities and demonstrations from the world of science.",
+    "place": "Üvegaula főbejárat földszint / Glass hall main entrance ground floor",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "Infrastruktúra igénye": "áram, asztal, székek",
+    "Neve": "Dr. Szabó Gábor",
+    "e-mail címe": "gabor.szabo@uni-miskolc.hu",
+    "tel. száma": "30704329944",
+    "Segítők": "",
+    "Korosztály": "vegyes",
+    "building": "elocsarnok"
+  },
+  {
+    "No.": "4",
+    "name": "Érmenyomás",
+    "english_name": "Coin forming",
+    "description": "Válassz egy mintát és készíts saját érmét pillanatok alatt!",
+    "english_description": "Choose a design and create your own coin in seconds!",
+    "place": "Üveg előcsarnok galériájának a Fornetti felé eső része / The part of the glass lobby gallery facing Fornetti",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "Infrastruktúra igénye": "-",
+    "Neve": "Puskás Csaba",
+    "e-mail címe": "csaba.puskas@uni-miskolc.hu",
+    "tel. száma": "",
+    "Segítők": "",
+    "Korosztály": "vegyes",
+    "building": "elocsarnok"
   },
   {
     "No.": "5",
@@ -48,7 +86,8 @@
     "e-mail címe": "bela.torok@uni-miskolc.hu",
     "tel. száma": "36309857230",
     "Segítők": "",
-    "Korosztály": "vegyes"
+    "Korosztály": "vegyes",
+    "building": "b1"
   },
   {
     "No.": "6",
@@ -65,7 +104,8 @@
     "e-mail címe": "alexandra.hamza@uni-miskolc.hu",
     "tel. száma": "",
     "Segítők": "",
-    "Korosztály": "vegyes"
+    "Korosztály": "vegyes",
+    "building": "c2"
   },
   {
     "No.": "7",
@@ -82,7 +122,8 @@
     "e-mail címe": "laura.madi@uni-miskolc.hu",
     "tel. száma": "36704263828",
     "Segítők": "Dr. Molnár Dániel, Gyarmati Gábor, Kovács Tamás Zoltán, Ferenczi Tibor, Hajas Levente",
-    "Korosztály": "vegyes"
+    "Korosztály": "vegyes",
+    "building": "c2"
   },
   {
     "No.": "8",
@@ -99,7 +140,133 @@
     "e-mail címe": "tibor.ferenczi@uni-miskolc.hu",
     "tel. száma": "36305161957",
     "Segítők": "Kovács Tamás Zoltán, Dr. Szabó Gábor, Lassú Gábor",
-    "Korosztály": "vegyes"
+    "Korosztály": "vegyes",
+    "building": "c2"
+  },
+  {
+    "No.": "9",
+    "name": "\"\"TŰZBEN SZÜLETETT\"\" - a tűzzománcozás-technológiák fejlődése    ",
+    "english_name": "\"\"BORN IN FIRE\"\" - the development of vitreous enamelling technologies",
+    "description": "A tűzzománcozás technológiájának bemutatása elméletben és konkrét tárgyak segítségével. Amiről szó lesz: öntöttvas hulladékból tűzzománcozott retro fürdőkád; vegyipari reaktorok felületvédelme tűzzománcozással; az ipari tűzzománcozás korszerű technológiái és termékei; díszítőművészeti alkalmazások köztéren és az ékszergyártásban.",
+    "english_description": "Presentation of the technology of fire enameling in theory and with the help of concrete objects. What will be discussed: retro bathtub fire enameled from cast iron waste; surface protection of chemical reactors with fire enameling; modern technologies and products of industrial fire enameling; decorative art applications in public spaces and in jewelry production.",
+    "place": "FÖI, C/2. műhelycsarnok V. hajó, földszint (északi oldal) / FÖI, C/2. building, workshop hall V. ship, ground floor (north side)",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "Infrastruktúra igénye": "-",
+    "Neve": "Prof. Dr. Török Tamás",
+    "e-mail címe": "tamas.istvan.torok@uni-miskolc.hu",
+    "tel. száma": "",
+    "Segítők": "",
+    "Korosztály": "vegyes",
+    "building": "c2"
+  },
+  {
+    "No.": "10",
+    "name": "Szuperszámítógépekkel a szupercellák nyomában - avagy meteorológiai előrejelzések a kulisszák mögül",
+    "english_name": "Tracking supercells with supercomputers—meteorological forecasts behind the scenes",
+    "description": "A meteorológusoknak gyakran feltett kérdésekre igyekszünk válaszokat adni az előadásban. Honnan lehet tudni, hogy milyen idő lesz? Végül miért nem olyan idő van, amilyet „jósoltak”? Hány napra tudják előre megmondani az időjárást?",
+    "english_description": "During our presentation, we will try to answer questions that are often asked of meteorologists. How do we know what the weather will be like? Why is the weather not what they “predicted”? How many days in advance can they predict the weather?",
+    "place": "B/1 épület, 4. emelet, 410. előadó - Energia-, Kerámia- és Polimetechnológiai Intézet / B/1 building, 4th floor, 410. room - Institute of Energy, Ceramics and Polymer Technology",
+    "time": "17:00, 19:00, 21:00",
+    "max_person": "40 fő/alkalom",
+    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
+    "Infrastruktúra igénye": "nincs",
+    "Neve": "Erdődiné Molnár Zsófia",
+    "e-mail címe": "molnar.zs@met.hu",
+    "tel. száma": "-",
+    "Segítők": "-",
+    "Korosztály": "vegyes",
+    "building": "b1"
+  },
+  {
+    "No.": "11",
+    "name": "Mesterséges intelligencia a meteorológiában - csendes forradalom zajlik az időjárás előrejelzésben?",
+    "english_name": "Artificial intelligence in meteorology — Is a quiet revolution taking place in weather forecasting?",
+    "description": "Az időjárás előrejelzés az elmúlt évtizedekben robbanásszerűen fejlődött, az előrejelzések egyre pontosabbak lettek, azonban ez a fejlődés az elmúlt években lelassult. A mesterséges intelligencia, ezen belül a gépi tanulás alkalmazása hozott új lendületet, egyes szakemberek szerint egyenesen forradalmasítja a fejlődést. Előadásunkban bemutatjuk ezt az új technológiát, megvizsgáljuk ennek elméleti, gyakorlati és pénzügyi oldalát és választ keresünk arra, hogy mi várható a közeli jövőben.",
+    "english_description": "Weather forecasting has developed explosively in recent decades, with forecasts becoming increasingly accurate, but this development has slowed down in recent years. The application of artificial intelligence, including machine learning, brings a new impetus, according to some experts, it will revolutionize development. In our presentation, we will introduce this new technology, examine its theoretical, practical and financial aspects, and seek answers to what can be expected in the near future.",
+    "place": "B/1 épület, 4. emelet, 410. előadó - Energia-, Kerámia- és Polimetechnológiai Intézet / B/1 building, 4th floor, 410. room - Institute of Energy, Ceramics and Polymer Technology",
+    "time": "00:20,0",
+    "max_person": "40 fő/alkalom",
+    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
+    "Infrastruktúra igénye": "nincs",
+    "Neve": "Kovács Attila Viktor",
+    "e-mail címe": "kovacs.av@met.hu",
+    "tel. száma": "-",
+    "Segítők": "-",
+    "Korosztály": "vegyes",
+    "building": "b1"
+  },
+  {
+    "No.": "12",
+    "name": "Tele-POR-tálás",
+    "english_name": "Measuring air quality for cleaner breath",
+    "description": " A HungAIRy LIFE IP projekt keretében a Miskolci Egyetem és a város szakemberei egy nagy felbontású PM mérőhálózatot építettek ki Miskolcon, amely több, mint 60 db. low cost mérőegységből áll. A hálózat online, valós idejű adatokat szolgáltat, amely a nyilvánosság számára a PMMONITORING.HU weboldalon szabadon elérhető - ezt mutatjuk be programunkon.",
+    "english_description": " Within the framework of the HungAIRy LIFE IP project, experts of the University of Miskolc and the city of Miskolc have built a high-resolution PM measurement network in Miskolc, which consists of more than 60 low cost measurement units. The network provides online, real-time data, which is freely available to the public on the PMMONITORING.HU website - this will be presented during our program.",
+    "place": "Az üvegaula galéria része, a Fornetti részénél / Glass hall gallery, near the Fornetti section",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "regisztráció nélküli",
+    "Infrastruktúra igénye": "2 asz",
+    "Neve": "Uramné dr. Lantai Katalin",
+    "e-mail címe": "uramne.katalin@miskolc.hu",
+    "tel. száma": "",
+    "Segítők": "",
+    "Korosztály": "vegyes",
+    "building": "elocsarnok"
+  },
+  {
+    "No.": "13",
+    "name": "Mire jó a hulladék kupak?",
+    "english_name": "What are waste bottle caps good for?",
+    "description": "Fedezd fel, hogyan születnek a műanyag tárgyak! Ismerkedj meg a fröccsöntés varázslatos világával, és alkosd meg saját figurádat.",
+    "english_description": "Discover how plastic objects are made! Explore the magical world of injection molding and create your own figure.",
+    "place": "B/1 épület 2. emelet, folyosó - Energia-, Kerámia- és Polimertechnológiai Intézet / B/1 building, 2nd floor, corridor - Institute of Energy, Ceramics and Polymer Technology",
+    "time": "17:00, 18:00, 19:00",
+    "max_person": "10 fő",
+    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
+    "Infrastruktúra igénye": "nincs",
+    "Neve": "Dr. Szabó Tamás",
+    "e-mail címe": "tamas.szabo@uni-miskolc.hu",
+    "tel. száma": "",
+    "Segítők": "",
+    "Korosztály": "vegyes",
+    "building": "b1"
+  },
+  {
+    "No.": "14",
+    "name": "Szuperlabda gyár – pattogó polimerek a laborban",
+    "english_name": "Superball factory – bouncing polymers in the laboratory",
+    "description": "Gyere és készítsd el a saját pattogó szuperlabdádat, miközben felfedezed a polimerek titkos világát! Megmutatjuk, hogyan lesz néhány egyszerű anyagból izgalmas, kézzel fogható játék. A kísérlet közben megtudhatod, miért pattog, rugalmas és különleges a szuperlabda.",
+    "english_description": "Come and create your own bouncing super ball while discovering the fascinating world of polymers! We’ll show you how a few simple ingredients can turn into an exciting, hands-on toy. Along the way, you’ll learn why the super ball is so bouncy, elastic, and unique.\"\"",
+    "place": "B/1 épület 2. emelet, 211. terem - Energia-, Kerámia- és Polimertechnológiai Intézet / B/1 building, 2nd floor, 211. room - Institute of Energy, Ceramics and Polymer Technology",
+    "time": "17:00, 17:45, 18:30",
+    "max_person": "10 fő",
+    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
+    "Infrastruktúra igénye": "nincs",
+    "Neve": "Polyákné Kovács Annamária, Dr.Sycheva Anna",
+    "e-mail címe": "annamaria.polyakne@uni-miskolc.hu",
+    "tel. száma": "6309061140",
+    "Segítők": "Tóth Marcell János",
+    "Korosztály": "4 éves kortól",
+    "building": "b1"
+  },
+  {
+    "No.": "15",
+    "name": "Briefcase - mit rejt a mobilod?",
+    "english_name": "Briefcase - what’s in your phone?",
+    "description": "Mindenki zsebében ott van a mobiltelefon, de nagyon kevesen tudják, hogy mi minden kell ahhoz, hogy ez az egyre apróbb és nagyobb tudású eszköz működhessen. A táskában nyersanyagokat, és alapanyagokat mutatunk meg, és elmondjuk, hogy a mobiltelefon különböző részeihez mi mindenre is van szükségünk.",
+    "english_description": "Everyone has a mobile phone in their pocket, but very few people know what it takes to make this increasingly small and sophisticated device work. We show you the raw materials and components in the briefcase, and we tell you what we need for the different parts of a mobile phone.",
+    "place": "Üvegaula AVK kari pultnál / Glass gall at AVK faculty stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "regisztráció nélküli",
+    "Infrastruktúra igénye": "-",
+    "Neve": "Dr. Hudák Henrietta",
+    "e-mail címe": "henrietta.hudak@uni-miskolc.hu",
+    "tel. száma": "36205877109",
+    "Segítők": "",
+    "Korosztály": "vegyes",
+    "building": "elocsarnok"
   }
-
 ]
