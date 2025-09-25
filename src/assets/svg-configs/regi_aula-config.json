@@ -11,7 +11,7 @@
   "interactiveAreas": [
     {
       "id": "mol",
-      "name": "Mol",
+      "name": "MOL Petrolkémia Zrt.",
       "type": "rectangle",
       "coordinates": {
         "x": 184.9,
@@ -29,7 +29,7 @@
     },
     {
       "id": "joyson",
-      "name": "Joyson",
+      "name": "Joyson Safety Systems Hungary Kft.",
       "type": "rectangle",
       "coordinates": {
         "x": 184.9,
@@ -47,7 +47,7 @@
     },
     {
       "id": "bosch",
-      "name": "Bosch",
+      "name": "Robert Bosch",
       "type": "rectangle",
       "coordinates": {
         "x": 299.4,
@@ -101,7 +101,7 @@
     },
     {
       "id": "mcc",
-      "name": "Mcc",
+      "name": "Miskolci Mathias Corvinus Collegium",
       "type": "rectangle",
       "coordinates": {
         "x": 673.9,
@@ -118,8 +118,8 @@
       }
     },
     {
-      "id": "borsodchem",
-      "name": "Borsodchem",
+      "id": "borsod",
+      "name": "BorsodChem Zrt.",
       "type": "rectangle",
       "coordinates": {
         "x": 741,

@@ -97,8 +97,11 @@ export class CanvasComponent implements AfterViewInit, OnInit {
           bounds: true,
           maxZoom: 3,
           minZoom: 0.4,
-          startScale: 1,
-          boundsPadding: 0.1
+          startScale: 0.6,
+          boundsPadding: 0.1,
+          startX: 0,
+          startY: -570
+
         });
 
         this.scene.nativeElement.addEventListener('wheel', (e: WheelEvent) => {

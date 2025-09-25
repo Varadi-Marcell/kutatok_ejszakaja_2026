@@ -9,7 +9,12 @@
     "time": "18:00",
     "max_person": "15 fő",
     "registration": "-",
-    "Infrastruktúra igénye": "-"
+    "Infrastruktúra igénye": "-",
+    "Neve": "Prof. Zhao Jing, Dr. Kuttor Dániel",
+    "e-mail címe": "daniel.kuttor@uni-miskolc.hu, zhao.jing@guest.uni-miskolc.hu",
+    "tel. száma": "24-14",
+    "Segítők": "Konfuciusz Intézet tanárai, munkatársai, diákjai",
+    "building": "a1"
   },
   {
     "No.": "2",
@@ -21,7 +26,12 @@
     "time": "18:30",
     "max_person": "15 fő",
     "registration": "-",
-    "Infrastruktúra igénye": "-"
+    "Infrastruktúra igénye": "-",
+    "Neve": "Prof. Zhao Jing, Dr. Kuttor Dániel",
+    "e-mail címe": "daniel.kuttor@uni-miskolc.hu, zhao.jing@guest.uni-miskolc.hu",
+    "tel. száma": "24-14",
+    "Segítők": "Konfuciusz Intézet tanárai, munkatársai, diákjai",
+    "building": "a1"
   },
   {
     "No.": "3",
@@ -33,7 +43,12 @@
     "time": "19:00",
     "max_person": "-",
     "registration": "-",
-    "Infrastruktúra igénye": "-"
+    "Infrastruktúra igénye": "-",
+    "Neve": "Prof. Zhao Jing, Dr. Kuttor Dániel",
+    "e-mail címe": "daniel.kuttor@uni-miskolc.hu, zhao.jing@guest.uni-miskolc.hu",
+    "tel. száma": "24-14",
+    "Segítők": "Konfuciusz Intézet tanárai, munkatársai, diákjai",
+    "building": "a1"
   },
   {
     "No.": "4",
@@ -45,7 +60,12 @@
     "time": "19:30",
     "max_person": "15 fő",
     "registration": "-",
-    "Infrastruktúra igénye": "-"
+    "Infrastruktúra igénye": "-",
+    "Neve": "Prof. Zhao Jing, Dr. Kuttor Dániel",
+    "e-mail címe": "daniel.kuttor@uni-miskolc.hu, zhao.jing@guest.uni-miskolc.hu",
+    "tel. száma": "24-14",
+    "Segítők": "Konfuciusz Intézet tanárai, munkatársai, diákjai",
+    "building": "a1"
   },
   {
     "No.": "5",
@@ -57,7 +77,12 @@
     "time": "20:00",
     "max_person": "15 fő",
     "registration": "-",
-    "Infrastruktúra igénye": "-"
+    "Infrastruktúra igénye": "-",
+    "Neve": "Prof. Zhao Jing, Dr. Kuttor Dániel",
+    "e-mail címe": "daniel.kuttor@uni-miskolc.hu, zhao.jing@guest.uni-miskolc.hu",
+    "tel. száma": "24-14",
+    "Segítők": "Konfuciusz Intézet tanárai, munkatársai, diákjai",
+    "building": "a1"
   },
   {
     "No.": "6",
@@ -69,7 +94,12 @@
     "time": "20:30",
     "max_person": "15 fő",
     "registration": "-",
-    "Infrastruktúra igénye": "-"
+    "Infrastruktúra igénye": "-",
+    "Neve": "Prof. Zhao Jing, Dr. Kuttor Dániel",
+    "e-mail címe": "daniel.kuttor@uni-miskolc.hu, zhao.jing@guest.uni-miskolc.hu",
+    "tel. száma": "24-14",
+    "Segítők": "Konfuciusz Intézet tanárai, munkatársai, diákjai",
+    "building": "a1"
   },
   {
     "No.": "7",
@@ -81,7 +111,12 @@
     "time": "21:00",
     "max_person": "15 fő",
     "registration": "-",
-    "Infrastruktúra igénye": "-"
+    "Infrastruktúra igénye": "-",
+    "Neve": "Prof. Zhao Jing, Dr. Kuttor Dániel",
+    "e-mail címe": "daniel.kuttor@uni-miskolc.hu, zhao.jing@guest.uni-miskolc.hu",
+    "tel. száma": "24-14",
+    "Segítők": "Konfuciusz Intézet tanárai, munkatársai, diákjai",
+    "building": "a1"
   },
   {
     "No.": "8",
@@ -93,18 +128,11 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "-",
-    "Infrastruktúra igénye": "Áramvételi lehetőség"
-  },
-  {
-    "No.": null,
-    "name": null,
-    "english_name": null,
-    "description": null,
-    "english_description": null,
-    "place": null,
-    "time": null,
-    "max_person": null,
-    "registration": null,
-    "Infrastruktúra igénye": null
+    "Infrastruktúra igénye": "Áramvételi lehetőség",
+    "Neve": "Prof. Zhao Jing, Dr. Kuttor Dániel",
+    "e-mail címe": "daniel.kuttor@uni-miskolc.hu, zhao.jing@guest.uni-miskolc.hu",
+    "tel. száma": "24-14",
+    "Segítők": "Konfuciusz Intézet tanárai, munkatársai, diákjai",
+    "building": "elocsarnok"
   }
 ]

@@ -1,27 +1,37 @@
 [
   {
     "No.": "1",
-    "name": "Sportos Ügyességi kihívások ",
-    "english_name": "Sport Skill Challanges",
-    "description": " ",
-    "english_description": " ",
+    "name": "Sportos Ügyességi kihívások",
+    "english_name": "Sport Skill Challenges",
+    "description": "",
+    "english_description": "",
     "place": "Díszaula / Main Hall",
     "time": "17.00-től 22.00-ig",
     "max_person": "folyamatos",
     "registration": "nincs limitálva",
-    "Infrastruktúra igénye": "Twisterhez TV, Miskolc Egyetem felirat"
+    "Infrastruktúra igénye": "Twisterhez TV, Miskolci Egyetem felirat",
+    "Neve": "Bene Szilárd Csaba",
+    "e-mail címe": "szilard.bene@uni-miskolc.hu",
+    "tel. száma": "+36 70 459 0152",
+    "Segítők": "",
+    "building": "diszaula"
   },
   {
     "No.": "2",
     "name": "Ugró-mászó akadálypálya",
-    "english_name": "Jump-and-climb obstacle course ",
-    "description": "Tedd próbára ügyességed és kitartásod az akadálypályán: a játékosok a jelzett kéz ás lábnyom szerint kell menni. ",
+    "english_name": "Jump-and-climb obstacle course",
+    "description": "Tedd próbára ügyességed és kitartásod az akadálypályán: a játékosok a jelzett kéz ás lábnyom szerint kell menni.",
     "english_description": "Test your skills and endurance on the obstacle course: the players must follow the indicated hand and footprints.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": " ",
-    "registration": " ",
-    "Infrastruktúra igénye": " "
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": "",
+    "Neve": "",
+    "e-mail címe": "",
+    "tel. száma": "",
+    "Segítők": "",
+    "building": "diszaula"
   },
   {
     "No.": "3",
@@ -31,9 +41,14 @@
     "english_description": "On 2 ping pong tables, 2-4 players hit the ball with rackets on both sides of a table.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": " ",
-    "registration": " ",
-    "Infrastruktúra igénye": " "
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": "",
+    "Neve": "",
+    "e-mail címe": "",
+    "tel. száma": "",
+    "Segítők": "",
+    "building": "diszaula"
   },
   {
     "No.": "4",
@@ -43,9 +58,14 @@
     "english_description": "They play with 2 small, tiny rackets and a smaller ball, developing reflexes and balance.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": " ",
-    "registration": " ",
-    "Infrastruktúra igénye": " "
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": "",
+    "Neve": "",
+    "e-mail címe": "",
+    "tel. száma": "",
+    "Segítők": "",
+    "building": "diszaula"
   },
   {
     "No.": "5",
@@ -55,9 +75,14 @@
     "english_description": "Try out how is it hanging upside down!",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": " ",
-    "registration": " ",
-    "Infrastruktúra igénye": " "
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": "",
+    "Neve": "",
+    "e-mail címe": "",
+    "tel. száma": "",
+    "Segítők": "",
+    "building": "diszaula"
   },
   {
     "No.": "6",
@@ -67,9 +92,14 @@
     "english_description": "Table football game, develops skill and concentration while providing a fun challenge.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": null,
-    "registration": null,
-    "Infrastruktúra igénye": null
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": "",
+    "Neve": "",
+    "e-mail címe": "",
+    "tel. száma": "",
+    "Segítők": "",
+    "building": "diszaula"
   },
   {
     "No.": "7",
@@ -79,9 +109,14 @@
     "english_description": "Accuracy and coordination are emphasized, fun developmental game.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": null,
-    "registration": null,
-    "Infrastruktúra igénye": null
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": "",
+    "Neve": "",
+    "e-mail címe": "",
+    "tel. száma": "",
+    "Segítők": "",
+    "building": "diszaula"
   },
   {
     "No.": "8",
@@ -91,20 +126,13 @@
     "english_description": "Participants try to reach the different colored markings.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": null,
-    "registration": null,
-    "Infrastruktúra igénye": null
-  },
-  {
-    "No.": null,
-    "name": null,
-    "english_name": null,
-    "description": null,
-    "english_description": null,
-    "place": null,
-    "time": null,
-    "max_person": null,
-    "registration": null,
-    "Infrastruktúra igénye": null
+    "max_person": "",
+    "registration": "",
+    "Infrastruktúra igénye": "",
+    "Neve": "",
+    "e-mail címe": "",
+    "tel. száma": "",
+    "Segítők": "",
+    "building": "diszaula"
   }
 ]

@@ -3,8 +3,8 @@
     "No.": "1",
     "name": "Szóbeli Origó és Zöld Út próbanyelvvizsga - ANGOL",
     "english_name": "Mock exam in English: Zöld Út and Origó oral exam",
-    "description": "Szóbeli Origó és Zöld Út (általános, gazdasági vagy műszaki) próbanyelvvizsga angol nyelvből, előzetes regisztráció alapján. A vizsga értékelése után tanácsadás a további felkészüléshez. Regisztráció az üveg előcsarnokban található IOK Információs pultnál szükséges! ",
-    "english_description": "Mock exam in English: Zöld Út (general, economic or technical) and Origó (general) bilingual (English-Hungarian) language exams. Personal assessment and recommendations after the exam considering further preparation. Registration is required at the IOK Information Desk located in the glass lobby! ",
+    "description": "Szóbeli Origó és Zöld Út (általános, gazdasági vagy műszaki) próbanyelvvizsga angol nyelvből, előzetes regisztráció alapján. A vizsga értékelése után tanácsadás a további felkészüléshez. Regisztráció az üveg előcsarnokban található IOK Információs pultnál szükséges!",
+    "english_description": "Mock exam in English: Zöld Út (general, economic or technical) and Origó (general) bilingual (English-Hungarian) language exams. Personal assessment and recommendations after the exam considering further preparation. Registration is required at the IOK Information Desk located in the glass lobby!",
     "place": "A/1 épület, 318. terem / Building A/1, Room 318",
     "time": "17:00-18:00",
     "max_person": "max. 10 fő",
@@ -14,13 +14,13 @@
     "e-mail címe": "erika.vitanyine.varga@uni-miskolc.hu",
     "tel. száma": "1771",
     "Segítők": "",
-    "age": ""
+    "building": "a1"
   },
   {
     "No.": "2",
     "name": "Tudod-e? - Érdekességek a spanyol és olasz nyelv és kultúra kapcsán",
     "english_name": "Did you know? - Fun facts about the Spanish and Italian language and culture",
-    "description": "Spanyol és olasz nyelvi és országismereti játékos feladatok. ",
+    "description": "Spanyol és olasz nyelvi és országismereti játékos feladatok.",
     "english_description": "Quizzes and games related to the Spanish and Italian language and culture.",
     "place": "A/1 épület, 317. terem / Building A/1, Room 317",
     "time": "17:00-19:00",
@@ -31,14 +31,14 @@
     "e-mail címe": "maria.havasine@uni-miskolc.hu és katalin.szokoli@uni-miskolc.hu",
     "tel. száma": "1378",
     "Segítők": "",
-    "age": ""
+    "building": "a1"
   },
   {
     "No.": "3",
     "name": "Szóbeli Origó és Zöld Út próbanyelvvizsga-NÉMET",
     "english_name": "Mock exam in German: Zöld Út and Origó oral exam",
-    "description": "Szóbeli Origó és Zöld Út (gazdasági) próbanyelvvizsga német nyelvből, előzetes regisztráció alapján. A vizsga értékelése után tanácsadás a további felkészüléshez. Regisztráció az üveg előcsarnokban található IOK Információs pultnál szükséges! ",
-    "english_description": "Mock exam in German: Zöld Út (economic) and Origó (general) bilingual (German-Hungarian) language exams. Personal assessment and recommendations after the exam. Registration is required at the IOK Information Desk located in the glass lobby! ",
+    "description": "Szóbeli Origó és Zöld Út (gazdasági) próbanyelvvizsga német nyelvből, előzetes regisztráció alapján. A vizsga értékelése után tanácsadás a további felkészüléshez. Regisztráció az üveg előcsarnokban található IOK Információs pultnál szükséges!",
+    "english_description": "Mock exam in German: Zöld Út (economic) and Origó (general) bilingual (German-Hungarian) language exams. Personal assessment and recommendations after the exam. Registration is required at the IOK Information Desk located in the glass lobby!",
     "place": "A/1 épület, 318. terem / Building A/1, Room 318",
     "time": "17:00-18:00",
     "max_person": "max. 10 fő",
@@ -48,13 +48,13 @@
     "e-mail címe": "andrea.jungne@uni-miskolc.hu",
     "tel. száma": "2149",
     "Segítők": "",
-    "age": ""
+    "building": "a1"
   },
   {
     "No.": "4",
-    "name": "Ünnepeljük együtt a Nyelvek Európai Napját! ",
+    "name": "Ünnepeljük együtt a Nyelvek Európai Napját!",
     "english_name": "Let's celebrate the European Day of Languages!",
-    "description": "Szavak mögött a világ - Nyelvi Tényvadászat: érdekességek, amik garantáltan meglepnek! ",
+    "description": "Szavak mögött a világ - Nyelvi Tényvadászat: érdekességek, amik garantáltan meglepnek!",
     "english_description": "The world behind the words- Linguistic Fact Hunt: curiosities that are guaranteed to surprise you!",
     "place": "A/1 épület, magasföldszint folyosó/ Building A/1, high ground corridor",
     "time": "17:00-19:00",
@@ -65,7 +65,7 @@
     "e-mail címe": "eszter.dobronyi@uni-miskolc.hu, erzsebet.levai.asztalos@uni-miskolc.hu, orsolya.nagyne.varga@uni-miskolc.hu",
     "tel. száma": "1387",
     "Segítők": "",
-    "age": "10+"
+    "building": "a1"
   },
   {
     "No.": "5",
@@ -82,7 +82,7 @@
     "e-mail címe": "",
     "tel. száma": "",
     "Segítők": "",
-    "age": ""
+    "building": "elocsarnok"
   },
   {
     "No.": "6",
@@ -99,6 +99,6 @@
     "e-mail címe": "maria.illes@uni-miskolc.hu",
     "tel. száma": "2149",
     "Segítők": "",
-    "age": "10+"
+    "building": "a1"
   }
 ]
