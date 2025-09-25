@@ -9,7 +9,8 @@
     "time": "18:00-20:30 között folyamatosan / Continuously between 18:00-20:30",
     "max_person": "Mindegy!",
     "registration": "Igen, a BTK standjánál lesz egy emberünk!",
-    "Infrastruktúra igénye": "Nincsen, de valamilyen nyeremény jó lenne. Pld. egyetemi logós valamik. Tavaly rengetegen voltak nálunk, így legalább 100 valami kellene. Ez lehet kis csoki, vagy toll, teljesen mindegy, csak valami legyen!"
+    "Infrastruktúra igénye": "Nincsen, de valamilyen nyeremény jó lenne. Pld. egyetemi logós valamik. Tavaly rengetegen voltak nálunk, így legalább 100 valami kellene. Ez lehet kis csoki, vagy toll, teljesen mindegy, csak valami legyen!",
+    "building": "a5"
   },
   {
     "No.": "2",
@@ -21,7 +22,9 @@
     "time": "20",
     "max_person": "10 fő",
     "registration": "Nem szükséges.",
-    "Infrastruktúra igénye": "nincs "
+    "Infrastruktúra igénye": "nincs ",
+    "building": "c1"
+
   },
   {
     "No.": "3",
@@ -33,7 +36,9 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "5 (egyszerre)",
     "registration": "Nem szükséges.",
-    "Infrastruktúra igénye": "saját erőből megoldjuk"
+    "Infrastruktúra igénye": "saját erőből megoldjuk",
+    "building": "c1"
+
   },
   {
     "No.": "4",
@@ -45,7 +50,9 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "Egyszerre kb. 30 fő, a program kb. 30-35 percet vesz igénybe, így a csoportok folyamatosan válthatják egymást",
     "registration": "Nem szükséges.",
-    "Infrastruktúra igénye": "nincs"
+    "Infrastruktúra igénye": "nincs",
+    "building": "c1"
+
   },
   {
     "No.": "5",
@@ -57,7 +64,9 @@
     "time": "19:00–21:00 között folyamatosan / continuously between 7pm-9pm",
     "max_person": "15–20 fő",
     "registration": "Nem szükséges.",
-    "Infrastruktúra igénye": "saját eszközöket hozunk"
+    "Infrastruktúra igénye": "saját eszközöket hozunk",
+    "building": "a1"
+
   },
   {
     "No.": "6",
@@ -69,7 +78,9 @@
     "time": "18:00-18:30; 19:00-19:30",
     "max_person": "15 fő",
     "registration": "Nem szükséges.",
-    "Infrastruktúra igénye": "Az intézet megoldja."
+    "Infrastruktúra igénye": "Az intézet megoldja.",
+    "building": "c1"
+
   },
   {
     "No.": "7",
@@ -81,7 +92,9 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "Nem szükséges maximálni",
     "registration": "Nem szükséges.",
-    "Infrastruktúra igénye": "saját erőből megoldjuk"
+    "Infrastruktúra igénye": "saját erőből megoldjuk",
+    "building": "c1"
+
   },
   {
     "No.": "8",
@@ -93,7 +106,9 @@
     "time": "17.30-19.30 között folyamatosan / continuously between 5:30pm-7:30pm",
     "max_person": "15",
     "registration": "Nem szükséges.",
-    "Infrastruktúra igénye": "Az intézet megoldja."
+    "Infrastruktúra igénye": "Az intézet megoldja.",
+    "building": "c1"
+
   },
   {
     "No.": "9",
@@ -105,7 +120,9 @@
     "time": "19:00-20:30 között folyamatosan / continuously between 7pm-8:30pm",
     "max_person": "20",
     "registration": "Nem szükséges.",
-    "Infrastruktúra igénye": "Vetítő"
+    "Infrastruktúra igénye": "Vetítő",
+    "building": "c1"
+
   },
   {
     "No.": "10",
@@ -122,7 +139,9 @@
     "e-mail címe": "",
     "tel. száma": "",
     "Segítők": "",
-    "age": ""
+    "age": "",
+    "building": "a6"
+
   },
   {
     "No.": "11",
@@ -139,7 +158,9 @@
     "e-mail címe": "",
     "tel. száma": "",
     "Segítők": "",
-    "age": ""
+    "age": "",
+    "building": "c1"
+
   },
   {
     "No.": "12",
@@ -156,7 +177,9 @@
     "e-mail címe": "",
     "tel. száma": "",
     "Segítők": "",
-    "age": ""
+    "age": "",
+    "building": "c1"
+
   },
   {
     "No.": "13",
@@ -173,7 +196,9 @@
     "e-mail címe": "",
     "tel. száma": "",
     "Segítők": "",
-    "age": ""
+    "age": "",
+    "building": "c1"
+
   },
   {
     "No.": "14",
@@ -190,6 +215,7 @@
     "e-mail címe": "",
     "tel. száma": "",
     "Segítők": "",
-    "age": ""
+    "age": "",
+    "building": "c1"
   }
 ]
