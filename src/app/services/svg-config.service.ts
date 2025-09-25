@@ -44,4 +44,21 @@ export class SvgConfigService {
   loadAreaData(areaId: string): Observable<ProgramEvent[]> {
     return this.http.get<ProgramEvent[]>(`assets/kutatók éjszakája 2025/${areaId}.json`);
   }
+
+  // Building.json betöltése és szűrése building kulcs alapján
+  loadBuildingData(buildingKey: string): Observable<ProgramEvent[]> {
+    return new Observable<ProgramEvent[]>(observer => {
+      this.http.get<ProgramEvent[]>('assets/kutatók éjszakája 2025/building.json').subscribe({
+        next: (allData) => {
+          // Szűrjük az adatokat a building kulcs alapján
+          const filteredData = allData.filter(item => item.building === buildingKey);
+          observer.next(filteredData);
+          observer.complete();
+        },
+        error: (error) => {
+          observer.error(error);
+        }
+      });
+    });
+  }
 }

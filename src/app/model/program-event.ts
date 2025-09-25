@@ -14,4 +14,5 @@ export interface ProgramEvent {
   'tel. száma'?: string | number;
   'Segítők'?: string;
   age?: string;
+  building?: string;
 }

@@ -183,23 +183,46 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     this.showPopup = true;
     this.popupPrograms = [];
 
-    // Dinamikus JSON betöltés az area id alapján
-    this.svgConfigService.loadAreaData(event.area.id).subscribe({
-      next: (data) => {
-        console.log(`${event.area.id.toUpperCase()} programok:`, data);
-        console.log(`Összesen ${data.length} program található a ${event.area.id.toUpperCase()}-nél`);
+    // Check if we're on nagyterkep_jo.svg
+    const isNagyterkep = this.currentSvgConfig?.svgPath === 'assets/nagyterkep_jo.svg';
+    
+    if (isNagyterkep) {
+      // For nagyterkep_jo.svg, load building.json and use area.id as building key
+      this.svgConfigService.loadBuildingData(event.area.id).subscribe({
+        next: (data) => {
+          console.log(`${event.area.id.toUpperCase()} programok (building.json-ből):`, data);
+          console.log(`Összesen ${data.length} program található a ${event.area.id.toUpperCase()}-nél`);
 
-        this.popupPrograms = data;
-        this.isLoadingPrograms = false;
-      },
-      error: (error) => {
-        console.error(`Hiba a ${event.area.id} adatok betöltésekor:`, error);
-        this.isLoadingPrograms = false;
-        this.showPopup = false;
-        // Fallback: eredeti alert ha nincs JSON fájl
-        alert(`${event.area.name} (${event.area.id}) területre kattintottál!`);
-      }
-    });
+          this.popupPrograms = data;
+          this.isLoadingPrograms = false;
+        },
+        error: (error) => {
+          console.error(`Hiba a ${event.area.id} adatok betöltésekor (building.json):`, error);
+          this.isLoadingPrograms = false;
+          this.showPopup = false;
+          // Fallback: eredeti alert ha nincs adat
+          alert(`${event.area.name} (${event.area.id}) területre kattintottál!`);
+        }
+      });
+    } else {
+      // For other SVGs, use the original logic
+      this.svgConfigService.loadAreaData(event.area.id).subscribe({
+        next: (data) => {
+          console.log(`${event.area.id.toUpperCase()} programok:`, data);
+          console.log(`Összesen ${data.length} program található a ${event.area.id.toUpperCase()}-nél`);
+
+          this.popupPrograms = data;
+          this.isLoadingPrograms = false;
+        },
+        error: (error) => {
+          console.error(`Hiba a ${event.area.id} adatok betöltésekor:`, error);
+          this.isLoadingPrograms = false;
+          this.showPopup = false;
+          // Fallback: eredeti alert ha nincs JSON fájl
+          alert(`${event.area.name} (${event.area.id}) területre kattintottál!`);
+        }
+      });
+    }
   }
 
   onClosePopup() {
