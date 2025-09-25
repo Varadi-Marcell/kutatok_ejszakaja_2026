@@ -52,7 +52,14 @@ export class SvgConfigService {
         next: (allData) => {
           // Szűrjük az adatokat a building kulcs alapján
           const filteredData = allData.filter(item => item.building === buildingKey);
-          observer.next(filteredData);
+          
+          // Automatikus sorszámozás hozzáadása (1-től kezdve)
+          const numberedData = filteredData.map((item, index) => ({
+            ...item,
+            'No.': index + 1
+          }));
+          
+          observer.next(numberedData);
           observer.complete();
         },
         error: (error) => {
