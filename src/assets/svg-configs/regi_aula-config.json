@@ -10,20 +10,128 @@
   },
   "interactiveAreas": [
     {
-      "id": "stage",
-      "name": "Színpad",
+      "id": "mol",
+      "name": "Mol",
       "type": "rectangle",
       "coordinates": {
-        "x": 494.5,
-        "y": 232.3,
-        "width": 56.7,
-        "height": 28.3
+        "x": 184.9,
+        "y": 92.2,
+        "width": 79.8,
+        "height": 43.1
       },
       "style": {
         "cssClass": "polygon"
       },
       "metadata": {
-        "description": "Főszínpad terület",
+        "description": "mol terület",
+        "capacity": 500
+      }
+    },
+    {
+      "id": "joyson",
+      "name": "Joyson",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 184.9,
+        "y": 171.4,
+        "width": 79.8,
+        "height": 68.5
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "mol terület",
+        "capacity": 500
+      }
+    },
+    {
+      "id": "bosch",
+      "name": "Bosch",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 299.4,
+        "y": 93.2,
+        "width": 201.8,
+        "height": 146.6
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "mol terület",
+        "capacity": 500
+      }
+    },
+    {
+      "id": "mfk",
+      "name": "Mfk",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 513.7,
+        "y": 249,
+        "width": 44.5,
+        "height": 22.2
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "bosch terület",
+        "capacity": 500
+      }
+    },
+    {
+      "id": "gtk",
+      "name": "Gtk",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 626.3,
+        "y": 100.4,
+        "width": 22.2,
+        "height": 133.5
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "gtk terület",
+        "capacity": 500
+      }
+    },
+    {
+      "id": "mcc",
+      "name": "Mcc",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 673.9,
+        "y": 107.3,
+        "width": 188,
+        "height": 22.2
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "mcc terület",
+        "capacity": 500
+      }
+    },
+    {
+      "id": "borsodchem",
+      "name": "Borsodchem",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 741,
+        "y": 163.1,
+        "width": 119.5,
+        "height": 73.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "borsodchem terület",
         "capacity": 500
       }
     },

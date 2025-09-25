@@ -47,22 +47,204 @@
     },
 
     {
-      "id": "audience",
-      "name": "Nézőtér",
+      "id": "etk",
+      "name": "etk",
       "type": "rectangle",
       "coordinates": {
-        "x": 347.3,
-        "y": 598.6,
-        "width": 351.1,
-        "height": 429.5
+        "x": 685.8,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
       },
       "style": {
         "cssClass": "polygon"
       },
       "metadata": {
-        "description": "Nézőtér",
-        "capacity": 300
+        "description": "etk terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "iok",
+      "name": "iok",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 759.2,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "iok terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "avk",
+      "name": "avk",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 486.1,
+        "y": 280.2,
+        "width": 113.6,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "iok terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "mfk",
+      "name": "mfk",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 604,
+        "y": 280.2,
+        "width": 113.6,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "mfk terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "teleport",
+      "name": "Tele-POR-tálás Levegőminőség mérése",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 155.7,
+        "y": 190.2,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "teleport terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "ermenyomtatas",
+      "name": "Érmenyomtatás",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 155.7,
+        "y": 249.8,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "ermenyomtatas terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "larina",
+      "name": "Larina? Tesla? Tik-Tok? Tudomány?",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 591.3,
+        "y": 530.3,
+        "width": 113.4,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "ermenyomtatas terület",
+        "capacity": 1500
+      }
+    },
+
+    {
+      "id": "honvedseg",
+      "name": "Magyar Honvédség",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 420.5,
+        "y": 28.1,
+        "width": 363,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "ermenyomtatas terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "konf",
+      "name": "Konfuciusz intézet",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 860.7,
+        "y": 338.7,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "konf terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "briefcase",
+      "name": "Brief Case",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 485.1,
+        "y": 530.3,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "briefcase terület",
+        "capacity": 1500
+      }
+    },
+    {
+      "id": "alvilag",
+      "name": "Az alivlág romantikája",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 576.4,
+        "y": 787.5,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "briefcase terület",
+        "capacity": 1500
       }
     }
+
   ]
 }

@@ -31,3 +31,193 @@ rect {
   stroke-linejoin: round;
   z-index: 10;
 }
+
+/* Modern Navigation Buttons */
+.nav-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  width: 200px;
+}
+
+.nav-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  min-height: 60px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.nav-btn:hover::before {
+  left: 100%;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.nav-btn-icon {
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover .nav-btn-icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.nav-btn-img {
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Make the icon white */
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover .nav-btn-img {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.nav-btn-text {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.1;
+  opacity: 0.95;
+}
+
+/* Individual button colors */
+.nav-btn-map {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.nav-btn-hall {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.nav-btn-entrance {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.nav-btn-old {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.nav-btn-map:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+.nav-btn-hall:hover {
+  background: linear-gradient(135deg, #e081e9 0%, #e3455a 100%);
+}
+
+.nav-btn-entrance:hover {
+  background: linear-gradient(135deg, #3d9aec 0%, #00e0ec 100%);
+}
+
+.nav-btn-old:hover {
+  background: linear-gradient(135deg, #31d769 0%, #26e7c5 100%);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-buttons-grid {
+    grid-template-columns: 1fr;
+    width: 120px;
+  }
+  
+  .nav-btn {
+    min-height: 50px;
+    padding: 8px 6px;
+  }
+  
+  .nav-btn-icon {
+    font-size: 1rem;
+  }
+  
+  .nav-btn-img {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .nav-btn-text {
+    font-size: 0.65rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-buttons-grid {
+    grid-template-columns: repeat(4, 1fr);
+    width: 320px;
+  }
+  
+  .nav-btn {
+    min-height: 70px;
+    padding: 14px 10px;
+  }
+  
+  .nav-btn-icon {
+    font-size: 1.4rem;
+  }
+  
+  .nav-btn-img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  
+  .nav-btn-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Focus styles for accessibility */
+.nav-btn:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .nav-btn,
+  .nav-btn-icon,
+  .nav-btn::before {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .nav-btn:hover {
+    transform: none !important;
+  }
+  
+  .nav-btn:hover .nav-btn-icon {
+    transform: none !important;
+  }
+}

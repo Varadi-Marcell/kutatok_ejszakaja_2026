@@ -21,7 +21,7 @@ export interface InteractiveArea {
 }
 
 export interface PolygonCoordinates {
-  d: string; // SVG path data
+  d: string | string[]; // SVG path data - single string or array of strings
 }
 
 export interface RectangleCoordinates {

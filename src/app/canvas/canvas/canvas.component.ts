@@ -23,7 +23,7 @@ export class CanvasComponent implements AfterViewInit, OnInit {
 
   @ViewChild('scene') scene: ElementRef;
   @ViewChild('svgComponent') svgComponent: SvgElementComponent;
-  
+
   private instance: any;
   currentSvgConfig: SvgMapConfig | null = null;
   private isInitialized = false;
@@ -65,14 +65,7 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     const svgElement = document.querySelector('app-svg-element svg');
     const svgContainer = document.querySelector('app-svg-element .svg-container');
     const svgComponent = document.querySelector('app-svg-element');
-    
-    console.log('Panzoom inicializálás próbálkozás...');
-    console.log('SVG Component:', this.svgComponent);
-    console.log('Scene:', this.scene);
-    console.log('SVG Element (DOM):', svgElement);
-    console.log('SVG Container:', svgContainer);
-    console.log('SVG Component Element:', svgComponent);
-    
+
     let targetElement = null;
     let method = '';
 
@@ -103,7 +96,8 @@ export class CanvasComponent implements AfterViewInit, OnInit {
         this.instance = panzoom(targetElement as HTMLElement, {
           bounds: true,
           maxZoom: 3,
-          minZoom: 0.5,
+          minZoom: 0.4,
+          startScale: 1,
           boundsPadding: 0.1
         });
 
@@ -150,7 +144,7 @@ export class CanvasComponent implements AfterViewInit, OnInit {
       console.warn('Panzoom még nem inicializálódott');
       return;
     }
-    
+
     try {
       const currentZoomFactor = this.instance.getScale();
       const zoomFactor = currentZoomFactor + 0.1;
@@ -166,7 +160,7 @@ export class CanvasComponent implements AfterViewInit, OnInit {
       console.warn('Panzoom még nem inicializálódott');
       return;
     }
-    
+
     try {
       const currentZoomFactor = this.instance.getScale();
       const zoomFactor = Math.max(currentZoomFactor - 0.1, 0.1); // minimum zoom 0.1
@@ -179,19 +173,19 @@ export class CanvasComponent implements AfterViewInit, OnInit {
 
   onAreaClick(event: AreaClickEvent) {
     console.log('Terület kattintva:', event.area.name, event.area);
-    
+
     // Set popup data and show loading
     this.popupAreaName = event.area.name || event.area.id;
     this.isLoadingPrograms = true;
     this.showPopup = true;
     this.popupPrograms = [];
-    
+
     // Dinamikus JSON betöltés az area id alapján
     this.svgConfigService.loadAreaData(event.area.id).subscribe({
       next: (data) => {
         console.log(`${event.area.id.toUpperCase()} programok:`, data);
         console.log(`Összesen ${data.length} program található a ${event.area.id.toUpperCase()}-nél`);
-        
+
         this.popupPrograms = data;
         this.isLoadingPrograms = false;
       },

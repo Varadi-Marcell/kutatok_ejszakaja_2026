@@ -44,6 +44,17 @@ export class SvgElementComponent implements AfterViewInit {
     return area.type === 'polygon' ? area.coordinates as PolygonCoordinates : null;
   }
 
+  getPolygonPaths(area: InteractiveArea): string[] {
+    const coords = this.getPolygonCoordinates(area);
+    if (!coords) return [];
+    
+    if (Array.isArray(coords.d)) {
+      return coords.d;
+    } else {
+      return [coords.d];
+    }
+  }
+
   getRectangleCoordinates(area: InteractiveArea): RectangleCoordinates | null {
     return area.type === 'rectangle' ? area.coordinates as RectangleCoordinates : null;
   }

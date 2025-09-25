@@ -46,14 +46,16 @@
       (click)="handleAreaClick(area, $event)"
     >
       <!-- Polygon areas -->
-      <path 
-        *ngIf="area.type === 'polygon'"
-        [attr.d]="getPolygonCoordinates(area)?.d"
-        [attr.class]="area.style?.cssClass || 'polygon'"
-        [attr.fill]="area.style?.fillStyle || 'transparent'"
-        [attr.stroke]="area.style?.strokeStyle || 'transparent'"
-        [attr.stroke-width]="area.style?.strokeWidth || 0"
-      ></path>
+      <ng-container *ngIf="area.type === 'polygon'">
+        <path 
+          *ngFor="let pathData of getPolygonPaths(area)"
+          [attr.d]="pathData"
+          [attr.class]="area.style?.cssClass || 'polygon'"
+          [attr.fill]="area.style?.fillStyle || 'transparent'"
+          [attr.stroke]="area.style?.strokeStyle || 'transparent'"
+          [attr.stroke-width]="area.style?.strokeWidth || 0"
+        ></path>
+      </ng-container>
       
       <!-- Rectangle areas -->
       <rect
