@@ -14,9 +14,13 @@
           (areaClick)="onAreaClick($event)">
         </app-svg-element>
         <div class="p-lg-3 zoom-buttons button-group position-absolute top-0 start-0">
-          <div class="button-wrapper">
-            <button class="btn btn-secondary" (click)="zoomIn()">+</button>
-            <button class="btn btn-secondary" (click)="zoomOut()">-</button>
+          <div class="zoom-controls">
+            <button class="zoom-btn zoom-in-btn" (click)="zoomIn()" title="Nagyítás">
+              <i class="bi bi-zoom-in"></i>
+            </button>
+            <button class="zoom-btn zoom-out-btn" (click)="zoomOut()" title="Kicsinyítés">
+              <i class="bi bi-zoom-out"></i>
+            </button>
           </div>
           <div class="svg-selector mt-2">
             <div class="nav-buttons-grid">
@@ -25,9 +29,7 @@
                 <div class="nav-btn-text">Campus Térkép</div>
               </button>
               <button class="nav-btn nav-btn-entrance" (click)="loadElocsarnok()">
-                <div class="nav-btn-icon">
-                  <img src="https://diplomatszerzek.hu/miskolci-egyetem-nyilt-nap/" alt="Előcsarnok" class="nav-btn-img">
-                </div>
+                <div class="nav-btn-icon">🏢</div>
                 <div class="nav-btn-text">Előcsarnok</div>
               </button>
               <button class="nav-btn nav-btn-hall" (click)="loadDiszaula()">

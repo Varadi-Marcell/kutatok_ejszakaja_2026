@@ -122,10 +122,6 @@
       "name": "malyi",
       "type": "rectangle",
       "coordinates": {
-        "x": 801.8,
-        "y": 1018.2,
-        "width": 28.3,
-        "height": 56.7
       },
       "style": {
         "cssClass": "polygon"
