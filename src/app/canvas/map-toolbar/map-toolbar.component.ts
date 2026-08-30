@@ -104,20 +104,7 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
     this.selectResult(first, first.matchedPrograms.length > 0 ? first.matchedPrograms[0] : undefined);
   }
 
-  // ===== Megosztás / beállítások / kedvencek =====
-
-  // Megosztás: az oldal linkje a vágólapra
-  sharePage() {
-    const url = window.location.href;
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(url).then(
-        () => this.showToast('A link a vágólapra másolva!'),
-        () => this.showToast('A link: ' + url)
-      );
-    } else {
-      this.showToast('A link: ' + url);
-    }
-  }
+  // ===== Beállítások / kedvencek =====
 
   toggleSettings() {
     this.showSettingsMenu = !this.showSettingsMenu;
