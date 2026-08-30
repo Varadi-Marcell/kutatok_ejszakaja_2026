@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, forkJoin, of } from 'rxjs';
-import { catchError, map, shareReplay } from 'rxjs/operators';
+import { catchError, map, shareReplay, switchMap } from 'rxjs/operators';
 import { SvgMapConfig } from '../model/svg-map-config';
 import { ProgramEvent } from '../model/program-event';
+import { SvgConfigService } from './svg-config.service';
 
 // Egy épület (terület) összes programja
 export interface ProgramGroup {
@@ -14,6 +15,8 @@ export interface ProgramGroup {
 
 // Keresési találati csoport
 export interface SearchResultGroup extends ProgramGroup {
+  mapId: string;
+  mapName: string;
   matchedPrograms: ProgramEvent[];
   areaMatches: boolean;
 }
@@ -29,8 +32,13 @@ export class ProgramSearchService {
 
   // Kész keresési indexek cache-elve térkép azonosító szerint
   private indexCache = new Map<string, Observable<ProgramGroup[]>>();
+  // Minden térkép konfigurációjának cache-e
+  private allConfigs$: Observable<SvgMapConfig[]> | null = null;
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private svgConfigService: SvgConfigService
+  ) { }
 
   /**
    * Betölti (és cache-eli) az adott térkép programjait, területenként csoportosítva.
@@ -70,26 +78,80 @@ export class ProgramSearchService {
   }
 
   /**
-   * Keresés a programok és területek között.
-   * Ékezet- és kisbetű-nagybetű független egyezést használ.
+   * Minden térkép konfigurációjának betöltése (cache-elve).
    */
-  searchPrograms(query: string, config: SvgMapConfig): Observable<SearchResultGroup[]> {
+  getAllConfigs(): Observable<SvgMapConfig[]> {
+    if (!this.allConfigs$) {
+      this.allConfigs$ = forkJoin([
+        this.svgConfigService.loadNagyterkepConfig(),
+        this.svgConfigService.loadElocsarnokConfig(),
+        this.svgConfigService.loadDiszaulaConfig(),
+        this.svgConfigService.loadRegiAulaConfig()
+      ]).pipe(shareReplay(1));
+    }
+    return this.allConfigs$;
+  }
+
+  /**
+   * Keresés az ÖSSZES térkép programjai és területei között.
+   * Ékezet- és kisbetű-nagybetű független egyezést használ.
+   * Az aktuális térkép találatai kerülnek a lista elejére.
+   */
+  searchAllMaps(query: string, currentMapId?: string): Observable<SearchResultGroup[]> {
     const q = this.normalize(query).trim();
-    if (!q || !config) {
+    if (!q) {
       return of([]);
     }
 
-    return this.getProgramIndex(config).pipe(
-      map(groups =>
-        groups
-          .map(group => {
-            const matchedPrograms = group.programs.filter(program => this.programMatches(program, q));
-            const areaMatches =
-              this.normalize(group.areaName).includes(q) ||
-              this.normalize(group.areaId).includes(q);
-            return { ...group, matchedPrograms, areaMatches };
+    return this.getAllConfigs().pipe(
+      switchMap(configs =>
+        forkJoin(
+          configs.map(config =>
+            this.getProgramIndex(config).pipe(
+              map(groups =>
+                groups
+                  .map(group => {
+                    const matchedPrograms = group.programs.filter(program => this.programMatches(program, q));
+                    const areaMatches =
+                      this.normalize(group.areaName).includes(q) ||
+                      this.normalize(group.areaId).includes(q);
+                    return {
+                      ...group,
+                      mapId: config.id,
+                      mapName: config.name,
+                      matchedPrograms,
+                      areaMatches
+                    };
+                  })
+                  .filter(result => result.areaMatches || result.matchedPrograms.length > 0)
+              )
+            )
+          )
+        ).pipe(
+          map(resultsByMap => {
+            const flat: SearchResultGroup[] = ([] as SearchResultGroup[]).concat(...resultsByMap);
+
+            // Ha egy épületnek dedikált beltéri térképe is van (Előcsarnok,
+            // Díszaula, Régi Aula), a találat arra a térképre mutasson -
+            // a campus térképen ugyanis csak az épület "külseje" kattintható
+            const configsById = new Map(configs.map(c => [c.id, c] as [string, SvgMapConfig]));
+            for (const result of flat) {
+              const dedicated = configsById.get(result.areaId);
+              if (dedicated && result.mapId !== dedicated.id) {
+                result.mapId = dedicated.id;
+                result.mapName = dedicated.name;
+              }
+            }
+
+            if (currentMapId) {
+              // Az aktuális térkép találati csoportjai az elejére kerülnek
+              flat.sort((a, b) =>
+                (a.mapId === currentMapId ? 0 : 1) - (b.mapId === currentMapId ? 0 : 1)
+              );
+            }
+            return flat;
           })
-          .filter(result => result.areaMatches || result.matchedPrograms.length > 0)
+        )
       )
     );
   }

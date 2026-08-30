@@ -33,6 +33,7 @@
           <div class="result-group-header" (click)="selectResult(group)">
             <i class="bi bi-geo-alt-fill group-icon"></i>
             <span class="result-area-name">{{ group.areaName }}</span>
+            <span class="map-badge" *ngIf="group.mapId !== currentMapId">{{ group.mapName }}</span>
             <span class="result-count" *ngIf="group.matchedPrograms.length === 0">
               {{ group.programs.length }} {{ language === 'en' ? 'programs' : 'program' }}
             </span>

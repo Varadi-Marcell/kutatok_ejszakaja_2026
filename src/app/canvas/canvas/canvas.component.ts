@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild, OnInit } from '@angular/core';
 import panzoom from "@panzoom/panzoom";
+import { Observable } from "rxjs";
 import { SvgElementComponent } from "../svg-element/svg-element.component";
 import { SvgConfigService } from "../../services/svg-config.service";
 import { SvgMapConfig, AreaClickEvent, InteractiveArea } from "../../model/svg-map-config";
@@ -39,6 +40,8 @@ export class CanvasComponent implements AfterViewInit, OnInit {
   language: 'hu' | 'en' = 'hu';
   selectedProgramName: string | null = null;
   private highlightTimeout: any = null;
+  // Térképváltás után feldolgozásra váró keresési kiválasztás
+  private pendingSelection: { mapId: string; areaId: string; areaName?: string; program?: ProgramEvent } | null = null;
 
   constructor(private svgConfigService: SvgConfigService) {
   }
@@ -212,8 +215,8 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     this.popupPrograms = [];
     this.selectedProgramName = selectedProgram?.name || null;
 
-    // Check if we're on nagyterkep_jo.svg
-    const isNagyterkep = this.currentSvgConfig?.svgPath === 'assets/nagyterkep_jo.svg';
+    // Check if we're on the campus map (nagyterkep)
+    const isNagyterkep = this.currentSvgConfig?.id === 'nagyterkep';
 
     if (isNagyterkep) {
       // For nagyterkep_jo.svg, load building.json and use area.id as building key
@@ -256,21 +259,68 @@ export class CanvasComponent implements AfterViewInit, OnInit {
 
   // ===== Keresés események (map-toolbar) =====
 
-  // Keresési találat kiválasztása: rázoomolás + kiemelés + program popup
-  onSearchAreaSelected(payload: { areaId: string; program?: ProgramEvent }) {
-    if (!this.currentSvgConfig) return;
+  // Keresési találat kiválasztása: szükség esetén térképváltás,
+  // majd rázoomolás + kiemelés + program popup
+  onSearchAreaSelected(payload: { mapId: string; areaId: string; areaName?: string; program?: ProgramEvent }) {
+    const activeId = this.currentSvgConfig?.id || null;
 
-    const area = this.currentSvgConfig.interactiveAreas.find(a => a.id === payload.areaId);
-    if (!area) {
-      console.warn('Keresési találat területe nem található:', payload.areaId);
+    // Ha a találat egy másik térképen van, előbb arra váltunk;
+    // a kiválasztás a betöltés után fut le (processPendingSelection)
+    if (payload.mapId && activeId && payload.mapId !== activeId) {
+      this.pendingSelection = payload;
+      this.loadMap(payload.mapId);
       return;
     }
 
-    this.highlightArea(area.id);
-    this.focusArea(area);
+    this.applyAreaSelection(payload.areaId, payload.program, payload.areaName);
+  }
 
-    // Program popup megnyitása (ugyanaz, mintha a területre kattintottak volna)
-    this.openAreaPrograms(area, payload.program);
+  // A kiválasztás alkalmazása: kiemelés + rázoomolás + popup
+  private applyAreaSelection(areaId: string, program?: ProgramEvent, areaName?: string) {
+    if (!this.currentSvgConfig) return;
+
+    const area = this.currentSvgConfig.interactiveAreas.find(a => a.id === areaId);
+    if (area) {
+      this.highlightArea(area.id);
+      this.focusArea(area);
+
+      // Program popup megnyitása (ugyanaz, mintha a területre kattintottak volna)
+      this.openAreaPrograms(area, program);
+      return;
+    }
+
+    // Az új térképen nincs ilyen terület (pl. az épület kattintható része csak
+    // a campus térképen létezik) - popup nyitás az épület programjaival
+    console.warn('A terület nem található a térképen, popup nyitás az épület adataival:', areaId);
+    this.popupAreaName = areaName || areaId;
+    this.isLoadingPrograms = true;
+    this.showPopup = true;
+    this.popupPrograms = [];
+    this.selectedProgramName = program?.name || null;
+
+    this.svgConfigService.loadBuildingData(areaId).subscribe({
+      next: (data) => {
+        this.popupPrograms = data;
+        this.isLoadingPrograms = false;
+      },
+      error: (error) => {
+        console.error('Hiba az épület programjainak betöltésekor:', error);
+        this.isLoadingPrograms = false;
+        this.showPopup = false;
+      }
+    });
+  }
+
+  // Térképváltás után függőben lévő keresési kiválasztás feldolgozása
+  private processPendingSelection() {
+    if (!this.pendingSelection || !this.currentSvgConfig) return;
+    if (this.pendingSelection.mapId !== this.currentSvgConfig.id) return;
+
+    const pending = this.pendingSelection;
+    this.pendingSelection = null;
+
+    // Rövid várakozás, hogy a Panzoom újrainicializálódjon
+    setTimeout(() => this.applyAreaSelection(pending.areaId, pending.program, pending.areaName), 400);
   }
 
   // Terület kiemelése néhány másodpercre
@@ -335,53 +385,32 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     this.isLoadingPrograms = false;
   }
 
-  // Különböző SVG konfigurációk betöltése
-  loadNagyterkep() {
+  // Különböző SVG konfigurációk betöltése térkép azonosító szerint
+  loadMap(mapId: string) {
     this.resetPanzoom();
-    this.svgConfigService.loadNagyterkepConfig().subscribe({
-      next: (config) => {
-        this.currentSvgConfig = config;
-        this.reinitializePanzoom();
-      },
-      error: (error) => {
-        console.error('Hiba a konfiguráció betöltésekor:', error);
-      }
-    });
-  }
 
-  // További SVG-k betöltésére szolgáló metódusok később implementálhatók
-  loadDiszaula() {
-    this.resetPanzoom();
-    this.svgConfigService.loadDiszaulaConfig().subscribe({
-      next: (config) => {
-        this.currentSvgConfig = config;
-        this.reinitializePanzoom();
-      },
-      error: (error) => {
-        console.error('Hiba a konfiguráció betöltésekor:', error);
-      }
-    });
-  }
+    let config$: Observable<SvgMapConfig>;
+    switch (mapId) {
+      case 'elocsarnok':
+        config$ = this.svgConfigService.loadElocsarnokConfig();
+        break;
+      case 'diszaula':
+        config$ = this.svgConfigService.loadDiszaulaConfig();
+        break;
+      case 'regi_aula':
+        config$ = this.svgConfigService.loadRegiAulaConfig();
+        break;
+      case 'nagyterkep':
+      default:
+        config$ = this.svgConfigService.loadNagyterkepConfig();
+        break;
+    }
 
-  loadElocsarnok() {
-    this.resetPanzoom();
-    this.svgConfigService.loadElocsarnokConfig().subscribe({
+    config$.subscribe({
       next: (config) => {
         this.currentSvgConfig = config;
         this.reinitializePanzoom();
-      },
-      error: (error) => {
-        console.error('Hiba a konfiguráció betöltésekor:', error);
-      }
-    });
-  }
-
-  loadRegiAula() {
-    this.resetPanzoom();
-    this.svgConfigService.loadRegiAulaConfig().subscribe({
-      next: (config) => {
-        this.currentSvgConfig = config;
-        this.reinitializePanzoom();
+        this.processPendingSelection();
       },
       error: (error) => {
         console.error('Hiba a konfiguráció betöltésekor:', error);

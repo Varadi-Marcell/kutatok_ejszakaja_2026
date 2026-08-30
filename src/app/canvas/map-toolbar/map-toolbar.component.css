@@ -130,6 +130,17 @@
   font-size: 0.78rem;
 }
 
+/* Térkép jelvény: melyik térképen található a találat */
+.map-badge {
+  background: #eef2f7;
+  color: #1a2e4a;
+  border-radius: 10px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
 .fav-toggle {
   border: none;
   background: transparent;

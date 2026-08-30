@@ -1,7 +1,6 @@
 import { Component, EventEmitter, HostListener, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged, of, switchMap, tap } from 'rxjs';
-import { SvgMapConfig } from '../../model/svg-map-config';
 import { ProgramEvent } from '../../model/program-event';
 import { ProgramSearchService, SearchResultGroup } from '../../services/program-search.service';
 
@@ -9,6 +8,7 @@ import { ProgramSearchService, SearchResultGroup } from '../../services/program-
 interface FavoriteEntry {
   areaId: string;
   areaName: string;
+  mapId?: string;
 }
 
 @Component({
@@ -18,12 +18,12 @@ interface FavoriteEntry {
 })
 export class MapToolbarComponent implements OnInit, OnDestroy {
 
-  // Az aktív térkép konfigurációja (a keresés ehhez tartozó programokat indexeli)
-  @Input() config: SvgMapConfig | null = null;
+  // Az aktív térkép azonosítója (a találati listában ez kerül az elejére)
+  @Input() currentMapId: string | null = null;
   @Input() language: 'hu' | 'en' = 'hu';
 
   // Terület kiválasztása (keresési találat vagy kedvenc), nyelvváltás
-  @Output() areaSelected = new EventEmitter<{ areaId: string; program?: ProgramEvent }>();
+  @Output() areaSelected = new EventEmitter<{ mapId: string; areaId: string; areaName?: string; program?: ProgramEvent }>();
   @Output() languageChanged = new EventEmitter<'hu' | 'en'>();
 
   searchQuery: string = '';
@@ -51,10 +51,10 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
       distinctUntilChanged(),
       tap(() => { this.isSearching = this.searchQuery.trim().length > 0; }),
       switchMap(query => {
-        if (!query.trim() || !this.config) {
+        if (!query.trim()) {
           return of([]);
         }
-        return this.programSearchService.searchPrograms(query, this.config);
+        return this.programSearchService.searchAllMaps(query, this.currentMapId || undefined);
       })
     ).subscribe(results => {
       this.results = results;
@@ -89,9 +89,14 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
     this.isSearching = false;
   }
 
-  // Találat kiválasztása: szülő komponens rázoomol + popupot nyit
+  // Találat kiválasztása: szülő komponens térképvált + rázoomol + popupot nyit
   selectResult(group: SearchResultGroup, program?: ProgramEvent) {
-    this.areaSelected.emit({ areaId: group.areaId, program: program });
+    this.areaSelected.emit({
+      mapId: group.mapId,
+      areaId: group.areaId,
+      areaName: group.areaName,
+      program: program
+    });
     this.showResults = false;
   }
 
@@ -132,7 +137,7 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
       this.favorites = this.favorites.filter(f => f.areaId !== group.areaId);
       this.showToast('Eltávolítva a kedvencekből');
     } else {
-      this.favorites.push({ areaId: group.areaId, areaName: group.areaName });
+      this.favorites.push({ areaId: group.areaId, areaName: group.areaName, mapId: group.mapId });
       this.showToast('Hozzáadva a kedvencekhez');
     }
     this.saveFavorites();
@@ -144,7 +149,11 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
   }
 
   selectFavorite(favorite: FavoriteEntry) {
-    this.areaSelected.emit({ areaId: favorite.areaId });
+    this.areaSelected.emit({
+      mapId: favorite.mapId || this.currentMapId || '',
+      areaId: favorite.areaId,
+      areaName: favorite.areaName
+    });
     this.showFavoritesMenu = false;
   }
 
