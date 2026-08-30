@@ -1,14 +1,2 @@
 /* App component styles */
-.container-fluid {
-  padding: 0;
-}
-
-main {
-  min-height: calc(100vh - 120px);
-}
-
-@media (max-width: 768px) {
-  main {
-    padding: 10px;
-  }
-}
+/* A térkép teljes képernyőt kitölt, itt nincs szükség extra keretekre */

@@ -34,55 +34,38 @@ rect {
 
 /* Modern Navigation Buttons */
 .nav-buttons-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 8px;
-  width: 200px;
+  width: auto;
 }
 
 .nav-btn {
-  background: linear-gradient(135deg, #1859f0 0%, #0d47a1 100%);
+  background: #1a2e4a;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 12px 8px;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: background 0.15s ease, transform 0.15s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  box-shadow: 0 4px 15px rgba(24, 89, 240, 0.3);
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   min-height: 60px;
   font-size: 0.75rem;
   font-weight: 500;
 }
 
-.nav-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
-}
-
-.nav-btn:hover::before {
-  left: 100%;
-}
-
 .nav-btn:hover {
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(24, 89, 240, 0.4);
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  background: #27405f;
+  transform: translateY(-1px);
 }
 
 .nav-btn:active {
-  transform: translateY(0) scale(0.98);
+  transform: translateY(0);
 }
 
 .nav-btn-icon {
@@ -91,20 +74,12 @@ rect {
   transition: transform 0.3s ease;
 }
 
-.nav-btn:hover .nav-btn-icon {
-  transform: scale(1.2) rotate(5deg);
-}
-
 .nav-btn-img {
   width: 1.2rem;
   height: 1.2rem;
   object-fit: contain;
   filter: brightness(0) invert(1); /* Make the icon white */
   transition: transform 0.3s ease;
-}
-
-.nav-btn:hover .nav-btn-img {
-  transform: scale(1.2) rotate(5deg);
 }
 
 .nav-btn-text {
@@ -119,9 +94,12 @@ rect {
 /* Responsive design */
 @media (max-width: 768px) {
   .nav-buttons-grid {
-    grid-template-columns: 1fr;
-    width: 120px;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: auto;
+}
   
   .nav-btn {
     min-height: 50px;
@@ -144,9 +122,12 @@ rect {
 
 @media (min-width: 1200px) {
   .nav-buttons-grid {
-    grid-template-columns: repeat(4, 1fr);
-    width: 320px;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: auto;
+}
   
   .nav-btn {
     min-height: 70px;
@@ -283,4 +264,83 @@ rect {
   .zoom-btn:hover .zoom-icon {
     transform: none !important;
   }
+}
+
+/* ===== Oxford Maps stílusú felület ===== */
+
+/* Felső eszköztár (kereső + gombok) konténere */
+.top-left-stack {
+  z-index: 1100;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Zoom gombok – jobb oldali fehér pill (Oxford stílus) */
+.zoom-pill {
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1100;
+}
+
+.zoom-pill-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #ffffff;
+  color: #1a2e4a;
+  font-size: 1.15rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.zoom-pill-btn:hover {
+  background: #f0f2f5;
+}
+
+.zoom-pill-btn:active {
+  background: #e2e6ea;
+}
+
+.zoom-pill-divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0 6px;
+}
+
+/* Térkép váltó gombok – bal alsó sarok */
+@media (max-width: 768px) {
+  .zoom-pill-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* ===== Teljes képernyős térkép ===== */
+
+/* A scene kitölti a teljes viewportot */
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* A SVG komponens kitölti a scene-t */
+app-svg-element {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

@@ -10,6 +10,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Teljes képernyős térkép: nincs görgetés, az app kitölti a viewportot */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+app-root {
+  display: block;
+  height: 100%;
+}
+
 .scene {
   overflow: hidden;
   position: relative;

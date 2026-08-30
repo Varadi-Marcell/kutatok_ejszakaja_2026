@@ -44,13 +44,13 @@
       <!-- Polygon areas -->
       <g 
         *ngIf="area.type === 'polygon'"
-        [attr.class]="'interactive-area polygon-group'"
+        [attr.class]="getGroupClass(area)"
         (click)="handleAreaClick(area, $event)"
       >
         <path 
           *ngFor="let pathData of getPolygonPaths(area)"
           [attr.d]="pathData"
-          [attr.class]="area.style?.cssClass || 'polygon'"
+          [attr.class]="getPathClass(area)"
           [attr.fill]="area.style?.fillStyle || 'transparent'"
           [attr.stroke]="area.style?.strokeStyle || 'transparent'"
           [attr.stroke-width]="area.style?.strokeWidth || 0"
@@ -60,7 +60,7 @@
       <!-- Rectangle areas -->
       <rect
         *ngIf="area.type === 'rectangle'"
-        [attr.class]="'interactive-area ' + (area.style?.cssClass || 'polygon')"
+        [attr.class]="getRectClass(area)"
         [attr.x]="getRectangleCoordinates(area)?.x"
         [attr.y]="getRectangleCoordinates(area)?.y"
         [attr.width]="getRectangleCoordinates(area)?.width"
@@ -75,7 +75,7 @@
       <!-- Circle areas -->
       <circle
         *ngIf="area.type === 'circle'"
-        [attr.class]="'interactive-area'"
+        [attr.class]="getCircleClass(area)"
         [attr.cx]="getCircleCoordinates(area)?.cx"
         [attr.cy]="getCircleCoordinates(area)?.cy"
         [attr.r]="getCircleCoordinates(area)?.r"

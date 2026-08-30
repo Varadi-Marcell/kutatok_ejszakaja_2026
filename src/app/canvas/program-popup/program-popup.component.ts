@@ -10,6 +10,12 @@ export class ProgramPopupComponent implements OnInit {
   @Input() programs: ProgramEvent[] = [];
   @Input() areaName: string = '';
   @Input() isVisible: boolean = false;
+  // Nyelv kívülről (térkép eszköztárból) állítható
+  @Input() set language(value: 'hu' | 'en') {
+    this.isEnglish = value === 'en';
+  }
+  // Kereséssel kiválasztott program neve (kiemeléshez)
+  @Input() selectedProgramName: string | null = null;
   @Output() close = new EventEmitter<void>();
 
   @ViewChild('popupContent', { static: false }) popupContent!: ElementRef;

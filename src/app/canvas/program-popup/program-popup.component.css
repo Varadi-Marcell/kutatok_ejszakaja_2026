@@ -643,3 +643,10 @@
   outline: 2px solid #2563eb;
   outline-offset: 2px;
 }
+
+/* ===== Kereséssel kiválasztott program kiemelése ===== */
+.program-card.selected {
+  border: 2px solid #ffc400;
+  background: #fffbea;
+  box-shadow: 0 4px 16px rgba(255, 196, 0, 0.35);
+}

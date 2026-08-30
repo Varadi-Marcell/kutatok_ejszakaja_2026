@@ -1,8 +1,8 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, ViewChild, OnInit } from '@angular/core';
 import panzoom from "@panzoom/panzoom";
 import { SvgElementComponent } from "../svg-element/svg-element.component";
 import { SvgConfigService } from "../../services/svg-config.service";
-import { SvgMapConfig, AreaClickEvent } from "../../model/svg-map-config";
+import { SvgMapConfig, AreaClickEvent, InteractiveArea } from "../../model/svg-map-config";
 import { ProgramEvent } from "../../model/program-event";
 
 interface Polygon {
@@ -33,6 +33,12 @@ export class CanvasComponent implements AfterViewInit, OnInit {
   popupPrograms: ProgramEvent[] = [];
   popupAreaName: string = '';
   isLoadingPrograms: boolean = false;
+
+  // Keresés / térkép UI állapot
+  highlightedAreaId: string | null = null;
+  language: 'hu' | 'en' = 'hu';
+  selectedProgramName: string | null = null;
+  private highlightTimeout: any = null;
 
   constructor(private svgConfigService: SvgConfigService) {
   }
@@ -97,11 +103,12 @@ export class CanvasComponent implements AfterViewInit, OnInit {
           bounds: true,
           maxZoom: 3,
           minZoom: 0.4,
-          startScale: 0.6,
+          // Auto-fit: az egész térkép látszódjon (a SVG preserveAspectRatio="meet"
+          // beállítása a böngészőben középre igazítja és betölti a teljes nézetbe)
+          startScale: 1,
           boundsPadding: 0.1,
           startX: 0,
-          startY: -570
-
+          startY: 0
         });
 
         this.scene.nativeElement.addEventListener('wheel', (e: WheelEvent) => {
@@ -158,6 +165,23 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     }
   }
 
+  // Teljes térkép láthatóvá tétele (auto-fit): alap zoom és középre igazítás
+  fitToView() {
+    if (!this.instance) return;
+    try {
+      this.instance.zoom(1);
+      this.instance.pan(0, 0);
+    } catch (error) {
+      console.error('Hiba a térkép illesztésekor:', error);
+    }
+  }
+
+  // Ablak átméretezésekor újra illesztjük a térképet a képernyőre
+  @HostListener('window:resize')
+  onResize() {
+    this.fitToView();
+  }
+
   zoomOut() {
     if (!this.instance) {
       console.warn('Panzoom még nem inicializálódott');
@@ -176,53 +200,132 @@ export class CanvasComponent implements AfterViewInit, OnInit {
 
   onAreaClick(event: AreaClickEvent) {
     console.log('Terület kattintva:', event.area.name, event.area);
+    this.openAreaPrograms(event.area);
+  }
 
+  // Programok megnyitása egy területhez (kattintás VAGY keresési találat alapján)
+  openAreaPrograms(area: InteractiveArea, selectedProgram?: ProgramEvent) {
     // Set popup data and show loading
-    this.popupAreaName = event.area.name || event.area.id;
+    this.popupAreaName = area.name || area.id;
     this.isLoadingPrograms = true;
     this.showPopup = true;
     this.popupPrograms = [];
+    this.selectedProgramName = selectedProgram?.name || null;
 
     // Check if we're on nagyterkep_jo.svg
     const isNagyterkep = this.currentSvgConfig?.svgPath === 'assets/nagyterkep_jo.svg';
-    
+
     if (isNagyterkep) {
       // For nagyterkep_jo.svg, load building.json and use area.id as building key
-      this.svgConfigService.loadBuildingData(event.area.id).subscribe({
+      this.svgConfigService.loadBuildingData(area.id).subscribe({
         next: (data) => {
-          console.log(`${event.area.id.toUpperCase()} programok (building.json-ből):`, data);
-          console.log(`Összesen ${data.length} program található a ${event.area.id.toUpperCase()}-nél`);
+          console.log(`${area.id.toUpperCase()} programok (building.json-ből):`, data);
+          console.log(`Összesen ${data.length} program található a ${area.id.toUpperCase()}-nél`);
 
           this.popupPrograms = data;
           this.isLoadingPrograms = false;
         },
         error: (error) => {
-          console.error(`Hiba a ${event.area.id} adatok betöltésekor (building.json):`, error);
+          console.error(`Hiba a ${area.id} adatok betöltésekor (building.json):`, error);
           this.isLoadingPrograms = false;
           this.showPopup = false;
           // Fallback: eredeti alert ha nincs adat
-          alert(`${event.area.name} (${event.area.id}) területre kattintottál!`);
+          alert(`${area.name} (${area.id}) területre kattintottál!`);
         }
       });
     } else {
       // For other SVGs, use the original logic
-      this.svgConfigService.loadAreaData(event.area.id).subscribe({
+      this.svgConfigService.loadAreaData(area.id).subscribe({
         next: (data) => {
-          console.log(`${event.area.id.toUpperCase()} programok:`, data);
-          console.log(`Összesen ${data.length} program található a ${event.area.id.toUpperCase()}-nél`);
+          console.log(`${area.id.toUpperCase()} programok:`, data);
+          console.log(`Összesen ${data.length} program található a ${area.id.toUpperCase()}-nél`);
 
           this.popupPrograms = data;
           this.isLoadingPrograms = false;
         },
         error: (error) => {
-          console.error(`Hiba a ${event.area.id} adatok betöltésekor:`, error);
+          console.error(`Hiba a ${area.id} adatok betöltésekor:`, error);
           this.isLoadingPrograms = false;
           this.showPopup = false;
           // Fallback: eredeti alert ha nincs JSON fájl
-          alert(`${event.area.name} (${event.area.id}) területre kattintottál!`);
+          alert(`${area.name} (${area.id}) területre kattintottál!`);
         }
       });
     }
+  }
+
+  // ===== Keresés események (map-toolbar) =====
+
+  // Keresési találat kiválasztása: rázoomolás + kiemelés + program popup
+  onSearchAreaSelected(payload: { areaId: string; program?: ProgramEvent }) {
+    if (!this.currentSvgConfig) return;
+
+    const area = this.currentSvgConfig.interactiveAreas.find(a => a.id === payload.areaId);
+    if (!area) {
+      console.warn('Keresési találat területe nem található:', payload.areaId);
+      return;
+    }
+
+    this.highlightArea(area.id);
+    this.focusArea(area);
+
+    // Program popup megnyitása (ugyanaz, mintha a területre kattintottak volna)
+    this.openAreaPrograms(area, payload.program);
+  }
+
+  // Terület kiemelése néhány másodpercre
+  highlightArea(areaId: string) {
+    this.highlightedAreaId = areaId;
+    if (this.highlightTimeout) {
+      clearTimeout(this.highlightTimeout);
+    }
+    this.highlightTimeout = setTimeout(() => {
+      this.highlightedAreaId = null;
+    }, 6000);
+  }
+
+  // Terület középre igazítása enyhe rázoomolással
+  focusArea(area: InteractiveArea) {
+    if (!this.instance) {
+      console.warn('Panzoom még nem inicializálódott, nem lehet rázoomolni');
+      return;
+    }
+
+    const center = this.svgComponent?.getAreaCenter(area);
+    const svgEl = document.querySelector('app-svg-element svg') as SVGSVGElement | null;
+    if (!center || !svgEl) {
+      console.warn('A terület középpontja nem számítható ki:', area.id);
+      return;
+    }
+
+    try {
+      // SVG koordináta -> képernyő koordináta átváltás
+      const ctm = svgEl.getScreenCTM();
+      if (!ctm) return;
+      const pt = svgEl.createSVGPoint();
+      pt.x = center.x;
+      pt.y = center.y;
+      const screenPt = pt.matrixTransform(ctm);
+
+      // Enyhe rázoomolás a terület pontjára (a pont helyben marad a zoom alatt)
+      const currentScale = this.instance.getScale();
+      const targetScale = Math.max(currentScale, 1.5);
+      this.instance.zoomToPoint(targetScale, { clientX: screenPt.x, clientY: screenPt.y });
+
+      // A terület középre igazítása animált pan-nal
+      const sceneRect = this.scene.nativeElement.getBoundingClientRect();
+      const dx = sceneRect.left + sceneRect.width / 2 - screenPt.x;
+      const dy = sceneRect.top + sceneRect.height / 2 - screenPt.y;
+      const pan = this.instance.getPan();
+      this.instance.pan(pan.x + dx, pan.y + dy, { animate: true });
+    } catch (error) {
+      console.error('Hiba a területre fókuszálás során:', error);
+    }
+  }
+
+  // Nyelvváltás az eszköztárból
+  onLanguageChanged(lang: 'hu' | 'en') {
+    this.language = lang;
   }
 
   onClosePopup() {

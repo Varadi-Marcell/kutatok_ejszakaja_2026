@@ -1,50 +1,54 @@
 <!--<canvas #myCanvas width="4997" height="4615"></canvas>-->
 <!--<img #mapImage  src="assets/nagyterkep_jo2_kisebb.svg" style="display:none;" />-->
-<div class="container-fluid " style="border: 1px solid gray; border-top: 1px solid gray;">
+<div #scene class="scene">
 
-  <div class="row justify-content-center ">
-    <div class="col">
-      <div #scene class="scene position-relative">
+  <app-svg-element
+    #svgComponent
+    class="img-fluid"
+    [config]="currentSvgConfig"
+    [highlightedAreaId]="highlightedAreaId"
+    (areaClick)="onAreaClick($event)">
+  </app-svg-element>
 
-        <app-svg-element
-          #svgComponent
-          class="img-fluid mx-auto d-block"
-          style="max-height: 90vh; object-fit: contain;"
-          [config]="currentSvgConfig"
-          (areaClick)="onAreaClick($event)">
-        </app-svg-element>
-        <div class="p-lg-3 zoom-buttons button-group position-absolute top-0 start-0">
-          <div class="zoom-controls">
-            <button class="zoom-btn zoom-in-btn" (click)="zoomIn()" title="Nagyítás">
-              <i class="bi bi-zoom-in"></i>
-            </button>
-            <button class="zoom-btn zoom-out-btn" (click)="zoomOut()" title="Kicsinyítés">
-              <i class="bi bi-zoom-out"></i>
-            </button>
-          </div>
-          <div class="svg-selector mt-2">
-            <div class="nav-buttons-grid">
-              <button class="nav-btn nav-btn-map" (click)="loadNagyterkep()">
-                <div class="nav-btn-icon">🗺️</div>
-                <div class="nav-btn-text">Campus Térkép</div>
-              </button>
-              <button class="nav-btn nav-btn-entrance" (click)="loadElocsarnok()">
-                <div class="nav-btn-icon">🏢</div>
-                <div class="nav-btn-text">Előcsarnok</div>
-              </button>
-              <button class="nav-btn nav-btn-hall" (click)="loadDiszaula()">
-                <div class="nav-btn-icon">🏛️</div>
-                <div class="nav-btn-text">Díszaula</div>
-              </button>
-              <button class="nav-btn nav-btn-old" (click)="loadRegiAula()">
-                <div class="nav-btn-icon">📚</div>
-                <div class="nav-btn-text">Régi Aula</div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Bal felső blokk: Oxford stílusú eszköztár (kereső + gombok) + épület gombok alatta -->
+  <div class="top-left-stack position-absolute top-0 start-0">
+    <app-map-toolbar
+      [config]="currentSvgConfig"
+      [language]="language"
+      (areaSelected)="onSearchAreaSelected($event)"
+      (languageChanged)="onLanguageChanged($event)">
+    </app-map-toolbar>
+
+    <!-- Térkép váltó gombok – a kereső alatt -->
+    <div class="nav-buttons-grid">
+      <button class="nav-btn nav-btn-map" (click)="loadNagyterkep()">
+        <div class="nav-btn-icon">🗺️</div>
+        <div class="nav-btn-text">Campus Térkép</div>
+      </button>
+      <button class="nav-btn nav-btn-entrance" (click)="loadElocsarnok()">
+        <div class="nav-btn-icon">🏢</div>
+        <div class="nav-btn-text">Előcsarnok</div>
+      </button>
+      <button class="nav-btn nav-btn-hall" (click)="loadDiszaula()">
+        <div class="nav-btn-icon">🏛️</div>
+        <div class="nav-btn-text">Díszaula</div>
+      </button>
+      <button class="nav-btn nav-btn-old" (click)="loadRegiAula()">
+        <div class="nav-btn-icon">📚</div>
+        <div class="nav-btn-text">Régi Aula</div>
+      </button>
     </div>
+  </div>
+
+  <!-- Zoom kontárok – jobb oldali fehér pill (Oxford stílus) -->
+  <div class="zoom-pill position-absolute">
+    <button class="zoom-pill-btn" (click)="zoomIn()" title="Nagyítás">
+      <i class="bi bi-plus-lg"></i>
+    </button>
+    <div class="zoom-pill-divider"></div>
+    <button class="zoom-pill-btn" (click)="zoomOut()" title="Kicsinyítés">
+      <i class="bi bi-dash-lg"></i>
+    </button>
   </div>
 </div>
 
@@ -53,5 +57,7 @@
   [programs]="popupPrograms"
   [areaName]="popupAreaName"
   [isVisible]="showPopup"
+  [language]="language"
+  [selectedProgramName]="selectedProgramName"
   (close)="onClosePopup()">
 </app-program-popup>
