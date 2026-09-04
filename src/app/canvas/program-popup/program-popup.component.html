@@ -13,16 +13,16 @@
     <!-- Header -->
     <div class="popup-header">
       <h2 class="popup-title">
-        <span class="header-icon">🎓</span>
+        <i class="bi bi-mortarboard header-icon"></i>
         {{ areaName.toUpperCase() }} {{ isEnglish ? 'Programs' : 'Programok' }}
       </h2>
       <div class="header-controls">
         <button class="lang-toggle-btn" (click)="toggleLanguage()" [attr.aria-label]="isEnglish ? 'Switch to Hungarian' : 'Switch to English'">
-          <span class="lang-flag">{{ isEnglish ? '🇭🇺' : '🇬🇧' }}</span>
+          <i class="bi bi-translate lang-flag"></i>
           <span class="lang-text">{{ isEnglish ? 'HU' : 'EN' }}</span>
         </button>
         <button class="close-btn" (click)="onClose()" aria-label="Bezárás">
-          <span>&times;</span>
+          <i class="bi bi-x-lg"></i>
         </button>
       </div>
     </div>
@@ -43,19 +43,19 @@
           
           <div class="program-details">
             <div class="detail-item" *ngIf="program.time">
-              <i class="icon-time">🕒</i>
+              <i class="bi bi-clock icon-time"></i>
               <span class="detail-text">{{ program.time }}</span>
             </div>
             
             <div class="detail-item" *ngIf="program.place">
-              <i class="icon-location">📍</i>
+              <i class="bi bi-geo-alt icon-location"></i>
               <span class="detail-text">{{ program.place }}</span>
             </div>
           </div>
           
           <div class="program-description" *ngIf="program.description || program.english_description">
             <div class="description-header">
-              <i class="icon-description">📝</i>
+              <i class="bi bi-file-text icon-description"></i>
               <span class="description-label">{{ isEnglish ? 'Description' : 'Leírás' }}</span>
             </div>
             <p>{{ isEnglish && program.english_description ? program.english_description : program.description }}</p>
@@ -63,11 +63,11 @@
 
           <div class="program-meta" *ngIf="program.max_person || program.registration">
             <div class="meta-item" *ngIf="program.max_person">
-              <i class="icon-people">👥</i>
+              <i class="bi bi-people icon-people"></i>
               <strong>{{ isEnglish ? 'Max. capacity:' : 'Max. létszám:' }}</strong> {{ program.max_person }}
             </div>
             <div class="meta-item" *ngIf="program.registration">
-              <i class="icon-registration">✅</i>
+              <i class="bi bi-pencil-square icon-registration"></i>
               <strong>{{ isEnglish ? 'Registration:' : 'Regisztráció:' }}</strong> {{ program.registration }}
             </div>
           </div>
