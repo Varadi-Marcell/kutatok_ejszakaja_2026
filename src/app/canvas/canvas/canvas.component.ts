@@ -260,7 +260,7 @@ export class CanvasComponent implements AfterViewInit, OnInit {
   // ===== Keresés események (map-toolbar) =====
 
   // Keresési találat kiválasztása: szükség esetén térképváltás,
-  // majd rázoomolás + kiemelés + program popup
+  // majd kiemeles + program popup (nincs zoom)
   onSearchAreaSelected(payload: { mapId: string; areaId: string; areaName?: string; program?: ProgramEvent }) {
     const activeId = this.currentSvgConfig?.id || null;
 
@@ -275,14 +275,13 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     this.applyAreaSelection(payload.areaId, payload.program, payload.areaName);
   }
 
-  // A kiválasztás alkalmazása: kiemelés + rázoomolás + popup
+  // A kivalasztas alkalmazasa: kiemeles + program popup (zoom nelkul)
   private applyAreaSelection(areaId: string, program?: ProgramEvent, areaName?: string) {
     if (!this.currentSvgConfig) return;
 
     const area = this.currentSvgConfig.interactiveAreas.find(a => a.id === areaId);
     if (area) {
       this.highlightArea(area.id);
-      this.focusArea(area);
 
       // Program popup megnyitása (ugyanaz, mintha a területre kattintottak volna)
       this.openAreaPrograms(area, program);
@@ -334,44 +333,6 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     }, 6000);
   }
 
-  // Terület középre igazítása enyhe rázoomolással
-  focusArea(area: InteractiveArea) {
-    if (!this.instance) {
-      console.warn('Panzoom még nem inicializálódott, nem lehet rázoomolni');
-      return;
-    }
-
-    const center = this.svgComponent?.getAreaCenter(area);
-    const svgEl = document.querySelector('app-svg-element svg') as SVGSVGElement | null;
-    if (!center || !svgEl) {
-      console.warn('A terület középpontja nem számítható ki:', area.id);
-      return;
-    }
-
-    try {
-      // SVG koordináta -> képernyő koordináta átváltás
-      const ctm = svgEl.getScreenCTM();
-      if (!ctm) return;
-      const pt = svgEl.createSVGPoint();
-      pt.x = center.x;
-      pt.y = center.y;
-      const screenPt = pt.matrixTransform(ctm);
-
-      // Enyhe rázoomolás a terület pontjára (a pont helyben marad a zoom alatt)
-      const currentScale = this.instance.getScale();
-      const targetScale = Math.max(currentScale, 1.5);
-      this.instance.zoomToPoint(targetScale, { clientX: screenPt.x, clientY: screenPt.y });
-
-      // A terület középre igazítása animált pan-nal
-      const sceneRect = this.scene.nativeElement.getBoundingClientRect();
-      const dx = sceneRect.left + sceneRect.width / 2 - screenPt.x;
-      const dy = sceneRect.top + sceneRect.height / 2 - screenPt.y;
-      const pan = this.instance.getPan();
-      this.instance.pan(pan.x + dx, pan.y + dy, { animate: true });
-    } catch (error) {
-      console.error('Hiba a területre fókuszálás során:', error);
-    }
-  }
 
   // Nyelvváltás az eszköztárból
   onLanguageChanged(lang: 'hu' | 'en') {
