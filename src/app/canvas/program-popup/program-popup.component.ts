@@ -26,9 +26,11 @@ export class ProgramPopupComponent implements OnInit {
 
   // Touch/swipe handling
   private startY: number = 0;
+  private startX: number = 0;
   private currentY: number = 0;
   private isDragging: boolean = false;
-  private initialTransform: number = 0;
+  // Lehuzasos bezaras csak akkor engedelyezett, ha a lista a tetejen van
+  private canSwipeClose: boolean = false;
 
   ngOnInit() {
   }
@@ -38,15 +40,12 @@ export class ProgramPopupComponent implements OnInit {
   }
 
   onClose() {
-    if (this.isClosing) return; // Prevent multiple close calls
-    
+    if (this.isClosing) return;
     this.isClosing = true;
-    
-    // Wait for closing animation to complete before emitting close
     setTimeout(() => {
       this.isClosing = false;
       this.close.emit();
-    }, 600); // Match the animation duration
+    }, 600);
   }
 
   onBackdropClick(event: Event) {
@@ -55,71 +54,76 @@ export class ProgramPopupComponent implements OnInit {
     }
   }
 
-  // Prevent event bubbling when clicking inside the popup content
   onContentClick(event: Event) {
     event.stopPropagation();
   }
 
-  // Touch event handlers for swipe-to-close
+  // A touch elttarget goergetheto szulojenek (.popup-body) megkeresese
+  private getScrollContainer(event: TouchEvent): HTMLElement | null {
+    const target = event.target as HTMLElement | null;
+    const content = this.popupContent?.nativeElement as HTMLElement | undefined;
+    if (!target || !content) return null;
+    const body = content.querySelector(".popup-body") as HTMLElement | null;
+    return body && body.contains(target) ? body : null;
+  }
+
+  private resetDragStyles() {
+    if (this.popupContent) {
+      this.popupContent.nativeElement.style.transform = "";
+      this.popupContent.nativeElement.style.opacity = "";
+    }
+  }
+
   onTouchStart(event: TouchEvent) {
     if (event.touches.length === 1) {
       this.startY = event.touches[0].clientY;
+      this.startX = event.touches[0].clientX;
       this.currentY = this.startY;
       this.isDragging = true;
-      this.initialTransform = 0;
-      
-      // Add transition class for smooth dragging
-      if (this.popupContent) {
-        this.popupContent.nativeElement.style.transition = 'none';
+      const scroller = this.getScrollContainer(event);
+      this.canSwipeClose = !scroller || scroller.scrollTop <= 0;
+      if (this.canSwipeClose && this.popupContent) {
+        this.popupContent.nativeElement.style.transition = "none";
       }
     }
   }
 
   onTouchMove(event: TouchEvent) {
     if (!this.isDragging || event.touches.length !== 1) return;
-
     this.currentY = event.touches[0].clientY;
     const deltaY = this.currentY - this.startY;
-
-    // Only allow downward swipes
-    if (deltaY > 0) {
-      const translateY = Math.min(deltaY, 200); // Limit the drag distance
-      
-      if (this.popupContent) {
-        this.popupContent.nativeElement.style.transform = `translateY(${translateY}px)`;
-        
-        // Add some opacity fade effect
-        const opacity = Math.max(0.3, 1 - (translateY / 300));
-        this.popupContent.nativeElement.style.opacity = opacity.toString();
-      }
+    const deltaX = event.touches[0].clientX - this.startX;
+    // Vizszintes mozdulat vagy felfele huzas megszakitja a lehuzast
+    if (deltaY <= 0 || Math.abs(deltaX) > Math.abs(deltaY)) {
+      this.canSwipeClose = false;
+      this.resetDragStyles();
+      return;
+    }
+    if (!this.canSwipeClose) return;
+    const translateY = Math.min(deltaY, 200);
+    if (this.popupContent) {
+      this.popupContent.nativeElement.style.transform = "translateY(" + translateY + "px)";
+      const opacity = Math.max(0.3, 1 - (translateY / 300));
+      this.popupContent.nativeElement.style.opacity = opacity.toString();
     }
   }
 
   onTouchEnd(event: TouchEvent) {
     if (!this.isDragging) return;
-
     const deltaY = this.currentY - this.startY;
-    const threshold = 100; // Minimum distance to trigger close
-
-    // Restore transition
+    const deltaX = event.changedTouches[0].clientX - this.startX;
+    const threshold = 100;
     if (this.popupContent) {
-      this.popupContent.nativeElement.style.transition = '';
+      this.popupContent.nativeElement.style.transition = "";
     }
-
-    if (deltaY > threshold) {
-      // Close the popup
+    // Csak akkor zar be, ha a mozdulat dontoen fuggoleges lehuzas volt
+    if (this.canSwipeClose && deltaY > threshold && Math.abs(deltaY) > Math.abs(deltaX)) {
       this.onClose();
     } else {
-      // Snap back to original position
-      if (this.popupContent) {
-        this.popupContent.nativeElement.style.transform = '';
-        this.popupContent.nativeElement.style.opacity = '';
-      }
+      this.resetDragStyles();
     }
-
     this.isDragging = false;
   }
-
   // Keyboard accessibility
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
