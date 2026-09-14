@@ -111,7 +111,7 @@ export class ProgramSearchService {
               map(groups =>
                 groups
                   .map(group => {
-                    const matchedPrograms = group.programs.filter(program => this.programMatches(program, q));
+                    const matchedPrograms = this.dedupePrograms(group.programs.filter(program => this.programMatches(program, q)));
                     const areaMatches =
                       this.normalize(group.areaName).includes(q) ||
                       this.normalize(group.areaId).includes(q);
@@ -148,6 +148,19 @@ export class ProgramSearchService {
               flat.sort((a, b) =>
                 (a.mapId === currentMapId ? 0 : 1) - (b.mapId === currentMapId ? 0 : 1)
               );
+            }
+
+            // Ugyanaz az esemeny tobb epulethez is tartozhat - a talalati
+            // listaban csak az elso elofordulasat mutatjuk (aktualis terkep elore)
+            const seenPrograms = new Set<string>();
+            for (const result of flat) {
+              result.matchedPrograms = result.matchedPrograms.filter(program => {
+                const key = this.programKey(program);
+                if (!key) return true;
+                if (seenPrograms.has(key)) return false;
+                seenPrograms.add(key);
+                return true;
+              });
             }
             return flat;
           })
@@ -196,5 +209,29 @@ export class ProgramSearchService {
       program['Neve']
     ];
     return fields.some(field => this.normalize(field).includes(q));
+  }
+
+  // A program egyertelmu kulcsa: normalizalt nev (angol nev tartalek)
+  programKey(program: ProgramEvent): string {
+    return this.normalize(program.name) || this.normalize(program.english_name);
+  }
+
+  // Programlista duplikaltjainak kiszurese nev szerint
+  private dedupePrograms(programs: ProgramEvent[]): ProgramEvent[] {
+    const seen = new Set<string>();
+    const result: ProgramEvent[] = [];
+    for (const program of programs) {
+      const key = this.programKey(program);
+      if (!key) {
+        result.push(program);
+        continue;
+      }
+      if (seen.has(key)) {
+        continue;
+      }
+      seen.add(key);
+      result.push(program);
+    }
+    return result;
   }
 }

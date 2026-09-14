@@ -4,11 +4,14 @@ import { debounceTime, distinctUntilChanged, of, switchMap, tap } from 'rxjs';
 import { ProgramEvent } from '../../model/program-event';
 import { ProgramSearchService, SearchResultGroup } from '../../services/program-search.service';
 
-// Kedvencek tárolására szolgáló bejegyzés
+// Kedvenc esemeny tarolasara szolgalo bejegyzes (az epulet csak navigacios info)
 interface FavoriteEntry {
+  programKey: string;
+  name: string;
+  englishName?: string;
+  mapId?: string;
   areaId: string;
   areaName: string;
-  mapId?: string;
 }
 
 @Component({
@@ -22,7 +25,7 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
   @Input() currentMapId: string | null = null;
   @Input() language: 'hu' | 'en' = 'hu';
 
-  // Terület kiválasztása (keresési találat vagy kedvenc), nyelvváltás
+  // Terület/program kiválasztása, nyelvváltás
   @Output() areaSelected = new EventEmitter<{ mapId: string; areaId: string; areaName?: string; program?: ProgramEvent }>();
   @Output() languageChanged = new EventEmitter<'hu' | 'en'>();
 
@@ -71,8 +74,18 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
 
   // ===== Keresés =====
 
+  onSearchFocus() {
+    this.showSettingsMenu = false;
+    this.showFavoritesMenu = false;
+    if (this.searchQuery.trim()) {
+      this.showResults = true;
+    }
+  }
+
   onSearchInput(event: any) {
     this.searchQuery = event.target.value;
+    this.showSettingsMenu = false;
+    this.showFavoritesMenu = false;
     if (!this.searchQuery.trim()) {
       this.results = [];
       this.showResults = false;
@@ -89,7 +102,7 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
     this.isSearching = false;
   }
 
-  // Találat kiválasztása: szülő komponens térképvált + rázoomol + popupot nyit
+  // Találat kiválasztása: szülő komponens térképvált + popupot nyit
   selectResult(group: SearchResultGroup, program?: ProgramEvent) {
     this.areaSelected.emit({
       mapId: group.mapId,
@@ -109,16 +122,18 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
     this.selectResult(first, first.matchedPrograms.length > 0 ? first.matchedPrograms[0] : undefined);
   }
 
-  // ===== Beállítások / kedvencek =====
+  // ===== Beallitasok / kedvencek =====
 
   toggleSettings() {
     this.showSettingsMenu = !this.showSettingsMenu;
     this.showFavoritesMenu = false;
+    this.showResults = false;
   }
 
   toggleFavorites() {
     this.showFavoritesMenu = !this.showFavoritesMenu;
     this.showSettingsMenu = false;
+    this.showResults = false;
   }
 
   selectLanguage(lang: 'hu' | 'en') {
@@ -126,40 +141,54 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
     this.showSettingsMenu = false;
   }
 
-  // ===== Kedvencek (localStorage) =====
+  // ===== Kedvencek (localStorage) - mostantol ESEMENYEKRE =====
 
-  isFavorite(areaId: string): boolean {
-    return this.favorites.some(f => f.areaId === areaId);
+  isFavorite(program: ProgramEvent): boolean {
+    const key = this.programSearchService.programKey(program);
+    return this.favorites.some(f => f.programKey === key);
   }
 
-  toggleFavorite(group: SearchResultGroup) {
-    if (this.isFavorite(group.areaId)) {
-      this.favorites = this.favorites.filter(f => f.areaId !== group.areaId);
+  toggleFavorite(group: SearchResultGroup, program: ProgramEvent) {
+    const key = this.programSearchService.programKey(program);
+    if (this.favorites.some(f => f.programKey === key)) {
+      this.favorites = this.favorites.filter(f => f.programKey !== key);
       this.showToast('Eltávolítva a kedvencekből');
     } else {
-      this.favorites.push({ areaId: group.areaId, areaName: group.areaName, mapId: group.mapId });
+      this.favorites.push({
+        programKey: key,
+        name: program.name || '',
+        englishName: program.english_name || '',
+        mapId: group.mapId,
+        areaId: group.areaId,
+        areaName: group.areaName
+      });
       this.showToast('Hozzáadva a kedvencekhez');
     }
     this.saveFavorites();
   }
 
   removeFavorite(favorite: FavoriteEntry) {
-    this.favorites = this.favorites.filter(f => f.areaId !== favorite.areaId);
+    this.favorites = this.favorites.filter(f => f.programKey !== favorite.programKey);
     this.saveFavorites();
   }
 
   selectFavorite(favorite: FavoriteEntry) {
+    // A popup kiemelesehez a program neve szukseges
+    const program = { name: favorite.name, english_name: favorite.englishName } as ProgramEvent;
     this.areaSelected.emit({
       mapId: favorite.mapId || this.currentMapId || '',
       areaId: favorite.areaId,
-      areaName: favorite.areaName
+      areaName: favorite.areaName,
+      program: program
     });
     this.showFavoritesMenu = false;
   }
 
   private loadFavorites() {
     try {
-      this.favorites = JSON.parse(localStorage.getItem(this.FAVORITES_KEY) || '[]');
+      const parsed = JSON.parse(localStorage.getItem(this.FAVORITES_KEY) || '[]');
+      // regi, epulet-alapu bejegyzesek kiszurese (nincs programKey)
+      this.favorites = Array.isArray(parsed) ? parsed.filter((f: any) => f && f.programKey) : [];
     } catch {
       this.favorites = [];
     }
@@ -169,7 +198,7 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
     localStorage.setItem(this.FAVORITES_KEY, JSON.stringify(this.favorites));
   }
 
-  // ===== Segédek =====
+  // ===== Segedek =====
 
   showToast(message: string) {
     this.toastMessage = message;
@@ -179,7 +208,7 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
     this.toastTimeout = setTimeout(() => { this.toastMessage = ''; }, 2500);
   }
 
-  // Kattintás az eszköztáron kívül: legördülők bezárása
+  // Kattintas az eszkoztaron kivul: legordulok bezarasa
   @HostListener('document:click')
   onDocumentClick() {
     this.showResults = false;

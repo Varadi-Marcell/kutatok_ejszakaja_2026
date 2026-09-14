@@ -1,8 +1,7 @@
-<!-- Oxford Maps stílusú eszköztár: kereső + megosztás / beállítások / kedvencek + POI kapcsoló -->
+<!-- Oxford Maps stilusu eszkoztar: kereso + beallitasok / kedvencek -->
 <div class="map-toolbar" (click)="$event.stopPropagation()">
 
   <div class="toolbar-row">
-    <!-- Kereső -->
     <div class="search-box">
       <i class="bi bi-search search-icon"></i>
       <input
@@ -12,13 +11,12 @@
         [value]="searchQuery"
         (input)="onSearchInput($event)"
         (keydown.enter)="selectFirstResult()"
-        (focus)="searchQuery && (showResults = true)"
+        (focus)="onSearchFocus()"
       />
       <button *ngIf="searchQuery" class="clear-btn" (click)="clearSearch()" aria-label="Törlés">
         <i class="bi bi-x-lg"></i>
       </button>
 
-      <!-- Keresési találatok: épületenként csoportosítva -->
       <div class="search-results" *ngIf="showResults && searchQuery.trim()">
         <div class="loading-indicator" *ngIf="isSearching">
           <span class="spinner-border spinner-border-sm"></span>
@@ -37,13 +35,6 @@
             <span class="result-count" *ngIf="group.matchedPrograms.length === 0">
               {{ group.programs.length }} {{ language === 'en' ? 'programs' : 'program' }}
             </span>
-            <button
-              class="fav-toggle"
-              [class.active]="isFavorite(group.areaId)"
-              (click)="toggleFavorite(group); $event.stopPropagation()"
-              [attr.aria-label]="isFavorite(group.areaId) ? 'Kedvenc eltávolítása' : 'Kedvencekhez adás'">
-              <i class="bi" [class.bi-heart-fill]="isFavorite(group.areaId)" [class.bi-heart]="!isFavorite(group.areaId)"></i>
-            </button>
           </div>
 
           <div
@@ -51,7 +42,14 @@
             *ngFor="let program of group.matchedPrograms.slice(0, 5)"
             (click)="selectResult(group, program)">
             <i class="bi bi-calendar-event program-icon"></i>
-            <span>{{ language === 'en' && program.english_name ? program.english_name : program.name }}</span>
+            <span class="program-name-text">{{ language === 'en' && program.english_name ? program.english_name : program.name }}</span>
+            <button
+              class="fav-toggle program-fav"
+              [class.active]="isFavorite(program)"
+              (click)="toggleFavorite(group, program); $event.stopPropagation()"
+              aria-label="Kedvencekhez adas / eltavolitas">
+              <i class="bi" [class.bi-heart-fill]="isFavorite(program)" [class.bi-heart]="!isFavorite(program)"></i>
+            </button>
           </div>
 
           <div class="result-more" *ngIf="group.matchedPrograms.length > 5">
@@ -61,7 +59,7 @@
       </div>
     </div>
 
-    <!-- Beállítások -->
+    <!-- Beallitasok -->
     <div class="menu-wrap">
       <button class="tool-btn" (click)="toggleSettings()" title="Beállítások">
         <i class="bi bi-gear"></i>
@@ -90,13 +88,16 @@
         </div>
         <div class="menu-item" *ngFor="let fav of favorites" (click)="selectFavorite(fav)">
           <i class="bi bi-heart-fill fav-icon"></i>
-          <span>{{ fav.areaName }}</span>
+          <span class="fav-texts">
+            <span class="fav-name">{{ language === 'en' && fav.englishName ? fav.englishName : fav.name }}</span>
+            <small class="fav-building">{{ fav.areaName }}</small>
+          </span>
           <i class="bi bi-x-lg remove-fav" (click)="removeFavorite(fav); $event.stopPropagation()" title="Eltávolítás"></i>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Toast üzenet (pl. vágólapra másolás visszajelzés) -->
+  <!-- Toast uzenet -->
   <div class="toast-message" *ngIf="toastMessage">{{ toastMessage }}</div>
 </div>
