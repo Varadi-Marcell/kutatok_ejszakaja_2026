@@ -1,0 +1,24 @@
+[
+  {
+    "No.": "11",
+    "name": "KARI REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "place": "A/4 épület\nRégi aula",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "age": "vegyes"
+  },
+  {
+    "No.": "1",
+    "name": "WONDER WORLD",
+    "english_name": "WONDER WORLD",
+    "description": "A játékosoknak kvízkérdésekre kell válaszolni. Egymás ellen versenyezve, dobókocka segítségével juthatnak el a pálya végére.",
+    "english_description": "Players have to answer quiz questions. They play against each other, using dice, to reach the end of the field.",
+    "place": "A/4 épület\nRégi aula",
+    "time": "18:00 - 24:00",
+    "max_person": "4 fő/kb.30 perc",
+    "registration": "nem",
+    "age": "16+"
+  }
+]

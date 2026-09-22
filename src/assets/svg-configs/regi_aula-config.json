@@ -10,7 +10,7 @@
                 },
     "interactiveAreas":  [
                              {
-                                 "id":  "gtk",
+                                 "id":  "gtk-regisztracios-pult",
                                  "name":  "GTK – Regisztrációs pult",
                                  "type":  "rectangle",
                                  "coordinates":  {
@@ -24,12 +24,13 @@
                                            },
                                  "metadata":  {
                                                   "description":  "GTK kari pult (KARI REGISZTRÁCIÓS PULT, WONDER WORLD)",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "GTK"
                                               }
                              },
                         
                              {
-                                 "id":  "gtk",
+                                 "id":  "gtk-adatelemzo-kviz",
                                  "name":  "Közgazdász-adatelemző kvíz",
                                  "type":  "rectangle",
                                  "coordinates":  {
@@ -43,11 +44,12 @@
                                            },
                                  "metadata":  {
                                                   "description":  "GTK program stand",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "GTK"
                                               }
                              },
                              {
-                                 "id":  "gtk",
+                                 "id":  "gtk-ember-vagy-ai",
                                  "name":  "Ember vagy AI? – Te felismered a különbséget?",
                                  "type":  "rectangle",
                                  "coordinates":  {
@@ -61,11 +63,12 @@
                                            },
                                  "metadata":  {
                                                   "description":  "GTK program stand",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "GTK"
                                               }
                              },
                              {
-                                 "id":  "gtk",
+                                 "id":  "gtk-uzleti-villamproba",
                                  "name":  "Üzleti villámpróba – Játssz, gondolkodj, dönts!",
                                  "type":  "rectangle",
                                  "coordinates":  {
@@ -79,11 +82,12 @@
                                            },
                                  "metadata":  {
                                                   "description":  "GTK program stand",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "GTK"
                                               }
                              },
                              {
-                                 "id":  "gtk",
+                                 "id":  "gtk-marketing-datalab",
                                  "name":  "Marketing Data Lab – Te vagy az algoritmus!",
                                  "type":  "rectangle",
                                  "coordinates":  {
@@ -97,11 +101,12 @@
                                            },
                                  "metadata":  {
                                                   "description":  "GTK program stand",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "GTK"
                                               }
                              },
                              {
-                                 "id":  "gtk",
+                                 "id":  "gtk-skilstation",
                                  "name":  "SkillStation",
                                  "type":  "rectangle",
                                  "coordinates":  {
@@ -115,11 +120,12 @@
                                            },
                                  "metadata":  {
                                                   "description":  "GTK program stand",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "GTK"
                                               }
                              },
                              {
-                                 "id":  "gtk",
+                                 "id":  "gtk-vakterkep",
                                  "name":  "Vaktérkép - online földrajz kvíz játék (GeoGuessr)",
                                  "type":  "rectangle",
                                  "coordinates":  {
@@ -133,7 +139,8 @@
                                            },
                                  "metadata":  {
                                                   "description":  "GTK program stand",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "GTK"
                                               }
                              },
                             {
@@ -151,7 +158,8 @@
                                            },
                                  "metadata":  {
                                                   "description":  "Bosch Stand",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "Céges partnerek"
                                               }
                              },
                              {
@@ -169,7 +177,8 @@
                                            },
                                  "metadata":  {
                                                   "description":  "Joyson Stand",
-                                                  "capacity":  500
+                                                  "capacity":  500,
+                                                  "sourceSheet":  "Céges partnerek"
                                               }
                              }
                          ]

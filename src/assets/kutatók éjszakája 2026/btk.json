@@ -170,5 +170,17 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "-"
+  },
+  {
+    "No.": "16",
+    "name": "\"... és az én őseim vajon kik voltak?\"",
+    "english_name": "\"... and who were my own ancestors?\"",
+    "description": "Anyakönyvek, sajtóhírek, gyászjelentések... A családnév és az anyai rokonok, a szűkebb és a tágabb rokonság. A keresztnevek érdekességei és a keresztszülők, hosszan érvényes hagyományok és a nemzedéki törések. A modern ember számára meghökkentő életutak, házasodások, gyermekszámok és gyermekhalálozás. Mozaikcsaládok és hadifoglyok.",
+    "english_description": "Church registers, press releases, funeral announcement cards... Family names and maternal relatives, kinship in a narrow and a broader sense. Cultural traditions of first names and godparents, long-term traditions and generation gaps. Surprising life spells, marriages, numbers of birth and infant mortality. Blended families and lists of war prisoners.",
+    "place": "C1. épület, II. emelet, 202/b. terem / Building C1, 2nd floor, room 202/b",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "Nem szükséges maximálni",
+    "registration": "Nem szükséges.",
+    "age": "bárki"
   }
 ]

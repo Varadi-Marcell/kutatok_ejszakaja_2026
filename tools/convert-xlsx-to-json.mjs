@@ -1,7 +1,7 @@
 /**
  * Excel -> JSON konverter
  * -----------------------
- * A "KÉ_2026_térképhez.xlsx" fájlból készíti el a
+ * A "KÉ_2026_térképhez (1).xlsx" fájlból készíti el a
  * src/assets/kutatók éjszakája 2026/*.json fájlokat,
  * a 2025-ös JSON-sémát (ProgramEvent) követve.
  *
@@ -19,7 +19,7 @@ const XLSX = require('xlsx');
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 
-const INPUT_DEFAULT = 'C:/Users/Crashh/OneDrive/Documents/KÉ_2026_térképhez.xlsx';
+const INPUT_DEFAULT = 'C:/Users/Crashh/OneDrive/Documents/KÉ_2026_térképhez (1).xlsx';
 const OUT_DEFAULT = path.join(ROOT, 'src/assets/kutatók éjszakája 2026');
 
 const inputPath = process.argv[2] || INPUT_DEFAULT;
@@ -45,6 +45,34 @@ const SHEET_TO_FILE = {
   'ERM': 'erme',
   'Zenepalota': 'zenepalota',
   'Céges partnerek': 'ceges',
+  // Önálló (nem kari) külsős standok - saját területet kapnak a campus térképen
+  'Baba Chill Zone': 'babachill',
+  'Mályi Madármentők': 'malyimadarmentok',
+};
+
+// Munkalap szintű épület-kulcs felülírás: ezeknél a place szövegből NEM lehet
+// megkülönböztetni a területet (pl. a "Mályi Madármentők" helyszíne szó szerint
+// "díszaula"), ezért a munkalaphoz saját terület-kulcs tartozik.
+const SHEET_BUILDING_OVERRIDE = {
+  'Baba Chill Zone': 'babachill',
+  'Mályi Madármentők': 'malyimadarmentok',
+};
+
+// Stand-szintű kimenetek (Régi aula standjai, céges standok):
+// kimeneti fájl -> forrás munkalap + a standhoz tartozó programok pontos nevei.
+// A térkép interaktív területeinek id-je a betöltendő fájlnév, ezért minden stand
+// a saját kis JSON-ját kapja - így a standra kattintva pontosan a hozzá tartozó
+// program(ok) jelennek meg (és a keresés is a helyes standra mutat).
+const STAND_EXTRACTS = {
+  'gtk-regisztracios-pult': { sheet: 'GTK', names: ['KARI REGISZTRÁCIÓS PULT', 'WONDER WORLD'] },
+  'gtk-adatelemzo-kviz': { sheet: 'GTK', names: ['Közgazdász-adatelemző kvíz'] },
+  'gtk-ember-vagy-ai': { sheet: 'GTK', names: ['Ember vagy AI? – Te felismered a különbséget?'] },
+  'gtk-uzleti-villamproba': { sheet: 'GTK', names: ['Üzleti villámpróba – Játssz, gondolkodj, dönts!'] },
+  'gtk-marketing-datalab': { sheet: 'GTK', names: ['Marketing Data Lab – Te vagy az algoritmus!'] },
+  'gtk-skilstation': { sheet: 'GTK', names: ['SkillStation'] },
+  'gtk-vakterkep': { sheet: 'GTK', names: ['Vaktérkép - online földrajz kvíz játék (GeoGuessr)'] },
+  'bosch': { sheet: 'Céges partnerek', names: ['Bemutatkoznak a miskolci Bosch gyárai'] },
+  'joyson': { sheet: 'Céges partnerek', names: ['Biztonságra hangolva-kutatástól életvédelemig-Joyson Safety Systems Hungary Kft.'] },
 };
 
 // Ezeket a munkalapokat kihagyjuk
@@ -288,7 +316,7 @@ const buildingEntries = []; // building.json tartalma
 
 for (const { sheetName, target, programs } of sheets) {
   for (const program of programs) {
-    const buildingKey = detectBuilding(program.place);
+    const buildingKey = SHEET_BUILDING_OVERRIDE[sheetName] || detectBuilding(program.place);
     // building.json: MINDEN program bekerül, ahol azonosítható, ott building kulccsal
     const entry = { ...program };
     if (buildingKey) {
@@ -311,6 +339,33 @@ for (const { sheetName, target, programs } of sheets) {
 
 // Campus térkép: building.json - az alkalmazás épület (area id) szerint csoportosít
 fs.writeFileSync(path.join(outDir, 'building.json'), JSON.stringify(buildingEntries, null, 2) + '\n', 'utf8');
+
+// ----- Stand-szintű fájlok (Régi aula standjai, céges standok) -----
+// A munkalap-szintű fájlokból kiemelt részhalmazok (lásd STAND_EXTRACTS).
+const programsBySheet = new Map(sheets.map(({ sheetName, programs }) => [sheetName, programs]));
+const normalizeName = (value) => String(value == null ? '' : value).replace(/\s+/g, ' ').trim().toLowerCase();
+
+for (const [file, { sheet, names }] of Object.entries(STAND_EXTRACTS)) {
+  const source = programsBySheet.get(sheet);
+  if (!source) {
+    warnings.push(`[${file}] A stand forrás-munkalapja nem található ("${sheet}") - a fájl kimaradt!`);
+    continue;
+  }
+  const extracted = [];
+  for (const wantedName of names) {
+    const matches = source.filter(p => normalizeName(p.name) === normalizeName(wantedName));
+    if (!matches.length) {
+      warnings.push(`[${file}] Nincs ilyen nevű program a(z) "${sheet}" munkalapon: "${wantedName}"`);
+      continue;
+    }
+    if (matches.length > 1) {
+      warnings.push(`[${file}] Több program is ugyanazzal a névvel ("${wantedName}") - az elsőt használjuk.`);
+    }
+    extracted.push(matches[0]);
+  }
+  fs.writeFileSync(path.join(outDir, `${file}.json`), JSON.stringify(extracted, null, 2) + '\n', 'utf8');
+  summary.push(`- [stand] ${file}.json: ${extracted.length} program (${sheet})`);
+}
 
 console.log('Konverzió kész:');
 console.log(summary.join('\n'));

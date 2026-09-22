@@ -6,8 +6,43 @@
     "description": "Gyere, és fedezd fel a Bosch világát játékosan! Próbáld ki a Bosch kéziszerszám játszóteret, ahol a szerszámok ezúttal nem csak dolgoznak, hanem szórakoztatnak is! Teszteld a tudásod a Bosch kvízben, és ha ügyes vagy, még egy kis repi ajándék is várhat rád. Tedd próbára gyorsaságodat és reakcióidődet a reflex falon, majd pattanj nyeregbe, és éld át az eBike VR szemüveg segítségével, milyen érzés egy egészen új dimenzióban tekerni! Játék, kihívás, technológia és egy kis Bosch-varázs – minden egy helyen. Ne hagyd ki!",
     "english_description": "Discover the Bosch plants in Miskolc! Come and discover the world of Bosch through fun and interactive experiences! Try out the Bosch Power Tools Playground, where tools are not only made to work, but also to entertain! Put your knowledge to the test with the Bosch Quiz, and if you're lucky, you might even take home a Bosch giveaway. Challenge your speed and reaction time at the Reflex Wall, then hop on an eBike and experience what it's like to ride in a whole new dimension with the eBike VR experience! Fun, challenges, technology and a little Bosch magic – all in one place. Don’t miss out!",
     "place": "A/4 oszlopos csarnok\npáternoszter és az üveg előcsarnok közötti rész",
+    "time": "folyamatosan / Continuously",
+    "max_person": "-",
+    "registration": "nincs",
+    "age": "vegyes",
     "Infrastruktúra igénye": "50-60 m2\nsaját stand\náram+8 db elosztó",
     "Neve": "Robert Bosch Energy and Body Systems Kft.:\nTeráz Patrícia\nRobert Bosch Power Tool Kft.:\nCsoma Orsolya Zita",
     "e-mail címe": "Patricia.Teraz@hu.bosch.com, OrsolyaZita.Csoma@hu.bosch.com"
+  },
+  {
+    "No.": "2",
+    "name": "Biztonságra hangolva-kutatástól életvédelemig-Joyson Safety Systems Hungary Kft.",
+    "english_name": "Focused on safety – from research to life-saving measures – Joyson Safety Systems Hungary Kft.",
+    "description": "Nálunk a Joyson-nál a legfontosabb küldetésünk az, hogy a családok a lehető legtökéletesebb biztonságban legyenek utazásaik során. Vezérelvünk: A legnagyobb érték a család. A legnagyobb küldetés, a biztonság. A rendkívül magas biztonsági elvárásoknak megfelelően készült légzsák a biztonsági öv mellett a legfontosabb utasvédő eszköz. Az autóipari találmányok között a légzsák az egyike azoknak, amely a legtöbb életet menti meg. Minden egyes termék gondossággal és felelősséggel készül azok számára, akik a legfontosabbak.",
+    "english_description": "At Joyson, our most important mission is to ensure that families are as safe as possible whilst travelling. Our guiding principle: Family is our greatest value. Our greatest mission is safety. Designed to meet extremely high safety standards, the airbag is the most important passenger protection device alongside the seatbelt. Amongst automotive innovations, the airbag is one of those that saves the most lives. Every single product is manufactured with care and responsibility for those who matter most.",
+    "place": "A/4 oszlopos csarnok\npáternoszter és az üveg előcsarnok közötti rész",
+    "time": "folyamatosan / Continuously",
+    "max_person": "-",
+    "registration": "nincs",
+    "age": "vegyes",
+    "Infrastruktúra igénye": "16 m2\n3 db asztal, 4 db szék\náram, szemetes\n\nStand, illetve bemutató modell (karosszéria elem), amennyiben ehhez megfeleleő helyigény a stand mellett rendelkezésre áll.",
+    "Neve": "Nagy-Felső Anita",
+    "e-mail címe": "anita.nagyfelso@joysonsafety.com",
+    "tel. száma": "+36 30 267 7145"
+  },
+  {
+    "No.": "3",
+    "name": "WonderLab",
+    "english_name": "WonderLab",
+    "description": "Kémiai és vegyipari tematikájú játékokkal, bemutatókkal várjuk az érdeklődőket:\n- Periódusos rendszer szókereső\n- Labor kísérletek\n- Gyorsasági verseny\n- EBK (egészség, biztonság, környezetvédelmi) játék",
+    "english_description": "We look forward to welcoming visitors with games and demonstrations on the themes of chemistry and chemical industry:\n- Periodic Table word search\n- Laboratory experiments\n- Speed competition\n- HSE (Health, Safety and Environment) game",
+    "time": "folyamatosan / Continuously",
+    "max_person": "-",
+    "registration": "nincs",
+    "age": "vegyes",
+    "Infrastruktúra igénye": "3 asztal, áram",
+    "Neve": "Borsodchem\nNagy-Turi Fanni",
+    "e-mail címe": "fanni.nagy-turi@borsodchem.eu",
+    "tel. száma": "+36-30 296 4882"
   }
 ]

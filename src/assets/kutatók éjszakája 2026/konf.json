@@ -50,7 +50,7 @@
     "description": "Ismerkedj meg a kínai kalligráfia művészetével.",
     "english_description": "Get to know the art of Chinese calligraphy.",
     "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
-    "time": "22:00",
+    "time": "21:30",
     "max_person": "15 fő",
     "registration": "-",
     "age": "Minden korosztály"
@@ -62,7 +62,7 @@
     "description": "Ismerkedj meg a kínai papírvágás technikájával",
     "english_description": "Discover the techinque of Chinese paper cutting",
     "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
-    "time": "18:30",
+    "time": "18:30:00-20:30",
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály"
@@ -74,7 +74,7 @@
     "description": "Készíts és díszíts emléket",
     "english_description": "Make and decorate memories",
     "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
-    "time": "18:30",
+    "time": "18:30:00-20:30",
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály"
@@ -86,7 +86,7 @@
     "description": "Fedezd fel a kínai tea varázslatos ízvilágát",
     "english_description": "Taste the wonderful world of Chinese tea",
     "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
-    "time": "19:30",
+    "time": "20:00-22:00",
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály"
@@ -98,7 +98,7 @@
     "description": "A Konfuciusz Intézet 13. születésnapjának ünneplése",
     "english_description": "Celebrating the 13th birthday of Confucius Institute",
     "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
-    "time": "21:30",
+    "time": "22:00",
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály"

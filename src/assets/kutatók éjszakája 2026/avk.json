@@ -18,7 +18,7 @@
     "description": "Kísérletek anyagokkal alacsony és nagy hőmérsékleten.",
     "english_description": "Experiments with materials at low and high temperatures.",
     "place": "B1 épület 4. emelet 410. sz. előadó / Building B1, 4th floor, room 410",
-    "time": "17:00, 18:00, 21:00",
+    "time": "18:00, 21:00",
     "max_person": "35 fő/alkalom",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes"
@@ -66,7 +66,7 @@
     "description": "Ismerd meg a tűzzománcozás világát! Egy rövid bemutató keretében megismerheted a tűzzománcozás történetét, majd Te is kipróbálhatod a hobbi zománcozás technológiáját. Készíts saját, egyedi medált, fülbevalót, karkötőt vagy gyűrűt, és vidd haza az elkészült alkotásodat!",
     "english_description": "Discover the fascinating world of vitreous enamelling! During a short presentation, you will learn about the history of enamelling, then try the hobby enamelling technique yourself. Create your own unique pendant, earrings, bracelet or ring, and take your finished piece home with you!",
     "place": "FÖI, B1 III. emelet 309, Felületkezelő labor",
-    "time": "17:00; 18:00",
+    "time": "19:00",
     "max_person": "6 fő/ alkalom",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes"
@@ -196,6 +196,30 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "Regisztráció nélküli",
+    "age": "vegyes"
+  },
+  {
+    "No.": "18",
+    "name": "Fényt viszünk a kémiába",
+    "english_name": "We bring light into Chemistry",
+    "description": "Az emberiség a kezdetektől fogva mély, szinte ösztönös vonzalmat érez a fény iránt. A kémiát ugyanakkor hajlamosak vagyunk inkább a különös szagokkal és a robbanásokkal társítani. Ma este azonban megmutatjuk a kémia fényes oldalát! Különböző reakciókkal fényt varázsolunk, zöld lángokat idézünk meg, és persze játszunk is a fénnyel. Természetesen nem maradhatnak el a tüzes kísérletek és a jól ismert hanghatások sem.",
+    "english_description": "Since the dawn of humanity, we have felt a deep, almost instinctive fascination with light. At the same time, we tend to associate chemistry with unusual smells and explosions. But tonight, we will show you the bright side of chemistry! Through a variety of reactions, we will create light, conjure up green flames, and, of course, play with light itself. And naturally, no chemistry show would be complete without fiery experiments and the familiar sound effects.",
+    "place": "díszudvar",
+    "time": "19:00-20:00",
+    "max_person": "-",
+    "registration": "Regisztráció nélküli",
+    "age": "vegyes"
+  },
+  {
+    "No.": "19",
+    "name": "Fényt viszünk a kémiába, fluoreszcencia a hétköznapokban",
+    "english_name": "We bring the light in chemistry, fluorescence in everday life",
+    "description": "Lépjen be a sötétszobába, és fedezze fel a láthatatlan fények birodalmát, ahol a hétköznapi tárgyak és a speciális kémiai vegyületek titkos színekben ragyognak! Folyamatosan zajló, interaktív bemutatónkon kiderül, miért világít kísértetiesen a tonik, mi a titka a fluoreszcens markereknek és a parti rudaknak, valamint hogyan buktatja le az UV-fény a hamisított olívaolajat. Látogatóink saját kezűleg ellenőrizhetik igazolványaik és bankjegyeik rejtett biztonsági elemeit, láthatatlan tintával írhatnak titkos üzeneteket, és megcsodálhatják a vakítóan neonsárga energiaitalok vagy a különleges uránüvegek fényét. A legbátrabbakat egy igazi „vegyész-koktélbár” is várja, ahol maguk pipettázhatják össze a sötétben színpompásan felvillanó, fémionokat kimutató fluoreszcens komplexeket, bepillantást nyerve a modern kutatólaborok izgalmas világába.",
+    "english_description": "Drop by our ongoing, interactive demo to discover why tonic water glows in the dark, what makes highlighters and glow sticks work, and how a simple UV light can expose fake olive oil. You can test the hidden security features on your own ID and banknotes, write secret messages in invisible ink, and marvel at the bright neon-yellow glow of energy drinks and vintage uranium glass. We’ve also set up a real \"chemist’s cocktail bar\" where you can mix your own glowing, color-changing fluorescent solutions used to detect metal ions, getting a firsthand look into the exciting world of a modern research lab.",
+    "place": "Kémiai Intézet B4 épület labor",
+    "time": "20:00-23:00",
+    "max_person": "20",
+    "registration": "regisztráció nélküli",
     "age": "vegyes"
   }
 ]
