@@ -79,6 +79,10 @@ Minden SVG térképhez tartozik egy JSON konfiguráció, amely a következő str
 
 - `nagyterkep-config.json` - Nagy térkép (nagyterkep_jo.svg)
 - `diszaula-config.json` - Díszaula (KutatokEjszakaja-Standalaprajz-Diszaula-01-1.svg)
+- `elocsarnok-config.json` - Előcsarnok (KutatokEjszakaja-Standalaprajz-Elocsarnok-01-1.svg)
+- `regi_aula-config.json` - Régi Aula (KutatokEjszakaja-Standalaprajz-RegiAula-01.svg)
+- `harmas-config.json` - Előadóterem 3 (KutatokEjszakaja-Standalaprajz-Harmas.svg)
+- `parkolo-config.json` - Parkoló (KutatokEjszakaja-Standalaprajz-Parkolo-01.svg)
 
 ## Használat a komponensben
 

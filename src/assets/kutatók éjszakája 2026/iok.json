@@ -1,0 +1,74 @@
+[
+  {
+    "No.": "1",
+    "name": "Szóbeli Origó és Zöld Út próbanyelvvizsga - ANGOL",
+    "english_name": "Mock exam in English: Zöld Út and Origó oral exam",
+    "description": "Szóbeli Origó és Zöld Út (általános, gazdasági vagy műszaki) próbanyelvvizsga angol nyelvből, előzetes regisztráció alapján. A vizsga értékelése után tanácsadás a további felkészüléshez. Regisztráció az üveg előcsarnokban található IOK Információs pultnál szükséges!",
+    "english_description": "Mock exam in English: Zöld Út (general, economic or technical) and Origó (general) bilingual (English-Hungarian) language exams. Personal assessment and recommendations after the exam considering further preparation. Registration is required at the IOK Information Desk located in the glass lobby!",
+    "place": "folyamatban",
+    "time": "18:00-19:00",
+    "max_person": "max. 10 fő",
+    "registration": "helyszíni regisztráció - IOK pultnál 17:30-tól 19:00-ig",
+    "age": "14+"
+  },
+  {
+    "No.": "2",
+    "name": "Tudod-e? - Érdekességek a spanyol és olasz nyelv és kultúra kapcsán",
+    "english_name": "Did you know? - Fun facts about the Spanish and Italian language and culture",
+    "description": "Spanyol és olasz nyelvi és országismereti játékos feladatok.",
+    "english_description": "Quizzes and games related to the Spanish and Italian language and culture.",
+    "place": "folyamatban",
+    "time": "18:00-20:00",
+    "registration": "nincs"
+  },
+  {
+    "No.": "3",
+    "name": "Ünnepeljük együtt a Nyelvek Európai Napját!",
+    "english_name": "Let's celebrate the European Day of Languages!",
+    "description": "Szavak mögött a világ - Nyelvi Tényvadászat: érdekességek, amik garantáltan meglepnek!",
+    "english_description": "The world behind the words- Linguistic Fact Hunt: curiosities that are guaranteed to surprise you!",
+    "place": "folyamatban",
+    "time": "18:00-20:00",
+    "registration": "nincs",
+    "age": "10+"
+  },
+  {
+    "No.": "4",
+    "name": "Információ, próbanyelvvizsga regisztráció",
+    "english_name": "Information; registration for mock exams",
+    "description": "Az IOK által kínált szóbeli próbanyelvvizsgára itt lehet regisztrálni",
+    "english_description": "Registration for oral mock exams",
+    "place": "Üveg aula stand / Main Hall IOK Stand",
+    "time": "17:30-19:00",
+    "registration": "nincs"
+  },
+  {
+    "No.": "5",
+    "name": "Angolul a világ körül – nyelvi és kulturális érdekességek",
+    "english_name": "Around the English-Speaking World – Language and Cultural Fun Facts",
+    "description": "Játékos utazás az angol nyelv és kultúra világában",
+    "english_description": "Quizzes, Fun Facts & Cultural Insights",
+    "place": "folyamatban",
+    "time": "18:00-20:00",
+    "registration": "nincs"
+  },
+  {
+    "No.": "6",
+    "name": "Játék a betűkkel",
+    "english_name": "Games with letters",
+    "description": "Német nyelvi játékos feladatok",
+    "english_description": "Fun games with the German language",
+    "place": "folyamatban",
+    "time": "18:00-20:00",
+    "registration": "nincs"
+  },
+  {
+    "No.": "7",
+    "name": "REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "place": "Üveg előcsarnok",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-"
+  }
+]

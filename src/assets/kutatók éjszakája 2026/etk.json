@@ -1,0 +1,122 @@
+[
+  {
+    "No.": "1",
+    "name": "Babaszoba",
+    "english_name": "Nursery",
+    "description": "A 9. hónap \"súlyának\" megélése várandós mellénnyel; a pelenkázás, öltöztetés fortélyai",
+    "english_description": "Experience the \"weight\" of the 9th month with a pregnancy simulator; baby changing and dressing tricks.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "bármely"
+  },
+  {
+    "No.": "2",
+    "name": "Mire képes a testünk?",
+    "english_name": "What is our body capable of?",
+    "description": "Testünk számos képességgel kell rendelkezzen mindennapi feladataink ellátáshoz. A program lehetőséget biztosít a saját képességek (erő, stabilitás, koordináció és egyensúly mérésével) megismerésére, vagy a mozgásszervrendszerrel kapcsolatos ismeretek tesztelésére.",
+    "english_description": "Our bodies need to have many abilities to perform our daily tasks. The program provides an opportunity to assess your own abilities (by measuring strength, stability, coordination and balance) or to test your knowledge of the musculoskeletal system.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "8-99"
+  },
+  {
+    "No.": "3",
+    "name": "Mit látsz a képen?",
+    "english_name": "What can you see in the picture?",
+    "description": "Különböző képalkotó eljárásokkal készített, nem mindennapi felvételek",
+    "english_description": "Unusual images from different medical imaging techniques.",
+    "place": "Díszaula / Main Hall- pódium",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "bármely"
+  },
+  {
+    "No.": "4",
+    "name": "Vakvezető kutyás bemutató",
+    "english_name": "Walking with a Guide dog",
+    "description": "A vakvezető kutyával való közlekedés egy együttműködésen alapuló partnerség, amelyben a kutya pilótaként működik, és segít elkerülni az akadályokat, míg a gazda navigátorként irányt mutató utasításokat ad. A segítő ismeri az útvonalat, a kiképzett kutya pedig biztonságosan vezeti őt járdaszegélytől járdaszegélyig, kikerülve az embereket és az épületben található akadályokat.",
+    "english_description": "Walking with a guide dog is a teamwork partnership where the dog acts as the pilot to avoid obstacles and the handler acts as the navigator providing directional commands. The handler knows the route, while the trained dog safely walks from kerb to kerb around people and building hazards.",
+    "place": "Stefánia épület, aula, / Stefania building, auditorium",
+    "time": "18-19",
+    "max_person": "60 fő",
+    "registration": "nincs",
+    "age": "Bármely"
+  },
+  {
+    "No.": "5",
+    "name": "Alma a vízben, ér a nyakban – ultrahangos kalandok",
+    "english_name": "Apple in the Water, Artery in the Neck - Ultrasound Adventures",
+    "description": "Hogyan lehet a testünk érhálózatát vagy akár egy gyümölcs belsejét hanghullámok segítségével megjeleníteni? Az ultrahang lenyűgöző eszköz: láthatóvá teszi a láthatatlant, legyen szó a nyaki verőerekről, a vesék finom ereiről, vagy akár egy almáról, ami megelevenedik egy tál vízben. Ismerd meg közelről a modern orvosi képalkotás egyik legizgalmasabb módszerét!",
+    "english_description": "How can we visualize the vessels in the human body or even the inside of a fruit using ultrasound waves? Ultrasound is a fascinating tool that makes the invisible visible—whether it’s the carotid artery, the delicate vessels of the kidney, or even an apple placed in a bowl of water. Discover one of the most exciting methods of modern medical imaging up close!",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "15-20 percenként 4-6 fő",
+    "registration": "nincs",
+    "age": "4-99 év"
+  },
+  {
+    "No.": "6",
+    "name": "Lógjunk anyuval!",
+    "english_name": "Let's hang out with mom!",
+    "description": "Babahordozás eszközei, technikája, kipróbálása.",
+    "english_description": "Babywearing: Carriers, Techniques, and Hands-On Practice.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "bármely"
+  },
+  {
+    "No.": "7",
+    "name": "Mikroműanyagok (előadás)",
+    "english_name": "Microplastics (lecture)",
+    "description": "A műanyag korában élünk, de tudjuk-e egyáltalán, miből állnak és hogyan aprózódnak fel ezek a mesterséges anyagok a környezetünkben?A mikroműanyagok különböző típusai mára az óceánok mélyétől a termőföldekig minden természetes közeget beszennyeztek, és észrevétlenül elárasztották bolygónkat. Ennél is égetőbb kérdés, hogy a belélegzett és lenyelt részecskék miként jutnak el az emberi szervezetbe, és milyen hosszú távú hatással vannak az egészségünkre.\nGyere el az előadásra, és ismerd meg a legújabb tudományos tényeket, valamint azokat a gyakorlati lépéseket, amelyekkel hatékonyan csökkentheted a mindennapi mikroműanyag-expozíciódat!",
+    "english_description": "We live in the age of plastic, but do we even know what these synthetic materials are made of and how they break down in our environment?Various types of microplastics have now contaminated every natural environment—from the depths of the oceans to farmland—and have quietly flooded our planet. An even more pressing question is how the particles we inhale and ingest enter the human body and what long-term effects they have on our health.\nCome to the presentation and learn about the latest scientific findings, as well as practical steps you can take to effectively reduce your daily exposure to microplastics!",
+    "place": "Stefánia épület, 4-es előadó",
+    "time": "18:00-18:30; 19:00-19:30",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "bármely"
+  },
+  {
+    "No.": "8",
+    "name": "Bepillantás az MR képalkotás világába",
+    "english_name": "Exploring the World of Magnetic Resonance Imaging",
+    "description": "Ha kíváncsi vagy egy képalkotó diagnoszta mindennapi munkájára,\nközérthető bevezetést nyújtunk az MR világába, bemutatva hogyan válik láthatóvá az emberi test.",
+    "english_description": "If you are curious about the everyday work of a diagnostic imaging professional, we offer an accessible introduction to the world of MRI, showing how the human body can be visualized from within.",
+    "place": "Stefánia épület, II. em. 204 terem",
+    "time": "18-20 óráig (4 turnus, 30 percenként)",
+    "max_person": "10 fő",
+    "registration": "nem",
+    "age": "bármelyik"
+  },
+  {
+    "No.": "9",
+    "name": "Miről mesélnek a csontok?",
+    "english_name": "What secrets do the bones hold?",
+    "description": "A program keretén belül csontmodellek és régészeti korú csontok segítségével ismerjük meg vázrendszerünk feladatait,\nilletve hogy hogyan tudhatunk meg minél többet valaki életéről a csontjai és fogai vizsgálatával. A program közben megfejteni való rejtélyes és érdekes eseteket mutatunk képeken.",
+    "english_description": "As part of the program, using both bone models and archaeological human remains,\nwe explore the functions of our skeletal system and learn how much we can discover about a person’s life by examining their bones and teeth.\nThroughout the program, we will also present intriguing and mysterious cases through images for participants to solve.",
+    "place": "Stefánia épület 11-es terem",
+    "time": "18-21 óráig (4db 45 perces turnus)",
+    "max_person": "25 fő",
+    "registration": "nem",
+    "age": "bármelyik"
+  },
+  {
+    "No.": "10",
+    "name": "Készséggel az egészségügyért",
+    "english_name": "Committed to Healthcare",
+    "description": "SKILL laborok bemutatása, Intraosseális kanülálás, Ultrahang készülék bemutatása",
+    "english_description": "Introduction to SKILL laboratories, Intraosseous cannulation, Introduction to the ultrasound machine",
+    "place": "Díszaula / Main Hall- pódium",
+    "time": "Folyamatosan a teljes rendezvény alatt\n/ Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "bármely"
+  }
+]

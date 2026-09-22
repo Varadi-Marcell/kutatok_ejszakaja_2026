@@ -1,0 +1,118 @@
+[
+  {
+    "No.": "1",
+    "name": "Tai-chi bemutató",
+    "english_name": "Tai-chi performance",
+    "description": "Tai-chi bemutató.",
+    "english_description": "Tai-ji performance.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "18:00",
+    "max_person": "-",
+    "registration": "-",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "2",
+    "name": "Kínai nyelvi óra",
+    "english_name": "Chinese Language class",
+    "description": "Bemutató kínai nyelvi óra, azaz nyerj betekintést a kínai nyelv szépségeibe.",
+    "english_description": "Demo Chinese language class - get an insight into the beauty of the Chinese language.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "19:00",
+    "max_person": "15 fő",
+    "registration": "-",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "3",
+    "name": "Kínai nyári tábor beszámoló",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "20:00",
+    "max_person": "15 fő",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "4",
+    "name": "Kínai kultúra óra az Őszközép Ünnepről",
+    "english_name": "Chinese Culture class about Mid-Autumn Festival",
+    "description": "Bemutató óra a kínai kultúráról mindazoknak, akiket vonz a Kelet gazdag kultúrája, a 2. legnagyobb kínai ünnepről, az Őszközép Fesztiválról.",
+    "english_description": "A lesson on Chinese culture for all those attracted by the rich culture of the East, about the second biggest Chinese holiday, the Mid-Autumn Festival",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "21:00",
+    "max_person": "15 fő",
+    "registration": "-",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "5",
+    "name": "Kínai kalligráfia foglalkozás",
+    "english_name": "Chinese Calligraphy workshop",
+    "description": "Ismerkedj meg a kínai kalligráfia művészetével.",
+    "english_description": "Get to know the art of Chinese calligraphy.",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "22:00",
+    "max_person": "15 fő",
+    "registration": "-",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "6",
+    "name": "Kínai papírvágás - a Tűz Ló évében",
+    "english_name": "Paper cutting - Year of the Fire Horse",
+    "description": "Ismerkedj meg a kínai papírvágás technikájával",
+    "english_description": "Discover the techinque of Chinese paper cutting",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "18:30",
+    "max_person": "-",
+    "registration": "-",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "7",
+    "name": "Kézműves foglalkozás - holdsüti alakú díszek készítése",
+    "english_name": "DIY - mooncake shaped decorations",
+    "description": "Készíts és díszíts emléket",
+    "english_description": "Make and decorate memories",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "18:30",
+    "max_person": "-",
+    "registration": "-",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "8",
+    "name": "Kínai tea kóstolás",
+    "english_name": "Chinese tea tasting",
+    "description": "Fedezd fel a kínai tea varázslatos ízvilágát",
+    "english_description": "Taste the wonderful world of Chinese tea",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "19:30",
+    "max_person": "-",
+    "registration": "-",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "9",
+    "name": "A Konfuciusz Intézet szülinapi köszöntése",
+    "english_name": "Confucius Institute Birthday",
+    "description": "A Konfuciusz Intézet 13. születésnapjának ünneplése",
+    "english_description": "Celebrating the 13th birthday of Confucius Institute",
+    "place": "Konfuciusz Intézet, A/1 épület, I. emelet / Confucius Institute, Building A/1, 1st floor",
+    "time": "21:30",
+    "max_person": "-",
+    "registration": "-",
+    "age": "Minden korosztály"
+  },
+  {
+    "No.": "10",
+    "name": "Kínai viseletek próbálása",
+    "english_name": "Chinese costumes",
+    "description": "Öltözz kínai ruhákba",
+    "english_description": "Wear Chinese costumes",
+    "place": "Főépület / Glass Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "age": "Minden korosztály"
+  }
+]

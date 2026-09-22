@@ -1,0 +1,84 @@
+[
+  {
+    "No.": "1",
+    "name": "Sportos Ügyességi kihívások",
+    "english_name": "Sport Skill Challenges",
+    "place": "Díszaula / Main Hall",
+    "time": "18.00-től 22.00-ig",
+    "max_person": "folyamatos",
+    "registration": "nincs limitálva",
+    "age": "bármely"
+  },
+  {
+    "No.": "2",
+    "name": "Ugró-mászó akadálypálya",
+    "english_name": "Jump-and-climb obstacle course",
+    "description": "Tedd próbára ügyességed és kitartásod az akadálypályán: a játékosok a jelzett kéz ás lábnyom szerint kell menni.",
+    "english_description": "Test your skills and endurance on the obstacle course: the players must follow the indicated hand and footprints.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event"
+  },
+  {
+    "No.": "3",
+    "name": "Asztalitenisz",
+    "english_name": "Table-Tennis",
+    "description": "2 db pingpong asztalon, 2-4 játékos ütőkkel üti a labdát egy asztal két oldalán.",
+    "english_description": "On 2 ping pong tables, 2-4 players hit the ball with rackets on both sides of a table.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event"
+  },
+  {
+    "No.": "4",
+    "name": "Mini pingpong",
+    "english_name": "Mini pingpong",
+    "description": "2 db kicsi, apró ütőkkel és kisebb labdával játszanak, fejlesztik a reflexeket, egyensúlyt.",
+    "english_description": "They play with 2 small, tiny rackets and a smaller ball, developing reflexes and balance.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event"
+  },
+  {
+    "No.": "5",
+    "name": "Denevérpad",
+    "english_name": "Batting bench",
+    "description": "Próbáld ki milyen fejjel-lefelé lógni!",
+    "english_description": "Try out how is it hanging upside down!",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event"
+  },
+  {
+    "No.": "6",
+    "name": "Gombfoci",
+    "english_name": "Foosball",
+    "description": "Asztali labdarugó játék, fejleszti az ügyességet, koncentrációt, miközben szórakoztató kihívást nyújt.",
+    "english_description": "Table football game, develops skill and concentration while providing a fun challenge.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event"
+  },
+  {
+    "No.": "7",
+    "name": "Cornhole",
+    "english_name": "Cornhole",
+    "description": "Ügyességi babzsákdobó játék, amely fejleszti a pontosságot és a koncentrációt.",
+    "english_description": "A beanbag tossing game that develops accuracy and concentration.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event"
+  },
+  {
+    "No.": "8",
+    "name": "Twister",
+    "english_name": "Twister",
+    "description": "A résztvevők próbálják elérni a különböző színű jelöléseket.",
+    "english_description": "Participants try to reach the different colored markings.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event"
+  },
+  {
+    "No.": "9",
+    "name": "Mölkky",
+    "english_name": "Mölkky",
+    "description": "Egy népszerű finn szabadtéri ügyességi és dobójáték, 12 darab számozott fából készült bábuval.",
+    "english_description": "A popular Finnish outdoor skill and throwing game with 12 numbered wooden pieces.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event"
+  }
+]

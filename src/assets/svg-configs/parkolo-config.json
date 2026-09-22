@@ -1,0 +1,12 @@
+{
+  "id": "parkolo",
+  "name": "Parkoló",
+  "svgPath": "assets/KutatokEjszakaja-Standalaprajz-Parkolo-01.svg",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 948.3,
+    "height": 485.2
+  },
+  "interactiveAreas": []
+}

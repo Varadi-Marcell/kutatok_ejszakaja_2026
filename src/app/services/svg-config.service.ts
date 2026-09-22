@@ -35,20 +35,30 @@ export class SvgConfigService {
     return this.loadConfig('assets/svg-configs/regi_aula-config.json');
   }
 
+  // Előadóterem 3 (Harmas) térkép betöltése
+  loadHarmasConfig(): Observable<SvgMapConfig> {
+    return this.loadConfig('assets/svg-configs/harmas-config.json');
+  }
+
+  // Parkoló térkép betöltése
+  loadParkoloConfig(): Observable<SvgMapConfig> {
+    return this.loadConfig('assets/svg-configs/parkolo-config.json');
+  }
+
   // GEIK programok betöltése (backward compatibility)
   loadGeikData(): Observable<ProgramEvent[]> {
-    return this.http.get<ProgramEvent[]>('assets/kutatók éjszakája 2025/geik.json');
+    return this.http.get<ProgramEvent[]>('assets/kutatók éjszakája 2026/geik.json');
   }
 
   // Dinamikus area adatok betöltése
   loadAreaData(areaId: string): Observable<ProgramEvent[]> {
-    return this.http.get<ProgramEvent[]>(`assets/kutatók éjszakája 2025/${areaId}.json`);
+    return this.http.get<ProgramEvent[]>(`assets/kutatók éjszakája 2026/${areaId}.json`);
   }
 
   // Building.json betöltése és szűrése building kulcs alapján
   loadBuildingData(buildingKey: string): Observable<ProgramEvent[]> {
     return new Observable<ProgramEvent[]>(observer => {
-      this.http.get<ProgramEvent[]>('assets/kutatók éjszakája 2025/building.json').subscribe({
+      this.http.get<ProgramEvent[]>('assets/kutatók éjszakája 2026/building.json').subscribe({
         next: (allData) => {
           // Szűrjük az adatokat a building kulcs alapján
           const filteredData = allData.filter(item => item.building === buildingKey);

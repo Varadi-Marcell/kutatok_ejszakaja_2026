@@ -1,0 +1,12 @@
+{
+  "id": "harmas",
+  "name": "Előadóterem 3",
+  "svgPath": "assets/KutatokEjszakaja-Standalaprajz-Harmas.svg",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 927.7,
+    "height": 301.5
+  },
+  "interactiveAreas": []
+}

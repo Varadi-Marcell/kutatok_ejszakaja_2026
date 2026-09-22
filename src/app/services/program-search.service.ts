@@ -21,8 +21,8 @@ export interface SearchResultGroup extends ProgramGroup {
   areaMatches: boolean;
 }
 
-const BUILDING_DATA_URL = 'assets/kutatók éjszakája 2025/building.json';
-const AREA_DATA_URL_TEMPLATE = 'assets/kutatók éjszakája 2025/{areaId}.json';
+const BUILDING_DATA_URL = 'assets/kutatók éjszakája 2026/building.json';
+const AREA_DATA_URL_TEMPLATE = 'assets/kutatók éjszakája 2026/{areaId}.json';
 const NAGYTERKEP_SVG_PATH = 'assets/nagyterkep_jo.svg';
 
 @Injectable({
@@ -86,7 +86,9 @@ export class ProgramSearchService {
         this.svgConfigService.loadNagyterkepConfig(),
         this.svgConfigService.loadElocsarnokConfig(),
         this.svgConfigService.loadDiszaulaConfig(),
-        this.svgConfigService.loadRegiAulaConfig()
+        this.svgConfigService.loadRegiAulaConfig(),
+        this.svgConfigService.loadHarmasConfig(),
+        this.svgConfigService.loadParkoloConfig()
       ]).pipe(shareReplay(1));
     }
     return this.allConfigs$;

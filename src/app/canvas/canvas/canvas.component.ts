@@ -348,6 +348,9 @@ export class CanvasComponent implements AfterViewInit, OnInit {
 
   // Különböző SVG konfigurációk betöltése térkép azonosító szerint
   loadMap(mapId: string) {
+    // Térkép váltáskor bezárjuk a nyitott popup ablakot
+    this.onClosePopup();
+
     this.resetPanzoom();
 
     let config$: Observable<SvgMapConfig>;
@@ -360,6 +363,12 @@ export class CanvasComponent implements AfterViewInit, OnInit {
         break;
       case 'regi_aula':
         config$ = this.svgConfigService.loadRegiAulaConfig();
+        break;
+      case 'harmas':
+        config$ = this.svgConfigService.loadHarmasConfig();
+        break;
+      case 'parkolo':
+        config$ = this.svgConfigService.loadParkoloConfig();
         break;
       case 'nagyterkep':
       default:
