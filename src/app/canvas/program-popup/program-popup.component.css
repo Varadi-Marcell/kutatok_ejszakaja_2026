@@ -635,3 +635,46 @@
 .meta-item i {
   color: #6b7280;
 }
+
+/* ===== Program badge-ek: angol-ajánlott / akadálymentesített ===== */
+.program-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 7px 0 3px;
+}
+
+.program-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.program-badge i {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.program-badge .badge-svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
+.badge-en {
+  background: #e7f1ff;
+  color: #084298;
+  border: 1px solid #9ec5fe;
+}
+
+.badge-access {
+  background: #e7f5ec;
+  color: #146c43;
+  border: 1px solid #a6cfb6;
+}

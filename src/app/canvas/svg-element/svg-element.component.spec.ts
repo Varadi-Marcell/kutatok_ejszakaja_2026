@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
 
 import { SvgElementComponent } from './svg-element.component';
 
@@ -8,7 +9,8 @@ describe('SvgElementComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SvgElementComponent]
+      declarations: [SvgElementComponent],
+      providers: [provideHttpClient()]
     });
     fixture = TestBed.createComponent(SvgElementComponent);
     component = fixture.componentInstance;

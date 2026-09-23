@@ -99,6 +99,82 @@
       >
         <title>{{ area.name }}</title>
       </circle>
+
+      <!-- Angol-ajánlott / akadálymentesített mini badge-ek a standon -->
+      <g
+        *ngFor="let badge of getAreaBadges(area)"
+        [attr.class]="'area-badge ' + (badge.type === 'en' ? 'area-badge-en' : 'area-badge-access')"
+        (click)="handleAreaClick(area, $event)"
+      >
+        <title>{{ badge.type === 'en'
+          ? (language === 'en' ? 'Recommended for English speakers' : 'Angol nyelvűek számára is ajánlott')
+          : (language === 'en' ? 'Accessible venue' : 'Akadálymentesített helyszín') }}</title>
+        <circle
+          class="badge-circle"
+          [attr.cx]="badge.x"
+          [attr.cy]="badge.y"
+          [attr.r]="badge.r"
+          [attr.stroke-width]="badge.sw"
+        ></circle>
+        <text
+          *ngIf="badge.type === 'en'"
+          class="badge-text"
+          [attr.x]="badge.x"
+          [attr.y]="badge.y"
+          [attr.font-size]="badge.r * 1.5"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >EN</text>
+        <path
+          *ngIf="badge.type === 'access'"
+          class="badge-icon"
+          [attr.d]="ACCESS_ICON_PATH"
+          [attr.transform]="getAccessIconTransform(badge)"
+        ></path>
+      </g>
+    </g>
+
+    <!-- Jelkulcs a térkép bal alsó sarkába – csak jelölt standok esetén -->
+    <g class="badge-legend" *ngIf="getLegendLayout() as legend">
+      <rect
+        class="legend-bg"
+        [attr.x]="legend.x"
+        [attr.y]="legend.y"
+        [attr.width]="legend.w"
+        [attr.height]="legend.h"
+        [attr.rx]="legend.fs * 0.6"
+      ></rect>
+      <ng-container *ngFor="let row of legend.rows">
+        <circle
+          [attr.class]="'legend-icon-circle ' + row.type"
+          [attr.cx]="legend.iconCx"
+          [attr.cy]="row.cy"
+          [attr.r]="legend.iconR"
+          [attr.stroke-width]="legend.iconR * 0.22"
+        ></circle>
+        <text
+          *ngIf="row.type === 'en'"
+          class="legend-icon-text"
+          [attr.x]="legend.iconCx"
+          [attr.y]="row.cy"
+          [attr.font-size]="legend.iconR * 1.5"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >EN</text>
+        <path
+          *ngIf="row.type === 'access'"
+          class="legend-icon-access"
+          [attr.d]="ACCESS_ICON_PATH"
+          [attr.transform]="getLegendAccessTransform(legend, row)"
+        ></path>
+        <text
+          class="legend-label"
+          [attr.x]="legend.iconCx + legend.iconR + legend.gap"
+          [attr.y]="row.cy"
+          [attr.font-size]="legend.fs"
+          dominant-baseline="central"
+        >{{ row.label }}</text>
+      </ng-container>
     </g>
   </svg>
 

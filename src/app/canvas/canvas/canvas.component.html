@@ -7,6 +7,7 @@
     class="img-fluid"
     [config]="currentSvgConfig"
     [highlightedAreaId]="highlightedAreaId"
+    [language]="language"
     (areaClick)="onAreaClick($event)">
   </app-svg-element>
 
@@ -19,29 +20,29 @@
       (languageChanged)="onLanguageChanged($event)">
     </app-map-toolbar>
 
-    <!-- Térkép váltó gombok – a kereső alatt (ikon + név) -->
+    <!-- Térkép váltó gombok – ikon + felirat, kompakt méretben -->
     <div class="nav-buttons-grid">
-      <button class="nav-btn nav-btn-map" (click)="loadMap('nagyterkep')" title="Campus Térkép">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'nagyterkep'" (click)="loadMap('nagyterkep')" title="Campus Térkép">
         <i class="bi bi-map"></i>
         <span class="nav-btn-text">Campus Térkép</span>
       </button>
-      <button class="nav-btn nav-btn-entrance" (click)="loadMap('elocsarnok')" title="Előcsarnok">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'elocsarnok'" (click)="loadMap('elocsarnok')" title="Előcsarnok">
         <i class="bi bi-door-open"></i>
         <span class="nav-btn-text">Előcsarnok</span>
       </button>
-      <button class="nav-btn nav-btn-hall" (click)="loadMap('diszaula')" title="Díszaula">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'diszaula'" (click)="loadMap('diszaula')" title="Díszaula">
         <i class="bi bi-bank"></i>
         <span class="nav-btn-text">Díszaula</span>
       </button>
-      <button class="nav-btn nav-btn-old" (click)="loadMap('regi_aula')" title="Régi Aula">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'regi_aula'" (click)="loadMap('regi_aula')" title="Régi Aula">
         <i class="bi bi-book"></i>
         <span class="nav-btn-text">Régi Aula</span>
       </button>
-      <button class="nav-btn nav-btn-lecture" (click)="loadMap('harmas')" title="Előadóterem 3">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'harmas'" (click)="loadMap('harmas')" title="Előadóterem 3">
         <i class="bi bi-easel2-fill"></i>
         <span class="nav-btn-text">Előadó 3</span>
       </button>
-      <button class="nav-btn nav-btn-parking" (click)="loadMap('parkolo')" title="Parkoló">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'parkolo'" (click)="loadMap('parkolo')" title="Parkoló">
         <i class="bi bi-p-square"></i>
         <span class="nav-btn-text">Parkoló</span>
       </button>

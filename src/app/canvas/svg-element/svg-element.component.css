@@ -118,3 +118,74 @@ circle.area-highlighted {
   stroke-width: 4 !important;
   animation: area-highlight-pulse 1.2s ease-in-out infinite;
 }
+
+
+/* ===== Angol-ajánlott / akadálymentesített mini badge-ek a standokon ===== */
+.area-badge {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.area-badge .badge-circle {
+  fill: #ffffff;
+  stroke: #0b4f85;
+}
+
+.area-badge-access .badge-circle {
+  stroke: #146c43;
+}
+
+.area-badge .badge-text {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  fill: #0b4f85;
+  user-select: none;
+}
+
+.area-badge .badge-icon {
+  fill: #146c43;
+}
+
+.area-badge:hover .badge-circle {
+  fill: #f0f7ff;
+}
+
+.area-badge-access:hover .badge-circle {
+  fill: #ecf7f0;
+}
+
+/* ===== Jelkulcs (legend) – bal alsó sarok ===== */
+.badge-legend {
+  pointer-events: none;
+}
+
+.badge-legend .legend-bg {
+  fill: rgba(255, 255, 255, 0.92);
+  stroke: rgba(26, 46, 74, 0.35);
+}
+
+.badge-legend .legend-icon-circle {
+  fill: #ffffff;
+  stroke: #0b4f85;
+}
+
+.badge-legend .legend-icon-circle.access {
+  stroke: #146c43;
+}
+
+.badge-legend .legend-icon-text {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  fill: #0b4f85;
+}
+
+.badge-legend .legend-icon-access {
+  fill: #146c43;
+}
+
+.badge-legend .legend-label {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  fill: #1a2e4a;
+  user-select: none;
+}

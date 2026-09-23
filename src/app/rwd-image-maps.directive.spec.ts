@@ -1,8 +1,11 @@
-import { RwdImageMapsDirective } from './rwd-image-maps.directive';
+import { ElementRef, Renderer2 } from '@angular/core';
 
-describe('RwdImageMapsDirective', () => {
+import { RwdImageMaps } from './rwd-image-maps.directive';
+
+describe('RwdImageMaps', () => {
   it('should create an instance', () => {
-    const directive = new RwdImageMapsDirective();
+    const el = { nativeElement: document.createElement('img') } as ElementRef;
+    const directive = new RwdImageMaps(el, null as unknown as Renderer2);
     expect(directive).toBeTruthy();
   });
 });
