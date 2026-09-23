@@ -37,7 +37,7 @@
     <div class="popup-body" *ngIf="!isLoading">
       <div class="programs-container" *ngIf="programs.length > 0; else noPrograms">
         <div class="program-card" *ngFor="let program of programs; let i = index" [class.selected]="selectedProgramName && program.name === selectedProgramName">
-          <div class="program-number" *ngIf="program['No.']">{{ program['No.'] }}</div>
+          <div class="program-number">{{ i + 1 }}</div>
           
           <h3 class="program-name">{{ isEnglish && program.english_name ? program.english_name : program.name }}</h3>
 
