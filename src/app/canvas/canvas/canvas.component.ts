@@ -111,29 +111,18 @@ export class CanvasComponent implements AfterViewInit, OnInit {
           startScale: 1,
           boundsPadding: 0.1,
           startX: 0,
-          startY: 0
+          startY: 0,
+          // Kisebb lepés + lágy easing, hogy a zoomolás (görgő és gombok) ne legyen hirtelen
+          step: 0.12,
+          animate: true,
+          duration: 220,
+          easing: 'ease-out'
         });
 
+        // A könyvtár beépített, sima görgős zoomolása (deltaY-arányos, fókuszpontra zoomol)
         this.scene.nativeElement.addEventListener('wheel', (e: WheelEvent) => {
-          e.preventDefault(); // do not scroll
-
           if (!this.instance) return;
-
-          const zoomSpeed = 0.2;
-          const currentZoomFactor = this.instance.getScale();
-          let zoomFactor;
-
-          if (e.deltaY < 0) { // zoom in
-            zoomFactor = currentZoomFactor + zoomSpeed;
-          } else { // zoom out
-            zoomFactor = currentZoomFactor - zoomSpeed;
-            if (zoomFactor < 0.5) { // minZoom
-              zoomFactor = 0.5;
-            }
-          }
-
-          const point = {clientX: e.clientX, clientY: e.clientY};
-          this.instance.zoomToPoint(zoomFactor, point);
+          this.instance.zoomWithWheel(e);
         });
 
         this.isInitialized = true;
@@ -159,10 +148,7 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     }
 
     try {
-      const currentZoomFactor = this.instance.getScale();
-      const zoomFactor = currentZoomFactor + 0.1;
-      console.log('Zoom in:', zoomFactor);
-      this.instance.zoom(zoomFactor);
+      this.instance.zoomIn();
     } catch (error) {
       console.error('Hiba a zoom in során:', error);
     }
@@ -192,10 +178,7 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     }
 
     try {
-      const currentZoomFactor = this.instance.getScale();
-      const zoomFactor = Math.max(currentZoomFactor - 0.1, 0.1); // minimum zoom 0.1
-      console.log('Zoom out:', zoomFactor);
-      this.instance.zoom(zoomFactor);
+      this.instance.zoomOut();
     } catch (error) {
       console.error('Hiba a zoom out során:', error);
     }
