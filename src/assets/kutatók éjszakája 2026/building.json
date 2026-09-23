@@ -10,6 +10,8 @@
     "max_person": "nincs korlát",
     "registration": "kari pultnál",
     "age": "0-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a3"
   },
   {
@@ -23,6 +25,8 @@
     "max_person": "nincs korlát",
     "registration": "kari pultnál",
     "age": "0-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a3"
   },
   {
@@ -36,6 +40,7 @@
     "max_person": "20 fő csoportonként",
     "registration": "kari pultnál",
     "age": "6-99 év",
+    "recommended_for_english_speakers": true,
     "building": "a3"
   },
   {
@@ -49,6 +54,8 @@
     "max_person": "nincs",
     "registration": "nincs",
     "age": "6-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -62,6 +69,8 @@
     "max_person": "nincs",
     "registration": "nincs",
     "age": "6-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -75,6 +84,8 @@
     "max_person": "20",
     "registration": "nincs",
     "age": "6-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -86,6 +97,7 @@
     "place": "MFK Stand üveg előcsarnok / MFK stand glass lobby",
     "time": "18:00-től / from 6pm",
     "registration": "nincs",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -97,6 +109,7 @@
     "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
     "time": "18:00-től / from 6pm",
     "registration": "nincs",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -109,9 +122,17 @@
     "time": "Távcsöves bemutató jó idő esetén 20 és 23 óra között folyamatosan. Standnál folyamatosan 19 és 23 óra között\nTelescope demonstration continuously from 8 pm to 11 pm (if the weather is good), stand continuosly from 7 pm to 11 pm",
     "registration": "nincs",
     "age": "10 éves kor felett",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
-
+  {
+    "No.": "10",
+    "name": "MFK STAND- KARI REGISZTRÁCIÓS PULT",
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
+    "building": "elocsarnok"
+  },
   {
     "No.": "11",
     "name": "Tájformáló erők – Geomorfológia működés közben",
@@ -123,6 +144,7 @@
     "max_person": "15 fő",
     "registration": "nincs",
     "age": "-",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -136,6 +158,7 @@
     "max_person": "20 fő",
     "registration": "nincs",
     "age": "6-99",
+    "accessible_venue": true,
     "building": "c2"
   },
   {
@@ -149,6 +172,8 @@
     "max_person": "30 fő",
     "registration": "nincs",
     "age": "0-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "c2"
   },
   {
@@ -162,6 +187,8 @@
     "max_person": "nincs limit",
     "registration": "nincs",
     "age": "6-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -174,7 +201,9 @@
     "time": "Folyamatosan 18:00 és 22:00 között / Continuously from 6 pm to 10 pm",
     "max_person": "nincs limit",
     "registration": "nincs",
-    "age": "6-99"
+    "age": "6-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "16",
@@ -186,6 +215,8 @@
     "time": "18:00 és 22:00 között / Continuously through 18:00 és 22:00",
     "max_person": "10",
     "registration": "igen",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a2"
   },
   {
@@ -198,6 +229,7 @@
     "time": "Folyamatosan a teljes rendezvény alatt",
     "max_person": "nincs",
     "registration": "nincs",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -211,6 +243,7 @@
     "max_person": "nincs",
     "registration": "nincs",
     "age": "6-99",
+    "accessible_venue": true,
     "building": "c2"
   },
   {
@@ -224,6 +257,8 @@
     "max_person": "300 fő",
     "registration": "Regisztráció nélküli",
     "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a2"
   },
   {
@@ -237,6 +272,8 @@
     "max_person": "35 fő/alkalom",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "b1"
   },
   {
@@ -250,6 +287,8 @@
     "max_person": "-",
     "registration": "-",
     "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -289,6 +328,7 @@
     "max_person": "6 fő/ alkalom",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "b1"
   },
   {
@@ -302,6 +342,7 @@
     "max_person": "-",
     "registration": "regisztráció nélküli",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -315,6 +356,8 @@
     "max_person": "10 fő",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "b1"
   },
   {
@@ -328,6 +371,7 @@
     "max_person": "10 fő",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "4 éves kortól",
+    "accessible_venue": true,
     "building": "b1"
   },
   {
@@ -341,6 +385,7 @@
     "max_person": "-",
     "registration": "regisztráció nélküli",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -366,6 +411,7 @@
     "max_person": "-",
     "registration": "regisztráció nélküli",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -392,6 +438,7 @@
     "max_person": "12 fő",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "b1"
   },
   {
@@ -405,9 +452,21 @@
     "max_person": "8",
     "registration": "Regisztráció nélküli",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
- 
+  {
+    "No.": "16",
+    "name": "KARI REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "place": "FŐBEJÁRAT, Üvegelőcsarnok / MAIN ENTRANCE, Glass Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "age": "vegyes",
+    "accessible_venue": true,
+    "building": "elocsarnok"
+  },
   {
     "No.": "17",
     "name": "(Metal Waste Solution Kft. programja)",
@@ -416,6 +475,7 @@
     "max_person": "-",
     "registration": "Regisztráció nélküli",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -428,7 +488,9 @@
     "time": "19:00-20:00",
     "max_person": "-",
     "registration": "Regisztráció nélküli",
-    "age": "vegyes"
+    "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "19",
@@ -440,7 +502,9 @@
     "time": "20:00-23:00",
     "max_person": "20",
     "registration": "regisztráció nélküli",
-    "age": "vegyes"
+    "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "1",
@@ -453,6 +517,7 @@
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
+    "accessible_venue": true,
     "building": "info"
   },
   {
@@ -466,6 +531,7 @@
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
+    "accessible_venue": true,
     "building": "info"
   },
   {
@@ -479,6 +545,7 @@
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
+    "accessible_venue": true,
     "building": "info"
   },
   {
@@ -492,6 +559,8 @@
     "max_person": "20",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "-",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a3"
   },
   {
@@ -504,6 +573,7 @@
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "accessible_venue": true,
     "building": "a3"
   },
   {
@@ -516,6 +586,8 @@
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a3"
   },
   {
@@ -528,6 +600,7 @@
     "time": "18:-00-tól folyamatos, fél óra",
     "max_person": "30",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -541,6 +614,7 @@
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
+    "accessible_venue": true,
     "building": "a5"
   },
   {
@@ -554,6 +628,7 @@
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
+    "accessible_venue": true,
     "building": "a5"
   },
   {
@@ -567,6 +642,7 @@
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
+    "accessible_venue": true,
     "building": "a5"
   },
   {
@@ -580,6 +656,8 @@
     "max_person": "20",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a2"
   },
   {
@@ -593,6 +671,7 @@
     "max_person": "-12",
     "registration": "-",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "a3"
   },
   {
@@ -606,6 +685,7 @@
     "max_person": "-12",
     "registration": "-",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "a3"
   },
   {
@@ -619,6 +699,7 @@
     "max_person": "-",
     "registration": "-",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "a3"
   },
   {
@@ -645,6 +726,7 @@
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "info"
   },
   {
@@ -658,6 +740,7 @@
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -671,6 +754,7 @@
     "max_person": "45",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -684,6 +768,7 @@
     "max_person": "40",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -697,6 +782,7 @@
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "a5"
   },
   {
@@ -710,7 +796,22 @@
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
+    "accessible_venue": true,
     "building": "a4"
+  },
+  {
+    "No.": "22",
+    "name": "KARI REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "description": "Látogatók útbaigazítása, regisztráció, programokhoz kísérése.",
+    "english_description": "Guiding, registering and accompanying visitors to programs.",
+    "place": "FŐBEJÁRAT, Üvegelőcsarnok / MAIN ENTRANCE, Glass Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "age": "vegyes",
+    "accessible_venue": true,
+    "building": "elocsarnok"
   },
   {
     "No.": "1",
@@ -735,7 +836,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limit",
     "registration": "nincs",
-    "age": "minden"
+    "age": "minden",
+    "accessible_venue": true
   },
   {
     "No.": "3",
@@ -747,7 +849,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limit",
     "registration": "nincs",
-    "age": "minden"
+    "age": "minden",
+    "accessible_venue": true
   },
   {
     "No.": "4",
@@ -759,7 +862,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "20",
     "registration": "nincs",
-    "age": "minden"
+    "age": "minden",
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -771,7 +875,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "10",
     "registration": "nincs",
-    "age": "minden"
+    "age": "minden",
+    "accessible_venue": true
   },
   {
     "No.": "6",
@@ -783,7 +888,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "10",
     "registration": "nincs",
-    "age": "minden"
+    "age": "minden",
+    "accessible_venue": true
   },
   {
     "No.": "7",
@@ -795,7 +901,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limit",
     "registration": "nincs",
-    "age": "minden"
+    "age": "minden",
+    "accessible_venue": true
   },
   {
     "No.": "8",
@@ -807,7 +914,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limit",
     "registration": "nincs",
-    "age": "minden"
+    "age": "minden",
+    "accessible_venue": true
   },
   {
     "No.": "9",
@@ -836,6 +944,17 @@
     "building": "c2"
   },
   {
+    "No.": "11",
+    "name": "KARI REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "place": "Díszaula",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "accessible_venue": true,
+    "building": "diszaula"
+  },
+  {
     "No.": "1",
     "name": "WONDER WORLD",
     "english_name": "WONDER WORLD",
@@ -846,6 +965,7 @@
     "max_person": "4 fő/kb.30 perc",
     "registration": "nem",
     "age": "16+",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -859,6 +979,7 @@
     "max_person": "10 fő/30 perc",
     "registration": "nem",
     "age": "14+",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -872,6 +993,7 @@
     "max_person": "10 fő/30 perc",
     "registration": "nem",
     "age": "16+",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -885,6 +1007,7 @@
     "max_person": "10 fő/30 perc",
     "registration": "nem",
     "age": "14+",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -896,6 +1019,7 @@
     "place": "A/4 épület\nRégi aula",
     "time": "18:00 - 22:00",
     "registration": "nem",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -907,6 +1031,7 @@
     "place": "A/4 épület\nRégi aula",
     "time": "18:00 - 22:00",
     "registration": "nem",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -918,6 +1043,7 @@
     "place": "A/4 épület\nRégi aula",
     "time": "18:00 - 22:00",
     "registration": "nem",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -930,6 +1056,7 @@
     "time": "18:00 - 23:00",
     "registration": "nem",
     "age": "16+",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -943,6 +1070,7 @@
     "max_person": "12 fő/alkalom",
     "registration": "IGEN",
     "age": "14+",
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -956,6 +1084,19 @@
     "max_person": "30 - 40 fő",
     "registration": "nem",
     "age": "16+",
+    "accessible_venue": true,
+    "building": "a4"
+  },
+  {
+    "No.": "11",
+    "name": "KARI REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "place": "A/4 épület\nRégi aula",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "age": "vegyes",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -966,6 +1107,7 @@
     "english_description": "Money puzzle, money drawing, memory and other money-related games, even the smallest ones can try.",
     "place": "FINTELLIGENCE\nPénzügyi Oktatási Centrum\nA/4. épület III. emelet",
     "time": "18:00 - 23:00",
+    "accessible_venue": true,
     "building": "a4"
   },
   {
@@ -979,6 +1121,7 @@
     "max_person": "Mindegy!",
     "registration": "Igen, a BTK standjánál lesz egy emberünk!",
     "age": "3-tól felfelé!",
+    "accessible_venue": true,
     "building": "a5"
   },
   {
@@ -992,6 +1135,7 @@
     "max_person": "10 fő",
     "registration": "Nem szükséges.",
     "age": "felnőttek",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1005,6 +1149,7 @@
     "max_person": "16",
     "registration": "Nem szükséges.",
     "age": "bárki",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1018,6 +1163,7 @@
     "max_person": "40 fő",
     "registration": "Nem szükséges.",
     "age": "12 éves kortól",
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1031,6 +1177,7 @@
     "max_person": "40 fő",
     "registration": "Nem szükséges.",
     "age": "Bárki",
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1044,6 +1191,7 @@
     "max_person": "15–20 fő",
     "registration": "Nem szükséges.",
     "age": "bárki",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1057,6 +1205,7 @@
     "max_person": "15",
     "registration": "Nem szükséges.",
     "age": "bárki, aki kiprobálná, hol tart",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1070,6 +1219,7 @@
     "max_person": "15",
     "registration": "Nem szükséges.",
     "age": "14+",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1082,6 +1232,7 @@
     "time": "18:00 - 20:00 / folyamatosan / continuously between 6pm-8pm",
     "max_person": "10",
     "registration": "Nem szükséges.",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1094,6 +1245,7 @@
     "time": "18:00-20:00 / folyamatosan / continuously between 6pm-8pm",
     "max_person": "20 fő",
     "registration": "Nem szükséges.",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1106,6 +1258,7 @@
     "time": "18:00-20:00 / folyamatosan / continuously between 6pm-8pm",
     "max_person": "15 fő",
     "registration": "Nem szükséges.",
+    "recommended_for_english_speakers": true,
     "building": "diszaula"
   },
   {
@@ -1117,6 +1270,7 @@
     "place": "C/1. épület, 305. terem / Building C/1, Room 305",
     "time": "17.30-18.00",
     "max_person": "20 fő",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1130,6 +1284,7 @@
     "max_person": "10-15 fő egy időpontra",
     "registration": "Nem szükséges.",
     "age": "Bárki, akit érdekel a program",
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1146,6 +1301,17 @@
     "building": "a6"
   },
   {
+    "No.": "15",
+    "name": "KARI REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "place": "Üveg előcsarnok",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "accessible_venue": true,
+    "building": "elocsarnok"
+  },
+  {
     "No.": "16",
     "name": "\"... és az én őseim vajon kik voltak?\"",
     "english_name": "\"... and who were my own ancestors?\"",
@@ -1156,6 +1322,8 @@
     "max_person": "Nem szükséges maximálni",
     "registration": "Nem szükséges.",
     "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "c1"
   },
   {
@@ -1169,6 +1337,7 @@
     "max_person": "nincs limitálva",
     "registration": "nincs",
     "age": "bármely",
+    "accessible_venue": true,
     "building": "diszaula"
   },
   {
@@ -1182,6 +1351,7 @@
     "max_person": "nincs limitálva",
     "registration": "nincs",
     "age": "8-99",
+    "accessible_venue": true,
     "building": "diszaula"
   },
   {
@@ -1195,6 +1365,8 @@
     "max_person": "nincs limitálva",
     "registration": "nincs",
     "age": "bármely",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "diszaula"
   },
   {
@@ -1208,6 +1380,8 @@
     "max_person": "60 fő",
     "registration": "nincs",
     "age": "Bármely",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "stefania"
   },
   {
@@ -1234,6 +1408,7 @@
     "max_person": "nincs limitálva",
     "registration": "nincs",
     "age": "bármely",
+    "accessible_venue": true,
     "building": "diszaula"
   },
   {
@@ -1247,6 +1422,7 @@
     "max_person": "nincs limitálva",
     "registration": "nincs",
     "age": "bármely",
+    "accessible_venue": true,
     "building": "stefania"
   },
   {
@@ -1260,6 +1436,7 @@
     "max_person": "10 fő",
     "registration": "nem",
     "age": "bármelyik",
+    "accessible_venue": true,
     "building": "stefania"
   },
   {
@@ -1273,6 +1450,7 @@
     "max_person": "25 fő",
     "registration": "nem",
     "age": "bármelyik",
+    "accessible_venue": true,
     "building": "stefania"
   },
   {
@@ -1319,7 +1497,8 @@
     "place": "folyamatban",
     "time": "18:00-20:00",
     "registration": "nincs",
-    "age": "10+"
+    "age": "10+",
+    "recommended_for_english_speakers": true
   },
   {
     "No.": "4",
@@ -1330,6 +1509,7 @@
     "place": "Üveg aula stand / Main Hall IOK Stand",
     "time": "17:30-19:00",
     "registration": "nincs",
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -1340,7 +1520,8 @@
     "english_description": "Quizzes, Fun Facts & Cultural Insights",
     "place": "folyamatban",
     "time": "18:00-20:00",
-    "registration": "nincs"
+    "registration": "nincs",
+    "recommended_for_english_speakers": true
   },
   {
     "No.": "6",
@@ -1352,7 +1533,17 @@
     "time": "18:00-20:00",
     "registration": "nincs"
   },
-
+  {
+    "No.": "7",
+    "name": "REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "place": "Üveg előcsarnok",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "accessible_venue": true,
+    "building": "elocsarnok"
+  },
   {
     "No.": "1",
     "name": "Selmeci Műemlékkönyvtár megtekintése",
@@ -1363,7 +1554,9 @@
     "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 30-35 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
     "max_person": "20-25 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "2",
@@ -1375,7 +1568,9 @@
     "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 15-20 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
     "max_person": "20-25 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "3",
@@ -1387,7 +1582,8 @@
     "time": "óránként (18:00 órától, utolsó időpont: 21:00) [kb. 20-30 perc] / every hour (from 6 pm, last time: 9 pm)",
     "max_person": "20-25 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "accessible_venue": true
   },
   {
     "No.": "4",
@@ -1399,7 +1595,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "8-10 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -1411,7 +1608,8 @@
     "time": "18:30 óra , és 20:30 óra [kb. 30 perc]/ from 6:30 pm, and 8:30 pm",
     "max_person": "50 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "accessible_venue": true
   },
   {
     "No.": "1",
@@ -1514,6 +1712,8 @@
     "time": "18:00-21:00",
     "max_person": "nincs",
     "registration": "nincs",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "diszaula"
   },
   {
@@ -1527,6 +1727,8 @@
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1540,6 +1742,8 @@
     "max_person": "15 fő",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1549,6 +1753,8 @@
     "time": "20:00",
     "max_person": "15 fő",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1562,6 +1768,8 @@
     "max_person": "15 fő",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1575,6 +1783,8 @@
     "max_person": "15 fő",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1588,6 +1798,8 @@
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1601,6 +1813,8 @@
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1614,6 +1828,8 @@
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1627,6 +1843,8 @@
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "a1"
   },
   {
@@ -1640,6 +1858,8 @@
     "max_person": "-",
     "registration": "-",
     "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "elocsarnok"
   },
   {
@@ -1652,6 +1872,8 @@
     "max_person": "Egyszerre maximum 3 fő. Egy csoport 3 főből áll, a program időtartama csoportonként kb. 1 perc.",
     "registration": "nincs",
     "age": "5-70",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "building": "diszaula"
   },
   {
@@ -1665,6 +1887,8 @@
     "max_person": "Egy időben kb. 40 fő, de rugalmasak vagyunk",
     "registration": "nincs",
     "age": "10 éves kor fölött ajánljuk",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "Infrastruktúra igénye": "nincs",
     "Neve": "Csorba Mónika",
     "e-mail címe": "monika.csorba@uni-miskolc.hu",
@@ -1683,6 +1907,7 @@
     "max_person": "8 fő / látogatás",
     "registration": "nincs",
     "age": "all",
+    "accessible_venue": true,
     "Infrastruktúra igénye": "nincs",
     "Neve": "Dr. Bölkény Ildi",
     "e-mail címe": "ildi.bolkeny@uni-miskolc.hu",
@@ -1700,6 +1925,8 @@
     "time": "folyamatosan / Continuously",
     "registration": "nincs",
     "age": "0-99+",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
     "Infrastruktúra igénye": "~15m² terület\n3 asztal, 10 szék, 230V áram",
     "Neve": "Tóth Eszter",
     "e-mail címe": "eszter.toth.erm@gmail.com",

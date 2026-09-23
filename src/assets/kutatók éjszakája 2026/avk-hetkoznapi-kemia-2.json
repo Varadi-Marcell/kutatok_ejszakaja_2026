@@ -9,6 +9,7 @@
     "time": "Folyamatos 18:00-tól",
     "max_person": "8",
     "registration": "Regisztráció nélküli",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   }
 ]

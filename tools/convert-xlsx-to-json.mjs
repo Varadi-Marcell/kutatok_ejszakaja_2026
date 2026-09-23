@@ -152,6 +152,7 @@ const SKIPPED_SHEETS = new Set(['Kari táblák - sablon']);
 const KEY_ORDER = [
   'No.', 'name', 'english_name', 'description', 'english_description',
   'place', 'time', 'max_person', 'registration', 'age',
+  'recommended_for_english_speakers', 'accessible_venue',
   'Infrastruktúra igénye', 'Neve', 'e-mail címe', 'tel. száma', 'Segítők',
   'building',
 ];
@@ -159,7 +160,6 @@ const KEY_ORDER = [
 // A séma idegen kulcsai: csak figyelmeztetünk, ha bennük van adat
 const IGNORED_HEADERS = new Set([
   'programfelelős', 'programfelelős (cég)', 'megjegyzés',
-  'angol nyelvűek számára is ajánlott', 'akadálymentesített helyszín',
   'felületre felkerült',
 ]);
 
@@ -185,6 +185,10 @@ function headerToKey(header) {
   if (h.includes('angol nyelvű megnevezés')) return 'english_name';
   if (h.includes('angol nyelvű leírás')) return 'english_description';
   if (h.includes('leírás') && !h.includes('angol')) return 'description';
+  // Pontos egyezések a részstring-szabályok ELÉ (pl. az "akadálymentesített
+  // helyszín" is tartalmazza a "helyszín" szót - különben rossz kulcsra kerülne!)
+  if (h.includes('angol nyelvűek számára is ajánlott')) return 'recommended_for_english_speakers';
+  if (h.includes('akadálymentesített helyszín')) return 'accessible_venue';
   if (h.includes('helyszín')) return 'place';
   if (h.includes('időpont')) return 'time';
   if (h.includes('férőhely')) return 'max_person';
@@ -196,6 +200,14 @@ function headerToKey(header) {
   if (h.includes('programtartó telefon')) return 'tel. száma';
   if (h === 'segítők' || h === 'segítők neve') return 'Segítők';
   return 'UNKNOWN';
+}
+
+/** Excel-boolean / igen-nem jellegű cella kiértékelése. */
+function isAffirmative(value) {
+  if (value === true) return true;
+  if (typeof value === 'number') return value !== 0;
+  const s = String(value == null ? '' : value).trim().toLowerCase();
+  return s === 'true' || s === 'igen' || s === 'i' || s === 'x' || s === '1' || s === '+' || s === 'yes' || s === 'y';
 }
 
 /** Cellérték tisztítása: stringgé alakítás, szóközök/soremelések rendezése. */
@@ -263,6 +275,13 @@ function convertSheet(ws, sheetName, warnings) {
       }
       const value = clean(rawValue);
       if (key === 'IGNORED' || key == null) continue;
+      if (key === 'recommended_for_english_speakers' || key === 'accessible_venue') {
+        // Boolean jellegű oszlopok: csak true esetén kerül be a kulcs (karcsú JSON),
+        // hiányzó oszlop vagy nem-igen érték esetén a kulcs kimarad.
+        // FONTOS: rawValue-t használunk, mert clean(true) -> "true" string lenne.
+        if (isAffirmative(rawValue)) event[key] = true;
+        continue;
+      }
       if (key === 'UNKNOWN') {
         if (value) {
           warnings.push(`[${sheetName}] Ismeretlen oszlop kihagyva: "${normalizeHeader(headers[idx])}" (érték: "${value.slice(0, 60)}")`);

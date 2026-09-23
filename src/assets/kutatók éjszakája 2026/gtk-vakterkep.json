@@ -9,6 +9,7 @@
     "time": "20:00 - 24:00",
     "max_person": "10 fő/30 perc",
     "registration": "nem",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   }
 ]

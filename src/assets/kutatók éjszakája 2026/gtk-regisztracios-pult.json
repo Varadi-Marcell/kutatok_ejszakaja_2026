@@ -7,7 +7,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "-",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "1",
@@ -19,6 +20,7 @@
     "time": "18:00 - 24:00",
     "max_person": "4 fő/kb.30 perc",
     "registration": "nem",
-    "age": "16+"
+    "age": "16+",
+    "accessible_venue": true
   }
 ]

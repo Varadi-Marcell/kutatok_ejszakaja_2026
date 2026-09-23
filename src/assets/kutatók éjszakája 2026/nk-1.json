@@ -8,6 +8,8 @@
     "place": "Díszaula / Main Hall",
     "time": "18:00-21:00",
     "max_person": "nincs",
-    "registration": "nincs"
+    "registration": "nincs",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   }
 ]

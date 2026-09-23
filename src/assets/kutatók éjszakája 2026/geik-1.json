@@ -9,6 +9,7 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "-",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   }
 ]

@@ -8,6 +8,7 @@
     "place": "A/4 épület\nRégi aula",
     "time": "18:00 - 23:00",
     "registration": "nem",
-    "age": "16+"
+    "age": "16+",
+    "accessible_venue": true
   }
 ]

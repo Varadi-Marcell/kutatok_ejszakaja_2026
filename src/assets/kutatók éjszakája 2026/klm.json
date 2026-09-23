@@ -9,7 +9,9 @@
     "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 30-35 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
     "max_person": "20-25 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "2",
@@ -21,7 +23,9 @@
     "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 15-20 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
     "max_person": "20-25 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "3",
@@ -33,7 +37,8 @@
     "time": "óránként (18:00 órától, utolsó időpont: 21:00) [kb. 20-30 perc] / every hour (from 6 pm, last time: 9 pm)",
     "max_person": "20-25 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "accessible_venue": true
   },
   {
     "No.": "4",
@@ -45,7 +50,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "8-10 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -57,6 +63,7 @@
     "time": "18:30 óra , és 20:30 óra [kb. 30 perc]/ from 6:30 pm, and 8:30 pm",
     "max_person": "50 / alkalom",
     "registration": "nem",
-    "age": "bárki"
+    "age": "bárki",
+    "accessible_venue": true
   }
 ]

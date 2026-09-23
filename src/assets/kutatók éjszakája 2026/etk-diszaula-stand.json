@@ -9,7 +9,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limitálva",
     "registration": "nincs",
-    "age": "bármely"
+    "age": "bármely",
+    "accessible_venue": true
   },
   {
     "No.": "2",
@@ -21,7 +22,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limitálva",
     "registration": "nincs",
-    "age": "8-99"
+    "age": "8-99",
+    "accessible_venue": true
   },
   {
     "No.": "6",
@@ -33,7 +35,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limitálva",
     "registration": "nincs",
-    "age": "bármely"
+    "age": "bármely",
+    "accessible_venue": true
   },
   {
     "No.": "5",

@@ -9,6 +9,8 @@
     "time": "19:00-20:00",
     "max_person": "-",
     "registration": "Regisztráció nélküli",
-    "age": "vegyes"
+    "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   }
 ]

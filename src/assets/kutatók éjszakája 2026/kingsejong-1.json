@@ -8,6 +8,8 @@
     "time": "Folyamatos, 17:30-20:00",
     "max_person": "Egyszerre maximum 3 fő. Egy csoport 3 főből áll, a program időtartama csoportonként kb. 1 perc.",
     "registration": "nincs",
-    "age": "5-70"
+    "age": "5-70",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   }
 ]

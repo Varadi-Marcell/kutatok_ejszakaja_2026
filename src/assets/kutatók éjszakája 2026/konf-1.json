@@ -9,6 +9,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "-",
-    "age": "Minden korosztály"
+    "age": "Minden korosztály",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   }
 ]

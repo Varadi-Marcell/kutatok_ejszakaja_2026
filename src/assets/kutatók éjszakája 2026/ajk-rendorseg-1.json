@@ -9,6 +9,7 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "10",
     "registration": "nincs",
-    "age": "minden"
+    "age": "minden",
+    "accessible_venue": true
   }
 ]

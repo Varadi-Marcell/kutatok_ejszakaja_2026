@@ -6,6 +6,7 @@
     "place": "Díszaula",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
-    "registration": "-"
+    "registration": "-",
+    "accessible_venue": true
   }
 ]

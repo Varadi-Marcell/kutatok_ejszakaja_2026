@@ -9,7 +9,9 @@
     "time": "folyamatos; de óránként (18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
     "max_person": "nincs korlát",
     "registration": "kari pultnál",
-    "age": "0-99 év"
+    "age": "0-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "2",
@@ -21,7 +23,9 @@
     "time": "folyamatos; de óránként ( 18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
     "max_person": "nincs korlát",
     "registration": "kari pultnál",
-    "age": "0-99 év"
+    "age": "0-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "3",
@@ -33,7 +37,8 @@
     "time": "18 órától 30 percenként indulnak csoportok a kari standtól / From 6:00 p.m., groups will depart from the faculty stand every 30 minutes.",
     "max_person": "20 fő csoportonként",
     "registration": "kari pultnál",
-    "age": "6-99 év"
+    "age": "6-99 év",
+    "recommended_for_english_speakers": true
   },
   {
     "No.": "4",
@@ -45,7 +50,9 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs",
     "registration": "nincs",
-    "age": "6-99 év"
+    "age": "6-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -57,7 +64,9 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs",
     "registration": "nincs",
-    "age": "6-99 év"
+    "age": "6-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "6",
@@ -69,7 +78,9 @@
     "time": "35 perces előadások, kezdési időpontok 19:00, 20:00, 21:00 ha van igény, 22:00 is; 35 min presentations starting at 7 pm, 8 pm, 9 pm (in case of interest at 10 pm as well)",
     "max_person": "20",
     "registration": "nincs",
-    "age": "6-99"
+    "age": "6-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "7",
@@ -79,7 +90,8 @@
     "english_description": "An augmented reality-based sandbox created with remote sensing tools for both kids and adults.",
     "place": "MFK Stand üveg előcsarnok / MFK stand glass lobby",
     "time": "18:00-től / from 6pm",
-    "registration": "nincs"
+    "registration": "nincs",
+    "accessible_venue": true
   },
   {
     "No.": "8",
@@ -89,7 +101,8 @@
     "english_description": "Introduction of various sensors that record environmental (air) and soil parameters, whose data assist earth and environmental science professionals in determining appropriate adaptation, economic, and intervention actions.",
     "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
     "time": "18:00-től / from 6pm",
-    "registration": "nincs"
+    "registration": "nincs",
+    "accessible_venue": true
   },
   {
     "No.": "9",
@@ -100,12 +113,15 @@
     "place": "Távcsöves bemutató (jó idő esetén) a Jó szerencsét felirat melletti füves területen.\nBemutató: üvegelőcsarnok/díszaula\nTelescope demonstration (if the weather is good) on the grassy area next to the 'Good Luck' sign.\nDemonstration: glass lobby/main hall",
     "time": "Távcsöves bemutató jó idő esetén 20 és 23 óra között folyamatosan. Standnál folyamatosan 19 és 23 óra között\nTelescope demonstration continuously from 8 pm to 11 pm (if the weather is good), stand continuosly from 7 pm to 11 pm",
     "registration": "nincs",
-    "age": "10 éves kor felett"
+    "age": "10 éves kor felett",
+    "accessible_venue": true
   },
   {
     "No.": "10",
     "name": "MFK STAND- KARI REGISZTRÁCIÓS PULT",
-    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby"
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "11",
@@ -117,7 +133,8 @@
     "time": "18:00-tól folyamatosan / Continuously from 6pm",
     "max_person": "15 fő",
     "registration": "nincs",
-    "age": "-"
+    "age": "-",
+    "accessible_venue": true
   },
   {
     "No.": "12",
@@ -129,7 +146,8 @@
     "time": "18:00-tól 30 perces előadások 21:30-ig (18:00, 19:00, 20:00, 21:00 kezdéssel) / 30-minute presentations from 6pm (starting at 6pm, 7pm, 8pm, 9pm)",
     "max_person": "20 fő",
     "registration": "nincs",
-    "age": "6-99"
+    "age": "6-99",
+    "accessible_venue": true
   },
   {
     "No.": "13",
@@ -141,7 +159,9 @@
     "time": "18:00-tól 30 perces előadások 21:30-ig (18:00, 19:00, 20:00, 21:00 kezdéssel) / 30-minute presentations from 6pm (starting at 6pm, 7pm, 8pm, 9pm)",
     "max_person": "30 fő",
     "registration": "nincs",
-    "age": "0-99"
+    "age": "0-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "14",
@@ -153,7 +173,9 @@
     "time": "19:00, 20:00 / 7 pm, 8 pm",
     "max_person": "nincs limit",
     "registration": "nincs",
-    "age": "6-99"
+    "age": "6-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "15",
@@ -165,7 +187,9 @@
     "time": "Folyamatosan 18:00 és 22:00 között / Continuously from 6 pm to 10 pm",
     "max_person": "nincs limit",
     "registration": "nincs",
-    "age": "6-99"
+    "age": "6-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "16",
@@ -176,7 +200,9 @@
     "place": "Olaj- és gázipari terepasztal\nA/2 épület, 24/A -\nOlajmérnöki és Gázmérnöki Tsz., illetve a Galéria előtti himba területe (jó idő esetén) / Oil and Gas Field Desk\nBuilding A/2, 24/A -\nOil and Gas Engineering Department and the pumpjack area in front of the Gallery (weather permitting)",
     "time": "18:00 és 22:00 között / Continuously through 18:00 és 22:00",
     "max_person": "10",
-    "registration": "igen"
+    "registration": "igen",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "17",
@@ -187,7 +213,8 @@
     "place": "MFK stand üveg előcsarnok /Díszaula/ MFK stand glass lobby",
     "time": "Folyamatosan a teljes rendezvény alatt",
     "max_person": "nincs",
-    "registration": "nincs"
+    "registration": "nincs",
+    "accessible_venue": true
   },
   {
     "No.": "18",
@@ -199,6 +226,7 @@
     "time": "18-22:00",
     "max_person": "nincs",
     "registration": "nincs",
-    "age": "6-99"
+    "age": "6-99",
+    "accessible_venue": true
   }
 ]

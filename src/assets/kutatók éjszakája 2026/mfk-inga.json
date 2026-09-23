@@ -9,6 +9,8 @@
     "time": "19:00, 20:00 / 7 pm, 8 pm",
     "max_person": "nincs limit",
     "registration": "nincs",
-    "age": "6-99"
+    "age": "6-99",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   }
 ]

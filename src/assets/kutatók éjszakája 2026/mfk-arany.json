@@ -9,6 +9,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs",
     "registration": "nincs",
-    "age": "6-99 év"
+    "age": "6-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   }
 ]

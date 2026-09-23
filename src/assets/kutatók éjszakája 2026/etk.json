@@ -9,7 +9,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limitálva",
     "registration": "nincs",
-    "age": "bármely"
+    "age": "bármely",
+    "accessible_venue": true
   },
   {
     "No.": "2",
@@ -21,7 +22,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limitálva",
     "registration": "nincs",
-    "age": "8-99"
+    "age": "8-99",
+    "accessible_venue": true
   },
   {
     "No.": "3",
@@ -33,7 +35,9 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limitálva",
     "registration": "nincs",
-    "age": "bármely"
+    "age": "bármely",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "4",
@@ -45,7 +49,9 @@
     "time": "18-19",
     "max_person": "60 fő",
     "registration": "nincs",
-    "age": "Bármely"
+    "age": "Bármely",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -69,7 +75,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "nincs limitálva",
     "registration": "nincs",
-    "age": "bármely"
+    "age": "bármely",
+    "accessible_venue": true
   },
   {
     "No.": "7",
@@ -81,7 +88,8 @@
     "time": "18:00-18:30; 19:00-19:30",
     "max_person": "nincs limitálva",
     "registration": "nincs",
-    "age": "bármely"
+    "age": "bármely",
+    "accessible_venue": true
   },
   {
     "No.": "8",
@@ -93,7 +101,8 @@
     "time": "18-20 óráig (4 turnus, 30 percenként)",
     "max_person": "10 fő",
     "registration": "nem",
-    "age": "bármelyik"
+    "age": "bármelyik",
+    "accessible_venue": true
   },
   {
     "No.": "9",
@@ -105,7 +114,8 @@
     "time": "18-21 óráig (4db 45 perces turnus)",
     "max_person": "25 fő",
     "registration": "nem",
-    "age": "bármelyik"
+    "age": "bármelyik",
+    "accessible_venue": true
   },
   {
     "No.": "10",

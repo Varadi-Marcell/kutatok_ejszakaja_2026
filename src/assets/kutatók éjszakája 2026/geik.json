@@ -9,7 +9,8 @@
     "time": "18:30",
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "2",
@@ -21,7 +22,8 @@
     "time": "20:30",
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "3",
@@ -33,7 +35,8 @@
     "time": "18:-00-tól folyamatos",
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "4",
@@ -45,7 +48,9 @@
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "-"
+    "age": "-",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -56,7 +61,8 @@
     "place": "Elektrotechnikai és Elektronikai Intézeti Tanszék A/3 2. emelet",
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!"
+    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "accessible_venue": true
   },
   {
     "No.": "6",
@@ -67,7 +73,9 @@
     "place": "Elektrotechnikai és Elektronikai Intézeti Tanszék A/3 2. emelet",
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!"
+    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "7",
@@ -78,7 +86,8 @@
     "place": "Gyártástudományi Intézet, C/1 épület, fsz. 16. és 18. terem",
     "time": "18:-00-tól folyamatos, fél óra",
     "max_person": "30",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!"
+    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "accessible_venue": true
   },
   {
     "No.": "8",
@@ -90,7 +99,8 @@
     "time": "18.00",
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "9",
@@ -102,7 +112,8 @@
     "time": "18.40",
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "10",
@@ -114,7 +125,8 @@
     "time": "19.20",
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "11",
@@ -126,7 +138,9 @@
     "time": "18:00, 18:30, 19:00, 19:30",
     "max_person": "20",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes"
+    "age": "vegyes",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   },
   {
     "No.": "12",
@@ -138,7 +152,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-12",
     "registration": "-",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "13",
@@ -150,7 +165,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-12",
     "registration": "-",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "14",
@@ -162,7 +178,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "-",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "15",
@@ -186,7 +203,8 @@
     "time": "18:00, 18:30, 19:00, 19:30, 20:00",
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "17",
@@ -198,7 +216,8 @@
     "time": "folyamatos\n(a program időtartama 30 perc)",
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "18",
@@ -210,7 +229,8 @@
     "time": "18:00, 18:30",
     "max_person": "45",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "19",
@@ -222,7 +242,8 @@
     "time": "19:00, 19:30",
     "max_person": "40",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "20",
@@ -234,7 +255,8 @@
     "time": "Folyamatos félóránként",
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "21",
@@ -246,7 +268,8 @@
     "time": "18:00, 19:00, 20:00",
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "22",
@@ -258,6 +281,7 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "-",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   }
 ]

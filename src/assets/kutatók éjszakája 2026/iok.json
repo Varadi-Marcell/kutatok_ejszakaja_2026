@@ -30,7 +30,8 @@
     "place": "folyamatban",
     "time": "18:00-20:00",
     "registration": "nincs",
-    "age": "10+"
+    "age": "10+",
+    "recommended_for_english_speakers": true
   },
   {
     "No.": "4",
@@ -40,7 +41,8 @@
     "english_description": "Registration for oral mock exams",
     "place": "Üveg aula stand / Main Hall IOK Stand",
     "time": "17:30-19:00",
-    "registration": "nincs"
+    "registration": "nincs",
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -50,7 +52,8 @@
     "english_description": "Quizzes, Fun Facts & Cultural Insights",
     "place": "folyamatban",
     "time": "18:00-20:00",
-    "registration": "nincs"
+    "registration": "nincs",
+    "recommended_for_english_speakers": true
   },
   {
     "No.": "6",
@@ -69,6 +72,7 @@
     "place": "Üveg előcsarnok",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
-    "registration": "-"
+    "registration": "-",
+    "accessible_venue": true
   }
 ]

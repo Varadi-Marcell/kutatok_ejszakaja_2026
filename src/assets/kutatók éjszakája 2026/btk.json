@@ -9,7 +9,8 @@
     "time": "18:00-20:30 között folyamatosan / Continuously between 18:00-20:30",
     "max_person": "Mindegy!",
     "registration": "Igen, a BTK standjánál lesz egy emberünk!",
-    "age": "3-tól felfelé!"
+    "age": "3-tól felfelé!",
+    "accessible_venue": true
   },
   {
     "No.": "2",
@@ -21,7 +22,8 @@
     "time": "20.00",
     "max_person": "10 fő",
     "registration": "Nem szükséges.",
-    "age": "felnőttek"
+    "age": "felnőttek",
+    "accessible_venue": true
   },
   {
     "No.": "3",
@@ -33,7 +35,8 @@
     "time": "19.00; 21.00",
     "max_person": "16",
     "registration": "Nem szükséges.",
-    "age": "bárki"
+    "age": "bárki",
+    "accessible_venue": true
   },
   {
     "No.": "4",
@@ -45,7 +48,8 @@
     "time": "20:00; 22:00",
     "max_person": "40 fő",
     "registration": "Nem szükséges.",
-    "age": "12 éves kortól"
+    "age": "12 éves kortól",
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -57,7 +61,8 @@
     "time": "19:00; 21:00",
     "max_person": "40 fő",
     "registration": "Nem szükséges.",
-    "age": "Bárki"
+    "age": "Bárki",
+    "accessible_venue": true
   },
   {
     "No.": "6",
@@ -69,7 +74,8 @@
     "time": "19:00–21:00 között folyamatosan / continuously between 7pm-9pm",
     "max_person": "15–20 fő",
     "registration": "Nem szükséges.",
-    "age": "bárki"
+    "age": "bárki",
+    "accessible_venue": true
   },
   {
     "No.": "7",
@@ -81,7 +87,8 @@
     "time": "17.30-19.30 között folyamatosan / continuously between 5:30pm-7:30pm",
     "max_person": "15",
     "registration": "Nem szükséges.",
-    "age": "bárki, aki kiprobálná, hol tart"
+    "age": "bárki, aki kiprobálná, hol tart",
+    "accessible_venue": true
   },
   {
     "No.": "8",
@@ -93,7 +100,8 @@
     "time": "17:00 órától / from 5pm",
     "max_person": "15",
     "registration": "Nem szükséges.",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "9",
@@ -104,7 +112,8 @@
     "place": "C/1. épület, III. emelet, 305. terem / Building C/1, 3rd floor, Room 305",
     "time": "18:00 - 20:00 / folyamatosan / continuously between 6pm-8pm",
     "max_person": "10",
-    "registration": "Nem szükséges."
+    "registration": "Nem szükséges.",
+    "accessible_venue": true
   },
   {
     "No.": "10",
@@ -115,7 +124,8 @@
     "place": "C/1. épület, 305. terem / Building C/1, Room 305",
     "time": "18:00-20:00 / folyamatosan / continuously between 6pm-8pm",
     "max_person": "20 fő",
-    "registration": "Nem szükséges."
+    "registration": "Nem szükséges.",
+    "accessible_venue": true
   },
   {
     "No.": "11",
@@ -126,7 +136,8 @@
     "place": "Díszaula, a színpaddal szembeni oldalon elhelyezkedő lépcsősor alatti rész.",
     "time": "18:00-20:00 / folyamatosan / continuously between 6pm-8pm",
     "max_person": "15 fő",
-    "registration": "Nem szükséges."
+    "registration": "Nem szükséges.",
+    "recommended_for_english_speakers": true
   },
   {
     "No.": "12",
@@ -136,7 +147,8 @@
     "english_description": "The lecture explains in accessible terms how confinement, hierarchy and control affect identity, relationships and behaviour. The topic helps us to better understand the complex relationship between institutional environments and human adaptation.",
     "place": "C/1. épület, 305. terem / Building C/1, Room 305",
     "time": "17.30-18.00",
-    "max_person": "20 fő"
+    "max_person": "20 fő",
+    "accessible_venue": true
   },
   {
     "No.": "13",
@@ -148,7 +160,8 @@
     "time": "18:00. 18:30. 19:00. 19:30. 20:00.",
     "max_person": "10-15 fő egy időpontra",
     "registration": "Nem szükséges.",
-    "age": "Bárki, akit érdekel a program"
+    "age": "Bárki, akit érdekel a program",
+    "accessible_venue": true
   },
   {
     "No.": "14",
@@ -169,7 +182,8 @@
     "place": "Üveg előcsarnok",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
-    "registration": "-"
+    "registration": "-",
+    "accessible_venue": true
   },
   {
     "No.": "16",
@@ -181,6 +195,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "Nem szükséges maximálni",
     "registration": "Nem szükséges.",
-    "age": "bárki"
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
   }
 ]

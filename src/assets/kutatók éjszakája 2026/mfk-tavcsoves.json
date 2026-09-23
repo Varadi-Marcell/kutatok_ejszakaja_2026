@@ -8,6 +8,7 @@
     "place": "Távcsöves bemutató (jó idő esetén) a Jó szerencsét felirat melletti füves területen.\nBemutató: üvegelőcsarnok/díszaula\nTelescope demonstration (if the weather is good) on the grassy area next to the 'Good Luck' sign.\nDemonstration: glass lobby/main hall",
     "time": "Távcsöves bemutató jó idő esetén 20 és 23 óra között folyamatosan. Standnál folyamatosan 19 és 23 óra között\nTelescope demonstration continuously from 8 pm to 11 pm (if the weather is good), stand continuosly from 7 pm to 11 pm",
     "registration": "nincs",
-    "age": "10 éves kor felett"
+    "age": "10 éves kor felett",
+    "accessible_venue": true
   }
 ]

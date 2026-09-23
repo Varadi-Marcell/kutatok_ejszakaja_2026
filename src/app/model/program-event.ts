@@ -8,6 +8,8 @@ export interface ProgramEvent {
   time?: string;
   max_person?: string | number;
   registration?: string;
+  recommended_for_english_speakers?: boolean;
+  accessible_venue?: boolean;
   'Infrastruktúra igénye'?: string;
   'Neve'?: string;
   'e-mail címe'?: string;

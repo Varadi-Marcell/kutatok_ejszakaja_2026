@@ -7,7 +7,8 @@
     "english_description": "Registration for oral mock exams",
     "place": "Üveg aula stand / Main Hall IOK Stand",
     "time": "17:30-19:00",
-    "registration": "nincs"
+    "registration": "nincs",
+    "accessible_venue": true
   },
   {
     "No.": "7",
@@ -16,6 +17,7 @@
     "place": "Üveg előcsarnok",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
-    "registration": "-"
+    "registration": "-",
+    "accessible_venue": true
   }
 ]

@@ -9,7 +9,8 @@
     "time": "18:00 - 24:00",
     "max_person": "4 fő/kb.30 perc",
     "registration": "nem",
-    "age": "16+"
+    "age": "16+",
+    "accessible_venue": true
   },
   {
     "No.": "2",
@@ -21,7 +22,8 @@
     "time": "18:00 - 19:00",
     "max_person": "10 fő/30 perc",
     "registration": "nem",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "3",
@@ -33,7 +35,8 @@
     "time": "19:00 - 20:00",
     "max_person": "10 fő/30 perc",
     "registration": "nem",
-    "age": "16+"
+    "age": "16+",
+    "accessible_venue": true
   },
   {
     "No.": "4",
@@ -45,7 +48,8 @@
     "time": "20:00 - 24:00",
     "max_person": "10 fő/30 perc",
     "registration": "nem",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "5",
@@ -55,7 +59,8 @@
     "english_description": "Test your skills with quick, engaging and entertaining challenges! Our games challenge your logical thinking, creativity and decision-making skills.",
     "place": "A/4 épület\nRégi aula",
     "time": "18:00 - 22:00",
-    "registration": "nem"
+    "registration": "nem",
+    "accessible_venue": true
   },
   {
     "No.": "6",
@@ -65,7 +70,8 @@
     "english_description": "Test how good your AI detector really is! Put your observation skills, critical thinking and AI knowledge to the test. Can you always tell the difference?",
     "place": "A/4 épület\nRégi aula",
     "time": "18:00 - 22:00",
-    "registration": "nem"
+    "registration": "nem",
+    "accessible_venue": true
   },
   {
     "No.": "7",
@@ -75,7 +81,8 @@
     "english_description": "An experience-based development space where competencies and skills take center stage. Participants can challenge themselves through playful, interactive activities and test how their various abilities work in real-life situations.",
     "place": "A/4 épület\nRégi aula",
     "time": "18:00 - 22:00",
-    "registration": "nem"
+    "registration": "nem",
+    "accessible_venue": true
   },
   {
     "No.": "8",
@@ -86,7 +93,8 @@
     "place": "A/4 épület\nRégi aula",
     "time": "18:00 - 23:00",
     "registration": "nem",
-    "age": "16+"
+    "age": "16+",
+    "accessible_venue": true
   },
   {
     "No.": "9",
@@ -98,7 +106,8 @@
     "time": "18:00\n18:45\n19:30\n20:15\n21:00",
     "max_person": "12 fő/alkalom",
     "registration": "IGEN",
-    "age": "14+"
+    "age": "14+",
+    "accessible_venue": true
   },
   {
     "No.": "10",
@@ -110,7 +119,8 @@
     "time": "18:00 - 23:00",
     "max_person": "30 - 40 fő",
     "registration": "nem",
-    "age": "16+"
+    "age": "16+",
+    "accessible_venue": true
   },
   {
     "No.": "11",
@@ -120,7 +130,8 @@
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
     "max_person": "-",
     "registration": "-",
-    "age": "vegyes"
+    "age": "vegyes",
+    "accessible_venue": true
   },
   {
     "No.": "12",
@@ -129,6 +140,7 @@
     "description": "Pénzkirakó, pénzrajzolás, memóriajáték és más pénzzel kapcsolatos játékok, amelyeket akár a legkisebbek is kipróbálhatnak.",
     "english_description": "Money puzzle, money drawing, memory and other money-related games, even the smallest ones can try.",
     "place": "FINTELLIGENCE\nPénzügyi Oktatási Centrum\nA/4. épület III. emelet",
-    "time": "18:00 - 23:00"
+    "time": "18:00 - 23:00",
+    "accessible_venue": true
   }
 ]
