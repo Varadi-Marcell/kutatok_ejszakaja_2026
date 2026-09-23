@@ -57,9 +57,17 @@ export class ProgramSearchService {
       // Campus térkép: egy nagy JSON, a programok `building` mezője a terület azonosító
       index$ = this.http.get<ProgramEvent[]>(BUILDING_DATA_URL).pipe(
         map(allPrograms => this.groupByBuilding(allPrograms, config)),
+        catchError(() => of([] as ProgramGroup[])),
         shareReplay(1)
       );
     } else {
+      // Ures terkep (pl. Parkolo): nincs mit betolteni, ures indexszel terunk vissza.
+      // (forkJoin([]) RxJS 7-ben soha nem emittal, ez akasztotta meg a teljes keresest.)
+      if (!config.interactiveAreas || config.interactiveAreas.length === 0) {
+        index$ = of([]);
+        this.indexCache.set(cacheKey, index$);
+        return index$;
+      }
       // Többi térkép: területenkénti JSON fájlok párhuzamosan
       // (a hiányzó/hibás fájlok üres programlistát adnak, nem döntik el a keresést)
       const requests = config.interactiveAreas.map(area =>
@@ -83,13 +91,16 @@ export class ProgramSearchService {
   getAllConfigs(): Observable<SvgMapConfig[]> {
     if (!this.allConfigs$) {
       this.allConfigs$ = forkJoin([
-        this.svgConfigService.loadNagyterkepConfig(),
-        this.svgConfigService.loadElocsarnokConfig(),
-        this.svgConfigService.loadDiszaulaConfig(),
-        this.svgConfigService.loadRegiAulaConfig(),
-        this.svgConfigService.loadHarmasConfig(),
-        this.svgConfigService.loadParkoloConfig()
-      ]).pipe(shareReplay(1));
+        this.svgConfigService.loadNagyterkepConfig().pipe(catchError(() => of(null as unknown as SvgMapConfig))),
+        this.svgConfigService.loadElocsarnokConfig().pipe(catchError(() => of(null as unknown as SvgMapConfig))),
+        this.svgConfigService.loadDiszaulaConfig().pipe(catchError(() => of(null as unknown as SvgMapConfig))),
+        this.svgConfigService.loadRegiAulaConfig().pipe(catchError(() => of(null as unknown as SvgMapConfig))),
+        this.svgConfigService.loadHarmasConfig().pipe(catchError(() => of(null as unknown as SvgMapConfig))),
+        this.svgConfigService.loadParkoloConfig().pipe(catchError(() => of(null as unknown as SvgMapConfig)))
+      ]).pipe(
+        map(configs => configs.filter((c): c is SvgMapConfig => !!c)),
+        shareReplay(1)
+      );
     }
     return this.allConfigs$;
   }
@@ -184,9 +195,15 @@ export class ProgramSearchService {
 
     // A területneveket a konfigurációból oldjuk fel
     const result: ProgramGroup[] = [];
+    // Minden kattinthato terulet szerepel az indexben (ures listaval is),
+    // igy epuletnev szerint is keresheto, ha nincs hozza program (pl. c3, info).
+    for (const area of config.interactiveAreas) {
+      result.push({ areaId: area.id, areaName: area.name, programs: byBuilding.get(area.id) || [] });
+    }
     for (const [areaId, programs] of byBuilding.entries()) {
-      const area = config.interactiveAreas.find(a => a.id === areaId);
-      result.push({ areaId, areaName: area?.name || areaId, programs });
+      if (!config.interactiveAreas.some(a => a.id === areaId)) {
+        result.push({ areaId, areaName: areaId, programs });
+      }
     }
     return result;
   }

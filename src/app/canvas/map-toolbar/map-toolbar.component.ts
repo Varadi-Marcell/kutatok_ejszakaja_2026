@@ -59,10 +59,18 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
         }
         return this.programSearchService.searchAllMaps(query, this.currentMapId || undefined);
       })
-    ).subscribe(results => {
-      this.results = results;
-      this.isSearching = false;
-      this.showResults = true;
+    ).subscribe({
+      next: (results) => {
+        this.results = results;
+        this.isSearching = false;
+        this.showResults = true;
+      },
+      error: () => {
+        // Hiba eseten se ragadjon be a kereso-spinner: ures lista + legordulo bezarasa
+        this.results = [];
+        this.isSearching = false;
+        this.showResults = false;
+      }
     });
   }
 
