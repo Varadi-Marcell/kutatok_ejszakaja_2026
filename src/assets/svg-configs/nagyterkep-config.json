@@ -221,32 +221,6 @@
       "style": {
         "cssClass": "polygon-no-stroke"
       }
-    },
-    {
-      "id": "babachill",
-      "name": "Baba Chill Zone",
-      "type": "polygon",
-      "coordinates": {
-        "d": [
-          "M1775.13,1458h135.89v82h-135.89v-82Z"
-        ]
-      },
-      "style": {
-        "cssClass": "polygon-no-stroke"
-      }
-    },
-    {
-      "id": "malyimadarmentok",
-      "name": "Mályi Madármentők",
-      "type": "polygon",
-      "coordinates": {
-        "d": [
-          "M1290,1760h160v70h-160v-70Z"
-        ]
-      },
-      "style": {
-        "cssClass": "polygon-no-stroke"
-      }
     }
   ]
 }
