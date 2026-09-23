@@ -73,7 +73,77 @@ const STAND_EXTRACTS = {
   'gtk-vakterkep': { sheet: 'GTK', names: ['Vaktérkép - online földrajz kvíz játék (GeoGuessr)'] },
   'bosch': { sheet: 'Céges partnerek', names: ['Bemutatkoznak a miskolci Bosch gyárai'] },
   'joyson': { sheet: 'Céges partnerek', names: ['Biztonságra hangolva-kutatástól életvédelemig-Joyson Safety Systems Hungary Kft.'] },
+
+  // Díszaula beltéri standjai (a diszaula-config.json area id-i)
+  'btk-anthroactivity': { sheet: 'BTK', names: ['AnthroActivity'] },
+  'etk-mit-latsz-1': { sheet: 'ETK', names: ['Mit látsz a képen?'] },
+  'etk-mit-latsz-2': { sheet: 'ETK', names: ['Mit látsz a képen?'] },
+  'ajk-rendorseg-1': { sheet: 'ÁJK', names: ['Bűnmegelőzés - Balesetmegelőzés Borsod-Abaúj-Zemplén Megyei Rendőr-Főkapitányság - Balesetmegelőzési Bizottság'] },
+  'ajk-rendorseg-2': { sheet: 'ÁJK', names: ['Vércseppek nyomában… Borsod-Abaúj-Zemplén Megyei Rendőr-Főkapitányság - Balesetmegelőzési Bizottság'] },
+  'ajk-torvenyszek': { sheet: 'ÁJK', names: ['Pörgess és nyerj!'] },
+  'ajk-aldozatsegito': { sheet: 'ÁJK', names: ['Ne válj áldozattá!'] },
+  'ajk-detektiv': { sheet: 'ÁJK', names: ['Detektíviskola', 'Teszteld a jogi tudásod! - Jogi kvíz'] },
+  'ajk-kari-stand': { sheet: 'ÁJK', names: ['KARI REGISZTRÁCIÓS PULT'] },
+  'kingsejong-1': { sheet: 'KING SEJONG', names: ['Hagyományos koreai játékok'] },
+  'kingsejong-2': { sheet: 'KING SEJONG', names: ['Hagyományos koreai játékok'] },
+  'nk-1': { sheet: 'NK', names: ['Nemzetközi játékok nemzetközi hallgatókkal'] },
+  'nk-2': { sheet: 'NK', names: ['Nemzetközi játékok nemzetközi hallgatókkal'] },
+  'erm-formula-1': { sheet: 'ERM', names: ['Electric Racing Miskolc - Formula Student versenyautó testközelből'] },
+  'erm-formula-2': { sheet: 'ERM', names: ['Electric Racing Miskolc - Formula Student versenyautó testközelből'] },
+  'erm-formula-3': { sheet: 'ERM', names: ['Electric Racing Miskolc - Formula Student versenyautó testközelből'] },
+  'sport-sportkozpont': {
+    sheet: 'SPORT',
+    names: ['Sportos Ügyességi kihívások', 'Ugró-mászó akadálypálya', 'Asztalitenisz', 'Mini pingpong', 'Denevérpad',
+      'Gombfoci', 'Cornhole', 'Twister', 'Mölkky'],
+  },
+  'avk-hetkoznapi-kemia-1': { sheet: 'AVK', names: ['Hétköznapi kémia'] },
+  'avk-hetkoznapi-kemia-2': { sheet: 'AVK', names: ['Hétköznapi kémia'] },
+  'mfk-tavcsoves': { sheet: 'MFK', names: ['Távcsöves bemutató'] },
+  'avk-feny': { sheet: 'AVK', names: ['Fényt viszünk a kémiába'] },
+  'etk-diszaula-stand': {
+    sheet: 'ETK',
+    names: ['Babaszoba', 'Mire képes a testünk?', 'Lógjunk anyuval!',
+      'Alma a vízben, ér a nyakban – ultrahangos kalandok', 'Készséggel az egészségügyért'],
+  },
+
+  // Üvegaula (főbejárat): a Foucault-ingához tartozó programok - a rajzon külön
+  // feliratuk van ("Mozog a Föld?", "Aranyláz"), de stand-téglalap nem tartozott hozzájuk
+  'mfk-inga': { sheet: 'MFK', names: ['Mozog a Föld? Kérdezd meg az ingát!'] },
+  'mfk-arany': { sheet: 'MFK', names: ['Aranyláz Miskolcon!'] },
+  'borsodchem': { sheet: 'Céges partnerek', names: ['WonderLab'] },
 };
+
+// Kari stand-csoportok (egy kar több standja ugyanazt a készletet mutatja):
+// fájl -> munkalap + a helyszínből felismert épület-kulcs. Nem neveket sorolunk fel,
+// hanem a BUILDING_RULES szerint szűrünk, így a tartalom követi az Excelt.
+const BUILDING_FILTER_EXTRACTS = {
+  'avk-1': { sheet: 'AVK', building: 'elocsarnok' },
+  'avk-2': { sheet: 'AVK', building: 'elocsarnok' },
+  'avk-3': { sheet: 'AVK', building: 'elocsarnok' },
+  'avk-4': { sheet: 'AVK', building: 'elocsarnok' },
+  'avk-5': { sheet: 'AVK', building: 'elocsarnok' },
+  'avk-6': { sheet: 'AVK', building: 'elocsarnok' },
+  'avk-7': { sheet: 'AVK', building: 'elocsarnok' },
+  'avk-8': { sheet: 'AVK', building: 'elocsarnok' },
+  'mfk-1': { sheet: 'MFK', building: 'elocsarnok' },
+  'mfk-2': { sheet: 'MFK', building: 'elocsarnok' },
+  'mfk-3': { sheet: 'MFK', building: 'elocsarnok' },
+  'mfk-4': { sheet: 'MFK', building: 'elocsarnok' },
+  'mfk-5': { sheet: 'MFK', building: 'elocsarnok' },
+  'mfk-6': { sheet: 'MFK', building: 'elocsarnok' },
+  'geik-1': { sheet: 'GÉIK', building: 'elocsarnok' },
+  'geik-2': { sheet: 'GÉIK', building: 'elocsarnok' },
+  'geik-3': { sheet: 'GÉIK', building: 'elocsarnok' },
+  'btk-1': { sheet: 'BTK', building: 'elocsarnok' },
+  'iok-1': { sheet: 'IOK', building: 'elocsarnok' },
+  'konf-1': { sheet: 'KONFUCIUSZ', building: 'elocsarnok' },
+};
+
+// Program nélküli standok (pl. Információs pult, Könyvtár, Alumni, BOKIK, Szeleta):
+// üres listát írunk, hogy a popup "nincsenek elérhető programok" szöveget adjon alert helyett.
+const EMPTY_AREA_FILES = [
+  'elocsarnok-info', 'elocsarnok-konyvtar', 'elocsarnok-alumni', 'elocsarnok-bokik', 'elocsarnok-szeleta',
+];
 
 // Ezeket a munkalapokat kihagyjuk
 const SKIPPED_SHEETS = new Set(['Kari táblák - sablon']);
@@ -366,6 +436,27 @@ for (const [file, { sheet, names }] of Object.entries(STAND_EXTRACTS)) {
   fs.writeFileSync(path.join(outDir, `${file}.json`), JSON.stringify(extracted, null, 2) + '\n', 'utf8');
   summary.push(`- [stand] ${file}.json: ${extracted.length} program (${sheet})`);
 }
+
+// ----- Kari stand-csoportok: az adott munkalap térhez tartozó programjai -----
+for (const [file, { sheet, building }] of Object.entries(BUILDING_FILTER_EXTRACTS)) {
+  const source = programsBySheet.get(sheet);
+  if (!source) {
+    warnings.push(`[${file}] A stand-csoport forrás-munkalapja nem található ("${sheet}") - a fájl kimaradt!`);
+    continue;
+  }
+  const extracted = source.filter(p => detectBuilding(p.place) === building);
+  if (!extracted.length) {
+    warnings.push(`[${file}] Egyetlen program sem tartozik a(z) "${building}" területhez a(z) "${sheet}" munkalapon.`);
+  }
+  fs.writeFileSync(path.join(outDir, `${file}.json`), JSON.stringify(extracted, null, 2) + '\n', 'utf8');
+  summary.push(`- [stand] ${file}.json: ${extracted.length} program (${sheet} / ${building})`);
+}
+
+// ----- Program nélküli standok: üres listát írunk (nem 404/alert lesz belőle) -----
+for (const file of EMPTY_AREA_FILES) {
+  fs.writeFileSync(path.join(outDir, `${file}.json`), '[]\n', 'utf8');
+}
+summary.push(`- [stand] üres stand-fájlok: ${EMPTY_AREA_FILES.length} (${EMPTY_AREA_FILES.join(', ')})`);
 
 console.log('Konverzió kész:');
 console.log(summary.join('\n'));

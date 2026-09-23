@@ -1,0 +1,14 @@
+[
+  {
+    "No.": "6",
+    "name": "Vércseppek nyomában… Borsod-Abaúj-Zemplén Megyei Rendőr-Főkapitányság - Balesetmegelőzési Bizottság",
+    "english_name": "Looking for bloodstains...",
+    "description": "A program a Borsod-Abaúj-Zemplén Vármegyei Rendőrfőkapitányság közreműködésével valósul meg.",
+    "english_description": "The programme is implemented in cooperation with the Police Headquarters of Borsod-Abaúj-Zemplén County.",
+    "place": "Rendőrség stand / Police stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "10",
+    "registration": "nincs",
+    "age": "minden"
+  }
+]

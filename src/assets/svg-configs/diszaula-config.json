@@ -1,463 +1,450 @@
 {
-    "id":  "diszaula",
-    "name":  "Díszaula",
-    "svgPath":  "assets/KutatokEjszakaja-Standalaprajz-Diszaula-01-1.svg",
-    "viewBox":  {
-                    "x":  -200,
-                    "y":  15,
-                    "width":  1285,
-                    "height":  1520
-                },
-    "interactiveAreas":  [
-                             {
-                                 "id":  "antro",
-                                 "name":  "Anthro-activity",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  311.3,
-                                                     "y":  278.1,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Anthro-activity",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "mit latsz",
-                                 "name":  "mit latsz",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  462.3,
-                                                     "y":  180,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "mit latsz",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "mit latsz",
-                                 "name":  "mit latsz",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  523,
-                                                     "y":  180,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "mit latsz",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-1",
-                                 "name":  "Stand 1",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  -163.5,
-                                                     "y":  455.7,
-                                                     "width":  46.6,
-                                                     "height":  120.8
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Türkiz stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-2",
-                                 "name":  "Stand 2",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  -163.5,
-                                                     "y":  588.1,
-                                                     "width":  46.6,
-                                                     "height":  120.8
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Türkiz stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-3",
-                                 "name":  "Stand 3",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  248.4,
-                                                     "y":  346.3,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-4",
-                                 "name":  "Stand 4",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  377.8,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-5",
-                                 "name":  "Stand 5",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  440.6,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-6",
-                                 "name":  "Stand 6",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  510,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-7",
-                                 "name":  "Stand 7",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  585.2,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-8",
-                                 "name":  "Stand 8",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  676.4,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-9",
-                                 "name":  "Stand 9",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  819.5,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-10",
-                                 "name":  "Stand 10",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  878.8,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-11",
-                                 "name":  "Stand 11",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  970,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-12",
-                                 "name":  "Stand 12",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  219.1,
-                                                     "y":  1029.5,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-13",
-                                 "name":  "Stand 13",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  427.7,
-                                                     "y":  538.4,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Formula Student stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-14",
-                                 "name":  "Stand 14",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  487.3,
-                                                     "y":  538.4,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Formula Student stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-15",
-                                 "name":  "Stand 15",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  546.9,
-                                                     "y":  538.4,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Formula Student stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-16",
-                                 "name":  "Stand 16",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  347.3,
-                                                     "y":  598.6,
-                                                     "width":  351.1,
-                                                     "height":  429.5
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Nagy zóna (SPORTKÖZPONT)",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-17",
-                                 "name":  "Stand 17",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  742,
-                                                     "y":  351.6,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-18",
-                                 "name":  "Stand 18",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  800,
-                                                     "y":  388.6,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-19",
-                                 "name":  "Stand 19",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  800,
-                                                     "y":  534.2,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-20",
-                                 "name":  "Stand 20",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  800,
-                                                     "y":  676.4,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-21",
-                                 "name":  "Stand 21",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  942.5,
-                                                     "y":  514.7,
-                                                     "width":  82.6,
-                                                     "height":  63.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "stand-22",
-                                 "name":  "Stand 22",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  347.3,
-                                                     "y":  1063.1,
-                                                     "width":  351.1,
-                                                     "height":  310.2
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Nagy zóna (ETK alsó terem)",
-                                                  "capacity":  500
-                                              }
-                             }
-                         ]
+  "id": "diszaula",
+  "name": "Díszaula",
+  "svgPath": "assets/KutatokEjszakaja-Standalaprajz-Diszaula-01-1.svg",
+  "viewBox": {
+    "x": -200,
+    "y": 15,
+    "width": 1285,
+    "height": 1520
+  },
+  "interactiveAreas": [
+    {
+      "id": "btk-anthroactivity",
+      "name": "AnthroActivity",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 311.3,
+        "y": 278.1,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Anthro-activity",
+        "capacity": 500,
+        "sourceSheet": "BTK"
+      }
+    },
+    {
+      "id": "etk-mit-latsz-1",
+      "name": "Mit látsz a képen? 1",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 462.3,
+        "y": 180,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Mit látsz a képen? (ETK stand, pódium)",
+        "capacity": 500,
+        "sourceSheet": "ETK"
+      }
+    },
+    {
+      "id": "etk-mit-latsz-2",
+      "name": "Mit látsz a képen? 2",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 523,
+        "y": 180,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Mit látsz a képen? (ETK stand, pódium)",
+        "capacity": 500,
+        "sourceSheet": "ETK"
+      }
+    },
+    {
+      "id": "ajk-rendorseg-1",
+      "name": "Bűnmegelőzés - Balesetmegelőzés",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 248.4,
+        "y": 346.3,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Rendőrség stand",
+        "capacity": 500,
+        "sourceSheet": "ÁJK"
+      }
+    },
+    {
+      "id": "ajk-rendorseg-2",
+      "name": "Vércseppek nyomában…",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 377.8,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Rendőrség stand",
+        "capacity": 500,
+        "sourceSheet": "ÁJK"
+      }
+    },
+    {
+      "id": "ajk-torvenyszek",
+      "name": "Pörgess és nyerj!",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 440.6,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Miskolci Törvényszék stand",
+        "capacity": 500,
+        "sourceSheet": "ÁJK"
+      }
+    },
+    {
+      "id": "ajk-aldozatsegito",
+      "name": "Ne válj áldozattá!",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 510,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Miskolci Áldozatsegítő Központ stand",
+        "capacity": 500,
+        "sourceSheet": "ÁJK"
+      }
+    },
+    {
+      "id": "ajk-detektiv",
+      "name": "Detektív jogi kvíz",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 585.2,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "ÁJK Kari stand – Detektív jogi kvíz",
+        "capacity": 500,
+        "sourceSheet": "ÁJK"
+      }
+    },
+    {
+      "id": "ajk-kari-stand",
+      "name": "Kari regisztrációs pult",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 676.4,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "ÁJK kari regisztrációs pult",
+        "capacity": 500,
+        "sourceSheet": "ÁJK"
+      }
+    },
+    {
+      "id": "kingsejong-1",
+      "name": "Hagyományos koreai játékok 1",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 819.5,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "King Sejong stand",
+        "capacity": 500,
+        "sourceSheet": "KING SEJONG"
+      }
+    },
+    {
+      "id": "kingsejong-2",
+      "name": "Hagyományos koreai játékok 2",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 878.8,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "King Sejong stand",
+        "capacity": 500,
+        "sourceSheet": "KING SEJONG"
+      }
+    },
+    {
+      "id": "nk-1",
+      "name": "Nemzetközi játékok 1",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 970,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Nemzetközi játékok stand",
+        "capacity": 500,
+        "sourceSheet": "NK"
+      }
+    },
+    {
+      "id": "nk-2",
+      "name": "Nemzetközi játékok 2",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 219.1,
+        "y": 1029.5,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Nemzetközi játékok stand",
+        "capacity": 500,
+        "sourceSheet": "NK"
+      }
+    },
+    {
+      "id": "erm-formula-1",
+      "name": "Formula Student stand 1",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 427.7,
+        "y": 538.4,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Formula Student stand",
+        "capacity": 500,
+        "sourceSheet": "ERM"
+      }
+    },
+    {
+      "id": "erm-formula-2",
+      "name": "Formula Student stand 2",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 487.3,
+        "y": 538.4,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Formula Student stand",
+        "capacity": 500,
+        "sourceSheet": "ERM"
+      }
+    },
+    {
+      "id": "erm-formula-3",
+      "name": "Formula Student stand 3",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 546.9,
+        "y": 538.4,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Formula Student stand",
+        "capacity": 500,
+        "sourceSheet": "ERM"
+      }
+    },
+    {
+      "id": "sport-sportkozpont",
+      "name": "SPORTKÖZPONT",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 347.3,
+        "y": 598.6,
+        "width": 351.1,
+        "height": 429.5
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Nagy zóna (SPORTKÖZPONT)",
+        "capacity": 500,
+        "sourceSheet": "SPORT"
+      }
+    },
+    {
+      "id": "avk-hetkoznapi-kemia-1",
+      "name": "Hétköznapi kémia 1",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 742,
+        "y": 351.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand – Hétköznapi kémia",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "avk-hetkoznapi-kemia-2",
+      "name": "Hétköznapi kémia 2",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 800,
+        "y": 388.6,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand – Hétköznapi kémia",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "mfk-tavcsoves",
+      "name": "Távcsöves bemutató",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 800,
+        "y": 534.2,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "MFK stand – Távcsöves bemutató",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    },
+    {
+      "id": "malyimadarmentok",
+      "name": "Mályi Madármentők",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 800,
+        "y": 676.4,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Mályi Madármentő stand",
+        "capacity": 500,
+        "sourceSheet": "Mályi Madármentők"
+      }
+    },
+    {
+      "id": "avk-feny",
+      "name": "Fényt viszünk a kémiába",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 942.5,
+        "y": 514.7,
+        "width": 82.6,
+        "height": 63.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand – Fényt viszünk a kémiába (Díszudvar)",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "etk-diszaula-stand",
+      "name": "ETK stand (alsó terem)",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 347.3,
+        "y": 1063.1,
+        "width": 351.1,
+        "height": 310.2
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Nagy zóna (ETK alsó terem)",
+        "capacity": 500,
+        "sourceSheet": "ETK"
+      }
+    }
+  ]
 }

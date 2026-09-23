@@ -1,0 +1,26 @@
+[
+  {
+    "No.": "3",
+    "name": "Detektíviskola",
+    "english_name": "School of Detectives",
+    "description": "A legkisebbekre is gondolunk. Legyél nyomozó, gyere játssz velünk! (4-10 éves korosztálynak)",
+    "english_description": "We think about the small ones too! Be a detective, come and play with us (ages 4-10)",
+    "place": "ÁJK Kari stand / ÁJK stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limit",
+    "registration": "nincs",
+    "age": "minden"
+  },
+  {
+    "No.": "2",
+    "name": "Teszteld a jogi tudásod! - Jogi kvíz",
+    "english_name": "Legal quiz - Test your legal knowledge!",
+    "description": "Mennyire vagy tájékozott a jog világában? Keresd az ÁJK standját és teszteld tudásodat!",
+    "english_description": "How well-informed are you about the law? Find the ÁJK desk and test your knowledge!",
+    "place": "ÁJK Kari stand / ÁJK stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limit",
+    "registration": "nincs",
+    "age": "minden"
+  }
+]

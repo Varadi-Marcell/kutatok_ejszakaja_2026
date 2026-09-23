@@ -1,12 +1,31 @@
 {
   "id": "harmas",
   "name": "Előadóterem 3",
-  "svgPath": "assets/KutatokEjszakaja-Standalaprajz-Harmas.svg",
+  "svgPath": "assets/2026_svg/KutatokEjszakaja-Standalaprajz-Harmas.svg",
   "viewBox": {
     "x": 0,
     "y": 0,
     "width": 927.7,
     "height": 301.5
   },
-  "interactiveAreas": []
+  "interactiveAreas": [
+    {
+      "id": "borsodchem",
+      "name": "BorsodChem – WonderLab",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 341.8,
+        "y": 171.7,
+        "width": 281.1,
+        "height": 27.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Előadóterem 3 – BorsodChem (WonderLab) stand",
+        "sourceSheet": "Céges partnerek"
+      }
+    }
+  ]
 }

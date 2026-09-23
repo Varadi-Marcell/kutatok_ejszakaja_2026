@@ -1,0 +1,81 @@
+[
+  {
+    "No.": "3",
+    "name": "Zenélj fénnyel, építs anyagból!",
+    "english_name": "Make music with light, build with material!",
+    "description": "Zenélő hárfa húrok nélkül, anyagválogatás, toronyépítés - és még sok érdekesség, anyag a tudomány világából.",
+    "english_description": "A musical harp without strings, material selection, tower building - and many more interesting things and materials from the world of science.",
+    "place": "Üvegaula főbejárat földszint / Glass hall main entrance ground floor",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "age": "vegyes"
+  },
+  {
+    "No.": "7",
+    "name": "Lehetsz te is meteorológus - játékos bevezető a légkörtudományba",
+    "english_name": "You too can be a meteorologist - a playful introduction to atmospheric science",
+    "description": "Interaktív-játékos bemutató, kísérletekkel.",
+    "english_description": "Interactive-game presentation with experiments.",
+    "place": "Üveg előcsarnok, vagy aula",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "regisztráció nélküli",
+    "age": "vegyes"
+  },
+  {
+    "No.": "10",
+    "name": "Briefcase - mit rejt a mobilod?",
+    "english_name": "Briefcase - what’s in your phone?",
+    "description": "Mindenki zsebében ott van a mobiltelefon, de nagyon kevesen tudják, hogy mi minden kell ahhoz, hogy ez az egyre apróbb és nagyobb tudású eszköz működhessen. A táskában nyersanyagokat, és alapanyagokat mutatunk meg, és elmondjuk, hogy a mobiltelefon különböző részeihez mi mindenre is van szükségünk.",
+    "english_description": "Everyone has a mobile phone in their pocket, but very few people know what it takes to make this increasingly small and sophisticated device work. We show you the raw materials and components in the briefcase, and we tell you what we need for the different parts of a mobile phone.",
+    "place": "Üvegaula AVK kari pultnál / Glass gall at AVK faculty stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "regisztráció nélküli",
+    "age": "vegyes"
+  },
+  {
+    "No.": "12",
+    "name": "Biopolimer",
+    "english_name": "Biopolymer",
+    "description": "Ismerd meg a vegán bőr készítését és főzzünk együtt biopolimert tejből.",
+    "english_description": "Discover how vegan leather is made and let’s make biopolymer together from milk!",
+    "place": "Üvegaula AVK kari pultnál / Glass gall at AVK faculty stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "regisztráció nélküli",
+    "age": "vegyes"
+  },
+  {
+    "No.": "15",
+    "name": "Hétköznapi kémia",
+    "english_name": "Everyday Chemistry",
+    "description": "4 bemutató kísérlet, 2 állomáson. Ismerd meg hogyan viselkedik a hideg/meleg víz, az olaj, és hogyan hoznak létre emulziót, majd mivel lehet szétválasztani őket ismét. Hány csepp vizet bír el különböző állapotokban egy pénzérme felülete? Négy rövid, látványos bemutató kísérleten keresztül találkozhatsz a határfelületi jelenségek izgalmas világával.",
+    "english_description": "4 demonstration experiments, at 2 stations. Find out how cold and hot water and oil behave, how they form an emulsion, and how they can be separated again. How many drops of water can the surface of a coin hold in different states? Through four short, spectacular demonstration experiments, you can discover the exciting world of interfacial phenomena.",
+    "place": "Aula",
+    "time": "Folyamatos 18:00-tól",
+    "max_person": "8",
+    "registration": "Regisztráció nélküli",
+    "age": "vegyes"
+  },
+  {
+    "No.": "16",
+    "name": "KARI REGISZTRÁCIÓS PULT",
+    "english_name": "REGISTRATION DESK",
+    "place": "FŐBEJÁRAT, Üvegelőcsarnok / MAIN ENTRANCE, Glass Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "-",
+    "age": "vegyes"
+  },
+  {
+    "No.": "17",
+    "name": "(Metal Waste Solution Kft. programja)",
+    "place": "FŐBEJÁRAT, Üvegelőcsarnok / MAIN ENTRANCE, Glass Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "-",
+    "registration": "Regisztráció nélküli",
+    "age": "vegyes"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "No.": "8",
+    "name": "Ne válj áldozattá!",
+    "english_name": "Don't become a victim!",
+    "description": "Interaktív program a Miskolci Áldozatsegítő Központ közreműködésével „T.J. sértett elmondta, éppen hazaindult a késői órán a szórakozóhelyről, amikor megtámadták és értékeit erőszakkal elvették tőle.”\nInteraktív program: Veled is megtörténhet! Tudod mit kell tenned? Tudod kitől kaphatsz segítséget? Keresd a Miskolci Áldozatsegítő Központ standját!",
+    "english_description": "Interactive program in cooperation with the Miskolc Victim Support Center \"T.J. said he was on his way home late at night from a nightclub when he was attacked and robbed.\"\nInteractive program: It could happen to you too! Do you know what to do? Do you know who can help you? Look for the Miskolc Victim Support Center stand!",
+    "place": "Miskolci Áldozatsegítő Központ stand / Miskolc Victim Support Center stand",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limit",
+    "registration": "nincs",
+    "age": "minden"
+  }
+]

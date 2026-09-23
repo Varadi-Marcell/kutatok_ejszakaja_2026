@@ -195,6 +195,19 @@
       }
     },
     {
+      "id": "stefania",
+      "name": "Stefánia épület",
+      "type": "polygon",
+      "coordinates": {
+        "d": [
+          "M321.77,4081.33h441.41v136h-441.41v-136Z"
+        ]
+      },
+      "style": {
+        "cssClass": "polygon-no-stroke"
+      }
+    },
+    {
       "id": "elocsarnok",
       "name": "Üvegaula",
       "type": "polygon",

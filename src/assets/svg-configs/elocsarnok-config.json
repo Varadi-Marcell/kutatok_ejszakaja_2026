@@ -1,463 +1,526 @@
 {
-    "id":  "elocsarnok",
-    "name":  "Előcsarnok",
-    "svgPath":  "assets/KutatokEjszakaja-Standalaprajz-Elocsarnok-01-1.svg",
-    "viewBox":  {
-                    "x":  0,
-                    "y":  0,
-                    "width":  1148.7,
-                    "height":  1056.7
-                },
-    "interactiveAreas":  [
-                             {
-                                 "id":  "avk",
-                                 "name":  "avk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  43,
-                                                     "y":  105.8,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "avk",
-                                 "name":  "avk ",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  102,
-                                                     "y":  105.8,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "geik",
-                                 "name":  "geik",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  377.2,
-                                                     "y":  113.6,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "geik",
-                                 "name":  "geik",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  451,
-                                                     "y":  113.6,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "geik",
-                                 "name":  "geik",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  524.4,
-                                                     "y":  113.6,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "btk",
-                                 "name":  "btk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  597.4,
-                                                     "y":  113.6,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "info",
-                                 "name":  "Információs pult (INFO)",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  671.3,
-                                                     "y":  113.6,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Információs pult",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "iok",
-                                 "name":  "iok",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  744.7,
-                                                     "y":  113.6,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "avk",
-                                 "name":  "avk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  486.1,
-                                                     "y":  280.2,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "avk",
-                                 "name":  "avk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  545.1,
-                                                     "y":  280.2,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "mfk",
-                                 "name":  "mfk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  604,
-                                                     "y":  280.2,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "mfk",
-                                 "name":  "mfk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  663.1,
-                                                     "y":  280.2,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "avk",
-                                 "name":  "avk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  486.1,
-                                                     "y":  502.4,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "avk",
-                                 "name":  "avk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  545.1,
-                                                     "y":  502.4,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "mfk",
-                                 "name":  "mfk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  604.7,
-                                                     "y":  502.4,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "mfk",
-                                 "name":  "mfk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  664.2,
-                                                     "y":  502.4,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "avk",
-                                 "name":  "avk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  488.5,
-                                                     "y":  343.7,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "avk",
-                                 "name":  "avk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  488.5,
-                                                     "y":  403,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "mfk",
-                                 "name":  "mfk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  691.4,
-                                                     "y":  340.4,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "mfk",
-                                 "name":  "mfk",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  691.4,
-                                                     "y":  399.9,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "konyvtar",
-                                 "name":  "Könyvtár",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  308.6,
-                                                     "y":  292.1,
-                                                     "width":  28.3,
-                                                     "height":  31.6
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Könyvtár stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "alumni",
-                                 "name":  "Alumni",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  308.6,
-                                                     "y":  326.9,
-                                                     "width":  28.3,
-                                                     "height":  31.6
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Alumni stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "konf",
-                                 "name":  "Konfuciusz Intézet",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  865.8,
-                                                     "y":  292.1,
-                                                     "width":  28.3,
-                                                     "height":  31.6
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Konfuciusz Intézet stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "bokik",
-                                 "name":  "BOKIK",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  972.5,
-                                                     "y":  277.9,
-                                                     "width":  56.7,
-                                                     "height":  28.3
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "BOKIK stand",
-                                                  "capacity":  500
-                                              }
-                             },
-                             {
-                                 "id":  "szeleta",
-                                 "name":  "Szeleta",
-                                 "type":  "rectangle",
-                                 "coordinates":  {
-                                                     "x":  809.8,
-                                                     "y":  85.3,
-                                                     "width":  28.3,
-                                                     "height":  56.7
-                                                 },
-                                 "style":  {
-                                               "cssClass":  "polygon"
-                                           },
-                                 "metadata":  {
-                                                  "description":  "Szeleta stand",
-                                                  "capacity":  500
-                                              }
-                             }
-                         ]
+  "id": "elocsarnok",
+  "name": "Előcsarnok",
+  "svgPath": "assets/KutatokEjszakaja-Standalaprajz-Elocsarnok-01-1.svg",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 1148.7,
+    "height": 1056.7
+  },
+  "interactiveAreas": [
+    {
+      "id": "avk-1",
+      "name": "AVK stand 1",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 43,
+        "y": 105.8,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "avk-2",
+      "name": "AVK stand 2",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 102,
+        "y": 105.8,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "geik-1",
+      "name": "GEIK stand 1",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 377.2,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "GEIK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "GÉIK"
+      }
+    },
+    {
+      "id": "geik-2",
+      "name": "GEIK stand 2",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 451,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "GEIK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "GÉIK"
+      }
+    },
+    {
+      "id": "geik-3",
+      "name": "GEIK stand 3",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 524.4,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "GEIK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "GÉIK"
+      }
+    },
+    {
+      "id": "btk-1",
+      "name": "BTK stand",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 597.4,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "BTK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "BTK"
+      }
+    },
+    {
+      "id": "elocsarnok-info",
+      "name": "Információs pult (INFO)",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 671.3,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Információs pult",
+        "capacity": 500,
+        "sourceSheet": ""
+      }
+    },
+    {
+      "id": "iok-1",
+      "name": "IOK stand",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 744.7,
+        "y": 113.6,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "IOK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "IOK"
+      }
+    },
+    {
+      "id": "avk-3",
+      "name": "AVK stand 3",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 486.1,
+        "y": 280.2,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "avk-4",
+      "name": "AVK stand 4",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 545.1,
+        "y": 280.2,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "mfk-1",
+      "name": "MFK stand 1",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 604,
+        "y": 280.2,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "MFK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    },
+    {
+      "id": "mfk-2",
+      "name": "MFK stand 2",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 663.1,
+        "y": 280.2,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "MFK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    },
+    {
+      "id": "avk-5",
+      "name": "AVK stand 5",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 486.1,
+        "y": 502.4,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "avk-6",
+      "name": "AVK stand 6",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 545.1,
+        "y": 502.4,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "mfk-3",
+      "name": "MFK stand 3",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 604.7,
+        "y": 502.4,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "MFK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    },
+    {
+      "id": "mfk-4",
+      "name": "MFK stand 4",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 664.2,
+        "y": 502.4,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "MFK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    },
+    {
+      "id": "avk-7",
+      "name": "AVK stand 7",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 488.5,
+        "y": 343.7,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "avk-8",
+      "name": "AVK stand 8",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 488.5,
+        "y": 403,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "AVK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "AVK"
+      }
+    },
+    {
+      "id": "mfk-5",
+      "name": "MFK stand 5",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 691.4,
+        "y": 340.4,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "MFK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    },
+    {
+      "id": "mfk-6",
+      "name": "MFK stand 6",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 691.4,
+        "y": 399.9,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "MFK stand az üvegaulában",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    },
+    {
+      "id": "elocsarnok-konyvtar",
+      "name": "Könyvtár",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 308.6,
+        "y": 292.1,
+        "width": 28.3,
+        "height": 31.6
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Könyvtár stand",
+        "capacity": 500,
+        "sourceSheet": ""
+      }
+    },
+    {
+      "id": "elocsarnok-alumni",
+      "name": "Alumni",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 308.6,
+        "y": 326.9,
+        "width": 28.3,
+        "height": 31.6
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Alumni stand",
+        "capacity": 500,
+        "sourceSheet": ""
+      }
+    },
+    {
+      "id": "konf-1",
+      "name": "Konfuciusz Intézet stand",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 865.8,
+        "y": 292.1,
+        "width": 28.3,
+        "height": 31.6
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Konfuciusz Intézet stand",
+        "capacity": 500,
+        "sourceSheet": "KONFUCIUSZ"
+      }
+    },
+    {
+      "id": "elocsarnok-bokik",
+      "name": "BOKIK",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 972.5,
+        "y": 277.9,
+        "width": 56.7,
+        "height": 28.3
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "BOKIK stand",
+        "capacity": 500,
+        "sourceSheet": ""
+      }
+    },
+    {
+      "id": "elocsarnok-szeleta",
+      "name": "Szeleta",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 809.8,
+        "y": 85.3,
+        "width": 28.3,
+        "height": 56.7
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Szeleta stand",
+        "capacity": 500,
+        "sourceSheet": ""
+      }
+    },
+    {
+      "id": "mfk-inga",
+      "name": "Mozog a Föld? Kérdezd meg az ingát!",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 545,
+        "y": 880,
+        "width": 115,
+        "height": 135
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Foucault-inga (főbejárat)",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    },
+    {
+      "id": "mfk-arany",
+      "name": "Aranyláz Miskolcon!",
+      "type": "rectangle",
+      "coordinates": {
+        "x": 502,
+        "y": 655,
+        "width": 200,
+        "height": 55
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "description": "Főbejárat, bejárati folyosó",
+        "capacity": 500,
+        "sourceSheet": "MFK"
+      }
+    }
+  ]
 }

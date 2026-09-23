@@ -1,0 +1,85 @@
+[
+  {
+    "No.": "4",
+    "name": "Szeparációs kihívás - válogass gyorsabban, mint Hamupipőke!",
+    "english_name": "Separation challenge - be faster than Cinderella!",
+    "description": "Különböző, a hulladékkezelésben is használatos szeparációs módszereket mutatunk be. Dobszita, légáramkészülék, de még varázskukorica is előkerül.",
+    "english_description": "We present various separation methods also used in waste management. A drum sieve, an air-flow device, and even magic corn will make an appearance.",
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs",
+    "registration": "nincs",
+    "age": "6-99 év"
+  },
+  {
+    "No.": "5",
+    "name": "Aranyláz Miskolcon!",
+    "english_name": "Gold rush in Miskolc!",
+    "description": "Miért található arany a folyók hordalékaiban? Hogyan választották el a régiek a nehéz fémszemcséket a homoktól és kavicstól? A program során bemutatjuk az aranymosás hagyományos technikáját, amelyet a látogatók saját kezűleg is kipróbálhatnak.",
+    "english_description": "Why can gold be found in river sediments? How did people in the past separate the heavy metal particles from sand and gravel? During the program, we will demonstrate the traditional technique of gold panning, which visitors can also try out for themselves.",
+    "place": "Főbejárat Foucault inga mellett / Main entrance next to Foucault's pendulum",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs",
+    "registration": "nincs",
+    "age": "6-99 év"
+  },
+  {
+    "No.": "7",
+    "name": "Digitális Terepasztal",
+    "english_name": "Digital Sandbox",
+    "description": "Távérzékelési eszközök segítségével létrehozott kiterjesztett valóság alapú terepasztal kicsiknek és nagyoknak egyaránt.",
+    "english_description": "An augmented reality-based sandbox created with remote sensing tools for both kids and adults.",
+    "place": "MFK Stand üveg előcsarnok / MFK stand glass lobby",
+    "time": "18:00-től / from 6pm",
+    "registration": "nincs"
+  },
+  {
+    "No.": "8",
+    "name": "Szenzorok a klímaváltozás \"árnyékában\"",
+    "english_name": "Soil and Air quality sensors in the \"shadow\" of climate change",
+    "description": "Különböző környezeti (levegő) és talaj paramétereket rögzítő szenzorok bemutatása, SLAM (kézi lézerszkenner), melyek adatai segítenek a föld- és környezettudományi szakemberek részére megfelelő alkalmazkodási, gazdasági és beavatkozási akciók kijelölésében.",
+    "english_description": "Introduction of various sensors that record environmental (air) and soil parameters, whose data assist earth and environmental science professionals in determining appropriate adaptation, economic, and intervention actions.",
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
+    "time": "18:00-től / from 6pm",
+    "registration": "nincs"
+  },
+  {
+    "No.": "9",
+    "name": "Távcsöves bemutató",
+    "english_name": "Stargazing program",
+    "description": "A Bükki Csillagda csapata derült idő esetén távcső segítségével kínál pillantást a Holdra, Szaturnuszra és más égitestekre. 20 és 23 óra között lesz lehetőség a távcsőbe belepillantani, 19 órától 23 óráig pedig az üvegcsarnokban lévő standnál sorskeréken próbálhatnak szerencsét, mely során nyereményeket lehet szerezni. A távcsöves bemutató csak derült idő esetén kerül megtartásra. Ellenkező esetben a beltéri standnál az érdeklődők a távcsövekről, égitestekről, jelenségekről kaphatnak hasznos és érdekes tudnivalókat.",
+    "english_description": "The members of the Bükk Astronomical Observatory offers a look at the Moon, Saturn and other celestial bodies through a telescope when the weather is clear. It will be possible to look through the telescope between 8 pm and 11 pm, and from 7 pm to 11 pm you can try your luck on the wheel of fortune at the stand in the glass hall, during which you can win prizes and gifts. The stargazing program will only be held in clear weather. Otherwise, at the indoor stand, people can get useful and interesting information about telescopes, celestial bodies, and sky phenomena.",
+    "place": "Távcsöves bemutató (jó idő esetén) a Jó szerencsét felirat melletti füves területen.\nBemutató: üvegelőcsarnok/díszaula\nTelescope demonstration (if the weather is good) on the grassy area next to the 'Good Luck' sign.\nDemonstration: glass lobby/main hall",
+    "time": "Távcsöves bemutató jó idő esetén 20 és 23 óra között folyamatosan. Standnál folyamatosan 19 és 23 óra között\nTelescope demonstration continuously from 8 pm to 11 pm (if the weather is good), stand continuosly from 7 pm to 11 pm",
+    "registration": "nincs",
+    "age": "10 éves kor felett"
+  },
+  {
+    "No.": "10",
+    "name": "MFK STAND- KARI REGISZTRÁCIÓS PULT",
+    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby"
+  },
+  {
+    "No.": "14",
+    "name": "Mozog a Föld? Kérdezd meg az ingát!",
+    "english_name": "Is the Earth Moving? Ask the Pendulum!",
+    "description": "Egy inga, amely látszólag saját életet él – de valójában a Föld forgását árulja el. Gyere, és fedezd fel Foucault híres kísérletének lenyűgöző titkát!",
+    "english_description": "A pendulum that seems to have a life of its own – but is actually revealing the rotation of the Earth. Join us and discover the fascinating secret behind Foucault’s famous experiment!",
+    "place": "Főbejárat Foucault inga mellett / Main entrance next to Foucault's pendulum",
+    "time": "19:00, 20:00 / 7 pm, 8 pm",
+    "max_person": "nincs limit",
+    "registration": "nincs",
+    "age": "6-99"
+  },
+  {
+    "No.": "17",
+    "name": "UNEXMIN Georobotics – robotika a fenntartható vízgazdálkodás és nyersanyagkutatás szolgálatában",
+    "english_name": "UNEXMIN Georobotics – Robotics for Sustainable Water Management and Mineral Exploration",
+    "description": "Nehezen hozzáférhető vízi és felszín alatti környezetek vizsgálata korszerű robotikai és adatfeldolgozási megoldásokkal.",
+    "english_description": "Advanced robotics and data-processing solutions for hard-to-access aquatic and subsurface environments.",
+    "place": "MFK stand üveg előcsarnok /Díszaula/ MFK stand glass lobby",
+    "time": "Folyamatosan a teljes rendezvény alatt",
+    "max_person": "nincs",
+    "registration": "nincs"
+  }
+]

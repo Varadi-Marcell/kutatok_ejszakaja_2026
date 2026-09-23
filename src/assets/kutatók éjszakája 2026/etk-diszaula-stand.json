@@ -1,0 +1,62 @@
+[
+  {
+    "No.": "1",
+    "name": "Babaszoba",
+    "english_name": "Nursery",
+    "description": "A 9. hónap \"súlyának\" megélése várandós mellénnyel; a pelenkázás, öltöztetés fortélyai",
+    "english_description": "Experience the \"weight\" of the 9th month with a pregnancy simulator; baby changing and dressing tricks.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "bármely"
+  },
+  {
+    "No.": "2",
+    "name": "Mire képes a testünk?",
+    "english_name": "What is our body capable of?",
+    "description": "Testünk számos képességgel kell rendelkezzen mindennapi feladataink ellátáshoz. A program lehetőséget biztosít a saját képességek (erő, stabilitás, koordináció és egyensúly mérésével) megismerésére, vagy a mozgásszervrendszerrel kapcsolatos ismeretek tesztelésére.",
+    "english_description": "Our bodies need to have many abilities to perform our daily tasks. The program provides an opportunity to assess your own abilities (by measuring strength, stability, coordination and balance) or to test your knowledge of the musculoskeletal system.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "8-99"
+  },
+  {
+    "No.": "6",
+    "name": "Lógjunk anyuval!",
+    "english_name": "Let's hang out with mom!",
+    "description": "Babahordozás eszközei, technikája, kipróbálása.",
+    "english_description": "Babywearing: Carriers, Techniques, and Hands-On Practice.",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "bármely"
+  },
+  {
+    "No.": "5",
+    "name": "Alma a vízben, ér a nyakban – ultrahangos kalandok",
+    "english_name": "Apple in the Water, Artery in the Neck - Ultrasound Adventures",
+    "description": "Hogyan lehet a testünk érhálózatát vagy akár egy gyümölcs belsejét hanghullámok segítségével megjeleníteni? Az ultrahang lenyűgöző eszköz: láthatóvá teszi a láthatatlant, legyen szó a nyaki verőerekről, a vesék finom ereiről, vagy akár egy almáról, ami megelevenedik egy tál vízben. Ismerd meg közelről a modern orvosi képalkotás egyik legizgalmasabb módszerét!",
+    "english_description": "How can we visualize the vessels in the human body or even the inside of a fruit using ultrasound waves? Ultrasound is a fascinating tool that makes the invisible visible—whether it’s the carotid artery, the delicate vessels of the kidney, or even an apple placed in a bowl of water. Discover one of the most exciting methods of modern medical imaging up close!",
+    "place": "Díszaula / Main Hall",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "15-20 percenként 4-6 fő",
+    "registration": "nincs",
+    "age": "4-99 év"
+  },
+  {
+    "No.": "10",
+    "name": "Készséggel az egészségügyért",
+    "english_name": "Committed to Healthcare",
+    "description": "SKILL laborok bemutatása, Intraosseális kanülálás, Ultrahang készülék bemutatása",
+    "english_description": "Introduction to SKILL laboratories, Intraosseous cannulation, Introduction to the ultrasound machine",
+    "place": "Díszaula / Main Hall- pódium",
+    "time": "Folyamatosan a teljes rendezvény alatt\n/ Continuously throughout the entire event",
+    "max_person": "nincs limitálva",
+    "registration": "nincs",
+    "age": "bármely"
+  }
+]
