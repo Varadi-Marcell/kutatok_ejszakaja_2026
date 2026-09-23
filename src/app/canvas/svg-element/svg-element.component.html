@@ -86,6 +86,19 @@
         [attr.stroke-width]="area.style?.strokeWidth || 0"
         (click)="handleAreaClick(area, $event)"
       ></circle>
+
+      <!-- Persistent click hint for touch screens and first-time visitors -->
+      <circle
+        *ngIf="getAreaCenter(area) as center"
+        class="hotspot-marker"
+        [attr.cx]="center.x"
+        [attr.cy]="center.y"
+        [attr.r]="getHotspotRadiusForArea(area)"
+        [attr.stroke-width]="getHotspotStrokeWidth(area)"
+        (click)="handleAreaClick(area, $event)"
+      >
+        <title>{{ area.name }}</title>
+      </circle>
     </g>
   </svg>
 

@@ -1,15 +1,16 @@
 .polygon {
-  fill: transparent;
-  stroke: transparent;
-  transition: fill 0.5s, stroke 0.5s, stroke-width 0.5s, opacity 0.5s;
+  fill: rgba(0, 122, 204, 0.1);
+  stroke: rgba(0, 82, 145, 0.55);
+  stroke-width: 2;
+  transition: fill 0.2s, stroke 0.2s, stroke-width 0.2s, opacity 0.2s;
   cursor: pointer;
 }
 
 .polygon:hover {
-  fill: #6198ce;
-  stroke: black;
-  stroke-width: 8;
-  opacity: 0.8;
+  fill: rgba(0, 122, 204, 0.34);
+  stroke: #0b4f85;
+  stroke-width: 6;
+  opacity: 0.95;
 }
 
 .polygon-group {
@@ -17,29 +18,50 @@
 }
 
 .polygon-group:hover .polygon {
-  fill: #6198ce;
-  stroke: black;
-  stroke-width: 8;
-  opacity: 0.8;
+  fill: rgba(0, 122, 204, 0.34);
+  stroke: #0b4f85;
+  stroke-width: 6;
+  opacity: 0.95;
 }
 
 .polygon-no-stroke {
-  fill: transparent;
-  stroke: black;
-  transition: fill 0.5s, stroke 0.5s, stroke-width 0.5s, opacity 0.5s;
+  fill: rgba(0, 122, 204, 0.08);
+  stroke: rgba(0, 82, 145, 0.55);
+  transition: fill 0.2s, stroke 0.2s, stroke-width 0.2s, opacity 0.2s;
   cursor: pointer;
-  stroke-width: 1;
+  stroke-width: 3;
 }
 
 .polygon-group:hover .polygon-no-stroke {
-  fill: #6198ce;
-  opacity: 0.6;
-  stroke: black;
-  stroke-width: 5;
+  fill: rgba(0, 122, 204, 0.32);
+  opacity: 0.95;
+  stroke: #0b4f85;
+  stroke-width: 8;
 }
 
 .interactive-area {
   cursor: pointer;
+}
+
+.hotspot-marker {
+  fill: rgba(255, 204, 28, 0.28);
+  stroke: #1a2e4a;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.35));
+  pointer-events: all;
+  transition: fill 0.2s, stroke-width 0.2s, opacity 0.4s;
+  animation: hotspot-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes hotspot-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+g:hover > .hotspot-marker {
+  fill: rgba(255, 255, 255, 0.85);
+  stroke-width: 5;
+  opacity: 1;
 }
 
 rect {

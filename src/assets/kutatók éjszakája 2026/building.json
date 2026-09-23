@@ -1352,16 +1352,7 @@
     "time": "18:00-20:00",
     "registration": "nincs"
   },
-  {
-    "No.": "7",
-    "name": "REGISZTRÁCIÓS PULT",
-    "english_name": "REGISTRATION DESK",
-    "place": "Üveg előcsarnok",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "-",
-    "registration": "-",
-    "building": "elocsarnok"
-  },
+
   {
     "No.": "1",
     "name": "Selmeci Műemlékkönyvtár megtekintése",
