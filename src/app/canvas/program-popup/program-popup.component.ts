@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit, ElementRef, ViewChild, HostListener } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChanges, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { ProgramEvent } from '../../model/program-event';
 
 @Component({
@@ -6,7 +6,7 @@ import { ProgramEvent } from '../../model/program-event';
   templateUrl: './program-popup.component.html',
   styleUrls: ['./program-popup.component.css']
 })
-export class ProgramPopupComponent implements OnInit {
+export class ProgramPopupComponent implements OnInit, OnChanges {
   @Input() programs: ProgramEvent[] = [];
   @Input() areaName: string = '';
   @Input() isVisible: boolean = false;
@@ -36,6 +36,23 @@ export class ProgramPopupComponent implements OnInit {
   private canSwipeClose: boolean = false;
 
   ngOnInit() {
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    // Kereséssel kiválasztott program: görgessünk rá, amint a kártyák megjelentek
+    if ((changes['programs'] || changes['selectedProgramName'] || changes['isVisible'])
+      && this.isVisible && this.selectedProgramName) {
+      this.scrollToSelectedProgram();
+    }
+  }
+
+  private scrollToSelectedProgram() {
+    // Kis késleltetés, hogy a *ngFor kártyák biztosan megjelenjenek a DOM-ban
+    setTimeout(() => {
+      const content = this.popupContent?.nativeElement as HTMLElement | undefined;
+      const selected = content?.querySelector('.program-card.selected') as HTMLElement | null;
+      selected?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 150);
   }
 
   toggleLanguage() {
