@@ -13,7 +13,7 @@
         (keydown.enter)="selectFirstResult()"
         (focus)="onSearchFocus()"
       />
-      <button *ngIf="searchQuery" class="clear-btn" (click)="clearSearch()" aria-label="Törlés">
+      <button *ngIf="searchQuery" class="clear-btn" (click)="clearSearch()" [attr.aria-label]="language === 'en' ? 'Clear' : 'Törlés'">
         <i class="bi bi-x-lg"></i>
       </button>
 
@@ -47,7 +47,7 @@
               class="fav-toggle program-fav"
               [class.active]="isFavorite(program)"
               (click)="toggleFavorite(group, program); $event.stopPropagation()"
-              aria-label="Kedvencekhez adas / eltavolitas">
+              [attr.aria-label]="language === 'en' ? 'Add to favorites / remove' : 'Kedvencekhez adás / eltávolítás'">
               <i class="bi" [class.bi-heart-fill]="isFavorite(program)" [class.bi-heart]="!isFavorite(program)"></i>
             </button>
           </div>
@@ -61,7 +61,7 @@
 
     <!-- Beallitasok -->
     <div class="menu-wrap">
-      <button class="tool-btn" (click)="toggleSettings()" title="Beállítások">
+      <button class="tool-btn" (click)="toggleSettings()" [attr.title]="language === 'en' ? 'Settings' : 'Beállítások'">
         <i class="bi bi-gear"></i>
       </button>
       <div class="dropdown-menu-custom" *ngIf="showSettingsMenu">
@@ -77,7 +77,7 @@
 
     <!-- Kedvencek -->
     <div class="menu-wrap">
-      <button class="tool-btn" (click)="toggleFavorites()" title="Kedvencek">
+      <button class="tool-btn" (click)="toggleFavorites()" [attr.title]="language === 'en' ? 'Favorites' : 'Kedvencek'">
         <i class="bi bi-heart"></i>
         <span class="badge-count" *ngIf="favorites.length > 0">{{ favorites.length }}</span>
       </button>
@@ -92,7 +92,7 @@
             <span class="fav-name">{{ language === 'en' && fav.englishName ? fav.englishName : fav.name }}</span>
             <small class="fav-building">{{ fav.areaName }}</small>
           </span>
-          <i class="bi bi-x-lg remove-fav" (click)="removeFavorite(fav); $event.stopPropagation()" title="Eltávolítás"></i>
+          <i class="bi bi-x-lg remove-fav" (click)="removeFavorite(fav); $event.stopPropagation()" [attr.title]="language === 'en' ? 'Remove' : 'Eltávolítás'"></i>
         </div>
       </div>
     </div>

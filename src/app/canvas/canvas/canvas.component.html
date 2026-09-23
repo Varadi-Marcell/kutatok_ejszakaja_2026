@@ -22,40 +22,40 @@
 
     <!-- Térkép váltó gombok – ikon + felirat, kompakt méretben -->
     <div class="nav-buttons-grid">
-      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'nagyterkep'" (click)="loadMap('nagyterkep')" title="Campus Térkép">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'nagyterkep'" (click)="loadMap('nagyterkep')" [attr.title]="language === 'en' ? 'Campus Map' : 'Campus Térkép'">
         <i class="bi bi-map"></i>
-        <span class="nav-btn-text">Campus Térkép</span>
+        <span class="nav-btn-text">{{ language === 'en' ? 'Campus Map' : 'Campus Térkép' }}</span>
       </button>
-      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'elocsarnok'" (click)="loadMap('elocsarnok')" title="Előcsarnok">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'elocsarnok'" (click)="loadMap('elocsarnok')" [attr.title]="language === 'en' ? 'Entrance Hall' : 'Előcsarnok'">
         <i class="bi bi-door-open"></i>
-        <span class="nav-btn-text">Előcsarnok</span>
+        <span class="nav-btn-text">{{ language === 'en' ? 'Entrance Hall' : 'Előcsarnok' }}</span>
       </button>
-      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'diszaula'" (click)="loadMap('diszaula')" title="Díszaula">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'diszaula'" (click)="loadMap('diszaula')" [attr.title]="language === 'en' ? 'Ceremonial Hall' : 'Díszaula'">
         <i class="bi bi-bank"></i>
-        <span class="nav-btn-text">Díszaula</span>
+        <span class="nav-btn-text">{{ language === 'en' ? 'Ceremonial Hall' : 'Díszaula' }}</span>
       </button>
-      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'regi_aula'" (click)="loadMap('regi_aula')" title="Régi Aula">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'regi_aula'" (click)="loadMap('regi_aula')" [attr.title]="language === 'en' ? 'Old Aula' : 'Régi Aula'">
         <i class="bi bi-book"></i>
-        <span class="nav-btn-text">Régi Aula</span>
+        <span class="nav-btn-text">{{ language === 'en' ? 'Old Aula' : 'Régi Aula' }}</span>
       </button>
-      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'harmas'" (click)="loadMap('harmas')" title="Előadóterem 3">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'harmas'" (click)="loadMap('harmas')" [attr.title]="language === 'en' ? 'Lecture Hall 3' : 'Előadóterem 3'">
         <i class="bi bi-easel2-fill"></i>
-        <span class="nav-btn-text">Előadó 3</span>
+        <span class="nav-btn-text">{{ language === 'en' ? 'Lecture Hall 3' : 'Előadó 3' }}</span>
       </button>
-      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'parkolo'" (click)="loadMap('parkolo')" title="Parkoló">
+      <button class="nav-btn" [class.active]="currentSvgConfig?.id === 'parkolo'" (click)="loadMap('parkolo')" [attr.title]="language === 'en' ? 'Parking' : 'Parkoló'">
         <i class="bi bi-p-square"></i>
-        <span class="nav-btn-text">Parkoló</span>
+        <span class="nav-btn-text">{{ language === 'en' ? 'Parking' : 'Parkoló' }}</span>
       </button>
     </div>
   </div>
 
   <!-- Zoom kontárok – jobb oldali fehér pill (Oxford stílus) -->
   <div class="zoom-pill position-absolute">
-    <button class="zoom-pill-btn" (click)="zoomIn()" title="Nagyítás">
+    <button class="zoom-pill-btn" (click)="zoomIn()" [attr.title]="language === 'en' ? 'Zoom in' : 'Nagyítás'">
       <i class="bi bi-plus-lg"></i>
     </button>
     <div class="zoom-pill-divider"></div>
-    <button class="zoom-pill-btn" (click)="zoomOut()" title="Kicsinyítés">
+    <button class="zoom-pill-btn" (click)="zoomOut()" [attr.title]="language === 'en' ? 'Zoom out' : 'Kicsinyítés'">
       <i class="bi bi-dash-lg"></i>
     </button>
   </div>
@@ -68,5 +68,6 @@
   [isVisible]="showPopup"
   [language]="language"
   [selectedProgramName]="selectedProgramName"
-  (close)="onClosePopup()">
+  (close)="onClosePopup()"
+  (languageChanged)="onLanguageChanged($event)">
 </app-program-popup>

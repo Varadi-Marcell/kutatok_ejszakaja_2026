@@ -181,5 +181,5 @@
 </div>
 
 <div *ngIf="!config" class="no-config-message">
-  <p>Nincs SVG konfiguráció betöltve.</p>
+  <p>{{ language === 'en' ? 'No SVG configuration loaded.' : 'Nincs SVG konfiguráció betöltve.' }}</p>
 </div>

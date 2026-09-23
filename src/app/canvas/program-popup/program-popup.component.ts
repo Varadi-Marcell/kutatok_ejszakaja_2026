@@ -17,6 +17,9 @@ export class ProgramPopupComponent implements OnInit {
   // Kereséssel kiválasztott program neve (kiemeléshez)
   @Input() selectedProgramName: string | null = null;
   @Output() close = new EventEmitter<void>();
+  // A kártyán belüli nyelvváltást fel kell vinni a szülő (canvas) globális
+  // language állapotába, hogy az egész app (navbar, kereső) együtt váltson
+  @Output() languageChanged = new EventEmitter<'hu' | 'en'>();
 
   @ViewChild('popupContent', { static: false }) popupContent!: ElementRef;
 
@@ -37,6 +40,7 @@ export class ProgramPopupComponent implements OnInit {
 
   toggleLanguage() {
     this.isEnglish = !this.isEnglish;
+    this.languageChanged.emit(this.isEnglish ? 'en' : 'hu');
   }
 
   onClose() {

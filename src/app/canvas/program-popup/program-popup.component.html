@@ -21,7 +21,7 @@
           <i class="bi bi-translate lang-flag"></i>
           <span class="lang-text">{{ isEnglish ? 'HU' : 'EN' }}</span>
         </button>
-        <button class="close-btn" (click)="onClose()" aria-label="Bezárás">
+        <button class="close-btn" (click)="onClose()" [attr.aria-label]="isEnglish ? 'Close' : 'Bezárás'">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
@@ -96,14 +96,14 @@
 
       <ng-template #noPrograms>
         <div class="no-programs">
-          <p>Jelenleg nincsenek elérhető programok ehhez a területhez.</p>
+          <p>{{ isEnglish ? 'There are no available programs for this area.' : 'Jelenleg nincsenek elérhető programok ehhez a területhez.' }}</p>
         </div>
       </ng-template>
     </div>
 
     <!-- Footer -->
     <div class="popup-footer">
-      <button class="btn-close-mobile" (click)="onClose()">Bezárás</button>
+      <button class="btn-close-mobile" (click)="onClose()">{{ isEnglish ? 'Close' : 'Bezárás' }}</button>
     </div>
   </div>
 </div>

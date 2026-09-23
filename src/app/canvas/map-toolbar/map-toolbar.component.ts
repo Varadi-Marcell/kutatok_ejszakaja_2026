@@ -160,7 +160,7 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
     const key = this.programSearchService.programKey(program);
     if (this.favorites.some(f => f.programKey === key)) {
       this.favorites = this.favorites.filter(f => f.programKey !== key);
-      this.showToast('Eltávolítva a kedvencekből');
+      this.showToast(this.language === 'en' ? 'Removed from favorites' : 'Eltávolítva a kedvencekből');
     } else {
       this.favorites.push({
         programKey: key,
@@ -170,7 +170,7 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
         areaId: group.areaId,
         areaName: group.areaName
       });
-      this.showToast('Hozzáadva a kedvencekhez');
+      this.showToast(this.language === 'en' ? 'Added to favorites' : 'Hozzáadva a kedvencekhez');
     }
     this.saveFavorites();
   }
