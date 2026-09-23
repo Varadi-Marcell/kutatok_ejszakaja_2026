@@ -122,6 +122,12 @@ export class CanvasComponent implements AfterViewInit, OnInit {
         // A könyvtár beépített, sima görgős zoomolása (deltaY-arányos, fókuszpontra zoomol)
         this.scene.nativeElement.addEventListener('wheel', (e: WheelEvent) => {
           if (!this.instance) return;
+          // A bal felső eszköztár (kereső / beállítások / kedvencek legördülők) felett
+          // hagyjuk a natív görgetést - ne a térkép zoomoljon a lista görgetése helyett
+          const target = e.target as HTMLElement | null;
+          if (target?.closest('.top-left-stack')) {
+            return;
+          }
           this.instance.zoomWithWheel(e);
         });
 
