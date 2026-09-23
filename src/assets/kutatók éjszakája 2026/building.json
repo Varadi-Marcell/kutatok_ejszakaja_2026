@@ -126,14 +126,6 @@
     "building": "elocsarnok"
   },
   {
-    "No.": "10",
-    "name": "MFK STAND- KARI REGISZTRÁCIÓS PULT",
-    "place": "MFK stand üveg előcsarnok / MFK stand glass lobby",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "elocsarnok"
-  },
-  {
     "No.": "11",
     "name": "Tájformáló erők – Geomorfológia működés közben",
     "english_name": "Shaping the landscape - geomorphology in action",
@@ -451,18 +443,6 @@
     "time": "Folyamatos 18:00-tól",
     "max_person": "8",
     "registration": "Regisztráció nélküli",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "elocsarnok"
-  },
-  {
-    "No.": "16",
-    "name": "KARI REGISZTRÁCIÓS PULT",
-    "english_name": "REGISTRATION DESK",
-    "place": "FŐBEJÁRAT, Üvegelőcsarnok / MAIN ENTRANCE, Glass Hall",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "-",
-    "registration": "-",
     "age": "vegyes",
     "accessible_venue": true,
     "building": "elocsarnok"
@@ -800,20 +780,6 @@
     "building": "a4"
   },
   {
-    "No.": "22",
-    "name": "KARI REGISZTRÁCIÓS PULT",
-    "english_name": "REGISTRATION DESK",
-    "description": "Látogatók útbaigazítása, regisztráció, programokhoz kísérése.",
-    "english_description": "Guiding, registering and accompanying visitors to programs.",
-    "place": "FŐBEJÁRAT, Üvegelőcsarnok / MAIN ENTRANCE, Glass Hall",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "-",
-    "registration": "-",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "elocsarnok"
-  },
-  {
     "No.": "1",
     "name": "Bűnös vagy ártatlan? - Mintatárgyalás",
     "english_name": "Guilty or innocent? - Mock trial",
@@ -942,17 +908,6 @@
     "registration": "ÁJK Kari stand",
     "age": "minden",
     "building": "c2"
-  },
-  {
-    "No.": "11",
-    "name": "KARI REGISZTRÁCIÓS PULT",
-    "english_name": "REGISTRATION DESK",
-    "place": "Díszaula",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "-",
-    "registration": "-",
-    "accessible_venue": true,
-    "building": "diszaula"
   },
   {
     "No.": "1",
@@ -1084,18 +1039,6 @@
     "max_person": "30 - 40 fő",
     "registration": "nem",
     "age": "16+",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "11",
-    "name": "KARI REGISZTRÁCIÓS PULT",
-    "english_name": "REGISTRATION DESK",
-    "place": "A/4 épület\nRégi aula",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "-",
-    "registration": "-",
-    "age": "vegyes",
     "accessible_venue": true,
     "building": "a4"
   },
@@ -1299,17 +1242,6 @@
     "registration": "Nem szükséges.",
     "age": "Bárki",
     "building": "a6"
-  },
-  {
-    "No.": "15",
-    "name": "KARI REGISZTRÁCIÓS PULT",
-    "english_name": "REGISTRATION DESK",
-    "place": "Üveg előcsarnok",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "-",
-    "registration": "-",
-    "accessible_venue": true,
-    "building": "elocsarnok"
   },
   {
     "No.": "16",
@@ -1532,17 +1464,6 @@
     "place": "folyamatban",
     "time": "18:00-20:00",
     "registration": "nincs"
-  },
-  {
-    "No.": "7",
-    "name": "REGISZTRÁCIÓS PULT",
-    "english_name": "REGISTRATION DESK",
-    "place": "Üveg előcsarnok",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "-",
-    "registration": "-",
-    "accessible_venue": true,
-    "building": "elocsarnok"
   },
   {
     "No.": "1",
