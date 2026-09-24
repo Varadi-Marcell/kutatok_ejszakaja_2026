@@ -8,5 +8,38 @@
     "max_person": "-",
     "registration": "-",
     "accessible_venue": true
+  },
+  {
+    "No.": "1",
+    "name": "Bűnös vagy ártatlan? - Mintatárgyalás",
+    "english_name": "Guilty or innocent? - Mock trial",
+    "description": "Interaktív büntetőeljárás, próbáld ki magad ügyvédként, ügyészként, bíróként, de akár a vádlottak padján is bizonyíthatod ártatlanságodat!",
+    "english_description": "Interactive criminal proceedings: try yourself out as a lawyer, prosecutor, judge, or even prove your innocence in the dock!",
+    "time": "19:00 ; 20:00",
+    "max_person": "30",
+    "registration": "ÁJK Kari stand",
+    "age": "minden"
+  },
+  {
+    "No.": "9",
+    "name": "Aki állatot kínoz, emberre készül? - az állatkínzás és a személyek ellen elkövetett erőszakos bűncselekmények összefüggése",
+    "english_name": "Does someone who tortures animals go on to harm people? – The link between animal cruelty and violent crimes against people",
+    "description": "A program az állatkínzás és az ember ellen elkövetett erőszakos bűncselekmények közötti lehetséges összefüggéseket mutatja be. A téma középpontjában az a jelenség áll, hogy az állatokkal szemben tanúsított kegyetlen, erőszakos magatartás bizonyos esetekben kapcsolatot mutathat az emberekkel szemben megjelenő erőszakkal is.\n\nA program célja, hogy felhívja a figyelmet az állatkínzás mint erőszakos magatartásformának a jelentőségére, valamint arra, hogy annak felismerése és megfelelő kezelése a bűnmegelőzés szempontjából is fontos lehet. A résztvevők betekintést kaphatnak a jelenség kriminológiai és társadalmi hátterébe.",
+    "english_description": "The programme explores the possible links between animal cruelty and violent crimes committed against humans. The focus of the programme is on the phenomenon whereby cruel and violent behaviour towards animals may, in certain cases, be linked to violence against humans.",
+    "time": "18:30",
+    "max_person": "30",
+    "registration": "ÁJK Kari stand",
+    "age": "minden"
+  },
+  {
+    "No.": "10",
+    "name": "\"Mit követtek el?\" Bűnügyi kvíz",
+    "english_name": "Crime quiz",
+    "description": "Interaktív bűnügyi kvíz",
+    "english_description": "Interactive crime quiz",
+    "time": "21:00",
+    "max_person": "30",
+    "registration": "ÁJK Kari stand",
+    "age": "minden"
   }
 ]

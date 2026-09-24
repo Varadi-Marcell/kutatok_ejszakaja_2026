@@ -22,5 +22,17 @@
     "registration": "nem",
     "age": "16+",
     "accessible_venue": true
+  },
+  {
+    "No.": "9",
+    "name": "Ropogós gondolatok – Süss, kóstolj, podcastelj!",
+    "english_name": "Crispy Thoughts – Bake, Taste, Podcast!",
+    "description": "Élményalapú gasztronómia és tartalomgyártás! A látogatók előre bekevert tésztákkal dolgoznak (pl. klasszikus vajaskeksz, fűszeres vagy helyi alapanyagokra épülő variációk). Formázzák, díszítik és sütik a kekszeket. Közben rövid, érdekes magyarázatok az élménygasztronómia szerepéről a turizmusban, az illatok és ízek vendégélményre gyakorolt hatásáról. Amíg hűl a keksz – vagy épp a friss falatok kóstolása közben –, a vendégek (párok, baráti társaságok vagy egyéni résztvevők) saját videós tartalmakat készítenek és feltöltik egy előre megadott felületre.",
+    "english_description": "Experience-based gastronomy and content creation! Visitors work with pre-mixed dough (e.g., classic butter cookies, or variations featuring spices or local ingredients). They shape, decorate, and bake the cookies. Meanwhile, there are brief, interesting explanations about the role of experiential gastronomy in tourism and the impact of aromas and flavors on the guest experience. While the cookies are cooling—or while tasting the fresh treats—guests (couples, groups of friends, or individual participants) create their own video content and upload it to a pre-designated platform.",
+    "time": "18:00\n18:45\n19:30\n20:15\n21:00",
+    "max_person": "12 fő/alkalom",
+    "registration": "IGEN",
+    "age": "14+",
+    "accessible_venue": true
   }
 ]

@@ -20,6 +20,11 @@ export class ProgramPopupComponent implements OnInit, OnChanges {
   // A kártyán belüli nyelvváltást fel kell vinni a szülő (canvas) globális
   // language állapotába, hogy az egész app (navbar, kereső) együtt váltson
   @Output() languageChanged = new EventEmitter<'hu' | 'en'>();
+  // Regisztrációhoz kötött program "vigyél a kari standhoz" gombja
+  @Output() registrationStandSelected = new EventEmitter<{ mapId: string; areaId: string; areaName?: string; program?: ProgramEvent }>();
+  // Ha ez a lista egy regisztrációhoz kötött program miatti átirányítás eredménye,
+  // itt kapjuk meg az eredeti program nevét, hogy elmagyarázzuk, miért itt vagyunk
+  @Input() redirectedProgramName: string | null = null;
 
   @ViewChild('popupContent', { static: false }) popupContent!: ElementRef;
 
@@ -58,6 +63,26 @@ export class ProgramPopupComponent implements OnInit, OnChanges {
   toggleLanguage() {
     this.isEnglish = !this.isEnglish;
     this.languageChanged.emit(this.isEnglish ? 'en' : 'hu');
+  }
+
+  onRegistrationHintClick(program: ProgramEvent) {
+    if (!program.registration_map_id || !program.registration_area_id) return;
+    this.registrationStandSelected.emit({
+      mapId: program.registration_map_id,
+      areaId: program.registration_area_id,
+      areaName: program.registration_stand_name,
+      program: program
+    });
+  }
+
+  onDetailHintClick(program: ProgramEvent) {
+    if (!program.detail_map_id || !program.detail_area_id) return;
+    this.registrationStandSelected.emit({
+      mapId: program.detail_map_id,
+      areaId: program.detail_area_id,
+      areaName: program.detail_stand_name,
+      program: program
+    });
   }
 
   onClose() {

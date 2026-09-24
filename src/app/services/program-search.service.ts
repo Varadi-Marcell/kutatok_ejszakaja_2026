@@ -142,7 +142,19 @@ export class ProgramSearchService {
           )
         ).pipe(
           map(resultsByMap => {
-            const flat: SearchResultGroup[] = ([] as SearchResultGroup[]).concat(...resultsByMap);
+            let flat: SearchResultGroup[] = ([] as SearchResultGroup[]).concat(...resultsByMap);
+
+            // Egyes standoknak (pl. GÉIK, AVK) több, egymással azonos tartalmú
+            // hotspot-területük van (több kattintható zóna ugyanahhoz a fizikai
+            // standhoz) - a keresésben ne jelenjen meg többször ugyanaz a stand
+            const seenAreaContent = new Set<string>();
+            flat = flat.filter(result => {
+              if (result.programs.length === 0) return true;
+              const signature = result.mapId + '::' + result.programs.map(p => p.name).join('|');
+              if (seenAreaContent.has(signature)) return false;
+              seenAreaContent.add(signature);
+              return true;
+            });
 
             // Ha egy épületnek dedikált beltéri térképe is van (Előcsarnok,
             // Díszaula, Régi Aula), a találat arra a térképre mutasson -

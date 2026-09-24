@@ -288,6 +288,27 @@
   padding: 10px;
 }
 
+/* ===== Átirányítás magyarázó sáv (regisztrációhoz kötött program miatt) ===== */
+.redirect-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 10px 0;
+  padding: 12px 14px;
+  background: #e7f1ff;
+  border: 1px solid #9ec5fe;
+  border-radius: 10px;
+  color: #084298;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.redirect-banner i {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
 /* Program Cards */
 .program-card {
   background: white;
@@ -361,6 +382,60 @@
   color: #333;
   line-height: 1.4;
   padding-right: 40px;
+}
+
+/* ===== Regisztráció máshol szükséges / részletek máshol - odairányító gombok ===== */
+.registration-hint,
+.detail-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.registration-hint {
+  background: #fff8e6;
+  border: 1px solid #ffdd8a;
+  color: #7a4e00;
+}
+
+.registration-hint:hover {
+  background: #fff1cc;
+}
+
+.detail-hint {
+  background: #e7f1ff;
+  border: 1px solid #9ec5fe;
+  color: #084298;
+}
+
+.detail-hint:hover {
+  background: #d6e7ff;
+}
+
+.registration-hint i:first-child,
+.detail-hint i:first-child {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.registration-hint span,
+.detail-hint span {
+  flex: 1;
+  line-height: 1.35;
+}
+
+.registration-hint .hint-arrow,
+.detail-hint .hint-arrow {
+  flex-shrink: 0;
+  opacity: 0.7;
 }
 
 /* Program Details */

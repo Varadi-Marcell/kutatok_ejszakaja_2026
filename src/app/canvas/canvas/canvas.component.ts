@@ -34,11 +34,17 @@ export class CanvasComponent implements AfterViewInit, OnInit {
   popupPrograms: ProgramEvent[] = [];
   popupAreaName: string = '';
   isLoadingPrograms: boolean = false;
+  // A jelenleg (vagy legutóbb) megnyitott popup területének azonosítója - bezáráskor
+  // ezt emeljük ki újra a térképen, hogy a felhasználó lássa, melyik standról volt szó
+  private popupAreaId: string | null = null;
 
   // Keresés / térkép UI állapot
   highlightedAreaId: string | null = null;
   language: 'hu' | 'en' = 'hu';
   selectedProgramName: string | null = null;
+  // Ha a popup egy regisztrációhoz kötött program miatti átirányítás eredménye,
+  // itt az eredeti program neve (magyarázó sávhoz a popupban)
+  redirectedProgramName: string | null = null;
   private highlightTimeout: any = null;
   // Térképváltás után feldolgozásra váró keresési kiválasztás
   private pendingSelection: { mapId: string; areaId: string; areaName?: string; program?: ProgramEvent } | null = null;
@@ -196,13 +202,21 @@ export class CanvasComponent implements AfterViewInit, OnInit {
   }
 
   // Programok megnyitása egy területhez (kattintás VAGY keresési találat alapján)
-  openAreaPrograms(area: InteractiveArea, selectedProgram?: ProgramEvent) {
+  // isNavigation: kereséssel/átirányítással jutottunk ide (nem sima kattintással) -
+  // csak ilyenkor emeljük ki újra a standot bezáráskor, sima kattintásnál felesleges
+  openAreaPrograms(area: InteractiveArea, selectedProgram?: ProgramEvent, isNavigation: boolean = false) {
     // Set popup data and show loading
+    this.popupAreaId = isNavigation ? area.id : null;
     this.popupAreaName = area.name || area.id;
     this.isLoadingPrograms = true;
     this.showPopup = true;
     this.popupPrograms = [];
     this.selectedProgramName = selectedProgram?.name || null;
+    // Ha ez a terület a kiválasztott program regisztrációs standja (nem az, ahol
+    // a program ténylegesen zajlik), jelezzük a popupban, miért irányítottunk ide
+    this.redirectedProgramName = (selectedProgram?.registration_area_id === area.id && selectedProgram?.name)
+      ? selectedProgram.name
+      : null;
 
     // Check if we're on the campus map (nagyterkep)
     const isNagyterkep = this.currentSvgConfig?.id === 'nagyterkep';
@@ -273,18 +287,20 @@ export class CanvasComponent implements AfterViewInit, OnInit {
       this.highlightArea(area.id);
 
       // Program popup megnyitása (ugyanaz, mintha a területre kattintottak volna)
-      this.openAreaPrograms(area, program);
+      this.openAreaPrograms(area, program, true);
       return;
     }
 
     // Az új térképen nincs ilyen terület (pl. az épület kattintható része csak
     // a campus térképen létezik) - popup nyitás az épület programjaival
     console.warn('A terület nem található a térképen, popup nyitás az épület adataival:', areaId);
+    this.popupAreaId = null;
     this.popupAreaName = areaName || areaId;
     this.isLoadingPrograms = true;
     this.showPopup = true;
     this.popupPrograms = [];
     this.selectedProgramName = program?.name || null;
+    this.redirectedProgramName = null;
 
     this.svgConfigService.loadBuildingData(areaId).subscribe({
       next: (data) => {
@@ -333,6 +349,14 @@ export class CanvasComponent implements AfterViewInit, OnInit {
     this.popupPrograms = [];
     this.popupAreaName = '';
     this.isLoadingPrograms = false;
+    this.redirectedProgramName = null;
+    // A popup nyitva léte alatt a korábbi kiemelés időzítője lejárhatott - bezáráskor
+    // frissen újraindítjuk, hogy a látogató most, hogy újra látja a térképet, lássa is,
+    // melyik standról volt szó
+    if (this.popupAreaId) {
+      this.highlightArea(this.popupAreaId);
+    }
+    this.popupAreaId = null;
   }
 
   // Különböző SVG konfigurációk betöltése térkép azonosító szerint

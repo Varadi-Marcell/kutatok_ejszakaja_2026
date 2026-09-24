@@ -111,14 +111,29 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
   }
 
   // Találat kiválasztása: szülő komponens térképvált + popupot nyit
+  // Ha a programhoz máshol (a kari standnál) kell regisztrálni, oda irányítunk,
+  // nem abba az épületbe, ahol a program ténylegesen zajlik
   selectResult(group: SearchResultGroup, program?: ProgramEvent) {
+    const target = this.registrationTarget(program);
     this.areaSelected.emit({
-      mapId: group.mapId,
-      areaId: group.areaId,
-      areaName: group.areaName,
+      mapId: target?.mapId || group.mapId,
+      areaId: target?.areaId || group.areaId,
+      areaName: target?.areaName || group.areaName,
       program: program
     });
     this.showResults = false;
+  }
+
+  // Ha a programnak van regisztrációs vagy "valódi otthona" (detail_*) átirányítása,
+  // azt részesítjük előnyben a találati csoport (épület) helye helyett
+  private registrationTarget(program?: ProgramEvent): { mapId: string; areaId: string; areaName?: string } | null {
+    if (program?.registration_map_id && program?.registration_area_id) {
+      return { mapId: program.registration_map_id, areaId: program.registration_area_id, areaName: program.registration_stand_name };
+    }
+    if (program?.detail_map_id && program?.detail_area_id) {
+      return { mapId: program.detail_map_id, areaId: program.detail_area_id, areaName: program.detail_stand_name };
+    }
+    return null;
   }
 
   // Enter: az első találat kiválasztása
@@ -162,13 +177,14 @@ export class MapToolbarComponent implements OnInit, OnDestroy {
       this.favorites = this.favorites.filter(f => f.programKey !== key);
       this.showToast(this.language === 'en' ? 'Removed from favorites' : 'Eltávolítva a kedvencekből');
     } else {
+      const target = this.registrationTarget(program);
       this.favorites.push({
         programKey: key,
         name: program.name || '',
         englishName: program.english_name || '',
-        mapId: group.mapId,
-        areaId: group.areaId,
-        areaName: group.areaName
+        mapId: target?.mapId || group.mapId,
+        areaId: target?.areaId || group.areaId,
+        areaName: target?.areaName || group.areaName
       });
       this.showToast(this.language === 'en' ? 'Added to favorites' : 'Hozzáadva a kedvencekhez');
     }

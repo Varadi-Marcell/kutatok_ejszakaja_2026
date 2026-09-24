@@ -211,6 +211,19 @@ export class SvgElementComponent implements AfterViewInit, OnChanges, OnDestroy 
     return Math.max(4, Math.min(base, smallerSide * 0.3));
   }
 
+  // Pulzáló/lebegő pin-jelző pozicionálása a kiemelt terület fölé (keresés/
+  // átirányítás után jól látható legyen, ne csak a finom szín-kiemelésre kelljen hagyatkozni)
+  getHighlightPinTransform(area: InteractiveArea): string {
+    const center = this.getAreaCenter(area);
+    if (!center) return '';
+    const r = this.getHotspotRadiusForArea(area);
+    const s = (r * 2.6) / 16;
+    const liftAbove = r * 1.3;
+    const x = center.x - 8 * s;
+    const y = center.y - liftAbove - 16 * s;
+    return `translate(${x.toFixed(2)}px, ${y.toFixed(2)}px) scale(${s.toFixed(4)})`;
+  }
+
   getHotspotStrokeWidth(area: InteractiveArea): number {
     return Math.min(8, Math.max(2, this.getHotspotRadiusForArea(area) * 0.45));
   }

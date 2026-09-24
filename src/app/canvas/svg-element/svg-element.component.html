@@ -100,6 +100,15 @@
         <title>{{ area.name }}</title>
       </circle>
 
+      <!-- Erős, lebegő pin-jelző a kiemelt (keresésből / átirányításból érkező) terület fölött -->
+      <g
+        *ngIf="highlightedAreaId === area.id"
+        class="highlight-pin"
+        [style.transform]="getHighlightPinTransform(area)"
+      >
+        <path class="highlight-pin-icon" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+      </g>
+
       <!-- Angol-ajánlott / akadálymentesített mini badge-ek a standon -->
       <g
         *ngFor="let badge of getAreaBadges(area)"

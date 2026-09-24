@@ -35,6 +35,16 @@
 
     <!-- Programs List -->
     <div class="popup-body" *ngIf="!isLoading">
+      <!-- Regisztrációhoz kötött program miatti átirányítás magyarázata -->
+      <div class="redirect-banner" *ngIf="redirectedProgramName">
+        <i class="bi bi-info-circle"></i>
+        <span>
+          {{ isEnglish ? 'You were redirected here because' : 'Azért irányítottunk ide, mert a(z)' }}
+          <strong>„{{ redirectedProgramName }}”</strong>
+          {{ isEnglish ? 'requires registration at this stand.' : 'programhoz itt kell regisztrálnod.' }}
+        </span>
+      </div>
+
       <div class="programs-container" *ngIf="programs.length > 0; else noPrograms">
         <div class="program-card" *ngFor="let program of programs; let i = index" [class.selected]="selectedProgramName && program.name === selectedProgramName">
           <div class="program-number">{{ i + 1 }}</div>
@@ -72,7 +82,25 @@
               <span class="detail-text">{{ program.place }}</span>
             </div>
           </div>
-          
+
+          <button
+            class="registration-hint"
+            *ngIf="program.registration_map_id && program.registration_area_id"
+            (click)="onRegistrationHintClick(program)">
+            <i class="bi bi-signpost-split"></i>
+            <span>{{ isEnglish ? 'Registration required at:' : 'Regisztráció szükséges itt:' }} <strong>{{ program.registration_stand_name }}</strong></span>
+            <i class="bi bi-chevron-right hint-arrow"></i>
+          </button>
+
+          <button
+            class="detail-hint"
+            *ngIf="program.detail_map_id && program.detail_area_id"
+            (click)="onDetailHintClick(program)">
+            <i class="bi bi-geo"></i>
+            <span>{{ isEnglish ? 'Full details at:' : 'Részletek és a teljes program itt:' }} <strong>{{ program.detail_stand_name }}</strong></span>
+            <i class="bi bi-chevron-right hint-arrow"></i>
+          </button>
+
           <div class="program-description" *ngIf="program.description || program.english_description">
             <div class="description-header">
               <i class="bi bi-file-text icon-description"></i>

@@ -68,6 +68,8 @@
   [isVisible]="showPopup"
   [language]="language"
   [selectedProgramName]="selectedProgramName"
+  [redirectedProgramName]="redirectedProgramName"
   (close)="onClosePopup()"
-  (languageChanged)="onLanguageChanged($event)">
+  (languageChanged)="onLanguageChanged($event)"
+  (registrationStandSelected)="onSearchAreaSelected($event)">
 </app-program-popup>

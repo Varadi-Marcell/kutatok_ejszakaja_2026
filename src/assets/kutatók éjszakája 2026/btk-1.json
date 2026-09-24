@@ -8,5 +8,17 @@
     "max_person": "-",
     "registration": "-",
     "accessible_venue": true
+  },
+  {
+    "No.": "1",
+    "name": "„SZELLEMVASÚT” – játékos vetélkedő egyének, családok, párok, csoportok számára!",
+    "english_name": "\"GHOST RAILWAY\" - a playful competition for individuals, families, couples, groups!",
+    "description": "A tavalyi és tavaly előtti nagysikerű programunk újból - izgalmas, új feladványokkal! A Szellemvasút 5+1 állomásból áll (0. állomás a standon, a többi 5 az A/5, II. emeleti folyosóján), valójában egy vetélkedő. Egyének, párok, családok, 5-6 fős csoportok is nevezhetnek központi standunknál! A vetélkedő egyes állomásai az ATTI termeiben és folyosóján lesznek, ahol a vállalkozó szellemű játékosoknak egy-egy kreatív feladványt kell megoldaniuk a vetélkedő központi témája mentén. Központi témánk: Helyünk a világban.\nAki a legügyesebben és leggyorsabban célba ér, nyereményeket kap!\nA programra várunk gyerekeket, fiatalokat, családokat is, tekintettel arra, hogy az egyes állomásokon olyan feladványok lesznek, amelyek megfejtésében bármely korosztályhoz tartozó ügyes, kreatív megoldásokat adhat!\nKalandra fel!\nÉs hogy miért is SZELLEMVASÚT? Kiderül majd a helyszínen!",
+    "english_description": "The Ghost Railway consists of 5+1 stations (station 0 at the stand, the other 5 in the corridor of A/5, II. floor), it is actually a competition. Individuals, couples, families, groups of 5-6 people can also register at our central stand! The various stations of the contest will be in the halls and corridors of ATTI, where enterprising players must solve a creative puzzle based on the central theme of the contest. Our central theme: Our place in the world.\nWhoever gets to the finish line the most skillfully and the fastest gets prizes!\nWe welcome children, young people, and families to the program, given that there will be puzzles at each station, which can be solved by any age group with clever, creative solutions!\nGo on an adventure!\nAnd why GHOST RAILWAY?\nWill be revealed on the spot!",
+    "time": "18:00-20:30 között folyamatosan / Continuously between 18:00-20:30",
+    "max_person": "Mindegy!",
+    "registration": "Igen, a BTK standjánál lesz egy emberünk!",
+    "age": "3-tól felfelé!",
+    "accessible_venue": true
   }
 ]

@@ -119,6 +119,24 @@ circle.area-highlighted {
   animation: area-highlight-pulse 1.2s ease-in-out infinite;
 }
 
+/* ===== Lebegő pin-jelző a kiemelt terület fölött (jobban észrevehető, mint a szín-pulzálás) ===== */
+.highlight-pin {
+  pointer-events: none;
+}
+
+.highlight-pin-icon {
+  fill: #ff2d2d;
+  stroke: #ffffff;
+  stroke-width: 0.9;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.55));
+  animation: highlight-pin-bounce 0.85s ease-in-out infinite;
+}
+
+@keyframes highlight-pin-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
 
 /* ===== Angol-ajánlott / akadálymentesített mini badge-ek a standokon ===== */
 .area-badge {

@@ -1,49 +1,5 @@
 [
   {
-    "No.": "1",
-    "name": "Amiről az ősmaradványok mesélnek",
-    "english_name": "The story of fossils",
-    "description": "Több száz különleges ős­maradványt bemutató kiállítás, melyből a földi élet fejlődését ismerhetjük meg.",
-    "english_description": "An exhibition featuring hundreds of unique fossils, providing insight into the evolution of life on Earth.",
-    "place": "A/3. épület, III. emelet lépcsőforduló; Őslénytár / A/3 building, 3rd floor landing; Fossil Museum",
-    "time": "folyamatos; de óránként (18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
-    "max_person": "nincs korlát",
-    "registration": "kari pultnál",
-    "age": "0-99 év",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "a3"
-  },
-  {
-    "No.": "2",
-    "name": "Ásványok a világ minden tájáról - Ásványkiállítás",
-    "english_name": "Minerals from around the world - Mineral exhibition",
-    "description": "Gyönyörködjön a Nyersanyagkutató Földtudományi Intézet több ezer darabos lélegzetelállító ásványkiállításában.",
-    "english_description": "Admire the breathtaking mineral exhibition of the Raw Materials Research Institute of Earth Sciences, featuring thousands of specimens.",
-    "place": "A/3 épület, III. emelet, Ásványtár / A/3 building, 3rd floor, Mineral storage",
-    "time": "folyamatos; de óránként ( 18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
-    "max_person": "nincs korlát",
-    "registration": "kari pultnál",
-    "age": "0-99 év",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "a3"
-  },
-  {
-    "No.": "3",
-    "name": "Tanbánya látogatás",
-    "english_name": "Underground mine visit inside the building of the University of Miskolc",
-    "description": "Gyere velünk a bánya mélyére! A tanbányában egykori bányákból származó\neszközök segítségével mutatjuk be\na bányászathoz kötődő kitermelési technológiákat valósághű környezetben.",
-    "english_description": "Come with us deep into the mine! In our underground mine, tools from former mines and mining-related extraction technologies can be seen in a realistic environment.",
-    "place": "Tanbánya (A/3 épület, 1. emelet) Élményközponton belül / Tanbánya (Building A/3, 1st floor) Inside the Experience Center",
-    "time": "18 órától 30 percenként indulnak csoportok a kari standtól / From 6:00 p.m., groups will depart from the faculty stand every 30 minutes.",
-    "max_person": "20 fő csoportonként",
-    "registration": "kari pultnál",
-    "age": "6-99 év",
-    "recommended_for_english_speakers": true,
-    "building": "a3"
-  },
-  {
     "No.": "4",
     "name": "Szeparációs kihívás - válogass gyorsabban, mint Hamupipőke!",
     "english_name": "Separation challenge - be faster than Cinderella!",
@@ -56,7 +12,10 @@
     "age": "6-99 év",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "mfk-1",
+    "detail_stand_name": "MFK stand"
   },
   {
     "No.": "5",
@@ -71,7 +30,10 @@
     "age": "6-99 év",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "mfk-1",
+    "detail_stand_name": "MFK stand"
   },
   {
     "No.": "6",
@@ -98,7 +60,10 @@
     "time": "18:00-től / from 6pm",
     "registration": "nincs",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "mfk-1",
+    "detail_stand_name": "MFK stand"
   },
   {
     "No.": "8",
@@ -110,7 +75,10 @@
     "time": "18:00-től / from 6pm",
     "registration": "nincs",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "mfk-1",
+    "detail_stand_name": "MFK stand"
   },
   {
     "No.": "9",
@@ -123,7 +91,10 @@
     "registration": "nincs",
     "age": "10 éves kor felett",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "mfk-1",
+    "detail_stand_name": "MFK stand"
   },
   {
     "No.": "11",
@@ -181,7 +152,10 @@
     "age": "6-99",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "mfk-1",
+    "detail_stand_name": "MFK stand"
   },
   {
     "No.": "15",
@@ -198,20 +172,6 @@
     "accessible_venue": true
   },
   {
-    "No.": "16",
-    "name": "Fekete arany nyomában",
-    "english_name": "In Search of Black Gold",
-    "description": "\"Fekete arany nyomában\" előadásunkban a kőolaj felfedezésének, kitermelésének és feldolgozásának világát mutatjuk be laboratóriumi környezetben, terepasztal segítségével szemléltetve a folyamatokat és a kihívásokat.",
-    "english_description": "During our demonstration \"In Search of Black Gold,\" we present the world of oil discovery, extraction, and processing in a laboratory setting, using a model setup to illustrate the processes and challenges.",
-    "place": "Olaj- és gázipari terepasztal\nA/2 épület, 24/A -\nOlajmérnöki és Gázmérnöki Tsz., illetve a Galéria előtti himba területe (jó idő esetén) / Oil and Gas Field Desk\nBuilding A/2, 24/A -\nOil and Gas Engineering Department and the pumpjack area in front of the Gallery (weather permitting)",
-    "time": "18:00 és 22:00 között / Continuously through 18:00 és 22:00",
-    "max_person": "10",
-    "registration": "igen",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "a2"
-  },
-  {
     "No.": "17",
     "name": "UNEXMIN Georobotics – robotika a fenntartható vízgazdálkodás és nyersanyagkutatás szolgálatában",
     "english_name": "UNEXMIN Georobotics – Robotics for Sustainable Water Management and Mineral Exploration",
@@ -222,7 +182,10 @@
     "max_person": "nincs",
     "registration": "nincs",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "mfk-1",
+    "detail_stand_name": "MFK stand"
   },
   {
     "No.": "18",
@@ -254,21 +217,6 @@
     "building": "a2"
   },
   {
-    "No.": "2",
-    "name": "Tüzes-jeges AnyagBAZÁR",
-    "english_name": "Materials with fire and ice",
-    "description": "Kísérletek anyagokkal alacsony és nagy hőmérsékleten.",
-    "english_description": "Experiments with materials at low and high temperatures.",
-    "place": "B1 épület 4. emelet 410. sz. előadó / Building B1, 4th floor, room 410",
-    "time": "18:00, 21:00",
-    "max_person": "35 fő/alkalom",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "b1"
-  },
-  {
     "No.": "3",
     "name": "Zenélj fénnyel, építs anyagból!",
     "english_name": "Make music with light, build with material!",
@@ -281,47 +229,10 @@
     "age": "vegyes",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "building": "elocsarnok"
-  },
-  {
-    "No.": "4",
-    "name": "Mini téglagyártás",
-    "english_name": "Mini brick production",
-    "description": "Interaktív bemutatása a téglagyártásnak - hogyan lesz az agyagból égetett kerámia falazóelem?",
-    "english_description": "Interactive demonstration of brick-making — how does clay become a fired ceramic building block?",
-    "place": "C/2. épület, V hajó - Energia-, Kerámia- és Polimetechnológiai Intézet, Portechnológiai laboratórium / C/2 épület, Ship V - Institute of Energy, Ceramics and Polymer Technology, Port Technology Laboratory /",
-    "time": "17:30, 18:30, 19:30",
-    "max_person": "10 fő/alkalom",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes",
-    "building": "c2"
-  },
-  {
-    "No.": "5",
-    "name": "Látványcsapolás",
-    "english_name": "Molten cast iron tapping",
-    "description": "Bemutatjuk az öntöttvas csapolást olvasztókemencéből.",
-    "english_description": "We will demonstrate the molten cast iron tapping from the melting furnace.",
-    "place": "FÖI, C/2. műhelycsarnok V. hajó, földszint (északi oldal) / FÖI, C/2. building, workshop hall V. ship, ground floor (north side)",
-    "time": "18:00",
-    "max_person": "30 fő/alkalom",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes",
-    "building": "c2"
-  },
-  {
-    "No.": "6",
-    "name": "Zománcműhely – Készítsd el saját alkotásod!",
-    "english_name": "Enamel Workshop – Create Your Own Piece!",
-    "description": "Ismerd meg a tűzzománcozás világát! Egy rövid bemutató keretében megismerheted a tűzzománcozás történetét, majd Te is kipróbálhatod a hobbi zománcozás technológiáját. Készíts saját, egyedi medált, fülbevalót, karkötőt vagy gyűrűt, és vidd haza az elkészült alkotásodat!",
-    "english_description": "Discover the fascinating world of vitreous enamelling! During a short presentation, you will learn about the history of enamelling, then try the hobby enamelling technique yourself. Create your own unique pendant, earrings, bracelet or ring, and take your finished piece home with you!",
-    "place": "FÖI, B1 III. emelet 309, Felületkezelő labor",
-    "time": "19:00",
-    "max_person": "6 fő/ alkalom",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "b1"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "avk-1",
+    "detail_stand_name": "AVK stand"
   },
   {
     "No.": "7",
@@ -335,36 +246,10 @@
     "registration": "regisztráció nélküli",
     "age": "vegyes",
     "accessible_venue": true,
-    "building": "elocsarnok"
-  },
-  {
-    "No.": "8",
-    "name": "Mire jó a hulladék kupak?",
-    "english_name": "What are waste bottle caps good for?",
-    "description": "Fedezd fel, hogyan születnek a műanyag tárgyak! Ismerkedj meg a fröccsöntés varázslatos világával, és alkosd meg saját figurádat.",
-    "english_description": "Discover how plastic objects are made! Explore the magical world of injection molding and create your own figure.",
-    "place": "B/1 épület 2. emelet, folyosó - Energia-, Kerámia- és Polimertechnológiai Intézet / B/1 building, 2nd floor, corridor - Institute of Energy, Ceramics and Polymer Technology",
-    "time": "20:00; 21:00",
-    "max_person": "10 fő",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "b1"
-  },
-  {
-    "No.": "9",
-    "name": "Szuperlabda gyár – pattogó polimerek a laborban",
-    "english_name": "Superball factory – bouncing polymers in the laboratory",
-    "description": "Gyere és készítsd el a saját pattogó szuperlabdádat, miközben felfedezed a polimerek titkos világát! Megmutatjuk, hogyan lesz néhány egyszerű anyagból izgalmas, kézzel fogható játék. A kísérlet közben megtudhatod, miért pattog, rugalmas és különleges a szuperlabda.",
-    "english_description": "Come and create your own bouncing super ball while discovering the fascinating world of polymers! We’ll show you how a few simple ingredients can turn into an exciting, hands-on toy. Along the way, you’ll learn why the super ball is so bouncy, elastic, and unique.\"",
-    "place": "B/1 épület 2. emelet, 211. terem - Energia-, Kerámia- és Polimertechnológiai Intézet / B/1 building, 2nd floor, 211. room - Institute of Energy, Ceramics and Polymer Technology",
-    "time": "18:00; 18:30; 19:00",
-    "max_person": "10 fő",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "4 éves kortól",
-    "accessible_venue": true,
-    "building": "b1"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "avk-1",
+    "detail_stand_name": "AVK stand"
   },
   {
     "No.": "10",
@@ -378,19 +263,10 @@
     "registration": "regisztráció nélküli",
     "age": "vegyes",
     "accessible_venue": true,
-    "building": "elocsarnok"
-  },
-  {
-    "No.": "11",
-    "name": "Gumiból abroncs – így születik az autógumi",
-    "english_name": "From Rubber to Tyre – How a Car Tyre Is Made",
-    "description": "Hogyan lesz a gumiból autóabroncs? Ismerd meg az abroncsok alapanyagait és gyártási folyamatát, majd próbáld ki magad a gyártásban! Látványos kísérletekkel és saját készítésű abronccsal fedezheted fel az anyagtudomány világát.",
-    "english_description": "How does rubber become a car tyre? Discover the raw materials and manufacturing process of tyres, then try your hand at making one yourself! Explore the world of materials science through spectacular experiments and by creating your own tyre.",
-    "place": "PAC",
-    "time": "18:00; 19:00",
-    "max_person": "15 fő",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "avk-1",
+    "detail_stand_name": "AVK stand"
   },
   {
     "No.": "12",
@@ -404,34 +280,10 @@
     "registration": "regisztráció nélküli",
     "age": "vegyes",
     "accessible_venue": true,
-    "building": "elocsarnok"
-  },
-  {
-    "No.": "13",
-    "name": "Virtuális öntvénygyártás - öntészeti szimuláció",
-    "english_name": "Virtual Casting – Casting Simulation",
-    "description": "Problémától a megoldásig számítógépes szimuláció segítségével valós esetek alapján interaktívan.",
-    "english_description": "From problem to solution through computer simulation, based on real-world cases in an interactive discussion.",
-    "place": "C/2. műhelycsarnok V. hajó hátsó oldal nem a Jó Szerencsét! felirat felől (Fémelőállítási és Öntészeti Intézet)",
-    "time": "18:30; 19:30",
-    "max_person": "15 fő",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes",
-    "building": "c2"
-  },
-  {
-    "No.": "14",
-    "name": "Hogyan lesz a műanyagból üzemanyag (hidrogén és kerozin)?",
-    "english_name": "How is plastic turned into fuel (hydrogen and kerosene)?",
-    "description": "Hogyan lesz a műanyag hulladékból értékes üzemanyag? Ismerd meg a pirolízis folyamatát, egy pirolízis reaktor felépítését és működését. Tudd meg, miként alakítható a műanyag hulladék olajjá, gázzá (hidrogén), majd üzemanyaggá!",
-    "english_description": "How to turn plastic waste into valuable fuel? Learn about the pyrolysis process, the structure and operation of a pyrolysis reactor. Learn how plastic waste can be converted into oil, gas (hydrogen), and then fuel!",
-    "place": "B1 épület 4. emelet 402. sz. előadó / Building B1, 4th floor, room 402",
-    "time": "17:30; 18:30",
-    "max_person": "12 fő",
-    "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "b1"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "avk-1",
+    "detail_stand_name": "AVK stand"
   },
   {
     "No.": "15",
@@ -445,7 +297,10 @@
     "registration": "Regisztráció nélküli",
     "age": "vegyes",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "avk-1",
+    "detail_stand_name": "AVK stand"
   },
   {
     "No.": "17",
@@ -456,7 +311,10 @@
     "registration": "Regisztráció nélküli",
     "age": "vegyes",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "avk-1",
+    "detail_stand_name": "AVK stand"
   },
   {
     "No.": "18",
@@ -470,7 +328,10 @@
     "registration": "Regisztráció nélküli",
     "age": "vegyes",
     "recommended_for_english_speakers": true,
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "diszaula",
+    "detail_area_id": "avk-feny",
+    "detail_stand_name": "Fényt viszünk a kémiába"
   },
   {
     "No.": "19",
@@ -485,160 +346,6 @@
     "age": "vegyes",
     "recommended_for_english_speakers": true,
     "accessible_venue": true
-  },
-  {
-    "No.": "1",
-    "name": "Minden amit a mesterséges intelligenciáról tudni akartál",
-    "english_name": "Everything you wanted to know about artificial intelligence",
-    "description": "Mesterséges ideghálózatok, élőlény gép kapcsolatok. Hogyan irányít egy marék idegsejt játékot? Hogyan segít a mindennapokban egy mesterséges intelligencia ügynök?",
-    "english_description": "How can a handful of neurons control a game? How can an artificial intelligence agent assist us in our everyday lives?",
-    "place": "Inf. Ép. II. em. 200.",
-    "time": "18:30",
-    "max_person": "20-25",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+",
-    "accessible_venue": true,
-    "building": "info"
-  },
-  {
-    "No.": "2",
-    "name": "Rádióhullámok hátán",
-    "english_name": "Riding the Radio Waves",
-    "description": "Rádiózás régen és most. Hogyan küldhettek egymásnak mémeket kézi rádióval? Honnan tudja a telefon, hogy mellette van a fülhallgatód? Miért nem megy át a WiFi a vastag falon?",
-    "english_description": "Radio communication: then and now. How could people send memes to each other using a handheld radio? How does your phone know that your earphones are nearby? Why doesn't Wi‑Fi pass through walls?",
-    "place": "Inf. Ép. II. em. 200 vagy 214",
-    "time": "20:30",
-    "max_person": "20-25",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+",
-    "accessible_venue": true,
-    "building": "info"
-  },
-  {
-    "No.": "3",
-    "name": "Robot-simogató és áramkör matató",
-    "english_name": "Robot petting and circuit tinkering",
-    "description": "Játék robotokkal és áramkörépítés.",
-    "english_description": "Playing with robots and building electric circuits.",
-    "place": "Inf. Ép. II. em. 200 vagy 214",
-    "time": "18:-00-tól folyamatos",
-    "max_person": "20-25",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+",
-    "accessible_venue": true,
-    "building": "info"
-  },
-  {
-    "No.": "4",
-    "name": "Vízfestés elektromossággal",
-    "english_name": "Water colouring with electricity",
-    "description": "A program keretében az érdeklődők megismerkedhetnek elektrokémiai folyamatokkal, amelyekkel látványos kísérleteket végzünk.",
-    "english_description": "As part of the program, participants will learn about electrochemical processes through a series of spectacular experiments.",
-    "place": "Elektrotechnikai és Elektronikai Intézeti Tanszék A/3 2. emelet",
-    "time": "18:-00-tól folyamatos",
-    "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "-",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "a3"
-  },
-  {
-    "No.": "5",
-    "name": "WC papír rádió és jelek szűrése",
-    "english_name": "Toilet paper radio and signal filtering",
-    "description": "Hogyan szűrjük ki a zajból a hasznos információt és milyen egyszerű rádióvevők készíthetők házilag.",
-    "english_description": "How to filter out useful information from noise, and how to build simple radio receivers at home.",
-    "place": "Elektrotechnikai és Elektronikai Intézeti Tanszék A/3 2. emelet",
-    "time": "18:-00-tól folyamatos",
-    "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "accessible_venue": true,
-    "building": "a3"
-  },
-  {
-    "No.": "6",
-    "name": "Elektronvihar",
-    "english_name": "Electronstorm",
-    "description": "Hogyan lenagyfeszültséggel szelet létrehozni.",
-    "english_description": "How to make wid with high voltage.",
-    "place": "Elektrotechnikai és Elektronikai Intézeti Tanszék A/3 2. emelet",
-    "time": "18:-00-tól folyamatos",
-    "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "a3"
-  },
-  {
-    "No.": "7",
-    "name": "Simaság és alakhelyesség - a mögöttük rejlő vizsgálatok",
-    "english_name": "Smoothness and form accuracy – the underlying analyses",
-    "description": "A gépeket alkotó alkatrészek sosem tökéletesek, az iparban mindig valamilyen hibával rendelkeznek gyártásuk\nkövetkeztében. Ezeket mérésekkel tudjuk vizsgálni és értékelni. A bemutató során ehhez használható érdesség\nés alakhiba mérő berendezések tekinthetők meg, melyek használatát és jelentőségét ismertetjük.",
-    "english_description": "The components that make up machines are never perfect; due to the manufacturing process, they invariably possess some degree of imperfection. These can be examined and evaluated through measurements. During the presentation, we will showcase instruments used to measure surface roughness and form errors, and we will explain their operation and significance.",
-    "place": "Gyártástudományi Intézet, C/1 épület, fsz. 16. és 18. terem",
-    "time": "18:-00-tól folyamatos, fél óra",
-    "max_person": "30",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "accessible_venue": true,
-    "building": "c1"
-  },
-  {
-    "No.": "8",
-    "name": "Digitalizációs megoldások a logisztikában - drón show",
-    "english_name": "Digitalization solutions in logistics - drone show",
-    "description": "Logisztikai intézetben található Logisztika 4.0 Llaboratóriumban lévő drón bemutatása.",
-    "english_description": "Presentation of a drone in the Logistics 4.0 laboratory located in a logistics institute.",
-    "place": "Logisztikai Intézet; A/5 ép. I. em. 104.",
-    "time": "18.00",
-    "max_person": "10",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+",
-    "accessible_venue": true,
-    "building": "a5"
-  },
-  {
-    "No.": "9",
-    "name": "Logisztikai high-tech eszközök bemutatása",
-    "english_name": "Presentation of high-tech logistics equipment",
-    "description": "Logisztikai intézetben található Logisztika 4.0 Llaboratóriumban lévő eszközök bemutatása (felrakó, komissiózó és mobil robotos rendszer).",
-    "english_description": "Presentation of the equipment in the Logistics 4.0 laboratory located in a logistics institute (stacker, order picker and mobile robot system).",
-    "place": "Logisztikai Intézet; A/5 ép. I. em. 104.",
-    "time": "18.40",
-    "max_person": "10",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+",
-    "accessible_venue": true,
-    "building": "a5"
-  },
-  {
-    "No.": "10",
-    "name": "Automatizált Lego minigyár",
-    "english_name": "Automated Lego mini factory",
-    "description": "Logisztikai intézetben található Logisztika 4.0 Llaboratóriumban lévő logisztikai Lego minigyár bemutatása.",
-    "english_description": "Presentation of the logistics Lego mini-factory in the Logistics 4.0 laboratory located in a logistics institute.",
-    "place": "Logisztikai Intézet; A/5 ép. I. em. 104.",
-    "time": "19.20",
-    "max_person": "10",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "14+",
-    "accessible_venue": true,
-    "building": "a5"
-  },
-  {
-    "No.": "11",
-    "name": "Látványos fizikai kísérletek",
-    "english_name": "Spectacular Physics Experiments",
-    "description": "Kísérletek vákuumban, elektrosztatikai eszközökkel és lézerekkel.",
-    "english_description": "Experiments in vaccum, with electrostatic devices, and lasers.",
-    "place": "A/2 épület, III. (legfelső) emelet 11. (üvegajtón be) - Fizikai és Elektrotechnikai Intézet / A/2 building, 3rd (top) floor 11. (through glass door)",
-    "time": "18:00, 18:30, 19:00, 19:30",
-    "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true,
-    "building": "a2"
   },
   {
     "No.": "12",
@@ -683,116 +390,6 @@
     "building": "a3"
   },
   {
-    "No.": "15",
-    "name": "Hogyan repül a repülő?",
-    "english_name": "How does an airplane fly?",
-    "description": "Szélcsatornában lézeres és olajködös megjelenítéssel testek körüli áramlás megjelenítése, sebességmérési lehetőségek, eszközök bemutatása.",
-    "english_description": "Visualization of flow around bodies using laser and oil mist visualization in a wind tunnel, speed measurement options, presentation of tools.",
-    "place": "C/2 épület, 2. hajó (Észak) - Áramlás- és Hőtechnikai Gépek Intézeti Tanszék laboratóriuma / C/2 building, 2nd floor (North) - Laboratory of the Department of Fluid and Thermal Engineering",
-    "time": "19:00-19:25; 19:30-19:55; 20:00-20:25; 20:30-20:55; 21:00-21:25; 21:30-21:55",
-    "max_person": "15",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes",
-    "building": "c2"
-  },
-  {
-    "No.": "16",
-    "name": "Játékos gépi tanulás",
-    "english_name": "Playful machine learning",
-    "description": "A Flappy Birds számítógépes játék kódjának elemzésén keresztül mutatjuk be a gépi tanulási folyamat menetét.\nA megerősítéses tanulás (Reinforcement Learning) egy speciális gépi tanulási feladattípus. Az ágens a környezete\náltal adott visszajelzések (megerősítések) alapján igyekszik megtalálni egy adott (előtte sosem \"látott\") problémára\na megoldást. Elemi döntések sorozatát hozza meg arra törekedve, hogy jutalmait (megerősítéseit) maximalizálja.\nA cél tehát egy ismeretlen problémára egy lehetséges megoldás keresése, csupán a környezet visszajelzései\n(megerősítési információi) alapján.",
-    "english_description": "We illustrate process of machine learning algorithms by examining the code of the Flappy Bird computer game. Reinforcement Learning is a special type of machine learning algorithms. Based on the feedback (reinforcements) provided by the environment, the agent attempts to find a solution to a problem it has never encountered before. The agent makes a series of decisions with the aim of maximizing its rewards (reinforcements). The goal is to find a solution to an unknown problem only based on the feedback received from the environment.",
-    "place": "Informatikai épület, I. emelet, 102. terem / Informatics Building, 1st floor, room 102",
-    "time": "18:00, 18:30, 19:00, 19:30, 20:00",
-    "max_person": "15",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "info"
-  },
-  {
-    "No.": "17",
-    "name": "Dimenziók határán: Geometriai feladványok virtuális és kiterjesztett valóságban",
-    "english_name": "At the Edge of Dimensions: Geometric Challenges in Virtual and Augmented Reality",
-    "description": "A program során a résztvevők különféle érdekes geometriai feladványokat oldhatnak meg virtuális és kiterjesztett valóságban.",
-    "english_description": "During the program, participants can solve various interesting geometric challenges in virtual and augmented reality.",
-    "place": "Matematikai Intézet, A/4 épület, 321. terem / Institute of Mathematics, A/4 building, 321. room",
-    "time": "folyamatos\n(a program időtartama 30 perc)",
-    "max_person": "15",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "18",
-    "name": "A fraktálok kialakulása, dimenziója és számítástechnikai megvalósítása",
-    "english_name": "The formation, dimensions, and computational implementation of fractals",
-    "description": "A programban bemutatásra kerül a fraktálok képződési elve, amely során az alakzat önhasonló lesz.\nBemutatásra kerül három dimenziós fraktál is, valamint az úgynevezett Hausdorff-dimenzió is, amelynek érdekes tulajdonsága, hogy általában nem egész szám. A fraktálok mindennapi alkalmazásai is terítékre\nkerülnek: például megvalósíthatóságuk a számítógépi grafikában.",
-    "english_description": "The program presents the principle of fractal formation, in which the shape becomes self-similar.\nThree-dimensional fractals will also be presented, as well as the so-called Hausdorff dimension, which has the interesting characteristic of not usually being an integer. The everyday applications of fractals are also discussed, such as their feasibility in computer graphics.",
-    "place": "Matematikai Intézet, A/4 épület, 3. emelet. 341. terem / Institute of Mathematics, Building A/4, 3rd floor. Room 341",
-    "time": "18:00, 18:30",
-    "max_person": "45",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "19",
-    "name": "Kivezetés a matematikából, azaz milyen lenne az életünk matematika nélkül?",
-    "english_name": "What would our lives be like without mathematics?",
-    "description": "Sokszor az átlagember idegenkedik a matematikától, azonban azt már nem gondolják át, hogy nélküle milyen lenne az életünk. Az előadás ezt próbálja bemutatni.",
-    "english_description": "People often have an aversion to mathematics, but they no longer think about what our lives would be like without it. The presentation tries to demonstrate this.",
-    "place": "Matematikai Intézet, A/4 épület, 3. emelet, 321. terem / Institute of Mathematics, Building A/4, 3rd floor, room 321",
-    "time": "19:00, 19:30",
-    "max_person": "40",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "20",
-    "name": "A mechatronika területei, avagy 3 az 1-ben",
-    "english_name": "The fields of mechatronics - 3 in 1",
-    "description": "A megújult eszközparkkal rendelkező Robert Bosch Mechatronikai Intézeti Tanszéken a kedves érdeklődők megismerkedhetnek a mechatronika változatos és sokrétű világával, amely ötvözi a gépészet- elektronika- és informatikai területeket. Az eseményen a tanszéken található korszerű laboratóriumok kerülnek bemutatásra, amelyekben helyet kapnak érzékelők, folyamatirányító rendszerek, ipari robotok és pneumatikus elemek. A Bosch gyárak támogatásával megújult eszközparkunk révén a legkorszerűbb technológiát ismerhetik meg az érdeklődők.",
-    "english_description": "The equipment park of the Robert Bosch Department of Mechatronics has been renewed. Visitors can get an insight into the multifaceted world of mechatronics, which combines the fields of mechanical engineering, electronics and IT. At the event, modern laboratories will be presented at the department, which contain sensors, process control systems, industrial robots and pneumatic elements. With the support of Hungarian Bosch factories, our renewed equipment park allows visitors to get acquainted with the most modern technology.",
-    "place": "A/5 épület, III. emelet / Building A/5, 3rd floor",
-    "time": "Folyamatos félóránként",
-    "max_person": "15",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "a5"
-  },
-  {
-    "No.": "21",
-    "name": "Katasztrófák nyomában",
-    "english_name": "Tracing disasters",
-    "description": "A program során a résztvevők érdekes káreseteket és katasztrófákat tanulmányozhatnak mikroszkóp segítségével.",
-    "english_description": "During the program, participants can study interesting damage cases and disasters using a microscope.",
-    "place": "A/4 épület, alagsor 9. laboratórium / Building A/4, basement, laboratory 9",
-    "time": "18:00, 19:00, 20:00",
-    "max_person": "10",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "1",
-    "name": "Bűnös vagy ártatlan? - Mintatárgyalás",
-    "english_name": "Guilty or innocent? - Mock trial",
-    "description": "Interaktív büntetőeljárás, próbáld ki magad ügyvédként, ügyészként, bíróként, de akár a vádlottak padján is bizonyíthatod ártatlanságodat!",
-    "english_description": "Interactive criminal proceedings: try yourself out as a lawyer, prosecutor, judge, or even prove your innocence in the dock!",
-    "place": "C/2 épület, Mintatárgyaló / Building C/2, Mock trial room",
-    "time": "19:00 ; 20:00",
-    "max_person": "30",
-    "registration": "ÁJK Kari stand",
-    "age": "minden",
-    "building": "c2"
-  },
-  {
     "No.": "2",
     "name": "Teszteld a jogi tudásod! - Jogi kvíz",
     "english_name": "Legal quiz - Test your legal knowledge!",
@@ -803,7 +400,10 @@
     "max_person": "nincs limit",
     "registration": "nincs",
     "age": "minden",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "diszaula",
+    "detail_area_id": "ajk-detektiv",
+    "detail_stand_name": "Detektív jogi kvíz"
   },
   {
     "No.": "3",
@@ -816,7 +416,10 @@
     "max_person": "nincs limit",
     "registration": "nincs",
     "age": "minden",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "diszaula",
+    "detail_area_id": "ajk-detektiv",
+    "detail_stand_name": "Detektív jogi kvíz"
   },
   {
     "No.": "4",
@@ -842,7 +445,10 @@
     "max_person": "10",
     "registration": "nincs",
     "age": "minden",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "diszaula",
+    "detail_area_id": "ajk-rendorseg-1",
+    "detail_stand_name": "Bűnmegelőzés - Balesetmegelőzés"
   },
   {
     "No.": "6",
@@ -855,7 +461,10 @@
     "max_person": "10",
     "registration": "nincs",
     "age": "minden",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "diszaula",
+    "detail_area_id": "ajk-rendorseg-2",
+    "detail_stand_name": "Vércseppek nyomában…"
   },
   {
     "No.": "7",
@@ -868,7 +477,10 @@
     "max_person": "nincs limit",
     "registration": "nincs",
     "age": "minden",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "diszaula",
+    "detail_area_id": "ajk-torvenyszek",
+    "detail_stand_name": "Pörgess és nyerj!"
   },
   {
     "No.": "8",
@@ -881,47 +493,10 @@
     "max_person": "nincs limit",
     "registration": "nincs",
     "age": "minden",
-    "accessible_venue": true
-  },
-  {
-    "No.": "9",
-    "name": "Aki állatot kínoz, emberre készül? - az állatkínzás és a személyek ellen elkövetett erőszakos bűncselekmények összefüggése",
-    "english_name": "Does someone who tortures animals go on to harm people? – The link between animal cruelty and violent crimes against people",
-    "description": "A program az állatkínzás és az ember ellen elkövetett erőszakos bűncselekmények közötti lehetséges összefüggéseket mutatja be. A téma középpontjában az a jelenség áll, hogy az állatokkal szemben tanúsított kegyetlen, erőszakos magatartás bizonyos esetekben kapcsolatot mutathat az emberekkel szemben megjelenő erőszakkal is.\n\nA program célja, hogy felhívja a figyelmet az állatkínzás mint erőszakos magatartásformának a jelentőségére, valamint arra, hogy annak felismerése és megfelelő kezelése a bűnmegelőzés szempontjából is fontos lehet. A résztvevők betekintést kaphatnak a jelenség kriminológiai és társadalmi hátterébe.",
-    "english_description": "The programme explores the possible links between animal cruelty and violent crimes committed against humans. The focus of the programme is on the phenomenon whereby cruel and violent behaviour towards animals may, in certain cases, be linked to violence against humans.",
-    "place": "C/2 Mintatárgyaló",
-    "time": "18:30",
-    "max_person": "30",
-    "registration": "ÁJK Kari stand",
-    "age": "minden",
-    "building": "c2"
-  },
-  {
-    "No.": "10",
-    "name": "\"Mit követtek el?\" Bűnügyi kvíz",
-    "english_name": "Crime quiz",
-    "description": "Interaktív bűnügyi kvíz",
-    "english_description": "Interactive crime quiz",
-    "place": "C/2 Mintatárgyaló",
-    "time": "21:00",
-    "max_person": "30",
-    "registration": "ÁJK Kari stand",
-    "age": "minden",
-    "building": "c2"
-  },
-  {
-    "No.": "1",
-    "name": "WONDER WORLD",
-    "english_name": "WONDER WORLD",
-    "description": "A játékosoknak kvízkérdésekre kell válaszolni. Egymás ellen versenyezve, dobókocka segítségével juthatnak el a pálya végére.",
-    "english_description": "Players have to answer quiz questions. They play against each other, using dice, to reach the end of the field.",
-    "place": "A/4 épület\nRégi aula",
-    "time": "18:00 - 24:00",
-    "max_person": "4 fő/kb.30 perc",
-    "registration": "nem",
-    "age": "16+",
     "accessible_venue": true,
-    "building": "a4"
+    "detail_map_id": "diszaula",
+    "detail_area_id": "ajk-aldozatsegito",
+    "detail_stand_name": "Ne válj áldozattá!"
   },
   {
     "No.": "2",
@@ -952,97 +527,6 @@
     "building": "a4"
   },
   {
-    "No.": "4",
-    "name": "Vaktérkép - online földrajz kvíz játék (GeoGuessr)",
-    "english_name": "BlindMap - online geography quiz game",
-    "description": "Személyek és/vagy kisebb csoportok helyeznek el vaktérképen országokat, városokat, folyókat, tavakat.",
-    "english_description": "Persons and/or small groups place countries, cities, rivers, and lakes on a blind map.",
-    "place": "A/4 épület\nRégi aula",
-    "time": "20:00 - 24:00",
-    "max_person": "10 fő/30 perc",
-    "registration": "nem",
-    "age": "14+",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "5",
-    "name": "Üzleti villámpróba – Játssz, gondolkodj, dönts!",
-    "english_name": "Business Quick Challenge – Play, Think, Decide!",
-    "description": "Tedd próbára magad rövid, pörgős és szórakoztató kihívásokban! Játékos feladataink a logikus gondolkodást, a kreativitást és a döntési készséget teszik próbára.",
-    "english_description": "Test your skills with quick, engaging and entertaining challenges! Our games challenge your logical thinking, creativity and decision-making skills.",
-    "place": "A/4 épület\nRégi aula",
-    "time": "18:00 - 22:00",
-    "registration": "nem",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "6",
-    "name": "Ember vagy AI? – Te felismered a különbséget?",
-    "english_name": "Human or AI? – Can You Tell the Difference?",
-    "description": "Teszteld, mennyire jó az AI-detektorod! Tedd próbára a megfigyelőképességedet, a kritikus gondolkodásodat és az AI-val kapcsolatos tudásodat! Vajon minden esetben felismered a különbséget?",
-    "english_description": "Test how good your AI detector really is! Put your observation skills, critical thinking and AI knowledge to the test. Can you always tell the difference?",
-    "place": "A/4 épület\nRégi aula",
-    "time": "18:00 - 22:00",
-    "registration": "nem",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "7",
-    "name": "SkillStation",
-    "english_name": "SkillStation",
-    "description": "Élményalapú fejlesztő tér, ahol a kompetenciák és készségek kerülnek előtérbe. A résztvevők játékos, interaktív feladatokon keresztül próbálhatják ki magukat, és valós helyzetekben tesztelhetik, hogyan működnek különböző képességeik.",
-    "english_description": "An experience-based development space where competencies and skills take center stage. Participants can challenge themselves through playful, interactive activities and test how their various abilities work in real-life situations.",
-    "place": "A/4 épület\nRégi aula",
-    "time": "18:00 - 22:00",
-    "registration": "nem",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "8",
-    "name": "Marketing Data Lab – Te vagy az algoritmus!",
-    "english_name": "Marketing Data Lab – You Are the Algorithm!",
-    "description": "Miért pont azt a videót, reklámot vagy posztot látjuk a közösségi médiában, amit? Ebben a rövid, játékos programban most te lehetsz az algoritmus! Különböző felhasználókról kapott digitális nyomok alapján kell kitalálnod, melyik tartalom kinek való.\nA játék közben egyszerűen és látványosan derül ki, hogyan használják fel az online rólunk gyűjtött adatokat, és hogyan kapcsolódik össze az informatika a marketinggel. Gyerekeknek és felnőtteknek egyaránt izgalmas kihívás.",
-    "english_description": "Why do we see exactly that video, ad, or post on social media? In this short, fun activity, you get to be the algorithm! Based on digital traces collected from different users, you have to figure out which content is right for whom.\nAs you play, you’ll discover in a simple and engaging way how the data collected about us online is used, and how computer science and marketing are connected. It’s an exciting challenge for kids and adults alike.",
-    "place": "A/4 épület\nRégi aula",
-    "time": "18:00 - 23:00",
-    "registration": "nem",
-    "age": "16+",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
-    "No.": "9",
-    "name": "Ropogós gondolatok – Süss, kóstolj, podcastelj!",
-    "english_name": "Crispy Thoughts – Bake, Taste, Podcast!",
-    "description": "Élményalapú gasztronómia és tartalomgyártás! A látogatók előre bekevert tésztákkal dolgoznak (pl. klasszikus vajaskeksz, fűszeres vagy helyi alapanyagokra épülő variációk). Formázzák, díszítik és sütik a kekszeket. Közben rövid, érdekes magyarázatok az élménygasztronómia szerepéről a turizmusban, az illatok és ízek vendégélményre gyakorolt hatásáról. Amíg hűl a keksz – vagy épp a friss falatok kóstolása közben –, a vendégek (párok, baráti társaságok vagy egyéni résztvevők) saját videós tartalmakat készítenek és feltöltik egy előre megadott felületre.",
-    "english_description": "Experience-based gastronomy and content creation! Visitors work with pre-mixed dough (e.g., classic butter cookies, or variations featuring spices or local ingredients). They shape, decorate, and bake the cookies. Meanwhile, there are brief, interesting explanations about the role of experiential gastronomy in tourism and the impact of aromas and flavors on the guest experience. While the cookies are cooling—or while tasting the fresh treats—guests (couples, groups of friends, or individual participants) create their own video content and upload it to a pre-designated platform.",
-    "place": "Marketing és Turizmus Intézet tankonyhája\nA1/108-109.",
-    "time": "18:00\n18:45\n19:30\n20:15\n21:00",
-    "max_person": "12 fő/alkalom",
-    "registration": "IGEN",
-    "age": "14+",
-    "accessible_venue": true,
-    "building": "a1"
-  },
-  {
-    "No.": "10",
-    "name": "Közgazdász-adatelemző kvíz",
-    "english_name": "Economist data analysis quiz",
-    "description": "Magyarország és a világ gazdasági és társadalmi jelenségeit a számok és a tények tükrében bemutató statisztikai ésközgazdasági kvízjátékok, melyek teszteli a résztvevők tájékozottságát, általános intelligenciáját.",
-    "english_description": "Statistical and economic quiz games that present the economic and social phenomena of Hungary and the world in the light of numbers and facts, which test the knowledge and general intelligence of the participants.",
-    "place": "A/4 épület\nRégi aula",
-    "time": "18:00 - 23:00",
-    "max_person": "30 - 40 fő",
-    "registration": "nem",
-    "age": "16+",
-    "accessible_venue": true,
-    "building": "a4"
-  },
-  {
     "No.": "12",
     "name": "FIN & FUN - Pénzügyi játékok",
     "english_name": "FIN & FUN - Financial games",
@@ -1052,20 +536,6 @@
     "time": "18:00 - 23:00",
     "accessible_venue": true,
     "building": "a4"
-  },
-  {
-    "No.": "1",
-    "name": "„SZELLEMVASÚT” – játékos vetélkedő egyének, családok, párok, csoportok számára!",
-    "english_name": "\"GHOST RAILWAY\" - a playful competition for individuals, families, couples, groups!",
-    "description": "A tavalyi és tavaly előtti nagysikerű programunk újból - izgalmas, új feladványokkal! A Szellemvasút 5+1 állomásból áll (0. állomás a standon, a többi 5 az A/5, II. emeleti folyosóján), valójában egy vetélkedő. Egyének, párok, családok, 5-6 fős csoportok is nevezhetnek központi standunknál! A vetélkedő egyes állomásai az ATTI termeiben és folyosóján lesznek, ahol a vállalkozó szellemű játékosoknak egy-egy kreatív feladványt kell megoldaniuk a vetélkedő központi témája mentén. Központi témánk: Helyünk a világban.\nAki a legügyesebben és leggyorsabban célba ér, nyereményeket kap!\nA programra várunk gyerekeket, fiatalokat, családokat is, tekintettel arra, hogy az egyes állomásokon olyan feladványok lesznek, amelyek megfejtésében bármely korosztályhoz tartozó ügyes, kreatív megoldásokat adhat!\nKalandra fel!\nÉs hogy miért is SZELLEMVASÚT? Kiderül majd a helyszínen!",
-    "english_description": "The Ghost Railway consists of 5+1 stations (station 0 at the stand, the other 5 in the corridor of A/5, II. floor), it is actually a competition. Individuals, couples, families, groups of 5-6 people can also register at our central stand! The various stations of the contest will be in the halls and corridors of ATTI, where enterprising players must solve a creative puzzle based on the central theme of the contest. Our central theme: Our place in the world.\nWhoever gets to the finish line the most skillfully and the fastest gets prizes!\nWe welcome children, young people, and families to the program, given that there will be puzzles at each station, which can be solved by any age group with clever, creative solutions!\nGo on an adventure!\nAnd why GHOST RAILWAY?\nWill be revealed on the spot!",
-    "place": "A/5 épület, II. emelet, az ATTI folyosója és termei / Building A/5, 2nd floor, ATTI corridor and rooms",
-    "time": "18:00-20:30 között folyamatosan / Continuously between 18:00-20:30",
-    "max_person": "Mindegy!",
-    "registration": "Igen, a BTK standjánál lesz egy emberünk!",
-    "age": "3-tól felfelé!",
-    "accessible_venue": true,
-    "building": "a5"
   },
   {
     "No.": "2",
@@ -1202,7 +672,10 @@
     "max_person": "15 fő",
     "registration": "Nem szükséges.",
     "recommended_for_english_speakers": true,
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "btk-anthroactivity",
+    "detail_stand_name": "AnthroActivity"
   },
   {
     "No.": "12",
@@ -1270,7 +743,10 @@
     "registration": "nincs",
     "age": "bármely",
     "accessible_venue": true,
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "etk-diszaula-stand",
+    "detail_stand_name": "ETK stand (alsó terem)"
   },
   {
     "No.": "2",
@@ -1284,7 +760,10 @@
     "registration": "nincs",
     "age": "8-99",
     "accessible_venue": true,
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "etk-diszaula-stand",
+    "detail_stand_name": "ETK stand (alsó terem)"
   },
   {
     "No.": "3",
@@ -1299,7 +778,10 @@
     "age": "bármely",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "etk-mit-latsz-1",
+    "detail_stand_name": "Mit látsz a képen?"
   },
   {
     "No.": "4",
@@ -1327,7 +809,10 @@
     "max_person": "15-20 percenként 4-6 fő",
     "registration": "nincs",
     "age": "4-99 év",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "etk-diszaula-stand",
+    "detail_stand_name": "ETK stand (alsó terem)"
   },
   {
     "No.": "6",
@@ -1341,7 +826,10 @@
     "registration": "nincs",
     "age": "bármely",
     "accessible_venue": true,
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "etk-diszaula-stand",
+    "detail_stand_name": "ETK stand (alsó terem)"
   },
   {
     "No.": "7",
@@ -1396,19 +884,10 @@
     "max_person": "nincs limitálva",
     "registration": "nincs",
     "age": "bármely",
-    "building": "diszaula"
-  },
-  {
-    "No.": "1",
-    "name": "Szóbeli Origó és Zöld Út próbanyelvvizsga - ANGOL",
-    "english_name": "Mock exam in English: Zöld Út and Origó oral exam",
-    "description": "Szóbeli Origó és Zöld Út (általános, gazdasági vagy műszaki) próbanyelvvizsga angol nyelvből, előzetes regisztráció alapján. A vizsga értékelése után tanácsadás a további felkészüléshez. Regisztráció az üveg előcsarnokban található IOK Információs pultnál szükséges!",
-    "english_description": "Mock exam in English: Zöld Út (general, economic or technical) and Origó (general) bilingual (English-Hungarian) language exams. Personal assessment and recommendations after the exam considering further preparation. Registration is required at the IOK Information Desk located in the glass lobby!",
-    "place": "folyamatban",
-    "time": "18:00-19:00",
-    "max_person": "max. 10 fő",
-    "registration": "helyszíni regisztráció - IOK pultnál 17:30-tól 19:00-ig",
-    "age": "14+"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "etk-diszaula-stand",
+    "detail_stand_name": "ETK stand (alsó terem)"
   },
   {
     "No.": "2",
@@ -1442,7 +921,10 @@
     "time": "17:30-19:00",
     "registration": "nincs",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "iok-1",
+    "detail_stand_name": "IOK stand"
   },
   {
     "No.": "5",
@@ -1477,7 +959,10 @@
     "registration": "nem",
     "age": "bárki",
     "recommended_for_english_speakers": true,
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
   },
   {
     "No.": "2",
@@ -1491,7 +976,10 @@
     "registration": "nem",
     "age": "bárki",
     "recommended_for_english_speakers": true,
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
   },
   {
     "No.": "3",
@@ -1504,7 +992,10 @@
     "max_person": "20-25 / alkalom",
     "registration": "nem",
     "age": "bárki",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
   },
   {
     "No.": "4",
@@ -1517,7 +1008,10 @@
     "max_person": "8-10 / alkalom",
     "registration": "nem",
     "age": "bárki",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
   },
   {
     "No.": "5",
@@ -1530,7 +1024,10 @@
     "max_person": "50 / alkalom",
     "registration": "nem",
     "age": "bárki",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
   },
   {
     "No.": "1",
@@ -1541,7 +1038,10 @@
     "max_person": "folyamatos",
     "registration": "nincs limitálva",
     "age": "bármely",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "2",
@@ -1551,7 +1051,10 @@
     "english_description": "Test your skills and endurance on the obstacle course: the players must follow the indicated hand and footprints.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "3",
@@ -1561,7 +1064,10 @@
     "english_description": "On 2 ping pong tables, 2-4 players hit the ball with rackets on both sides of a table.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "4",
@@ -1571,7 +1077,10 @@
     "english_description": "They play with 2 small, tiny rackets and a smaller ball, developing reflexes and balance.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "5",
@@ -1581,7 +1090,10 @@
     "english_description": "Try out how is it hanging upside down!",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "6",
@@ -1591,7 +1103,10 @@
     "english_description": "Table football game, develops skill and concentration while providing a fun challenge.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "7",
@@ -1601,7 +1116,10 @@
     "english_description": "A beanbag tossing game that develops accuracy and concentration.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "8",
@@ -1611,7 +1129,10 @@
     "english_description": "Participants try to reach the different colored markings.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "9",
@@ -1621,7 +1142,10 @@
     "english_description": "A popular Finnish outdoor skill and throwing game with 12 numbered wooden pieces.",
     "place": "Díszaula / Main Hall",
     "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "sport-sportkozpont",
+    "detail_stand_name": "SPORTKÖZPONT"
   },
   {
     "No.": "1",
@@ -1635,7 +1159,10 @@
     "registration": "nincs",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "nk-1",
+    "detail_stand_name": "Nemzetközi játékok"
   },
   {
     "No.": "1",
@@ -1781,7 +1308,10 @@
     "age": "Minden korosztály",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "konf-1",
+    "detail_stand_name": "Konfuciusz Intézet stand"
   },
   {
     "name": "Hagyományos koreai játékok",
@@ -1795,7 +1325,10 @@
     "age": "5-70",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "kingsejong-1",
+    "detail_stand_name": "Hagyományos koreai játékok"
   },
   {
     "No.": "1",
@@ -1853,7 +1386,10 @@
     "e-mail címe": "eszter.toth.erm@gmail.com",
     "tel. száma": "36702110290",
     "Segítők": "Sikora Dávid Ádám, + csapattagok - kb 14 fő",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "erm-formula-1",
+    "detail_stand_name": "Formula Student stand"
   },
   {
     "No.": "1",
@@ -1876,7 +1412,10 @@
     "Infrastruktúra igénye": "1 asztal 2 szék",
     "Neve": "Lehóczkyné Tóth Alexandra",
     "e-mail címe": "alexandra.lehoczkyne@uni-miskolc.hu",
-    "building": "diszaula"
+    "building": "diszaula",
+    "detail_map_id": "diszaula",
+    "detail_area_id": "malyimadarmentok",
+    "detail_stand_name": "Mályi Madármentők"
   },
   {
     "No.": "1",
@@ -1886,6 +1425,111 @@
     "Neve": "Jármai Ágota",
     "e-mail címe": "jaagota@gmail.com",
     "building": "zenepalota"
+  },
+  {
+    "No.": "3",
+    "name": "WonderLab",
+    "english_name": "WonderLab",
+    "description": "Kémiai és vegyipari tematikájú játékokkal, bemutatókkal várjuk az érdeklődőket:\n- Periódusos rendszer szókereső\n- Labor kísérletek\n- Gyorsasági verseny\n- EBK (egészség, biztonság, környezetvédelmi) játék",
+    "english_description": "We look forward to welcoming visitors with games and demonstrations on the themes of chemistry and chemical industry:\n- Periodic Table word search\n- Laboratory experiments\n- Speed competition\n- HSE (Health, Safety and Environment) game",
+    "time": "folyamatosan / Continuously",
+    "max_person": "-",
+    "registration": "nincs",
+    "age": "vegyes",
+    "Infrastruktúra igénye": "3 asztal, áram",
+    "Neve": "Borsodchem\nNagy-Turi Fanni",
+    "e-mail címe": "fanni.nagy-turi@borsodchem.eu",
+    "tel. száma": "+36-30 296 4882",
+    "detail_map_id": "harmas",
+    "detail_area_id": "borsodchem",
+    "detail_stand_name": "BorsodChem – WonderLab"
+  },
+  {
+    "No.": "1",
+    "name": "Selmeci Műemlékkönyvtár megtekintése",
+    "english_name": "Visiting the Selmec Museum Library",
+    "description": "Selmeci Műemlékkönyvtár megtekintése - tárlatvezetés",
+    "english_description": "Visiting the Selmec Museum Library - guided tour.",
+    "place": "KLM épület földszint / KLM building ground floor",
+    "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 30-35 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
+    "max_person": "20-25 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
+  },
+  {
+    "No.": "2",
+    "name": "Egyetemtörténeti kiállítás megtekintése",
+    "english_name": "Vivisting the exhibition on the history of the University of Miskolc",
+    "description": "Miskolci Egyetem Egyetemtörténeti kiállításának megtekintése - tárlatvezetés",
+    "english_description": "Vivisting the exhibition on the history of the University of Miskolc - guided tour.",
+    "place": "KLM épület földszint / KLM building ground floor",
+    "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 15-20 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
+    "max_person": "20-25 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
+  },
+  {
+    "No.": "3",
+    "name": "Ahol a könyvek éjszakáznak: kulisszatúra a Könyvtárban",
+    "english_name": "Where Books Spend the Night: A Behind-the-Scenes Tour of the Library",
+    "description": "A könyv beérkezésétől a raktárba kerülésig. Ismerd meg a könyv útját.",
+    "english_description": "From the moment a book arrives to the moment it is placed in the warehouse. Learn about a book's journey.",
+    "place": "KLM épület, 1. emelet, olvasóterem / KLM building first floor",
+    "time": "óránként (18:00 órától, utolsó időpont: 21:00) [kb. 20-30 perc] / every hour (from 6 pm, last time: 9 pm)",
+    "max_person": "20-25 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "accessible_venue": true,
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
+  },
+  {
+    "No.": "4",
+    "name": "Barcsay mozaik: Nézd, keresd, rakd össze",
+    "english_name": "Barcsay Mosaic: Look, Find, Put It Together",
+    "description": "Barcsay mozaik története, és papír-mozaik workshop és közösségi óriás mozaik.",
+    "english_description": "The History of Barcsay Mosaics, a Paper Mosaic Workshop, and a Community Giant Mosaic.",
+    "place": "KLM épület, földszint / KLM building ground floor",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "8-10 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "accessible_venue": true,
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
+  },
+  {
+    "No.": "5",
+    "name": "Időutazás a könyvtárban",
+    "english_name": "Time travel in the Library",
+    "description": "A könyvtár épülete régen és most - a könyvtár átváltozása. Képes \"időutazás\" (előadás)",
+    "english_description": "The Building of the Library Then and Now — The Library's Transformation. A “journey through time” in pictures (presentation)",
+    "place": "KLM épület, 1. emelet, olvasóterem / KLM building, first floor",
+    "time": "18:30 óra , és 20:30 óra [kb. 30 perc]/ from 6:30 pm, and 8:30 pm",
+    "max_person": "50 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "accessible_venue": true,
+    "building": "elocsarnok",
+    "detail_map_id": "elocsarnok",
+    "detail_area_id": "elocsarnok-konyvtar",
+    "detail_stand_name": "Könyvtár"
   },
   {
     "No.": "1",
@@ -1901,7 +1545,10 @@
     "Infrastruktúra igénye": "50-60 m2\nsaját stand\náram+8 db elosztó",
     "Neve": "Robert Bosch Energy and Body Systems Kft.:\nTeráz Patrícia\nRobert Bosch Power Tool Kft.:\nCsoma Orsolya Zita",
     "e-mail címe": "Patricia.Teraz@hu.bosch.com, OrsolyaZita.Csoma@hu.bosch.com",
-    "building": "a4"
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "bosch",
+    "detail_stand_name": "Régi Aula"
   },
   {
     "No.": "2",
@@ -1918,93 +1565,121 @@
     "Neve": "Nagy-Felső Anita",
     "e-mail címe": "anita.nagyfelso@joysonsafety.com",
     "tel. száma": "+36 30 267 7145",
-    "building": "a4"
-  },
-  {
-    "No.": "3",
-    "name": "WonderLab",
-    "english_name": "WonderLab",
-    "description": "Kémiai és vegyipari tematikájú játékokkal, bemutatókkal várjuk az érdeklődőket:\n- Periódusos rendszer szókereső\n- Labor kísérletek\n- Gyorsasági verseny\n- EBK (egészség, biztonság, környezetvédelmi) játék",
-    "english_description": "We look forward to welcoming visitors with games and demonstrations on the themes of chemistry and chemical industry:\n- Periodic Table word search\n- Laboratory experiments\n- Speed competition\n- HSE (Health, Safety and Environment) game",
-    "time": "folyamatosan / Continuously",
-    "max_person": "-",
-    "registration": "nincs",
-    "age": "vegyes",
-    "Infrastruktúra igénye": "3 asztal, áram",
-    "Neve": "Borsodchem\nNagy-Turi Fanni",
-    "e-mail címe": "fanni.nagy-turi@borsodchem.eu",
-    "tel. száma": "+36-30 296 4882"
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "joyson",
+    "detail_stand_name": "Régi Aula"
   },
   {
     "No.": "1",
-    "name": "Selmeci Műemlékkönyvtár megtekintése",
-    "english_name": "Visiting the Selmec Museum Library",
-    "description": "Selmeci Műemlékkönyvtár megtekintése - tárlatvezetés",
-    "english_description": "Visiting the Selmec Museum Library - guided tour.",
-    "place": "KLM épület földszint / KLM building ground floor",
-    "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 30-35 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
-    "max_person": "20-25 / alkalom",
+    "name": "WONDER WORLD",
+    "english_name": "WONDER WORLD",
+    "description": "A játékosoknak kvízkérdésekre kell válaszolni. Egymás ellen versenyezve, dobókocka segítségével juthatnak el a pálya végére.",
+    "english_description": "Players have to answer quiz questions. They play against each other, using dice, to reach the end of the field.",
+    "place": "A/4 épület\nRégi aula",
+    "time": "18:00 - 24:00",
+    "max_person": "4 fő/kb.30 perc",
     "registration": "nem",
-    "age": "bárki",
-    "recommended_for_english_speakers": true,
+    "age": "16+",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "gtk-regisztracios-pult",
+    "detail_stand_name": "Régi Aula"
   },
   {
-    "No.": "2",
-    "name": "Egyetemtörténeti kiállítás megtekintése",
-    "english_name": "Vivisting the exhibition on the history of the University of Miskolc",
-    "description": "Miskolci Egyetem Egyetemtörténeti kiállításának megtekintése - tárlatvezetés",
-    "english_description": "Vivisting the exhibition on the history of the University of Miskolc - guided tour.",
-    "place": "KLM épület földszint / KLM building ground floor",
-    "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 15-20 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
-    "max_person": "20-25 / alkalom",
+    "No.": "10",
+    "name": "Közgazdász-adatelemző kvíz",
+    "english_name": "Economist data analysis quiz",
+    "description": "Magyarország és a világ gazdasági és társadalmi jelenségeit a számok és a tények tükrében bemutató statisztikai ésközgazdasági kvízjátékok, melyek teszteli a résztvevők tájékozottságát, általános intelligenciáját.",
+    "english_description": "Statistical and economic quiz games that present the economic and social phenomena of Hungary and the world in the light of numbers and facts, which test the knowledge and general intelligence of the participants.",
+    "place": "A/4 épület\nRégi aula",
+    "time": "18:00 - 23:00",
+    "max_person": "30 - 40 fő",
     "registration": "nem",
-    "age": "bárki",
-    "recommended_for_english_speakers": true,
+    "age": "16+",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "gtk-adatelemzo-kviz",
+    "detail_stand_name": "Régi Aula"
   },
   {
-    "No.": "3",
-    "name": "Ahol a könyvek éjszakáznak: kulisszatúra a Könyvtárban",
-    "english_name": "Where Books Spend the Night: A Behind-the-Scenes Tour of the Library",
-    "description": "A könyv beérkezésétől a raktárba kerülésig. Ismerd meg a könyv útját.",
-    "english_description": "From the moment a book arrives to the moment it is placed in the warehouse. Learn about a book's journey.",
-    "place": "KLM épület, 1. emelet, olvasóterem / KLM building first floor",
-    "time": "óránként (18:00 órától, utolsó időpont: 21:00) [kb. 20-30 perc] / every hour (from 6 pm, last time: 9 pm)",
-    "max_person": "20-25 / alkalom",
+    "No.": "6",
+    "name": "Ember vagy AI? – Te felismered a különbséget?",
+    "english_name": "Human or AI? – Can You Tell the Difference?",
+    "description": "Teszteld, mennyire jó az AI-detektorod! Tedd próbára a megfigyelőképességedet, a kritikus gondolkodásodat és az AI-val kapcsolatos tudásodat! Vajon minden esetben felismered a különbséget?",
+    "english_description": "Test how good your AI detector really is! Put your observation skills, critical thinking and AI knowledge to the test. Can you always tell the difference?",
+    "place": "A/4 épület\nRégi aula",
+    "time": "18:00 - 22:00",
     "registration": "nem",
-    "age": "bárki",
     "accessible_venue": true,
-    "building": "elocsarnok"
-  },
-  {
-    "No.": "4",
-    "name": "Barcsay mozaik: Nézd, keresd, rakd össze",
-    "english_name": "Barcsay Mosaic: Look, Find, Put It Together",
-    "description": "Barcsay mozaik története, és papír-mozaik workshop és közösségi óriás mozaik.",
-    "english_description": "The History of Barcsay Mosaics, a Paper Mosaic Workshop, and a Community Giant Mosaic.",
-    "place": "KLM épület, földszint / KLM building ground floor",
-    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
-    "max_person": "8-10 / alkalom",
-    "registration": "nem",
-    "age": "bárki",
-    "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "gtk-ember-vagy-ai",
+    "detail_stand_name": "Régi Aula"
   },
   {
     "No.": "5",
-    "name": "Időutazás a könyvtárban",
-    "english_name": "Time travel in the Library",
-    "description": "A könyvtár épülete régen és most - a könyvtár átváltozása. Képes \"időutazás\" (előadás)",
-    "english_description": "The Building of the Library Then and Now — The Library's Transformation. A “journey through time” in pictures (presentation)",
-    "place": "KLM épület, 1. emelet, olvasóterem / KLM building, first floor",
-    "time": "18:30 óra , és 20:30 óra [kb. 30 perc]/ from 6:30 pm, and 8:30 pm",
-    "max_person": "50 / alkalom",
+    "name": "Üzleti villámpróba – Játssz, gondolkodj, dönts!",
+    "english_name": "Business Quick Challenge – Play, Think, Decide!",
+    "description": "Tedd próbára magad rövid, pörgős és szórakoztató kihívásokban! Játékos feladataink a logikus gondolkodást, a kreativitást és a döntési készséget teszik próbára.",
+    "english_description": "Test your skills with quick, engaging and entertaining challenges! Our games challenge your logical thinking, creativity and decision-making skills.",
+    "place": "A/4 épület\nRégi aula",
+    "time": "18:00 - 22:00",
     "registration": "nem",
-    "age": "bárki",
     "accessible_venue": true,
-    "building": "elocsarnok"
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "gtk-uzleti-villamproba",
+    "detail_stand_name": "Régi Aula"
+  },
+  {
+    "No.": "8",
+    "name": "Marketing Data Lab – Te vagy az algoritmus!",
+    "english_name": "Marketing Data Lab – You Are the Algorithm!",
+    "description": "Miért pont azt a videót, reklámot vagy posztot látjuk a közösségi médiában, amit? Ebben a rövid, játékos programban most te lehetsz az algoritmus! Különböző felhasználókról kapott digitális nyomok alapján kell kitalálnod, melyik tartalom kinek való.\nA játék közben egyszerűen és látványosan derül ki, hogyan használják fel az online rólunk gyűjtött adatokat, és hogyan kapcsolódik össze az informatika a marketinggel. Gyerekeknek és felnőtteknek egyaránt izgalmas kihívás.",
+    "english_description": "Why do we see exactly that video, ad, or post on social media? In this short, fun activity, you get to be the algorithm! Based on digital traces collected from different users, you have to figure out which content is right for whom.\nAs you play, you’ll discover in a simple and engaging way how the data collected about us online is used, and how computer science and marketing are connected. It’s an exciting challenge for kids and adults alike.",
+    "place": "A/4 épület\nRégi aula",
+    "time": "18:00 - 23:00",
+    "registration": "nem",
+    "age": "16+",
+    "accessible_venue": true,
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "gtk-marketing-datalab",
+    "detail_stand_name": "Régi Aula"
+  },
+  {
+    "No.": "7",
+    "name": "SkillStation",
+    "english_name": "SkillStation",
+    "description": "Élményalapú fejlesztő tér, ahol a kompetenciák és készségek kerülnek előtérbe. A résztvevők játékos, interaktív feladatokon keresztül próbálhatják ki magukat, és valós helyzetekben tesztelhetik, hogyan működnek különböző képességeik.",
+    "english_description": "An experience-based development space where competencies and skills take center stage. Participants can challenge themselves through playful, interactive activities and test how their various abilities work in real-life situations.",
+    "place": "A/4 épület\nRégi aula",
+    "time": "18:00 - 22:00",
+    "registration": "nem",
+    "accessible_venue": true,
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "gtk-skilstation",
+    "detail_stand_name": "Régi Aula"
+  },
+  {
+    "No.": "4",
+    "name": "Vaktérkép - online földrajz kvíz játék (GeoGuessr)",
+    "english_name": "BlindMap - online geography quiz game",
+    "description": "Személyek és/vagy kisebb csoportok helyeznek el vaktérképen országokat, városokat, folyókat, tavakat.",
+    "english_description": "Persons and/or small groups place countries, cities, rivers, and lakes on a blind map.",
+    "place": "A/4 épület\nRégi aula",
+    "time": "20:00 - 24:00",
+    "max_person": "10 fő/30 perc",
+    "registration": "nem",
+    "age": "14+",
+    "accessible_venue": true,
+    "building": "a4",
+    "detail_map_id": "regi_aula",
+    "detail_area_id": "gtk-vakterkep",
+    "detail_stand_name": "Régi Aula"
   }
 ]
