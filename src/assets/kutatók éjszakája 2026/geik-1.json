@@ -20,7 +20,7 @@
     "english_description": "How can a handful of neurons control a game? How can an artificial intelligence agent assist us in our everyday lives?",
     "time": "18:30",
     "max_person": "20-25",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "14+",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -33,7 +33,7 @@
     "english_description": "Radio communication: then and now. How could people send memes to each other using a handheld radio? How does your phone know that your earphones are nearby? Why doesn't Wi‑Fi pass through walls?",
     "time": "20:30",
     "max_person": "20-25",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "14+",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -46,7 +46,7 @@
     "english_description": "Playing with robots and building electric circuits.",
     "time": "18:-00-tól folyamatos",
     "max_person": "20-25",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "14+",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -59,7 +59,7 @@
     "english_description": "As part of the program, participants will learn about electrochemical processes through a series of spectacular experiments.",
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "-",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
@@ -73,7 +73,7 @@
     "english_description": "How to filter out useful information from noise, and how to build simple radio receivers at home.",
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
   },
@@ -85,7 +85,7 @@
     "english_description": "How to make wid with high voltage.",
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -98,7 +98,7 @@
     "english_description": "The components that make up machines are never perfect; due to the manufacturing process, they invariably possess some degree of imperfection. These can be examined and evaluated through measurements. During the presentation, we will showcase instruments used to measure surface roughness and form errors, and we will explain their operation and significance.",
     "time": "18:00-tól folyamatos, fél óra",
     "max_person": "30",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
   },
@@ -110,7 +110,7 @@
     "english_description": "Presentation of a drone in the Logistics 4.0 laboratory located in a logistics institute.",
     "time": "18.00",
     "max_person": "10",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "14+",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -123,7 +123,7 @@
     "english_description": "Presentation of the equipment in the Logistics 4.0 laboratory located in a logistics institute (stacker, order picker and mobile robot system).",
     "time": "18.40",
     "max_person": "10",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "14+",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -136,7 +136,7 @@
     "english_description": "Presentation of the logistics Lego mini-factory in the Logistics 4.0 laboratory located in a logistics institute.",
     "time": "19.20",
     "max_person": "10",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "14+",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -149,7 +149,7 @@
     "english_description": "Experiments in vaccum, with electrostatic devices, and lasers.",
     "time": "18:00, 18:30, 19:00, 19:30",
     "max_person": "20",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
@@ -163,7 +163,7 @@
     "english_description": "Visualization of flow around bodies using laser and oil mist visualization in a wind tunnel, speed measurement options, presentation of tools.",
     "time": "19:00-19:25; 19:30-19:55; 20:00-20:25; 20:30-20:55; 21:00-21:25; 21:30-21:55",
     "max_person": "15",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "place": "Gépészmérnöki és Informatikai kari stand"
   },
@@ -175,7 +175,7 @@
     "english_description": "We illustrate process of machine learning algorithms by examining the code of the Flappy Bird computer game. Reinforcement Learning is a special type of machine learning algorithms. Based on the feedback (reinforcements) provided by the environment, the agent attempts to find a solution to a problem it has never encountered before. The agent makes a series of decisions with the aim of maximizing its rewards (reinforcements). The goal is to find a solution to an unknown problem only based on the feedback received from the environment.",
     "time": "18:00, 18:30, 19:00, 19:30, 20:00",
     "max_person": "15",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -188,7 +188,7 @@
     "english_description": "During the program, participants can solve various interesting geometric challenges in virtual and augmented reality.",
     "time": "folyamatos\n(a program időtartama 30 perc)",
     "max_person": "15",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -201,7 +201,7 @@
     "english_description": "The program presents the principle of fractal formation, in which the shape becomes self-similar.\nThree-dimensional fractals will also be presented, as well as the so-called Hausdorff dimension, which has the interesting characteristic of not usually being an integer. The everyday applications of fractals are also discussed, such as their feasibility in computer graphics.",
     "time": "18:00, 18:30",
     "max_person": "45",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -214,7 +214,7 @@
     "english_description": "People often have an aversion to mathematics, but they no longer think about what our lives would be like without it. The presentation tries to demonstrate this.",
     "time": "19:00, 19:30",
     "max_person": "40",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -227,7 +227,7 @@
     "english_description": "The equipment park of the Robert Bosch Department of Mechatronics has been renewed. Visitors can get an insight into the multifaceted world of mechatronics, which combines the fields of mechanical engineering, electronics and IT. At the event, modern laboratories will be presented at the department, which contain sensors, process control systems, industrial robots and pneumatic elements. With the support of Hungarian Bosch factories, our renewed equipment park allows visitors to get acquainted with the most modern technology.",
     "time": "Folyamatos félóránként",
     "max_person": "15",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
@@ -240,7 +240,7 @@
     "english_description": "During the program, participants can study interesting damage cases and disasters using a microscope.",
     "time": "18:00, 19:00, 20:00",
     "max_person": "10",
-    "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
+    "registration": "Regisztrálás az GÉIK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "accessible_venue": true,
     "place": "Gépészmérnöki és Informatikai kari stand"
