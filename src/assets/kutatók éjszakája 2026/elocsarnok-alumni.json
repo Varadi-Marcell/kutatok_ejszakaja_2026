@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "No.": "1",
+    "name": "Könyvtár, Levéltár és Múzeum standja",
+    "english_name": "Library, Archives and Museum stand",
+    "description": "A könyvtár programjaira innen indulnak a csoportok kísérettel.",
+    "english_description": "Groups depart from here, with an escort, to the library's programs.",
+    "accessible_venue": true
+  },
+  {
+    "No.": "2",
+    "name": "Selmeci Műemlékkönyvtár megtekintése",
+    "english_name": "Visiting the Selmec Museum Library",
+    "description": "Selmeci Műemlékkönyvtár megtekintése - tárlatvezetés",
+    "english_description": "Visiting the Selmec Museum Library - guided tour.",
+    "place": "KLM épület földszint / KLM building ground floor",
+    "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 30-35 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
+    "max_person": "20-25 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
+  },
+  {
+    "No.": "3",
+    "name": "Egyetemtörténeti kiállítás megtekintése",
+    "english_name": "Vivisting the exhibition on the history of the University of Miskolc",
+    "description": "Miskolci Egyetem Egyetemtörténeti kiállításának megtekintése - tárlatvezetés",
+    "english_description": "Vivisting the exhibition on the history of the University of Miskolc - guided tour.",
+    "place": "KLM épület földszint / KLM building ground floor",
+    "time": "18:00 órától óránként tárlatvezetés, utolsó időpont: 21:00 [kb. 15-20 perc]/\nGuided tours every hour from 6 pm, last time: 9 pm)",
+    "max_person": "20-25 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true
+  },
+  {
+    "No.": "4",
+    "name": "Ahol a könyvek éjszakáznak: kulisszatúra a Könyvtárban",
+    "english_name": "Where Books Spend the Night: A Behind-the-Scenes Tour of the Library",
+    "description": "A könyv beérkezésétől a raktárba kerülésig. Ismerd meg a könyv útját.",
+    "english_description": "From the moment a book arrives to the moment it is placed in the warehouse. Learn about a book's journey.",
+    "place": "KLM épület, 1. emelet, olvasóterem / KLM building first floor",
+    "time": "óránként (18:00 órától, utolsó időpont: 21:00) [kb. 20-30 perc] / every hour (from 6 pm, last time: 9 pm)",
+    "max_person": "20-25 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "accessible_venue": true
+  },
+  {
+    "No.": "5",
+    "name": "Barcsay mozaik: Nézd, keresd, rakd össze",
+    "english_name": "Barcsay Mosaic: Look, Find, Put It Together",
+    "description": "Barcsay mozaik története, és papír-mozaik workshop és közösségi óriás mozaik.",
+    "english_description": "The History of Barcsay Mosaics, a Paper Mosaic Workshop, and a Community Giant Mosaic.",
+    "place": "KLM épület, földszint / KLM building ground floor",
+    "time": "Folyamatosan a teljes rendezvény alatt / Continuously throughout the entire event",
+    "max_person": "8-10 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "accessible_venue": true
+  },
+  {
+    "No.": "6",
+    "name": "Időutazás a könyvtárban",
+    "english_name": "Time travel in the Library",
+    "description": "A könyvtár épülete régen és most - a könyvtár átváltozása. Képes \"időutazás\" (előadás)",
+    "english_description": "The Building of the Library Then and Now — The Library's Transformation. A “journey through time” in pictures (presentation)",
+    "place": "KLM épület, 1. emelet, olvasóterem / KLM building, first floor",
+    "time": "18:30 óra , és 20:30 óra [kb. 30 perc]/ from 6:30 pm, and 8:30 pm",
+    "max_person": "50 / alkalom",
+    "registration": "nem",
+    "age": "bárki",
+    "accessible_venue": true
+  }
+]

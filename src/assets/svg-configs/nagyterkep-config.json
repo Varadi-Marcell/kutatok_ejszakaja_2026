@@ -222,6 +222,22 @@
       "style": {
         "cssClass": "polygon"
       }
+    },
+    {
+      "id": "klm",
+      "name": "Könyvtár, Levéltár és Múzeum",
+      "type": "circle",
+      "coordinates": {
+        "cx": 2220.8,
+        "cy": 2762.3,
+        "r": 70
+      },
+      "style": {
+        "cssClass": "polygon"
+      },
+      "metadata": {
+        "showBadges": true
+      }
     }
   ]
 }

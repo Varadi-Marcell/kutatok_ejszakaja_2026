@@ -114,8 +114,9 @@ const STAND_EXTRACTS = {
 };
 
 // Kari stand-csoportok (egy kar több standja ugyanazt a készletet mutatja):
-// fájl -> munkalap + a helyszínből felismert épület-kulcs. Nem neveket sorolunk fel,
-// hanem a BUILDING_RULES szerint szűrünk, így a tartalom követi az Excelt.
+// fájl -> munkalap + a helyszínből felismert épület-kulcs (+ opcionálisan név
+// szerint duplikált extra programok, pl. az IOK stand az A1-es kvízeket is mutatja).
+// Nem neveket sorolunk fel, hanem a BUILDING_RULES szerint szűrünk, így a tartalom követi az Excelt.
 const BUILDING_FILTER_EXTRACTS = {
   'avk-1': { sheet: 'AVK', building: 'elocsarnok' },
   'avk-2': { sheet: 'AVK', building: 'elocsarnok' },
@@ -135,7 +136,19 @@ const BUILDING_FILTER_EXTRACTS = {
   'geik-2': { sheet: 'GÉIK', building: 'elocsarnok' },
   'geik-3': { sheet: 'GÉIK', building: 'elocsarnok' },
   'btk-1': { sheet: 'BTK', building: 'elocsarnok' },
-  'iok-1': { sheet: 'IOK', building: 'elocsarnok' },
+  // Az IOK stand az üveg előcsarnokos IOK-programok mellett az A1-es teremben
+  // tartott 4 nyelvi kvízt is mutatja (szándékos duplikáció - a campus térképen
+  // ezek az A1 épületnél maradnak).
+  'iok-1': {
+    sheet: 'IOK',
+    building: 'elocsarnok',
+    extraNames: [
+      'Tudod-e? - Érdekességek a spanyol és olasz nyelv és kultúra kapcsán',
+      'Ünnepeljük együtt a Nyelvek Európai Napját!',
+      'Angolul a világ körül – nyelvi és kulturális érdekességek',
+      'Játék a betűkkel',
+    ],
+  },
   'konf-1': { sheet: 'KONFUCIUSZ', building: 'elocsarnok' },
 };
 
@@ -248,6 +261,55 @@ function formatExcelTime(value) {
   return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
 }
 
+/**
+ * Helyszín-felülírások: bizonyos programoknál a táblázatban szereplő értéket
+ * egy kézzel karbantartott, pontosabb helyszínre cseréljük, MIELŐTT az
+ * épület-felismerés lefut - így a besorolás is az új helyszínből következik.
+ * Szándékosan szűk szabályok (a nevük alapján azonosított programokra
+ * vonatkoznak), hogy más programokra ne hassanak:
+ *  - a regisztrációköteles IOK vizsgánál a táblázatbeli értéket (a helyi
+ *    másolatban még "folyamatban", a megosztott táblázatban már az A1-es terem)
+ *    a regisztrációs pultra cseréljük, ezért a szabály a vizsga NEVÉRE és a
+ *    regisztrációs igényre illeszkedik (az "IOK" + "pult" szavakra), nem a
+ *    helyszínre - különben a látogató egyenesen a terembe menne, pedig előbb
+ *    regisztrálnia kell a pultnál. Az ilyen program az üveg előcsarnokhoz
+ *    (elocsarnok) sorolódik, így bekerül az iok-1.json-ba, és a campus
+ *    térképen is a pulthoz kerül;
+ *  - a 4 nyelvi kvíznél a táblázatban még "folyamatban" szerepel, ezek helye a
+ *    visszaigazolt A1. épület 1. emelet 105. tanterem (ez a szabály automatikusan
+ *    "a1" épületbesorolást is ad nekik).
+ */
+const PLACE_OVERRIDES = [
+  {
+    namePatterns: [/^szobeli origo/],
+    placePatterns: [/folyamatban/, /\ba\s*\/\s*1\b|\ba1\b/, /iok stand/, /uveg elocsarnok/],
+    registrationPatterns: [/iok/, /pult/],
+    newPlace: 'Üveg előcsarnok – IOK regisztrációs pult / Glass lobby – IOK registration desk',
+  },
+  {
+    namePatterns: [/^tudod-e\?/, /^unnepeljuk egyutt a nyelvek europai napjat/, /^angolul a vilag korul/, /^jatek a betukkel/],
+    placePatterns: [/folyamatban/],
+    newPlace: 'A1. épület, 1. emelet, 105. tanterem / Building A1, 1st floor, Room 105',
+  },
+];
+
+/** Az esetleges helyszín-felülírások alkalmazása egy programra. */
+function applyPlaceOverrides(event) {
+  const name = normalizePlace(event.name);
+  const place = normalizePlace(event.place);
+  if (!place) return;
+  const registration = normalizePlace(event.registration);
+  for (const rule of PLACE_OVERRIDES) {
+    const nameOk = !rule.namePatterns || rule.namePatterns.some(pattern => pattern.test(name));
+    const placeOk = !rule.placePatterns || rule.placePatterns.some(pattern => pattern.test(place));
+    const registrationOk = !rule.registrationPatterns || rule.registrationPatterns.every(pattern => pattern.test(registration));
+    if (nameOk && placeOk && registrationOk) {
+      event.place = rule.newPlace;
+      return;
+    }
+  }
+}
+
 function convertSheet(ws, sheetName, warnings) {
   const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '', raw: true });
   const headerIdx = findHeaderRowIndex(rows);
@@ -306,6 +368,8 @@ function convertSheet(ws, sheetName, warnings) {
 
   // Kulcsok a 2025-ös sorrendbe rendezése
   return programs.map(ev => {
+    // Helyszín-felülírások (pl. regisztrációköteles IOK program -> regisztrációs pult)
+    applyPlaceOverrides(ev);
     const ordered = {};
     for (const k of KEY_ORDER) {
       if (ev[k] !== undefined) ordered[k] = ev[k];
@@ -457,13 +521,26 @@ for (const [file, { sheet, names }] of Object.entries(STAND_EXTRACTS)) {
 }
 
 // ----- Kari stand-csoportok: az adott munkalap térhez tartozó programjai -----
-for (const [file, { sheet, building }] of Object.entries(BUILDING_FILTER_EXTRACTS)) {
+for (const [file, { sheet, building, extraNames }] of Object.entries(BUILDING_FILTER_EXTRACTS)) {
   const source = programsBySheet.get(sheet);
   if (!source) {
     warnings.push(`[${file}] A stand-csoport forrás-munkalapja nem található ("${sheet}") - a fájl kimaradt!`);
     continue;
   }
   const extracted = source.filter(p => detectBuilding(p.place) === building);
+  if (extraNames && extraNames.length) {
+    // Szándékosan duplikált extra programok (pl. az IOK stand az A1-es kvízeket
+    // is mutatja): név szerint, az eredeti sorrendben, a lista végére fűzve.
+    for (const wantedName of extraNames) {
+      const matches = source.filter(p => normalizeName(p.name) === normalizeName(wantedName));
+      if (!matches.length) {
+        warnings.push(`[${file}] Nincs ilyen nevű extra program a(z) "${sheet}" munkalapon: "${wantedName}"`);
+        continue;
+      }
+      if (extracted.some(p => normalizeName(p.name) === normalizeName(wantedName))) continue;
+      extracted.push(matches[0]);
+    }
+  }
   if (!extracted.length) {
     warnings.push(`[${file}] Egyetlen program sem tartozik a(z) "${building}" területhez a(z) "${sheet}" munkalapon.`);
   }
@@ -473,6 +550,14 @@ for (const [file, { sheet, building }] of Object.entries(BUILDING_FILTER_EXTRACT
 
 // ----- Program nélküli standok: üres listát írunk (nem 404/alert lesz belőle) -----
 for (const file of EMPTY_AREA_FILES) {
+  const filePath = path.join(outDir, `${file}.json`);
+  const existing = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8').trim() : '';
+  if (existing && existing !== '[]') {
+    // Kézzel karbantartott tartalom (pl. elocsarnok-alumni.json, elocsarnok-konyvtar.json):
+    // ne írjuk felül üres listával, különben elveszne a stand adata
+    summary.push(`- [stand] ${file}.json: kézzel karbantartott tartalom, érintetlenül hagyva`);
+    continue;
+  }
   fs.writeFileSync(path.join(outDir, `${file}.json`), '[]\n', 'utf8');
 }
 summary.push(`- [stand] üres stand-fájlok: ${EMPTY_AREA_FILES.length} (${EMPTY_AREA_FILES.join(', ')})`);

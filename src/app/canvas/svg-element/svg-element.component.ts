@@ -358,8 +358,13 @@ export class SvgElementComponent implements AfterViewInit, OnChanges, OnDestroy 
    */
   getAreaBadges(area: InteractiveArea): AreaBadgeInfo[] {
     const flags = this.areaFlags.get(area.id);
-    // A nagytérképen (campus overview) nem kellenek a mini badge-ek - túl sok stand van rajta
-    if (!flags || !this.config || this.config.id === 'nagyterkep') {
+    if (!flags || !this.config) {
+      return [];
+    }
+    // A nagytérképen (campus overview) alapból nem rajzolunk mini badge-eket - túl sok
+    // stand van rajta. Kivétel: ha a terület a metadata.showBadges = true értékkel
+    // kifejezetten kéri (pl. a Könyvtár / KLM pont akadálymentesített jelölése).
+    if (this.config.id === 'nagyterkep' && !area.metadata?.showBadges) {
       return [];
     }
     const bounds = this.getAreaBounds(area);
@@ -419,13 +424,19 @@ export class SvgElementComponent implements AfterViewInit, OnChanges, OnDestroy 
    * ha az adott térképen van legalább egy jelölt stand.
    */
   getLegendLayout(): LegendLayout | null {
-    // A nagytérképen (campus overview) nem kell a jelkulcs
-    if (!this.config || this.config.id === 'nagyterkep') {
+    if (!this.config) {
       return null;
     }
+    // A nagytérképen (campus overview) csak akkor kell jelkulcs, ha valamelyik terület
+    // a metadata.showBadges = true értékkel kifejezetten kérte a badge-eket (egyébként
+    // ott egyáltalán nem is rajzolunk badge-et, így a magyarázat felesleges lenne)
+    const isCampus = this.config.id === 'nagyterkep';
     let anyEn = false;
     let anyAccess = false;
     for (const area of this.config.interactiveAreas) {
+      if (isCampus && !area.metadata?.showBadges) {
+        continue;
+      }
       const flags = this.areaFlags.get(area.id);
       if (flags?.en) {
         anyEn = true;
