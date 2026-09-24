@@ -22,19 +22,7 @@
         "cssClass": "polygon-no-stroke"
       }
     },
-    {
-      "id": "b1",
-      "name": "B1 Épület",
-      "type": "polygon",
-      "coordinates": {
-        "d": [
-          "M1570.12,2135.02h135.89v88.5h-135.89v-88.5Z"
-        ]
-      },
-      "style": {
-        "cssClass": "polygon-no-stroke"
-      }
-    },
+    
     {
       "id": "c1",
       "name": "C1 Épület",
@@ -78,20 +66,7 @@
         "cssClass": "polygon-no-stroke"
       }
     },
-    {
-      "id": "a5",
-      "name": "A5 Épület",
-      "type": "polygon",
-      "coordinates": {
-        "d": [
-          "M1622.18,1197.71l54.03-77.39,315.31,220.09-54.02,77.39-315.32-220.09Z",
-          "M1703.25,1186.61h135.88v88.5h-135.88v-88.5Z"
-        ]
-      },
-      "style": {
-        "cssClass": "polygon-no-stroke"
-      }
-    },
+   
     {
       "id": "a3",
       "name": "A3 Épület",
