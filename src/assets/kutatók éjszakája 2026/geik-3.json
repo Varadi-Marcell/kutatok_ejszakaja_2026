@@ -22,7 +22,8 @@
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "2",
@@ -34,7 +35,8 @@
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "3",
@@ -46,7 +48,8 @@
     "max_person": "20-25",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "4",
@@ -59,7 +62,8 @@
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "-",
     "recommended_for_english_speakers": true,
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "5",
@@ -70,7 +74,8 @@
     "time": "18:-00-tól folyamatos",
     "max_person": "20",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "6",
@@ -82,7 +87,8 @@
     "max_person": "20",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "recommended_for_english_speakers": true,
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "7",
@@ -90,10 +96,11 @@
     "english_name": "Smoothness and form accuracy – the underlying analyses",
     "description": "A gépeket alkotó alkatrészek sosem tökéletesek, az iparban mindig valamilyen hibával rendelkeznek gyártásuk\nkövetkeztében. Ezeket mérésekkel tudjuk vizsgálni és értékelni. A bemutató során ehhez használható érdesség\nés alakhiba mérő berendezések tekinthetők meg, melyek használatát és jelentőségét ismertetjük.",
     "english_description": "The components that make up machines are never perfect; due to the manufacturing process, they invariably possess some degree of imperfection. These can be examined and evaluated through measurements. During the presentation, we will showcase instruments used to measure surface roughness and form errors, and we will explain their operation and significance.",
-    "time": "18:-00-tól folyamatos, fél óra",
+    "time": "18:00-tól folyamatos, fél óra",
     "max_person": "30",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "8",
@@ -105,7 +112,8 @@
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "9",
@@ -117,7 +125,8 @@
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "10",
@@ -129,7 +138,8 @@
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "14+",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "11",
@@ -142,7 +152,8 @@
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
     "recommended_for_english_speakers": true,
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "15",
@@ -153,7 +164,8 @@
     "time": "19:00-19:25; 19:30-19:55; 20:00-20:25; 20:30-20:55; 21:00-21:25; 21:30-21:55",
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
-    "age": "vegyes"
+    "age": "vegyes",
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "16",
@@ -165,7 +177,8 @@
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "17",
@@ -177,7 +190,8 @@
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "18",
@@ -189,7 +203,8 @@
     "max_person": "45",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "19",
@@ -201,7 +216,8 @@
     "max_person": "40",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "20",
@@ -213,7 +229,8 @@
     "max_person": "15",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   },
   {
     "No.": "21",
@@ -225,6 +242,7 @@
     "max_person": "10",
     "registration": "Helyi regisztráció a GÉIK standnál! / Local registration at the GÉIK stand!",
     "age": "vegyes",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gépészmérnöki és Informatikai kari stand"
   }
 ]

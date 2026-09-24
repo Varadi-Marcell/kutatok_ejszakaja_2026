@@ -28,6 +28,44 @@ export class ProgramPopupComponent implements OnInit, OnChanges {
 
   @ViewChild('popupContent', { static: false }) popupContent!: ElementRef;
 
+  // A "regisztráció nem szükséges" jelentésű szövegek egységesítéséhez - a forrás
+  // adatban ez sokféleképp van megadva (vagy hiányzik), a kártyán mindig ugyanaz jelenjen meg
+  private readonly NO_REGISTRATION_VALUES = new Set([
+    'nem', 'nincs', '-', 'regisztráció nélküli', 'nem szükséges', 'nincs limitálva'
+  ]);
+
+  isRegistrationRequired(program: ProgramEvent): boolean {
+    const reg = (program.registration || '').toString().trim().toLowerCase().replace(/\.$/, '');
+    if (!reg) return false;
+    return !this.NO_REGISTRATION_VALUES.has(reg);
+  }
+
+  registrationDisplay(program: ProgramEvent): string {
+    if (this.isRegistrationRequired(program)) {
+      return program.registration!;
+    }
+    return this.isEnglish ? 'Not required' : 'Regisztráció nem szükséges';
+  }
+
+  // A "nincs max létszám" jelentésű szövegek egységesítéséhez - a forrás adatban
+  // ez is sokféleképp van megadva (vagy hiányzik), a kártyán mindig ugyanaz jelenjen meg
+  private readonly NO_LIMIT_VALUES = new Set([
+    '-', 'nincs', 'nincs limitálva', 'nincs limit', 'nincs korlát', 'nem szükséges maximálni', 'mindegy'
+  ]);
+
+  private hasMaxPersonLimit(program: ProgramEvent): boolean {
+    const val = (program.max_person ?? '').toString().trim().toLowerCase().replace(/[.!]$/, '');
+    if (!val) return false;
+    return !this.NO_LIMIT_VALUES.has(val);
+  }
+
+  maxPersonDisplay(program: ProgramEvent): string {
+    if (this.hasMaxPersonLimit(program)) {
+      return program.max_person!.toString();
+    }
+    return this.isEnglish ? 'No maximum capacity' : 'Nincs max létszám';
+  }
+
   isLoading: boolean = false;
   isEnglish: boolean = false;
   isClosing: boolean = false;

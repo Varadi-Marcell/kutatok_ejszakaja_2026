@@ -93,5 +93,46 @@
     "max_person": "nincs",
     "registration": "nincs",
     "accessible_venue": true
+  },
+  {
+    "No.": "1",
+    "name": "Amiről az ősmaradványok mesélnek",
+    "english_name": "The story of fossils",
+    "description": "Több száz különleges ős­maradványt bemutató kiállítás, melyből a földi élet fejlődését ismerhetjük meg.",
+    "english_description": "An exhibition featuring hundreds of unique fossils, providing insight into the evolution of life on Earth.",
+    "time": "folyamatos; de óránként (18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
+    "max_person": "nincs korlát",
+    "registration": "kari pultnál",
+    "age": "0-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
+    "place": "Műszaki Föld- és Környezettudományi kari stand"
+  },
+  {
+    "No.": "2",
+    "name": "Ásványok a világ minden tájáról - Ásványkiállítás",
+    "english_name": "Minerals from around the world - Mineral exhibition",
+    "description": "Gyönyörködjön a Nyersanyagkutató Földtudományi Intézet több ezer darabos lélegzetelállító ásványkiállításában.",
+    "english_description": "Admire the breathtaking mineral exhibition of the Raw Materials Research Institute of Earth Sciences, featuring thousands of specimens.",
+    "time": "folyamatos; de óránként ( 18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
+    "max_person": "nincs korlát",
+    "registration": "kari pultnál",
+    "age": "0-99 év",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
+    "place": "Műszaki Föld- és Környezettudományi kari stand"
+  },
+  {
+    "No.": "3",
+    "name": "Tanbánya látogatás",
+    "english_name": "Underground mine visit inside the building of the University of Miskolc",
+    "description": "Gyere velünk a bánya mélyére! A tanbányában egykori bányákból származó\neszközök segítségével mutatjuk be\na bányászathoz kötődő kitermelési technológiákat valósághű környezetben.",
+    "english_description": "Come with us deep into the mine! In our underground mine, tools from former mines and mining-related extraction technologies can be seen in a realistic environment.",
+    "time": "18 órától 30 percenként indulnak csoportok a kari standtól / From 6:00 p.m., groups will depart from the faculty stand every 30 minutes.",
+    "max_person": "20 fő csoportonként",
+    "registration": "kari pultnál",
+    "age": "6-99 év",
+    "recommended_for_english_speakers": true,
+    "place": "Műszaki Föld- és Környezettudományi kari stand"
   }
 ]

@@ -5,9 +5,9 @@
     "english_name": "Information; registration for mock exams",
     "description": "Az IOK által kínált szóbeli próbanyelvvizsgára itt lehet regisztrálni",
     "english_description": "Registration for oral mock exams",
-    "place": "Üveg aula stand / Main Hall IOK Stand",
+    "place": "Idegennyelvi Oktatási Központ standjánál",
     "time": "17:30-19:00",
-    "registration": "nincs",
+    "registration": "Regisztráció szükséges",
     "accessible_venue": true
   },
   {
@@ -29,6 +29,7 @@
     "time": "18:00-19:00",
     "max_person": "max. 10 fő",
     "registration": "helyszíni regisztráció - IOK pultnál 17:30-tól 19:00-ig",
-    "age": "14+"
+    "age": "14+",
+    "place": "IOK stand"
   }
 ]

@@ -33,6 +33,7 @@
     "max_person": "12 fő/alkalom",
     "registration": "IGEN",
     "age": "14+",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Gazdaságtudományi kari stand"
   }
 ]

@@ -45,11 +45,6 @@ export class SvgConfigService {
     return this.loadConfig('assets/svg-configs/parkolo-config.json');
   }
 
-  // GEIK programok betöltése (backward compatibility)
-  loadGeikData(): Observable<ProgramEvent[]> {
-    return this.http.get<ProgramEvent[]>('assets/kutatók éjszakája 2026/geik.json');
-  }
-
   // Dinamikus area adatok betöltése
   loadAreaData(areaId: string): Observable<ProgramEvent[]> {
     return this.http.get<ProgramEvent[]>(`assets/kutatók éjszakája 2026/${areaId}.json`);

@@ -329,9 +329,7 @@
     "age": "vegyes",
     "recommended_for_english_speakers": true,
     "accessible_venue": true,
-    "detail_map_id": "diszaula",
-    "detail_area_id": "avk-feny",
-    "detail_stand_name": "Fényt viszünk a kémiába"
+    "building": "diszudvar"
   },
   {
     "No.": "19",
@@ -571,7 +569,7 @@
     "english_name": "The Golden Age of Poison: Poisons in Agatha Christie’s Crime Novels",
     "description": "Szereted a krimi királynőjének műveit? Mindig is kíváncsi voltál rá, hogy miért mérgeznek meg olyan sokakat a könyveiben? Most megtudhatod erre a kérdésre a választ, és számos Christie regényeiben említett méreg történetét is megismerheted az interaktív előadás során.",
     "english_description": "Do you like the novels of the Queen of Crime? Have you always been curious about why so many people are poisoned in her books? In this interactive presentation, you will find out the answer to this question and learn about several poisons that appear in her novels.",
-    "place": "A/1 mfsz. 10.?",
+    "place": "A/1 mfsz. 10.",
     "time": "20:00; 22:00",
     "max_person": "40 fő",
     "registration": "Nem szükséges.",
@@ -585,7 +583,7 @@
     "english_name": "Harry Potter Quiz",
     "description": "Olvastad J. K. Rowling híres regényeit és/vagy láttad a filmeket? Gyere el erre a különleges Mágiatörténet órára, és próbáld ki a tudásod a varázslóvilágról egy izgalmas és pörgős kvízen! A részvételhez okostelefonra és internetkapcsolatra lesz szükséged.",
     "english_description": "Have you read J. K. Rowling’s famous novels and/or seen the films? Attend this special History of Magic lesson and test your knowledge of the wizarding world with an exciting and fast-paced quiz! You will need a smartphone and an internet connection to participate.",
-    "place": "A/1 mfsz. 10.?",
+    "place": "A/1 mfsz. 10.",
     "time": "19:00; 21:00",
     "max_person": "40 fő",
     "registration": "Nem szükséges.",
@@ -1332,11 +1330,11 @@
   },
   {
     "No.": "1",
-    "name": "A TÁRSASJÁTÉKOK REJTETT SZUPEREREJE\nJáték, szakmai beszélgetések és személyes tanácsadás a modern társasjátékok fejlesztő hatásairól",
-    "english_name": "THE HIDDEN SUPERPOWER OF BOARD GAMES\nPlay modern board games, talk to our experts, and discover how board games help develop essential skills",
+    "name": "A TÁRSASJÁTÉKOK REJTETT SZUPEREREJE - Játék, szakmai beszélgetések és személyes tanácsadás a modern társasjátékok fejlesztő hatásairól",
+    "english_name": "THE HIDDEN SUPERPOWER OF BOARD GAMES - Play modern board games, talk to our experts, and discover how board games help develop essential skills",
     "description": "A társasjátékok nemcsak szórakoztatnak, hanem észrevétlenül fejlesztik a kommunikációt, az együttműködést, a problémamegoldást és a stratégiai gondolkodást is. Próbálj ki modern társasjátékokat, beszélgess a KÖSZI szakembereivel, és fedezd fel, hogyan segíthetik a játékok a mindennapi életben, a tanulásban és a munka világában szükséges készségek fejlődését. Kellemes hangulattal, rengeteg játékkal és meglepetéssel várunk minden érdeklődőt!",
     "english_description": "Board games are more than just fun—they also help develop communication, teamwork, problem-solving, and strategic thinking in a natural way. Try a variety of modern board games, talk to KÖSZI's experts, and discover how games can support the development of skills essential for everyday life, learning, and the workplace. Join us for a fun and friendly atmosphere, plenty of games, and lots of surprises!",
-    "place": "ME KÖSZI, C/1. földszint",
+    "place": "ME KÖSZI, C/2. Földszint",
     "time": "18:00 - 23:00 között\nfolyamatosan",
     "max_person": "Egy időben kb. 40 fő, de rugalmasak vagyunk",
     "registration": "nincs",
@@ -1348,7 +1346,7 @@
     "e-mail címe": "monika.csorba@uni-miskolc.hu",
     "tel. száma": "30/219-9885",
     "Segítők": "Juhász Orchidea\nCsorba Mónika\nÖnkéntes hallgatók és IKSZ-es diákok (nevek később)",
-    "building": "c1"
+    "building": "c2"
   },
   {
     "No.": "1",
@@ -1367,7 +1365,7 @@
     "e-mail címe": "ildi.bolkeny@uni-miskolc.hu",
     "tel. száma": "+36-30/8793-600",
     "Segítők": "Godó László, Hussam Rostum, Jakubinyi Máté",
-    "building": "info"
+    "building": "emc-labor"
   },
   {
     "No.": "1",
@@ -1681,5 +1679,19 @@
     "detail_map_id": "regi_aula",
     "detail_area_id": "gtk-vakterkep",
     "detail_stand_name": "Régi Aula"
+  },
+  {
+    "No.": "16",
+    "name": "Fekete arany nyomában",
+    "english_name": "In Search of Black Gold",
+    "description": "Fekete arany nyomában előadásunkban a kőolaj felfedezésének, kitermelésének és feldolgozásának világát mutatjuk be laboratóriumi környezetben, terepasztal segítségével szemléltetve a folyamatokat és a kihívásokat.",
+    "english_description": "During our demonstration In Search of Black Gold, we present the world of oil discovery, extraction, and processing in a laboratory setting, using a model setup to illustrate the processes and challenges.",
+    "place": "Olaj- és gázipari terepasztal, A/2 épület, 24/A - Olajmérnöki és Gázmérnöki Tsz., illetve a Galéria előtti himba területe (jó idő esetén) / Oil and Gas Field Desk, Building A/2, 24/A - Oil and Gas Engineering Department and the pumpjack area in front of the Gallery (weather permitting)",
+    "time": "18:00 és 22:00 között / Continuously through 18:00 és 22:00",
+    "max_person": "10",
+    "registration": "nincs",
+    "recommended_for_english_speakers": true,
+    "accessible_venue": true,
+    "building": "feketearany"
   }
 ]

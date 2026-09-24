@@ -109,14 +109,14 @@
             <p>{{ isEnglish && program.english_description ? program.english_description : program.description }}</p>
           </div>
 
-          <div class="program-meta" *ngIf="program.max_person || program.registration">
-            <div class="meta-item" *ngIf="program.max_person">
+          <div class="program-meta">
+            <div class="meta-item">
               <i class="bi bi-people icon-people"></i>
-              <strong>{{ isEnglish ? 'Max. capacity:' : 'Max. létszám:' }}</strong> {{ program.max_person }}
+              <strong>{{ isEnglish ? 'Max. capacity:' : 'Max. létszám:' }}</strong> {{ maxPersonDisplay(program) }}
             </div>
-            <div class="meta-item" *ngIf="program.registration">
+            <div class="meta-item">
               <i class="bi bi-pencil-square icon-registration"></i>
-              <strong>{{ isEnglish ? 'Registration:' : 'Regisztráció:' }}</strong> {{ program.registration }}
+              <strong>{{ isEnglish ? 'Registration:' : 'Regisztráció:' }}</strong> {{ registrationDisplay(program) }}
             </div>
           </div>
         </div>

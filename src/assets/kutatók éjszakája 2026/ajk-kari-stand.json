@@ -18,7 +18,8 @@
     "time": "19:00 ; 20:00",
     "max_person": "30",
     "registration": "ÁJK Kari stand",
-    "age": "minden"
+    "age": "minden",
+    "place": "Állam- és Jogtudományi kari stand"
   },
   {
     "No.": "9",
@@ -29,7 +30,8 @@
     "time": "18:30",
     "max_person": "30",
     "registration": "ÁJK Kari stand",
-    "age": "minden"
+    "age": "minden",
+    "place": "Állam- és Jogtudományi kari stand"
   },
   {
     "No.": "10",
@@ -40,6 +42,7 @@
     "time": "21:00",
     "max_person": "30",
     "registration": "ÁJK Kari stand",
-    "age": "minden"
+    "age": "minden",
+    "place": "Állam- és Jogtudományi kari stand"
   }
 ]

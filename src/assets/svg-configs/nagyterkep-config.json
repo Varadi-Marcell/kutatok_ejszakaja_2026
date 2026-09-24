@@ -152,20 +152,7 @@
         "cssClass": "polygon-no-stroke"
       }
     },
-    {
-      "id": "info",
-      "name": "Informatikai  Épület",
-      "type": "polygon",
-      "coordinates": {
-        "d": [
-          "M3193.36,842.23l-104.88,147.38-31.5-12.62-29.5-16.5-27.5-19.88-25.63-22.62-22.62-25.25,103.01-144.75,39.12-55.12,136.64,96.88-37.13,52.5Z",
-          "M2852.84,657.97h525.16v136h-525.16v-136Z"
-        ]
-      },
-      "style": {
-        "cssClass": "polygon-no-stroke"
-      }
-    },
+    
     {
       "id": "a2",
       "name": "A2  Épület",
@@ -220,6 +207,45 @@
       },
       "style": {
         "cssClass": "polygon-no-stroke"
+      }
+    },
+    {
+      "id": "feketearany",
+      "name": "Fekete arany nyomában",
+      "type": "circle",
+      "coordinates": {
+        "cx": 2858,
+        "cy": 2079,
+        "r": 70
+      },
+      "style": {
+        "cssClass": "polygon"
+      }
+    },
+    {
+      "id": "diszudvar",
+      "name": "Fényt viszünk a kémiába",
+      "type": "circle",
+      "coordinates": {
+        "cx": 1605,
+        "cy": 1706,
+        "r": 70
+      },
+      "style": {
+        "cssClass": "polygon"
+      }
+    },
+    {
+      "id": "emc-labor",
+      "name": "Rejtő Ferenc EMC Laboratórium",
+      "type": "circle",
+      "coordinates": {
+        "cx": 2742,
+        "cy": 630,
+        "r": 70
+      },
+      "style": {
+        "cssClass": "polygon"
       }
     }
   ]

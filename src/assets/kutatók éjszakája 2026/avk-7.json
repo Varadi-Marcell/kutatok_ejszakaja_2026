@@ -87,56 +87,6 @@
     "accessible_venue": true
   },
   {
-    "No.": "1",
-    "name": "Amiről az ősmaradványok mesélnek",
-    "english_name": "The story of fossils",
-    "description": "Több száz különleges ős­maradványt bemutató kiállítás, melyből a földi élet fejlődését ismerhetjük meg.",
-    "english_description": "An exhibition featuring hundreds of unique fossils, providing insight into the evolution of life on Earth.",
-    "time": "folyamatos; de óránként (18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
-    "max_person": "nincs korlát",
-    "registration": "kari pultnál",
-    "age": "0-99 év",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true
-  },
-  {
-    "No.": "2",
-    "name": "Ásványok a világ minden tájáról - Ásványkiállítás",
-    "english_name": "Minerals from around the world - Mineral exhibition",
-    "description": "Gyönyörködjön a Nyersanyagkutató Földtudományi Intézet több ezer darabos lélegzetelállító ásványkiállításában.",
-    "english_description": "Admire the breathtaking mineral exhibition of the Raw Materials Research Institute of Earth Sciences, featuring thousands of specimens.",
-    "time": "folyamatos; de óránként ( 18:00; 19:00; 20:00 és 21:00-kor) vezetett tárlatlátogatás / continuous; but guided tours of the exhibition every hour (6:00 PM; 7:00 PM; 8:00 PM and 9:00 PM)",
-    "max_person": "nincs korlát",
-    "registration": "kari pultnál",
-    "age": "0-99 év",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true
-  },
-  {
-    "No.": "3",
-    "name": "Tanbánya látogatás",
-    "english_name": "Underground mine visit inside the building of the University of Miskolc",
-    "description": "Gyere velünk a bánya mélyére! A tanbányában egykori bányákból származó\neszközök segítségével mutatjuk be\na bányászathoz kötődő kitermelési technológiákat valósághű környezetben.",
-    "english_description": "Come with us deep into the mine! In our underground mine, tools from former mines and mining-related extraction technologies can be seen in a realistic environment.",
-    "time": "18 órától 30 percenként indulnak csoportok a kari standtól / From 6:00 p.m., groups will depart from the faculty stand every 30 minutes.",
-    "max_person": "20 fő csoportonként",
-    "registration": "kari pultnál",
-    "age": "6-99 év",
-    "recommended_for_english_speakers": true
-  },
-  {
-    "No.": "16",
-    "name": "Fekete arany nyomában",
-    "english_name": "In Search of Black Gold",
-    "description": "\"Fekete arany nyomában\" előadásunkban a kőolaj felfedezésének, kitermelésének és feldolgozásának világát mutatjuk be laboratóriumi környezetben, terepasztal segítségével szemléltetve a folyamatokat és a kihívásokat.",
-    "english_description": "During our demonstration \"In Search of Black Gold,\" we present the world of oil discovery, extraction, and processing in a laboratory setting, using a model setup to illustrate the processes and challenges.",
-    "time": "18:00 és 22:00 között / Continuously through 18:00 és 22:00",
-    "max_person": "10",
-    "registration": "igen",
-    "recommended_for_english_speakers": true,
-    "accessible_venue": true
-  },
-  {
     "No.": "2",
     "name": "Tüzes-jeges AnyagBAZÁR",
     "english_name": "Materials with fire and ice",
@@ -147,7 +97,8 @@
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "recommended_for_english_speakers": true,
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   },
   {
     "No.": "4",
@@ -158,7 +109,8 @@
     "time": "17:30, 18:30, 19:30",
     "max_person": "10 fő/alkalom",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes"
+    "age": "vegyes",
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   },
   {
     "No.": "5",
@@ -169,7 +121,8 @@
     "time": "18:00",
     "max_person": "30 fő/alkalom",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes"
+    "age": "vegyes",
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   },
   {
     "No.": "6",
@@ -181,7 +134,8 @@
     "max_person": "6 fő/ alkalom",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   },
   {
     "No.": "8",
@@ -194,7 +148,8 @@
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes",
     "recommended_for_english_speakers": true,
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   },
   {
     "No.": "9",
@@ -206,7 +161,8 @@
     "max_person": "10 fő",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "4 éves kortól",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   },
   {
     "No.": "11",
@@ -217,7 +173,8 @@
     "time": "18:00; 19:00",
     "max_person": "15 fő",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes"
+    "age": "vegyes",
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   },
   {
     "No.": "13",
@@ -228,7 +185,8 @@
     "time": "18:30; 19:30",
     "max_person": "15 fő",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
-    "age": "vegyes"
+    "age": "vegyes",
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   },
   {
     "No.": "14",
@@ -240,6 +198,7 @@
     "max_person": "12 fő",
     "registration": "Regisztrálás az AVK kari standnál. (Üvegaula)",
     "age": "vegyes",
-    "accessible_venue": true
+    "accessible_venue": true,
+    "place": "Anyag- és Vegyészmérnöki kari stand"
   }
 ]
