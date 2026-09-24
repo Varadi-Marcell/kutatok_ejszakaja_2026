@@ -32,8 +32,12 @@
     [attr.viewBox]="getViewBox()"
     xmlns="http://www.w3.org/2000/svg"
   >
+    <!-- trackBy-jal kényszerítjük, hogy térképváltáskor az image elem teljesen
+         újra létrejöjjön (ne csak a href attribútuma változzon) - egyes mobil
+         böngészők (pl. iOS Safari) nem mindig rajzolják újra a puszta href-csere után -->
     <image
-      [attr.href]="config.svgPath"
+      *ngFor="let path of [config.svgPath]; trackBy: trackBySvgPath"
+      [attr.href]="path"
       [attr.x]="config.viewBox.x"
       [attr.y]="config.viewBox.y"
       width="100%"

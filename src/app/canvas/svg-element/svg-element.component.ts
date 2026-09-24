@@ -66,6 +66,12 @@ export class SvgElementComponent implements AfterViewInit, OnChanges, OnDestroy 
     }
   }
 
+  // Ez kényszeríti ki, hogy a háttér <image> elem térképváltáskor teljesen
+  // újra létrejöjjön ahelyett, hogy csak a href attribútuma frissülne
+  trackBySvgPath(index: number, path: string): string {
+    return path;
+  }
+
   ngOnDestroy() {
     if (this.flagsSub) {
       this.flagsSub.unsubscribe();
